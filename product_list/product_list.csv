@@ -1,0 +1,1921 @@
+,backorder_date,category,color,number_from_vendor,number_in_stock,product_name,product_number,size,style,subcategory,wholesale_price
+0,2019-01-03,wedding,pearl,11,244,The Silas Bissell Pearl Earring,A100000,small,men,earring,38.628
+1,2018-12-27,wedding,pearl,62,32,The Boudin Pearl Earring,A100001,small,men,earring,48.285
+2,2019-01-04,wedding,pearl,58,150,The Lacombe Pearl Earring,A100002,small,men,earring,28.970999999999997
+3,2019-01-05,wedding,pearl,51,193,The Marx Pearl Earring,A100003,small,men,earring,38.628
+4,2018-12-29,wedding,pearl,66,196,The Guevara Pearl Earring,A100004,small,men,earring,28.970999999999997
+5,2019-01-03,wedding,pearl,53,685,The Silas Bissell Pearl Earring,A100005,medium,men,earring,57.94199999999999
+6,2018-12-16,wedding,pearl,16,406,The Boudin Pearl Earring,A100006,medium,men,earring,28.970999999999997
+7,2019-02-06,wedding,pearl,86,575,The Lacombe Pearl Earring,A100007,medium,men,earring,28.970999999999997
+8,2018-11-11,wedding,pearl,7,523,The Marx Pearl Earring,A100008,medium,men,earring,38.628
+9,2018-12-26,wedding,pearl,59,458,The Guevara Pearl Earring,A100009,medium,men,earring,57.94199999999999
+10,2019-01-30,wedding,pearl,29,809,The Silas Bissell Pearl Earring,A100010,large,men,earring,48.285
+11,2018-12-06,wedding,pearl,95,429,The Boudin Pearl Earring,A100011,large,men,earring,38.628
+12,2018-11-11,wedding,pearl,80,982,The Lacombe Pearl Earring,A100012,large,men,earring,28.970999999999997
+13,2019-01-08,wedding,pearl,19,187,The Marx Pearl Earring,A100013,large,men,earring,48.285
+14,2018-12-31,wedding,pearl,36,946,The Guevara Pearl Earring,A100014,large,men,earring,28.970999999999997
+15,2019-01-04,wedding,white,67,923,The Silas Bissell White Earring,A100015,small,men,earring,38.628
+16,2019-01-24,wedding,white,56,21,The Boudin White Earring,A100016,small,men,earring,38.628
+17,2018-12-02,wedding,white,13,164,The Lacombe White Earring,A100017,small,men,earring,57.94199999999999
+18,2019-02-03,wedding,white,2,197,The Marx White Earring,A100018,small,men,earring,28.970999999999997
+19,2019-01-08,wedding,white,20,797,The Guevara White Earring,A100019,small,men,earring,28.970999999999997
+20,2019-01-05,wedding,white,34,340,The Silas Bissell White Earring,A100020,medium,men,earring,28.970999999999997
+21,2018-12-03,wedding,white,20,262,The Boudin White Earring,A100021,medium,men,earring,28.970999999999997
+22,2018-12-16,wedding,white,51,99,The Lacombe White Earring,A100022,medium,men,earring,48.285
+23,2018-12-28,wedding,white,34,218,The Marx White Earring,A100023,medium,men,earring,28.970999999999997
+24,2018-12-06,wedding,white,68,759,The Guevara White Earring,A100024,medium,men,earring,28.970999999999997
+25,2018-11-20,wedding,white,26,615,The Silas Bissell White Earring,A100025,large,men,earring,28.970999999999997
+26,2019-01-24,wedding,white,26,801,The Boudin White Earring,A100026,large,men,earring,57.94199999999999
+27,2018-11-12,wedding,white,36,323,The Lacombe White Earring,A100027,large,men,earring,38.628
+28,2018-11-30,wedding,white,70,275,The Marx White Earring,A100028,large,men,earring,57.94199999999999
+29,2018-11-19,wedding,white,36,682,The Guevara White Earring,A100029,large,men,earring,48.285
+30,2019-01-12,wedding,amber,61,996,The Silas Bissell Amber Earring,A100030,small,men,earring,57.94199999999999
+31,2018-11-30,wedding,amber,71,323,The Boudin Amber Earring,A100031,small,men,earring,38.628
+32,2019-01-13,wedding,amber,97,737,The Lacombe Amber Earring,A100032,small,men,earring,28.970999999999997
+33,2019-01-06,wedding,amber,89,244,The Marx Amber Earring,A100033,small,men,earring,57.94199999999999
+34,2018-12-18,wedding,amber,90,261,The Guevara Amber Earring,A100034,small,men,earring,48.285
+35,2018-12-23,wedding,amber,31,33,The Silas Bissell Amber Earring,A100035,medium,men,earring,28.970999999999997
+36,2018-12-24,wedding,amber,94,236,The Boudin Amber Earring,A100036,medium,men,earring,38.628
+37,2018-12-05,wedding,amber,75,965,The Lacombe Amber Earring,A100037,medium,men,earring,38.628
+38,2019-01-16,wedding,amber,33,288,The Marx Amber Earring,A100038,medium,men,earring,57.94199999999999
+39,2018-11-12,wedding,amber,25,739,The Guevara Amber Earring,A100039,medium,men,earring,57.94199999999999
+40,2019-02-06,wedding,amber,13,905,The Silas Bissell Amber Earring,A100040,large,men,earring,28.970999999999997
+41,2019-02-07,wedding,amber,4,869,The Boudin Amber Earring,A100041,large,men,earring,38.628
+42,2019-02-01,wedding,amber,82,995,The Lacombe Amber Earring,A100042,large,men,earring,28.970999999999997
+43,2019-02-03,wedding,amber,95,973,The Marx Amber Earring,A100043,large,men,earring,48.285
+44,2019-01-18,wedding,amber,61,328,The Guevara Amber Earring,A100044,large,men,earring,38.628
+45,2019-01-04,wedding,gold,92,729,The Silas Bissell Gold Earring,A100045,small,men,earring,67.59899999999999
+46,2019-01-29,wedding,gold,14,325,The Boudin Gold Earring,A100046,small,men,earring,67.59899999999999
+47,2019-01-30,wedding,gold,51,167,The Lacombe Gold Earring,A100047,small,men,earring,81.11879999999998
+48,2018-11-21,wedding,gold,13,295,The Marx Gold Earring,A100048,small,men,earring,81.11879999999998
+49,2018-11-21,wedding,gold,6,145,The Guevara Gold Earring,A100049,small,men,earring,67.59899999999999
+50,2019-01-27,wedding,gold,99,978,The Silas Bissell Gold Earring,A100050,medium,men,earring,67.59899999999999
+51,2018-12-21,wedding,gold,92,891,The Boudin Gold Earring,A100051,medium,men,earring,81.11879999999998
+52,2018-12-05,wedding,gold,39,938,The Lacombe Gold Earring,A100052,medium,men,earring,54.07919999999999
+53,2018-12-20,wedding,gold,24,968,The Marx Gold Earring,A100053,medium,men,earring,67.59899999999999
+54,2019-01-07,wedding,gold,81,401,The Guevara Gold Earring,A100054,medium,men,earring,54.07919999999999
+55,2018-12-13,wedding,gold,59,310,The Silas Bissell Gold Earring,A100055,large,men,earring,81.11879999999998
+56,2019-01-24,wedding,gold,89,966,The Boudin Gold Earring,A100056,large,men,earring,54.07919999999999
+57,2018-12-28,wedding,gold,12,525,The Lacombe Gold Earring,A100057,large,men,earring,40.55939999999999
+58,2018-11-13,wedding,gold,44,134,The Marx Gold Earring,A100058,large,men,earring,40.55939999999999
+59,2018-11-30,wedding,gold,46,465,The Guevara Gold Earring,A100059,large,men,earring,81.11879999999998
+60,2019-02-01,wedding,pearl,7,424,The Silas Bissell Pearl Necklace,A100060,small,men,necklace,7.39
+61,2019-01-29,wedding,pearl,0,693,The Boudin Pearl Necklace,A100061,small,men,necklace,4.433999999999999
+62,2019-01-12,wedding,pearl,69,171,The Lacombe Pearl Necklace,A100062,small,men,necklace,5.912
+63,2018-12-22,wedding,pearl,19,15,The Marx Pearl Necklace,A100063,small,men,necklace,4.433999999999999
+64,2018-12-11,wedding,pearl,10,530,The Guevara Pearl Necklace,A100064,small,men,necklace,4.433999999999999
+65,2019-01-25,wedding,pearl,88,43,The Silas Bissell Pearl Necklace,A100065,medium,men,necklace,4.433999999999999
+66,2018-12-18,wedding,pearl,57,605,The Boudin Pearl Necklace,A100066,medium,men,necklace,5.912
+67,2019-01-05,wedding,pearl,32,734,The Lacombe Pearl Necklace,A100067,medium,men,necklace,5.912
+68,2018-12-26,wedding,pearl,95,848,The Marx Pearl Necklace,A100068,medium,men,necklace,8.867999999999999
+69,2018-12-31,wedding,pearl,85,398,The Guevara Pearl Necklace,A100069,medium,men,necklace,4.433999999999999
+70,2019-01-12,wedding,pearl,88,770,The Silas Bissell Pearl Necklace,A100070,large,men,necklace,7.39
+71,2018-11-28,wedding,pearl,26,643,The Boudin Pearl Necklace,A100071,large,men,necklace,7.39
+72,2018-12-13,wedding,pearl,41,225,The Lacombe Pearl Necklace,A100072,large,men,necklace,5.912
+73,2018-12-14,wedding,pearl,47,722,The Marx Pearl Necklace,A100073,large,men,necklace,5.912
+74,2018-11-16,wedding,pearl,1,130,The Guevara Pearl Necklace,A100074,large,men,necklace,4.433999999999999
+75,2018-12-16,wedding,white,32,776,The Silas Bissell White Necklace,A100075,small,men,necklace,4.433999999999999
+76,2018-12-12,wedding,white,50,193,The Boudin White Necklace,A100076,small,men,necklace,7.39
+77,2018-12-14,wedding,white,73,715,The Lacombe White Necklace,A100077,small,men,necklace,5.912
+78,2018-12-19,wedding,white,29,767,The Marx White Necklace,A100078,small,men,necklace,8.867999999999999
+79,2019-01-30,wedding,white,62,783,The Guevara White Necklace,A100079,small,men,necklace,8.867999999999999
+80,2019-01-27,wedding,white,39,432,The Silas Bissell White Necklace,A100080,medium,men,necklace,8.867999999999999
+81,2018-11-16,wedding,white,72,721,The Boudin White Necklace,A100081,medium,men,necklace,7.39
+82,2018-11-23,wedding,white,36,732,The Lacombe White Necklace,A100082,medium,men,necklace,7.39
+83,2018-12-06,wedding,white,43,805,The Marx White Necklace,A100083,medium,men,necklace,8.867999999999999
+84,2018-11-29,wedding,white,96,384,The Guevara White Necklace,A100084,medium,men,necklace,7.39
+85,2019-02-02,wedding,white,88,36,The Silas Bissell White Necklace,A100085,large,men,necklace,4.433999999999999
+86,2018-12-27,wedding,white,29,870,The Boudin White Necklace,A100086,large,men,necklace,5.912
+87,2019-01-22,wedding,white,93,22,The Lacombe White Necklace,A100087,large,men,necklace,5.912
+88,2018-12-18,wedding,white,26,329,The Marx White Necklace,A100088,large,men,necklace,5.912
+89,2018-12-26,wedding,white,50,308,The Guevara White Necklace,A100089,large,men,necklace,4.433999999999999
+90,2018-12-24,wedding,amber,94,907,The Silas Bissell Amber Necklace,A100090,small,men,necklace,5.912
+91,2018-12-14,wedding,amber,82,784,The Boudin Amber Necklace,A100091,small,men,necklace,4.433999999999999
+92,2019-01-18,wedding,amber,80,492,The Lacombe Amber Necklace,A100092,small,men,necklace,4.433999999999999
+93,2018-12-12,wedding,amber,41,799,The Marx Amber Necklace,A100093,small,men,necklace,8.867999999999999
+94,2019-01-20,wedding,amber,46,424,The Guevara Amber Necklace,A100094,small,men,necklace,4.433999999999999
+95,2018-12-15,wedding,amber,80,183,The Silas Bissell Amber Necklace,A100095,medium,men,necklace,8.867999999999999
+96,2018-11-13,wedding,amber,33,30,The Boudin Amber Necklace,A100096,medium,men,necklace,5.912
+97,2019-01-04,wedding,amber,49,489,The Lacombe Amber Necklace,A100097,medium,men,necklace,8.867999999999999
+98,2018-11-27,wedding,amber,70,121,The Marx Amber Necklace,A100098,medium,men,necklace,7.39
+99,2019-02-08,wedding,amber,55,584,The Guevara Amber Necklace,A100099,medium,men,necklace,4.433999999999999
+100,2019-01-14,wedding,amber,41,513,The Silas Bissell Amber Necklace,A100100,large,men,necklace,5.912
+101,2019-01-29,wedding,amber,82,285,The Boudin Amber Necklace,A100101,large,men,necklace,8.867999999999999
+102,2018-12-25,wedding,amber,9,267,The Lacombe Amber Necklace,A100102,large,men,necklace,4.433999999999999
+103,2019-01-29,wedding,amber,17,174,The Marx Amber Necklace,A100103,large,men,necklace,7.39
+104,2018-11-13,wedding,amber,84,328,The Guevara Amber Necklace,A100104,large,men,necklace,8.867999999999999
+105,2019-01-11,wedding,gold,24,952,The Silas Bissell Gold Necklace,A100105,small,men,necklace,10.345999999999998
+106,2018-11-29,wedding,gold,47,773,The Boudin Gold Necklace,A100106,small,men,necklace,12.415199999999997
+107,2019-01-04,wedding,gold,0,855,The Lacombe Gold Necklace,A100107,small,men,necklace,6.2075999999999985
+108,2019-01-07,wedding,gold,23,701,The Marx Gold Necklace,A100108,small,men,necklace,6.2075999999999985
+109,2018-11-23,wedding,gold,24,72,The Guevara Gold Necklace,A100109,small,men,necklace,10.345999999999998
+110,2018-12-02,wedding,gold,8,508,The Silas Bissell Gold Necklace,A100110,medium,men,necklace,10.345999999999998
+111,2018-12-24,wedding,gold,41,977,The Boudin Gold Necklace,A100111,medium,men,necklace,8.2768
+112,2018-12-07,wedding,gold,14,230,The Lacombe Gold Necklace,A100112,medium,men,necklace,8.2768
+113,2019-02-04,wedding,gold,43,187,The Marx Gold Necklace,A100113,medium,men,necklace,10.345999999999998
+114,2019-01-04,wedding,gold,11,861,The Guevara Gold Necklace,A100114,medium,men,necklace,10.345999999999998
+115,2018-12-07,wedding,gold,80,885,The Silas Bissell Gold Necklace,A100115,large,men,necklace,10.345999999999998
+116,2018-11-26,wedding,gold,4,73,The Boudin Gold Necklace,A100116,large,men,necklace,12.415199999999997
+117,2019-01-12,wedding,gold,43,75,The Lacombe Gold Necklace,A100117,large,men,necklace,6.2075999999999985
+118,2019-01-12,wedding,gold,7,449,The Marx Gold Necklace,A100118,large,men,necklace,10.345999999999998
+119,2018-12-09,wedding,gold,23,594,The Guevara Gold Necklace,A100119,large,men,necklace,10.345999999999998
+120,2019-01-11,wedding,pearl,11,628,The Silas Bissell Pearl Bracelet,A100120,small,men,bracelet,0.92
+121,2018-12-16,wedding,pearl,60,354,The Boudin Pearl Bracelet,A100121,small,men,bracelet,0.552
+122,2019-01-28,wedding,pearl,34,135,The Lacombe Pearl Bracelet,A100122,small,men,bracelet,0.552
+123,2018-12-19,wedding,pearl,80,631,The Marx Pearl Bracelet,A100123,small,men,bracelet,0.552
+124,2018-12-23,wedding,pearl,34,621,The Guevara Pearl Bracelet,A100124,small,men,bracelet,0.7360000000000001
+125,2018-11-21,wedding,pearl,39,515,The Silas Bissell Pearl Bracelet,A100125,medium,men,bracelet,0.7360000000000001
+126,2019-01-18,wedding,pearl,48,502,The Boudin Pearl Bracelet,A100126,medium,men,bracelet,0.552
+127,2018-12-27,wedding,pearl,92,597,The Lacombe Pearl Bracelet,A100127,medium,men,bracelet,1.104
+128,2019-01-06,wedding,pearl,76,121,The Marx Pearl Bracelet,A100128,medium,men,bracelet,1.104
+129,2018-12-11,wedding,pearl,86,594,The Guevara Pearl Bracelet,A100129,medium,men,bracelet,0.7360000000000001
+130,2018-12-26,wedding,pearl,15,643,The Silas Bissell Pearl Bracelet,A100130,large,men,bracelet,1.104
+131,2018-12-30,wedding,pearl,95,15,The Boudin Pearl Bracelet,A100131,large,men,bracelet,1.104
+132,2019-01-26,wedding,pearl,5,610,The Lacombe Pearl Bracelet,A100132,large,men,bracelet,0.552
+133,2018-11-16,wedding,pearl,1,385,The Marx Pearl Bracelet,A100133,large,men,bracelet,0.552
+134,2019-01-03,wedding,pearl,24,211,The Guevara Pearl Bracelet,A100134,large,men,bracelet,1.104
+135,2019-01-16,wedding,white,21,980,The Silas Bissell White Bracelet,A100135,small,men,bracelet,0.552
+136,2018-12-11,wedding,white,6,637,The Boudin White Bracelet,A100136,small,men,bracelet,0.92
+137,2019-01-29,wedding,white,52,484,The Lacombe White Bracelet,A100137,small,men,bracelet,0.92
+138,2018-12-23,wedding,white,52,483,The Marx White Bracelet,A100138,small,men,bracelet,0.7360000000000001
+139,2018-12-02,wedding,white,96,871,The Guevara White Bracelet,A100139,small,men,bracelet,1.104
+140,2019-01-09,wedding,white,6,835,The Silas Bissell White Bracelet,A100140,medium,men,bracelet,0.92
+141,2018-12-08,wedding,white,47,111,The Boudin White Bracelet,A100141,medium,men,bracelet,0.552
+142,2019-02-02,wedding,white,69,430,The Lacombe White Bracelet,A100142,medium,men,bracelet,0.552
+143,2018-12-19,wedding,white,96,839,The Marx White Bracelet,A100143,medium,men,bracelet,0.552
+144,2018-11-23,wedding,white,51,579,The Guevara White Bracelet,A100144,medium,men,bracelet,1.104
+145,2019-02-07,wedding,white,62,603,The Silas Bissell White Bracelet,A100145,large,men,bracelet,0.92
+146,2018-12-20,wedding,white,72,541,The Boudin White Bracelet,A100146,large,men,bracelet,1.104
+147,2019-01-06,wedding,white,92,112,The Lacombe White Bracelet,A100147,large,men,bracelet,0.92
+148,2018-12-22,wedding,white,45,376,The Marx White Bracelet,A100148,large,men,bracelet,0.92
+149,2018-12-10,wedding,white,42,87,The Guevara White Bracelet,A100149,large,men,bracelet,0.7360000000000001
+150,2018-12-05,wedding,amber,40,793,The Silas Bissell Amber Bracelet,A100150,small,men,bracelet,0.7360000000000001
+151,2018-12-13,wedding,amber,95,333,The Boudin Amber Bracelet,A100151,small,men,bracelet,0.552
+152,2018-12-07,wedding,amber,50,778,The Lacombe Amber Bracelet,A100152,small,men,bracelet,0.552
+153,2018-11-28,wedding,amber,3,969,The Marx Amber Bracelet,A100153,small,men,bracelet,0.552
+154,2018-11-13,wedding,amber,28,716,The Guevara Amber Bracelet,A100154,small,men,bracelet,0.92
+155,2019-01-20,wedding,amber,36,633,The Silas Bissell Amber Bracelet,A100155,medium,men,bracelet,0.552
+156,2018-12-27,wedding,amber,38,959,The Boudin Amber Bracelet,A100156,medium,men,bracelet,0.92
+157,2019-01-12,wedding,amber,13,962,The Lacombe Amber Bracelet,A100157,medium,men,bracelet,0.92
+158,2019-01-10,wedding,amber,36,847,The Marx Amber Bracelet,A100158,medium,men,bracelet,0.92
+159,2018-11-23,wedding,amber,3,442,The Guevara Amber Bracelet,A100159,medium,men,bracelet,0.552
+160,2019-01-18,wedding,amber,22,615,The Silas Bissell Amber Bracelet,A100160,large,men,bracelet,1.104
+161,2018-11-13,wedding,amber,15,819,The Boudin Amber Bracelet,A100161,large,men,bracelet,0.552
+162,2018-12-21,wedding,amber,50,782,The Lacombe Amber Bracelet,A100162,large,men,bracelet,0.92
+163,2019-01-02,wedding,amber,68,562,The Marx Amber Bracelet,A100163,large,men,bracelet,0.92
+164,2019-01-10,wedding,amber,87,418,The Guevara Amber Bracelet,A100164,large,men,bracelet,0.552
+165,2019-02-04,wedding,gold,93,824,The Silas Bissell Gold Bracelet,A100165,small,men,bracelet,1.0304
+166,2018-12-15,wedding,gold,83,294,The Boudin Gold Bracelet,A100166,small,men,bracelet,1.288
+167,2019-01-22,wedding,gold,25,191,The Lacombe Gold Bracelet,A100167,small,men,bracelet,1.0304
+168,2018-11-15,wedding,gold,92,738,The Marx Gold Bracelet,A100168,small,men,bracelet,1.288
+169,2019-02-01,wedding,gold,51,341,The Guevara Gold Bracelet,A100169,small,men,bracelet,1.5456
+170,2018-11-13,wedding,gold,10,653,The Silas Bissell Gold Bracelet,A100170,medium,men,bracelet,0.7728
+171,2019-01-28,wedding,gold,55,824,The Boudin Gold Bracelet,A100171,medium,men,bracelet,1.288
+172,2018-12-15,wedding,gold,54,918,The Lacombe Gold Bracelet,A100172,medium,men,bracelet,1.288
+173,2018-12-20,wedding,gold,14,925,The Marx Gold Bracelet,A100173,medium,men,bracelet,1.288
+174,2019-02-01,wedding,gold,85,306,The Guevara Gold Bracelet,A100174,medium,men,bracelet,1.0304
+175,2019-01-17,wedding,gold,65,748,The Silas Bissell Gold Bracelet,A100175,large,men,bracelet,1.5456
+176,2019-01-03,wedding,gold,34,843,The Boudin Gold Bracelet,A100176,large,men,bracelet,1.5456
+177,2018-12-22,wedding,gold,56,486,The Lacombe Gold Bracelet,A100177,large,men,bracelet,1.288
+178,2018-12-28,wedding,gold,89,499,The Marx Gold Bracelet,A100178,large,men,bracelet,0.7728
+179,2018-12-24,wedding,gold,40,99,The Guevara Gold Bracelet,A100179,large,men,bracelet,1.0304
+180,2019-01-06,wedding,pearl,4,365,The Silas Bissell Pearl Ring,A100180,small,men,ring,42.355
+181,2018-12-05,wedding,pearl,75,158,The Boudin Pearl Ring,A100181,small,men,ring,33.884
+182,2018-11-28,wedding,pearl,5,661,The Lacombe Pearl Ring,A100182,small,men,ring,25.412999999999997
+183,2018-12-14,wedding,pearl,27,301,The Marx Pearl Ring,A100183,small,men,ring,25.412999999999997
+184,2019-01-22,wedding,pearl,36,97,The Guevara Pearl Ring,A100184,small,men,ring,50.82599999999999
+185,2018-12-25,wedding,pearl,91,125,The Silas Bissell Pearl Ring,A100185,medium,men,ring,25.412999999999997
+186,2019-01-04,wedding,pearl,41,170,The Boudin Pearl Ring,A100186,medium,men,ring,42.355
+187,2019-01-16,wedding,pearl,14,41,The Lacombe Pearl Ring,A100187,medium,men,ring,25.412999999999997
+188,2018-12-11,wedding,pearl,53,169,The Marx Pearl Ring,A100188,medium,men,ring,42.355
+189,2019-01-07,wedding,pearl,9,360,The Guevara Pearl Ring,A100189,medium,men,ring,33.884
+190,2018-11-12,wedding,pearl,56,786,The Silas Bissell Pearl Ring,A100190,large,men,ring,33.884
+191,2018-12-03,wedding,pearl,27,671,The Boudin Pearl Ring,A100191,large,men,ring,25.412999999999997
+192,2019-01-18,wedding,pearl,44,155,The Lacombe Pearl Ring,A100192,large,men,ring,33.884
+193,2018-11-21,wedding,pearl,75,376,The Marx Pearl Ring,A100193,large,men,ring,25.412999999999997
+194,2019-01-06,wedding,pearl,99,524,The Guevara Pearl Ring,A100194,large,men,ring,33.884
+195,2018-11-11,wedding,white,46,692,The Silas Bissell White Ring,A100195,small,men,ring,33.884
+196,2018-12-23,wedding,white,31,472,The Boudin White Ring,A100196,small,men,ring,33.884
+197,2018-11-13,wedding,white,12,821,The Lacombe White Ring,A100197,small,men,ring,33.884
+198,2019-02-08,wedding,white,88,321,The Marx White Ring,A100198,small,men,ring,25.412999999999997
+199,2018-12-06,wedding,white,23,277,The Guevara White Ring,A100199,small,men,ring,50.82599999999999
+200,2019-01-06,wedding,white,48,174,The Silas Bissell White Ring,A100200,medium,men,ring,50.82599999999999
+201,2018-11-23,wedding,white,55,724,The Boudin White Ring,A100201,medium,men,ring,50.82599999999999
+202,2018-11-13,wedding,white,17,400,The Lacombe White Ring,A100202,medium,men,ring,33.884
+203,2019-02-04,wedding,white,13,627,The Marx White Ring,A100203,medium,men,ring,42.355
+204,2018-12-21,wedding,white,72,198,The Guevara White Ring,A100204,medium,men,ring,50.82599999999999
+205,2018-11-22,wedding,white,6,624,The Silas Bissell White Ring,A100205,large,men,ring,33.884
+206,2018-12-12,wedding,white,49,240,The Boudin White Ring,A100206,large,men,ring,42.355
+207,2019-02-02,wedding,white,71,233,The Lacombe White Ring,A100207,large,men,ring,33.884
+208,2018-12-25,wedding,white,81,411,The Marx White Ring,A100208,large,men,ring,25.412999999999997
+209,2018-11-29,wedding,white,33,415,The Guevara White Ring,A100209,large,men,ring,25.412999999999997
+210,2019-02-02,wedding,amber,77,180,The Silas Bissell Amber Ring,A100210,small,men,ring,50.82599999999999
+211,2018-12-21,wedding,amber,84,285,The Boudin Amber Ring,A100211,small,men,ring,33.884
+212,2019-01-09,wedding,amber,0,411,The Lacombe Amber Ring,A100212,small,men,ring,33.884
+213,2018-11-29,wedding,amber,63,204,The Marx Amber Ring,A100213,small,men,ring,50.82599999999999
+214,2018-12-20,wedding,amber,13,83,The Guevara Amber Ring,A100214,small,men,ring,25.412999999999997
+215,2019-01-16,wedding,amber,91,359,The Silas Bissell Amber Ring,A100215,medium,men,ring,42.355
+216,2019-01-07,wedding,amber,19,660,The Boudin Amber Ring,A100216,medium,men,ring,33.884
+217,2018-11-25,wedding,amber,20,294,The Lacombe Amber Ring,A100217,medium,men,ring,50.82599999999999
+218,2019-01-11,wedding,amber,88,300,The Marx Amber Ring,A100218,medium,men,ring,33.884
+219,2018-12-14,wedding,amber,67,421,The Guevara Amber Ring,A100219,medium,men,ring,42.355
+220,2019-01-14,wedding,amber,61,353,The Silas Bissell Amber Ring,A100220,large,men,ring,25.412999999999997
+221,2019-01-09,wedding,amber,96,598,The Boudin Amber Ring,A100221,large,men,ring,50.82599999999999
+222,2018-12-12,wedding,amber,47,196,The Lacombe Amber Ring,A100222,large,men,ring,33.884
+223,2019-01-25,wedding,amber,0,649,The Marx Amber Ring,A100223,large,men,ring,42.355
+224,2019-01-21,wedding,amber,60,890,The Guevara Amber Ring,A100224,large,men,ring,50.82599999999999
+225,2019-01-03,wedding,gold,34,454,The Silas Bissell Gold Ring,A100225,small,men,ring,35.578199999999995
+226,2019-01-04,wedding,gold,75,554,The Boudin Gold Ring,A100226,small,men,ring,47.437599999999996
+227,2019-01-01,wedding,gold,44,906,The Lacombe Gold Ring,A100227,small,men,ring,35.578199999999995
+228,2018-12-19,wedding,gold,47,409,The Marx Gold Ring,A100228,small,men,ring,59.29699999999999
+229,2019-02-02,wedding,gold,94,450,The Guevara Gold Ring,A100229,small,men,ring,35.578199999999995
+230,2019-01-29,wedding,gold,28,142,The Silas Bissell Gold Ring,A100230,medium,men,ring,35.578199999999995
+231,2019-02-05,wedding,gold,60,413,The Boudin Gold Ring,A100231,medium,men,ring,35.578199999999995
+232,2018-12-22,wedding,gold,48,827,The Lacombe Gold Ring,A100232,medium,men,ring,71.15639999999999
+233,2019-02-08,wedding,gold,19,782,The Marx Gold Ring,A100233,medium,men,ring,71.15639999999999
+234,2018-12-10,wedding,gold,20,362,The Guevara Gold Ring,A100234,medium,men,ring,71.15639999999999
+235,2018-12-27,wedding,gold,55,996,The Silas Bissell Gold Ring,A100235,large,men,ring,35.578199999999995
+236,2019-01-07,wedding,gold,79,329,The Boudin Gold Ring,A100236,large,men,ring,47.437599999999996
+237,2019-01-25,wedding,gold,33,328,The Lacombe Gold Ring,A100237,large,men,ring,59.29699999999999
+238,2019-02-07,wedding,gold,90,526,The Marx Gold Ring,A100238,large,men,ring,59.29699999999999
+239,2019-01-11,wedding,gold,36,425,The Guevara Gold Ring,A100239,large,men,ring,35.578199999999995
+240,2019-01-24,wedding,pearl,50,233,The Silas Bissell Pearl Earring,A100240,small,women,earring,10.852
+241,2018-11-28,wedding,pearl,48,454,The Boudin Pearl Earring,A100241,small,women,earring,16.278
+242,2018-12-05,wedding,pearl,99,984,The Lacombe Pearl Earring,A100242,small,women,earring,16.278
+243,2019-02-03,wedding,pearl,36,498,The Marx Pearl Earring,A100243,small,women,earring,13.565
+244,2019-01-16,wedding,pearl,31,623,The Guevara Pearl Earring,A100244,small,women,earring,8.139
+245,2018-12-03,wedding,pearl,0,465,The Silas Bissell Pearl Earring,A100245,medium,women,earring,10.852
+246,2018-11-28,wedding,pearl,31,336,The Boudin Pearl Earring,A100246,medium,women,earring,8.139
+247,2019-01-26,wedding,pearl,74,695,The Lacombe Pearl Earring,A100247,medium,women,earring,10.852
+248,2019-01-09,wedding,pearl,26,148,The Marx Pearl Earring,A100248,medium,women,earring,8.139
+249,2019-01-14,wedding,pearl,80,85,The Guevara Pearl Earring,A100249,medium,women,earring,13.565
+250,2019-02-02,wedding,pearl,75,92,The Silas Bissell Pearl Earring,A100250,large,women,earring,10.852
+251,2019-02-01,wedding,pearl,12,599,The Boudin Pearl Earring,A100251,large,women,earring,10.852
+252,2019-01-30,wedding,pearl,27,34,The Lacombe Pearl Earring,A100252,large,women,earring,16.278
+253,2019-01-05,wedding,pearl,39,944,The Marx Pearl Earring,A100253,large,women,earring,16.278
+254,2018-12-04,wedding,pearl,27,925,The Guevara Pearl Earring,A100254,large,women,earring,10.852
+255,2019-02-04,wedding,white,79,615,The Silas Bissell White Earring,A100255,small,women,earring,10.852
+256,2019-02-01,wedding,white,88,819,The Boudin White Earring,A100256,small,women,earring,13.565
+257,2018-11-11,wedding,white,99,50,The Lacombe White Earring,A100257,small,women,earring,16.278
+258,2018-12-21,wedding,white,46,592,The Marx White Earring,A100258,small,women,earring,13.565
+259,2019-02-04,wedding,white,5,856,The Guevara White Earring,A100259,small,women,earring,16.278
+260,2018-12-07,wedding,white,25,178,The Silas Bissell White Earring,A100260,medium,women,earring,10.852
+261,2018-12-27,wedding,white,59,811,The Boudin White Earring,A100261,medium,women,earring,13.565
+262,2019-01-18,wedding,white,78,732,The Lacombe White Earring,A100262,medium,women,earring,10.852
+263,2018-12-21,wedding,white,83,117,The Marx White Earring,A100263,medium,women,earring,8.139
+264,2018-11-12,wedding,white,11,533,The Guevara White Earring,A100264,medium,women,earring,10.852
+265,2018-12-15,wedding,white,92,846,The Silas Bissell White Earring,A100265,large,women,earring,8.139
+266,2019-01-10,wedding,white,74,978,The Boudin White Earring,A100266,large,women,earring,13.565
+267,2018-12-14,wedding,white,13,609,The Lacombe White Earring,A100267,large,women,earring,16.278
+268,2018-11-23,wedding,white,8,70,The Marx White Earring,A100268,large,women,earring,8.139
+269,2018-11-16,wedding,white,31,341,The Guevara White Earring,A100269,large,women,earring,8.139
+270,2018-12-08,wedding,amber,56,32,The Silas Bissell Amber Earring,A100270,small,women,earring,13.565
+271,2018-11-14,wedding,amber,88,751,The Boudin Amber Earring,A100271,small,women,earring,13.565
+272,2019-01-17,wedding,amber,26,359,The Lacombe Amber Earring,A100272,small,women,earring,10.852
+273,2019-02-05,wedding,amber,51,226,The Marx Amber Earring,A100273,small,women,earring,10.852
+274,2018-12-17,wedding,amber,1,634,The Guevara Amber Earring,A100274,small,women,earring,10.852
+275,2018-11-20,wedding,amber,69,626,The Silas Bissell Amber Earring,A100275,medium,women,earring,16.278
+276,2018-12-14,wedding,amber,82,313,The Boudin Amber Earring,A100276,medium,women,earring,13.565
+277,2018-12-24,wedding,amber,13,65,The Lacombe Amber Earring,A100277,medium,women,earring,8.139
+278,2018-11-14,wedding,amber,60,298,The Marx Amber Earring,A100278,medium,women,earring,16.278
+279,2018-12-24,wedding,amber,89,744,The Guevara Amber Earring,A100279,medium,women,earring,10.852
+280,2019-01-28,wedding,amber,94,963,The Silas Bissell Amber Earring,A100280,large,women,earring,16.278
+281,2019-01-15,wedding,amber,55,813,The Boudin Amber Earring,A100281,large,women,earring,16.278
+282,2019-01-17,wedding,amber,82,737,The Lacombe Amber Earring,A100282,large,women,earring,8.139
+283,2019-01-22,wedding,amber,85,588,The Marx Amber Earring,A100283,large,women,earring,13.565
+284,2018-12-04,wedding,amber,19,366,The Guevara Amber Earring,A100284,large,women,earring,10.852
+285,2018-12-27,wedding,gold,63,667,The Silas Bissell Gold Earring,A100285,small,women,earring,11.394599999999999
+286,2018-12-25,wedding,gold,95,112,The Boudin Gold Earring,A100286,small,women,earring,15.1928
+287,2018-11-19,wedding,gold,98,530,The Lacombe Gold Earring,A100287,small,women,earring,11.394599999999999
+288,2018-12-22,wedding,gold,44,284,The Marx Gold Earring,A100288,small,women,earring,22.789199999999997
+289,2019-01-09,wedding,gold,7,840,The Guevara Gold Earring,A100289,small,women,earring,22.789199999999997
+290,2019-01-04,wedding,gold,13,68,The Silas Bissell Gold Earring,A100290,medium,women,earring,22.789199999999997
+291,2019-02-06,wedding,gold,40,437,The Boudin Gold Earring,A100291,medium,women,earring,11.394599999999999
+292,2019-01-17,wedding,gold,19,426,The Lacombe Gold Earring,A100292,medium,women,earring,18.991
+293,2019-01-06,wedding,gold,67,101,The Marx Gold Earring,A100293,medium,women,earring,15.1928
+294,2018-11-16,wedding,gold,18,518,The Guevara Gold Earring,A100294,medium,women,earring,15.1928
+295,2018-12-22,wedding,gold,33,180,The Silas Bissell Gold Earring,A100295,large,women,earring,22.789199999999997
+296,2019-01-23,wedding,gold,62,22,The Boudin Gold Earring,A100296,large,women,earring,15.1928
+297,2018-12-31,wedding,gold,22,480,The Lacombe Gold Earring,A100297,large,women,earring,11.394599999999999
+298,2019-01-19,wedding,gold,51,299,The Marx Gold Earring,A100298,large,women,earring,22.789199999999997
+299,2018-12-16,wedding,gold,27,295,The Guevara Gold Earring,A100299,large,women,earring,15.1928
+300,2018-12-01,wedding,pearl,62,862,The Silas Bissell Pearl Necklace,A100300,small,women,necklace,56.088
+301,2018-12-07,wedding,pearl,14,225,The Boudin Pearl Necklace,A100301,small,women,necklace,37.392
+302,2018-12-05,wedding,pearl,89,624,The Lacombe Pearl Necklace,A100302,small,women,necklace,46.74
+303,2018-12-17,wedding,pearl,90,613,The Marx Pearl Necklace,A100303,small,women,necklace,37.392
+304,2018-12-31,wedding,pearl,20,645,The Guevara Pearl Necklace,A100304,small,women,necklace,46.74
+305,2019-01-10,wedding,pearl,53,561,The Silas Bissell Pearl Necklace,A100305,medium,women,necklace,56.088
+306,2018-11-17,wedding,pearl,84,358,The Boudin Pearl Necklace,A100306,medium,women,necklace,28.044
+307,2019-02-01,wedding,pearl,94,904,The Lacombe Pearl Necklace,A100307,medium,women,necklace,37.392
+308,2019-01-27,wedding,pearl,16,243,The Marx Pearl Necklace,A100308,medium,women,necklace,56.088
+309,2018-12-25,wedding,pearl,38,905,The Guevara Pearl Necklace,A100309,medium,women,necklace,37.392
+310,2019-01-26,wedding,pearl,99,866,The Silas Bissell Pearl Necklace,A100310,large,women,necklace,46.74
+311,2018-12-15,wedding,pearl,60,662,The Boudin Pearl Necklace,A100311,large,women,necklace,46.74
+312,2019-01-07,wedding,pearl,65,98,The Lacombe Pearl Necklace,A100312,large,women,necklace,46.74
+313,2019-02-01,wedding,pearl,99,576,The Marx Pearl Necklace,A100313,large,women,necklace,46.74
+314,2019-01-13,wedding,pearl,62,436,The Guevara Pearl Necklace,A100314,large,women,necklace,46.74
+315,2018-11-19,wedding,white,59,729,The Silas Bissell White Necklace,A100315,small,women,necklace,46.74
+316,2019-01-19,wedding,white,31,628,The Boudin White Necklace,A100316,small,women,necklace,46.74
+317,2019-02-05,wedding,white,92,661,The Lacombe White Necklace,A100317,small,women,necklace,28.044
+318,2019-01-24,wedding,white,16,190,The Marx White Necklace,A100318,small,women,necklace,37.392
+319,2019-01-01,wedding,white,25,738,The Guevara White Necklace,A100319,small,women,necklace,46.74
+320,2018-12-12,wedding,white,41,831,The Silas Bissell White Necklace,A100320,medium,women,necklace,56.088
+321,2018-12-26,wedding,white,63,593,The Boudin White Necklace,A100321,medium,women,necklace,37.392
+322,2018-11-29,wedding,white,59,998,The Lacombe White Necklace,A100322,medium,women,necklace,46.74
+323,2019-01-09,wedding,white,83,339,The Marx White Necklace,A100323,medium,women,necklace,56.088
+324,2019-02-05,wedding,white,33,594,The Guevara White Necklace,A100324,medium,women,necklace,46.74
+325,2018-12-30,wedding,white,71,788,The Silas Bissell White Necklace,A100325,large,women,necklace,37.392
+326,2018-12-02,wedding,white,95,710,The Boudin White Necklace,A100326,large,women,necklace,37.392
+327,2018-11-11,wedding,white,39,306,The Lacombe White Necklace,A100327,large,women,necklace,56.088
+328,2018-12-09,wedding,white,44,261,The Marx White Necklace,A100328,large,women,necklace,56.088
+329,2019-01-13,wedding,white,90,513,The Guevara White Necklace,A100329,large,women,necklace,28.044
+330,2018-11-24,wedding,amber,10,694,The Silas Bissell Amber Necklace,A100330,small,women,necklace,56.088
+331,2018-12-26,wedding,amber,0,663,The Boudin Amber Necklace,A100331,small,women,necklace,56.088
+332,2018-12-10,wedding,amber,93,898,The Lacombe Amber Necklace,A100332,small,women,necklace,56.088
+333,2019-01-03,wedding,amber,46,992,The Marx Amber Necklace,A100333,small,women,necklace,37.392
+334,2019-02-08,wedding,amber,39,455,The Guevara Amber Necklace,A100334,small,women,necklace,28.044
+335,2019-01-14,wedding,amber,89,397,The Silas Bissell Amber Necklace,A100335,medium,women,necklace,46.74
+336,2018-11-11,wedding,amber,13,217,The Boudin Amber Necklace,A100336,medium,women,necklace,46.74
+337,2019-01-24,wedding,amber,23,437,The Lacombe Amber Necklace,A100337,medium,women,necklace,56.088
+338,2019-01-09,wedding,amber,34,224,The Marx Amber Necklace,A100338,medium,women,necklace,28.044
+339,2018-12-14,wedding,amber,81,492,The Guevara Amber Necklace,A100339,medium,women,necklace,37.392
+340,2018-12-28,wedding,amber,35,196,The Silas Bissell Amber Necklace,A100340,large,women,necklace,56.088
+341,2018-11-17,wedding,amber,53,187,The Boudin Amber Necklace,A100341,large,women,necklace,28.044
+342,2019-01-23,wedding,amber,21,176,The Lacombe Amber Necklace,A100342,large,women,necklace,28.044
+343,2018-12-20,wedding,amber,72,970,The Marx Amber Necklace,A100343,large,women,necklace,37.392
+344,2019-01-14,wedding,amber,50,797,The Guevara Amber Necklace,A100344,large,women,necklace,28.044
+345,2018-12-25,wedding,gold,36,233,The Silas Bissell Gold Necklace,A100345,small,women,necklace,39.261599999999994
+346,2019-01-19,wedding,gold,34,946,The Boudin Gold Necklace,A100346,small,women,necklace,39.261599999999994
+347,2018-11-14,wedding,gold,36,983,The Lacombe Gold Necklace,A100347,small,women,necklace,39.261599999999994
+348,2018-11-24,wedding,gold,30,43,The Marx Gold Necklace,A100348,small,women,necklace,65.43599999999999
+349,2019-01-30,wedding,gold,11,407,The Guevara Gold Necklace,A100349,small,women,necklace,39.261599999999994
+350,2018-12-16,wedding,gold,5,754,The Silas Bissell Gold Necklace,A100350,medium,women,necklace,65.43599999999999
+351,2018-12-02,wedding,gold,61,292,The Boudin Gold Necklace,A100351,medium,women,necklace,52.3488
+352,2019-01-15,wedding,gold,91,511,The Lacombe Gold Necklace,A100352,medium,women,necklace,52.3488
+353,2018-12-05,wedding,gold,16,354,The Marx Gold Necklace,A100353,medium,women,necklace,39.261599999999994
+354,2018-12-05,wedding,gold,31,60,The Guevara Gold Necklace,A100354,medium,women,necklace,39.261599999999994
+355,2018-12-01,wedding,gold,85,675,The Silas Bissell Gold Necklace,A100355,large,women,necklace,65.43599999999999
+356,2018-12-31,wedding,gold,97,454,The Boudin Gold Necklace,A100356,large,women,necklace,39.261599999999994
+357,2018-12-20,wedding,gold,98,772,The Lacombe Gold Necklace,A100357,large,women,necklace,65.43599999999999
+358,2019-01-09,wedding,gold,93,426,The Marx Gold Necklace,A100358,large,women,necklace,39.261599999999994
+359,2018-12-10,wedding,gold,83,54,The Guevara Gold Necklace,A100359,large,women,necklace,39.261599999999994
+360,2018-12-19,wedding,pearl,68,168,The Silas Bissell Pearl Bracelet,A100360,small,women,bracelet,6.716
+361,2018-12-17,wedding,pearl,53,595,The Boudin Pearl Bracelet,A100361,small,women,bracelet,6.716
+362,2019-01-31,wedding,pearl,71,740,The Lacombe Pearl Bracelet,A100362,small,women,bracelet,10.074
+363,2018-12-08,wedding,pearl,30,699,The Marx Pearl Bracelet,A100363,small,women,bracelet,6.716
+364,2019-01-20,wedding,pearl,95,922,The Guevara Pearl Bracelet,A100364,small,women,bracelet,10.074
+365,2018-11-27,wedding,pearl,31,44,The Silas Bissell Pearl Bracelet,A100365,medium,women,bracelet,5.037
+366,2019-01-05,wedding,pearl,81,272,The Boudin Pearl Bracelet,A100366,medium,women,bracelet,5.037
+367,2018-12-30,wedding,pearl,94,412,The Lacombe Pearl Bracelet,A100367,medium,women,bracelet,6.716
+368,2018-11-11,wedding,pearl,99,427,The Marx Pearl Bracelet,A100368,medium,women,bracelet,6.716
+369,2018-11-15,wedding,pearl,23,478,The Guevara Pearl Bracelet,A100369,medium,women,bracelet,8.395
+370,2018-12-30,wedding,pearl,29,256,The Silas Bissell Pearl Bracelet,A100370,large,women,bracelet,6.716
+371,2019-02-04,wedding,pearl,79,189,The Boudin Pearl Bracelet,A100371,large,women,bracelet,6.716
+372,2018-11-27,wedding,pearl,89,919,The Lacombe Pearl Bracelet,A100372,large,women,bracelet,5.037
+373,2018-12-30,wedding,pearl,5,193,The Marx Pearl Bracelet,A100373,large,women,bracelet,8.395
+374,2018-12-08,wedding,pearl,69,839,The Guevara Pearl Bracelet,A100374,large,women,bracelet,5.037
+375,2018-11-14,wedding,white,38,197,The Silas Bissell White Bracelet,A100375,small,women,bracelet,6.716
+376,2018-12-17,wedding,white,71,625,The Boudin White Bracelet,A100376,small,women,bracelet,10.074
+377,2018-12-24,wedding,white,18,714,The Lacombe White Bracelet,A100377,small,women,bracelet,5.037
+378,2018-12-07,wedding,white,13,156,The Marx White Bracelet,A100378,small,women,bracelet,8.395
+379,2019-01-07,wedding,white,9,714,The Guevara White Bracelet,A100379,small,women,bracelet,5.037
+380,2018-11-25,wedding,white,61,388,The Silas Bissell White Bracelet,A100380,medium,women,bracelet,10.074
+381,2018-11-16,wedding,white,52,925,The Boudin White Bracelet,A100381,medium,women,bracelet,5.037
+382,2018-12-27,wedding,white,9,695,The Lacombe White Bracelet,A100382,medium,women,bracelet,5.037
+383,2019-01-04,wedding,white,62,26,The Marx White Bracelet,A100383,medium,women,bracelet,6.716
+384,2019-01-28,wedding,white,45,721,The Guevara White Bracelet,A100384,medium,women,bracelet,6.716
+385,2018-11-11,wedding,white,0,888,The Silas Bissell White Bracelet,A100385,large,women,bracelet,10.074
+386,2019-01-19,wedding,white,25,838,The Boudin White Bracelet,A100386,large,women,bracelet,6.716
+387,2018-12-18,wedding,white,32,590,The Lacombe White Bracelet,A100387,large,women,bracelet,6.716
+388,2019-01-17,wedding,white,1,579,The Marx White Bracelet,A100388,large,women,bracelet,8.395
+389,2018-11-23,wedding,white,91,2,The Guevara White Bracelet,A100389,large,women,bracelet,5.037
+390,2018-12-22,wedding,amber,72,870,The Silas Bissell Amber Bracelet,A100390,small,women,bracelet,10.074
+391,2018-12-28,wedding,amber,32,165,The Boudin Amber Bracelet,A100391,small,women,bracelet,8.395
+392,2019-01-15,wedding,amber,76,150,The Lacombe Amber Bracelet,A100392,small,women,bracelet,10.074
+393,2019-01-01,wedding,amber,5,90,The Marx Amber Bracelet,A100393,small,women,bracelet,5.037
+394,2018-12-02,wedding,amber,88,730,The Guevara Amber Bracelet,A100394,small,women,bracelet,6.716
+395,2019-01-05,wedding,amber,22,35,The Silas Bissell Amber Bracelet,A100395,medium,women,bracelet,6.716
+396,2019-01-18,wedding,amber,10,807,The Boudin Amber Bracelet,A100396,medium,women,bracelet,6.716
+397,2018-12-25,wedding,amber,78,806,The Lacombe Amber Bracelet,A100397,medium,women,bracelet,10.074
+398,2018-11-26,wedding,amber,95,611,The Marx Amber Bracelet,A100398,medium,women,bracelet,6.716
+399,2018-12-05,wedding,amber,86,330,The Guevara Amber Bracelet,A100399,medium,women,bracelet,5.037
+400,2018-12-05,wedding,amber,93,987,The Silas Bissell Amber Bracelet,A100400,large,women,bracelet,6.716
+401,2019-01-19,wedding,amber,31,60,The Boudin Amber Bracelet,A100401,large,women,bracelet,6.716
+402,2019-01-22,wedding,amber,80,781,The Lacombe Amber Bracelet,A100402,large,women,bracelet,6.716
+403,2019-01-19,wedding,amber,94,740,The Marx Amber Bracelet,A100403,large,women,bracelet,8.395
+404,2019-01-20,wedding,amber,10,778,The Guevara Amber Bracelet,A100404,large,women,bracelet,5.037
+405,2018-11-11,wedding,gold,16,823,The Silas Bissell Gold Bracelet,A100405,small,women,bracelet,14.103599999999998
+406,2019-01-25,wedding,gold,46,952,The Boudin Gold Bracelet,A100406,small,women,bracelet,14.103599999999998
+407,2018-12-13,wedding,gold,19,7,The Lacombe Gold Bracelet,A100407,small,women,bracelet,7.051799999999999
+408,2019-01-17,wedding,gold,74,323,The Marx Gold Bracelet,A100408,small,women,bracelet,14.103599999999998
+409,2018-12-06,wedding,gold,24,784,The Guevara Gold Bracelet,A100409,small,women,bracelet,14.103599999999998
+410,2018-12-12,wedding,gold,65,735,The Silas Bissell Gold Bracelet,A100410,medium,women,bracelet,9.402399999999998
+411,2018-12-17,wedding,gold,6,771,The Boudin Gold Bracelet,A100411,medium,women,bracelet,14.103599999999998
+412,2019-01-10,wedding,gold,65,374,The Lacombe Gold Bracelet,A100412,medium,women,bracelet,14.103599999999998
+413,2019-01-05,wedding,gold,21,348,The Marx Gold Bracelet,A100413,medium,women,bracelet,14.103599999999998
+414,2018-11-30,wedding,gold,73,334,The Guevara Gold Bracelet,A100414,medium,women,bracelet,7.051799999999999
+415,2018-12-19,wedding,gold,34,813,The Silas Bissell Gold Bracelet,A100415,large,women,bracelet,7.051799999999999
+416,2018-12-06,wedding,gold,44,622,The Boudin Gold Bracelet,A100416,large,women,bracelet,14.103599999999998
+417,2019-01-06,wedding,gold,10,936,The Lacombe Gold Bracelet,A100417,large,women,bracelet,7.051799999999999
+418,2018-12-28,wedding,gold,93,20,The Marx Gold Bracelet,A100418,large,women,bracelet,14.103599999999998
+419,2018-11-17,wedding,gold,55,808,The Guevara Gold Bracelet,A100419,large,women,bracelet,14.103599999999998
+420,2018-12-08,wedding,pearl,57,720,The Silas Bissell Pearl Ring,A100420,small,women,ring,11.544
+421,2018-12-27,wedding,pearl,10,496,The Boudin Pearl Ring,A100421,small,women,ring,8.658
+422,2018-12-19,wedding,pearl,12,752,The Lacombe Pearl Ring,A100422,small,women,ring,17.316
+423,2019-01-16,wedding,pearl,1,346,The Marx Pearl Ring,A100423,small,women,ring,8.658
+424,2018-11-24,wedding,pearl,39,387,The Guevara Pearl Ring,A100424,small,women,ring,8.658
+425,2018-12-05,wedding,pearl,19,782,The Silas Bissell Pearl Ring,A100425,medium,women,ring,17.316
+426,2018-11-21,wedding,pearl,67,509,The Boudin Pearl Ring,A100426,medium,women,ring,17.316
+427,2019-02-07,wedding,pearl,64,47,The Lacombe Pearl Ring,A100427,medium,women,ring,8.658
+428,2019-01-12,wedding,pearl,35,733,The Marx Pearl Ring,A100428,medium,women,ring,11.544
+429,2018-12-10,wedding,pearl,8,515,The Guevara Pearl Ring,A100429,medium,women,ring,14.43
+430,2019-01-11,wedding,pearl,18,158,The Silas Bissell Pearl Ring,A100430,large,women,ring,14.43
+431,2018-12-28,wedding,pearl,81,200,The Boudin Pearl Ring,A100431,large,women,ring,11.544
+432,2018-12-10,wedding,pearl,52,350,The Lacombe Pearl Ring,A100432,large,women,ring,14.43
+433,2018-11-30,wedding,pearl,8,398,The Marx Pearl Ring,A100433,large,women,ring,8.658
+434,2019-02-06,wedding,pearl,57,886,The Guevara Pearl Ring,A100434,large,women,ring,8.658
+435,2018-12-06,wedding,white,22,929,The Silas Bissell White Ring,A100435,small,women,ring,17.316
+436,2019-02-03,wedding,white,20,881,The Boudin White Ring,A100436,small,women,ring,8.658
+437,2018-12-17,wedding,white,50,673,The Lacombe White Ring,A100437,small,women,ring,11.544
+438,2019-02-01,wedding,white,63,286,The Marx White Ring,A100438,small,women,ring,11.544
+439,2018-12-28,wedding,white,47,161,The Guevara White Ring,A100439,small,women,ring,8.658
+440,2019-01-18,wedding,white,7,988,The Silas Bissell White Ring,A100440,medium,women,ring,8.658
+441,2018-12-15,wedding,white,83,137,The Boudin White Ring,A100441,medium,women,ring,14.43
+442,2018-11-23,wedding,white,62,476,The Lacombe White Ring,A100442,medium,women,ring,8.658
+443,2019-01-30,wedding,white,76,73,The Marx White Ring,A100443,medium,women,ring,8.658
+444,2019-02-06,wedding,white,8,366,The Guevara White Ring,A100444,medium,women,ring,11.544
+445,2018-12-20,wedding,white,84,918,The Silas Bissell White Ring,A100445,large,women,ring,17.316
+446,2018-11-26,wedding,white,82,411,The Boudin White Ring,A100446,large,women,ring,11.544
+447,2018-12-04,wedding,white,58,624,The Lacombe White Ring,A100447,large,women,ring,11.544
+448,2018-12-17,wedding,white,65,63,The Marx White Ring,A100448,large,women,ring,8.658
+449,2019-01-12,wedding,white,0,990,The Guevara White Ring,A100449,large,women,ring,14.43
+450,2018-11-13,wedding,amber,70,555,The Silas Bissell Amber Ring,A100450,small,women,ring,14.43
+451,2018-12-27,wedding,amber,19,298,The Boudin Amber Ring,A100451,small,women,ring,8.658
+452,2018-11-28,wedding,amber,15,138,The Lacombe Amber Ring,A100452,small,women,ring,14.43
+453,2018-12-20,wedding,amber,0,380,The Marx Amber Ring,A100453,small,women,ring,14.43
+454,2018-12-04,wedding,amber,2,477,The Guevara Amber Ring,A100454,small,women,ring,11.544
+455,2018-11-25,wedding,amber,59,420,The Silas Bissell Amber Ring,A100455,medium,women,ring,17.316
+456,2018-12-08,wedding,amber,83,110,The Boudin Amber Ring,A100456,medium,women,ring,17.316
+457,2018-11-28,wedding,amber,25,803,The Lacombe Amber Ring,A100457,medium,women,ring,17.316
+458,2018-12-13,wedding,amber,22,930,The Marx Amber Ring,A100458,medium,women,ring,11.544
+459,2019-01-02,wedding,amber,89,119,The Guevara Amber Ring,A100459,medium,women,ring,11.544
+460,2018-12-30,wedding,amber,0,769,The Silas Bissell Amber Ring,A100460,large,women,ring,17.316
+461,2019-01-09,wedding,amber,65,965,The Boudin Amber Ring,A100461,large,women,ring,17.316
+462,2018-11-28,wedding,amber,58,535,The Lacombe Amber Ring,A100462,large,women,ring,17.316
+463,2018-12-06,wedding,amber,52,107,The Marx Amber Ring,A100463,large,women,ring,8.658
+464,2019-02-04,wedding,amber,4,96,The Guevara Amber Ring,A100464,large,women,ring,8.658
+465,2018-12-30,wedding,gold,21,389,The Silas Bissell Gold Ring,A100465,small,women,ring,12.121199999999998
+466,2019-01-30,wedding,gold,20,675,The Boudin Gold Ring,A100466,small,women,ring,16.1616
+467,2019-01-09,wedding,gold,56,993,The Lacombe Gold Ring,A100467,small,women,ring,20.201999999999998
+468,2019-02-01,wedding,gold,40,512,The Marx Gold Ring,A100468,small,women,ring,20.201999999999998
+469,2019-01-12,wedding,gold,77,433,The Guevara Gold Ring,A100469,small,women,ring,20.201999999999998
+470,2018-12-17,wedding,gold,28,580,The Silas Bissell Gold Ring,A100470,medium,women,ring,24.242399999999996
+471,2019-02-07,wedding,gold,70,304,The Boudin Gold Ring,A100471,medium,women,ring,12.121199999999998
+472,2019-01-24,wedding,gold,29,294,The Lacombe Gold Ring,A100472,medium,women,ring,20.201999999999998
+473,2019-02-03,wedding,gold,12,491,The Marx Gold Ring,A100473,medium,women,ring,16.1616
+474,2018-11-13,wedding,gold,38,519,The Guevara Gold Ring,A100474,medium,women,ring,12.121199999999998
+475,2019-02-08,wedding,gold,19,702,The Silas Bissell Gold Ring,A100475,large,women,ring,24.242399999999996
+476,2018-11-19,wedding,gold,23,993,The Boudin Gold Ring,A100476,large,women,ring,20.201999999999998
+477,2018-11-14,wedding,gold,93,101,The Lacombe Gold Ring,A100477,large,women,ring,12.121199999999998
+478,2018-12-02,wedding,gold,89,90,The Marx Gold Ring,A100478,large,women,ring,12.121199999999998
+479,2018-12-13,wedding,gold,66,789,The Guevara Gold Ring,A100479,large,women,ring,16.1616
+480,2018-11-15,wedding,pearl,21,43,The Silas Bissell Pearl Earring,A100480,small,baby,earring,37.605
+481,2018-12-31,wedding,pearl,30,131,The Boudin Pearl Earring,A100481,small,baby,earring,30.084
+482,2019-02-02,wedding,pearl,65,348,The Lacombe Pearl Earring,A100482,small,baby,earring,22.563
+483,2018-12-26,wedding,pearl,32,614,The Marx Pearl Earring,A100483,small,baby,earring,37.605
+484,2019-01-19,wedding,pearl,8,484,The Guevara Pearl Earring,A100484,small,baby,earring,37.605
+485,2019-01-10,wedding,pearl,70,60,The Silas Bissell Pearl Earring,A100485,medium,baby,earring,22.563
+486,2019-01-29,wedding,pearl,4,969,The Boudin Pearl Earring,A100486,medium,baby,earring,37.605
+487,2018-11-14,wedding,pearl,6,153,The Lacombe Pearl Earring,A100487,medium,baby,earring,45.126
+488,2018-11-29,wedding,pearl,99,102,The Marx Pearl Earring,A100488,medium,baby,earring,30.084
+489,2019-01-04,wedding,pearl,36,925,The Guevara Pearl Earring,A100489,medium,baby,earring,45.126
+490,2018-12-11,wedding,pearl,73,885,The Silas Bissell Pearl Earring,A100490,large,baby,earring,45.126
+491,2018-12-24,wedding,pearl,55,795,The Boudin Pearl Earring,A100491,large,baby,earring,30.084
+492,2019-02-05,wedding,pearl,33,937,The Lacombe Pearl Earring,A100492,large,baby,earring,22.563
+493,2018-11-17,wedding,pearl,98,674,The Marx Pearl Earring,A100493,large,baby,earring,22.563
+494,2019-02-04,wedding,pearl,40,72,The Guevara Pearl Earring,A100494,large,baby,earring,22.563
+495,2019-01-02,wedding,white,15,756,The Silas Bissell White Earring,A100495,small,baby,earring,30.084
+496,2018-12-05,wedding,white,30,526,The Boudin White Earring,A100496,small,baby,earring,45.126
+497,2019-01-31,wedding,white,26,254,The Lacombe White Earring,A100497,small,baby,earring,30.084
+498,2019-01-08,wedding,white,10,321,The Marx White Earring,A100498,small,baby,earring,45.126
+499,2018-12-24,wedding,white,1,760,The Guevara White Earring,A100499,small,baby,earring,30.084
+500,2019-02-02,wedding,white,48,957,The Silas Bissell White Earring,A100500,medium,baby,earring,30.084
+501,2018-12-17,wedding,white,55,568,The Boudin White Earring,A100501,medium,baby,earring,37.605
+502,2018-12-20,wedding,white,56,864,The Lacombe White Earring,A100502,medium,baby,earring,22.563
+503,2018-12-17,wedding,white,52,500,The Marx White Earring,A100503,medium,baby,earring,37.605
+504,2018-12-06,wedding,white,99,119,The Guevara White Earring,A100504,medium,baby,earring,37.605
+505,2018-12-18,wedding,white,64,13,The Silas Bissell White Earring,A100505,large,baby,earring,30.084
+506,2019-01-12,wedding,white,47,571,The Boudin White Earring,A100506,large,baby,earring,22.563
+507,2019-01-25,wedding,white,15,441,The Lacombe White Earring,A100507,large,baby,earring,37.605
+508,2018-12-26,wedding,white,46,498,The Marx White Earring,A100508,large,baby,earring,22.563
+509,2018-11-14,wedding,white,99,274,The Guevara White Earring,A100509,large,baby,earring,30.084
+510,2018-11-11,wedding,amber,66,77,The Silas Bissell Amber Earring,A100510,small,baby,earring,30.084
+511,2018-12-30,wedding,amber,19,178,The Boudin Amber Earring,A100511,small,baby,earring,45.126
+512,2019-01-23,wedding,amber,97,492,The Lacombe Amber Earring,A100512,small,baby,earring,37.605
+513,2018-11-11,wedding,amber,54,713,The Marx Amber Earring,A100513,small,baby,earring,45.126
+514,2018-11-23,wedding,amber,46,308,The Guevara Amber Earring,A100514,small,baby,earring,45.126
+515,2018-11-17,wedding,amber,91,797,The Silas Bissell Amber Earring,A100515,medium,baby,earring,30.084
+516,2019-01-28,wedding,amber,40,283,The Boudin Amber Earring,A100516,medium,baby,earring,22.563
+517,2019-01-05,wedding,amber,6,769,The Lacombe Amber Earring,A100517,medium,baby,earring,45.126
+518,2019-02-03,wedding,amber,16,201,The Marx Amber Earring,A100518,medium,baby,earring,45.126
+519,2019-01-23,wedding,amber,13,237,The Guevara Amber Earring,A100519,medium,baby,earring,22.563
+520,2019-01-05,wedding,amber,25,640,The Silas Bissell Amber Earring,A100520,large,baby,earring,30.084
+521,2019-01-03,wedding,amber,2,76,The Boudin Amber Earring,A100521,large,baby,earring,30.084
+522,2019-01-10,wedding,amber,34,966,The Lacombe Amber Earring,A100522,large,baby,earring,30.084
+523,2018-11-15,wedding,amber,14,219,The Marx Amber Earring,A100523,large,baby,earring,22.563
+524,2019-01-07,wedding,amber,24,782,The Guevara Amber Earring,A100524,large,baby,earring,22.563
+525,2018-11-29,wedding,gold,42,259,The Silas Bissell Gold Earring,A100525,small,baby,earring,63.17639999999999
+526,2019-01-01,wedding,gold,78,286,The Boudin Gold Earring,A100526,small,baby,earring,63.17639999999999
+527,2018-12-22,wedding,gold,12,991,The Lacombe Gold Earring,A100527,small,baby,earring,31.588199999999993
+528,2018-12-09,wedding,gold,83,879,The Marx Gold Earring,A100528,small,baby,earring,31.588199999999993
+529,2018-12-24,wedding,gold,7,855,The Guevara Gold Earring,A100529,small,baby,earring,42.117599999999996
+530,2018-11-13,wedding,gold,80,307,The Silas Bissell Gold Earring,A100530,medium,baby,earring,31.588199999999993
+531,2019-01-24,wedding,gold,12,453,The Boudin Gold Earring,A100531,medium,baby,earring,52.64699999999999
+532,2018-11-12,wedding,gold,79,575,The Lacombe Gold Earring,A100532,medium,baby,earring,31.588199999999993
+533,2018-12-04,wedding,gold,42,365,The Marx Gold Earring,A100533,medium,baby,earring,52.64699999999999
+534,2019-02-05,wedding,gold,67,152,The Guevara Gold Earring,A100534,medium,baby,earring,63.17639999999999
+535,2019-01-12,wedding,gold,21,16,The Silas Bissell Gold Earring,A100535,large,baby,earring,31.588199999999993
+536,2018-12-11,wedding,gold,76,181,The Boudin Gold Earring,A100536,large,baby,earring,31.588199999999993
+537,2018-11-19,wedding,gold,25,915,The Lacombe Gold Earring,A100537,large,baby,earring,63.17639999999999
+538,2019-02-06,wedding,gold,40,719,The Marx Gold Earring,A100538,large,baby,earring,63.17639999999999
+539,2019-01-06,wedding,gold,6,780,The Guevara Gold Earring,A100539,large,baby,earring,63.17639999999999
+540,2018-12-12,wedding,pearl,83,715,The Silas Bissell Pearl Necklace,A100540,small,baby,necklace,27.881999999999998
+541,2018-11-13,wedding,pearl,24,840,The Boudin Pearl Necklace,A100541,small,baby,necklace,18.588
+542,2018-12-25,wedding,pearl,0,373,The Lacombe Pearl Necklace,A100542,small,baby,necklace,18.588
+543,2018-12-13,wedding,pearl,67,317,The Marx Pearl Necklace,A100543,small,baby,necklace,13.940999999999999
+544,2018-11-27,wedding,pearl,40,922,The Guevara Pearl Necklace,A100544,small,baby,necklace,27.881999999999998
+545,2019-01-15,wedding,pearl,24,356,The Silas Bissell Pearl Necklace,A100545,medium,baby,necklace,18.588
+546,2018-12-19,wedding,pearl,85,492,The Boudin Pearl Necklace,A100546,medium,baby,necklace,23.235
+547,2018-12-12,wedding,pearl,25,832,The Lacombe Pearl Necklace,A100547,medium,baby,necklace,18.588
+548,2019-01-27,wedding,pearl,98,176,The Marx Pearl Necklace,A100548,medium,baby,necklace,18.588
+549,2019-01-16,wedding,pearl,95,797,The Guevara Pearl Necklace,A100549,medium,baby,necklace,27.881999999999998
+550,2018-11-13,wedding,pearl,9,514,The Silas Bissell Pearl Necklace,A100550,large,baby,necklace,13.940999999999999
+551,2018-12-13,wedding,pearl,39,91,The Boudin Pearl Necklace,A100551,large,baby,necklace,18.588
+552,2019-01-30,wedding,pearl,75,123,The Lacombe Pearl Necklace,A100552,large,baby,necklace,23.235
+553,2018-12-31,wedding,pearl,82,423,The Marx Pearl Necklace,A100553,large,baby,necklace,27.881999999999998
+554,2018-12-04,wedding,pearl,62,984,The Guevara Pearl Necklace,A100554,large,baby,necklace,27.881999999999998
+555,2018-11-14,wedding,white,13,329,The Silas Bissell White Necklace,A100555,small,baby,necklace,23.235
+556,2019-02-08,wedding,white,45,254,The Boudin White Necklace,A100556,small,baby,necklace,27.881999999999998
+557,2019-01-29,wedding,white,88,225,The Lacombe White Necklace,A100557,small,baby,necklace,13.940999999999999
+558,2018-12-03,wedding,white,99,407,The Marx White Necklace,A100558,small,baby,necklace,23.235
+559,2018-12-16,wedding,white,67,150,The Guevara White Necklace,A100559,small,baby,necklace,27.881999999999998
+560,2018-11-15,wedding,white,93,310,The Silas Bissell White Necklace,A100560,medium,baby,necklace,18.588
+561,2018-11-24,wedding,white,98,391,The Boudin White Necklace,A100561,medium,baby,necklace,13.940999999999999
+562,2018-11-21,wedding,white,58,340,The Lacombe White Necklace,A100562,medium,baby,necklace,23.235
+563,2019-01-10,wedding,white,20,981,The Marx White Necklace,A100563,medium,baby,necklace,27.881999999999998
+564,2019-01-22,wedding,white,28,561,The Guevara White Necklace,A100564,medium,baby,necklace,13.940999999999999
+565,2019-01-31,wedding,white,90,342,The Silas Bissell White Necklace,A100565,large,baby,necklace,18.588
+566,2019-01-03,wedding,white,38,21,The Boudin White Necklace,A100566,large,baby,necklace,23.235
+567,2019-01-13,wedding,white,87,891,The Lacombe White Necklace,A100567,large,baby,necklace,27.881999999999998
+568,2019-01-12,wedding,white,89,475,The Marx White Necklace,A100568,large,baby,necklace,23.235
+569,2019-01-27,wedding,white,9,447,The Guevara White Necklace,A100569,large,baby,necklace,23.235
+570,2019-01-17,wedding,amber,71,128,The Silas Bissell Amber Necklace,A100570,small,baby,necklace,18.588
+571,2018-12-17,wedding,amber,89,277,The Boudin Amber Necklace,A100571,small,baby,necklace,18.588
+572,2018-12-17,wedding,amber,94,935,The Lacombe Amber Necklace,A100572,small,baby,necklace,18.588
+573,2018-12-25,wedding,amber,46,628,The Marx Amber Necklace,A100573,small,baby,necklace,13.940999999999999
+574,2018-12-11,wedding,amber,65,986,The Guevara Amber Necklace,A100574,small,baby,necklace,23.235
+575,2018-12-17,wedding,amber,87,866,The Silas Bissell Amber Necklace,A100575,medium,baby,necklace,18.588
+576,2018-12-29,wedding,amber,40,982,The Boudin Amber Necklace,A100576,medium,baby,necklace,27.881999999999998
+577,2019-02-08,wedding,amber,98,250,The Lacombe Amber Necklace,A100577,medium,baby,necklace,18.588
+578,2018-12-11,wedding,amber,53,235,The Marx Amber Necklace,A100578,medium,baby,necklace,23.235
+579,2018-12-26,wedding,amber,66,221,The Guevara Amber Necklace,A100579,medium,baby,necklace,23.235
+580,2019-01-06,wedding,amber,25,532,The Silas Bissell Amber Necklace,A100580,large,baby,necklace,18.588
+581,2018-11-12,wedding,amber,47,390,The Boudin Amber Necklace,A100581,large,baby,necklace,18.588
+582,2019-01-25,wedding,amber,95,985,The Lacombe Amber Necklace,A100582,large,baby,necklace,27.881999999999998
+583,2019-02-05,wedding,amber,67,388,The Marx Amber Necklace,A100583,large,baby,necklace,27.881999999999998
+584,2019-01-21,wedding,amber,78,248,The Guevara Amber Necklace,A100584,large,baby,necklace,23.235
+585,2018-11-16,wedding,gold,33,260,The Silas Bissell Gold Necklace,A100585,small,baby,necklace,26.0232
+586,2019-01-03,wedding,gold,48,402,The Boudin Gold Necklace,A100586,small,baby,necklace,39.0348
+587,2019-01-26,wedding,gold,46,297,The Lacombe Gold Necklace,A100587,small,baby,necklace,32.528999999999996
+588,2018-12-21,wedding,gold,54,962,The Marx Gold Necklace,A100588,small,baby,necklace,32.528999999999996
+589,2018-11-27,wedding,gold,24,38,The Guevara Gold Necklace,A100589,small,baby,necklace,19.5174
+590,2019-01-01,wedding,gold,72,428,The Silas Bissell Gold Necklace,A100590,medium,baby,necklace,19.5174
+591,2018-12-29,wedding,gold,89,741,The Boudin Gold Necklace,A100591,medium,baby,necklace,19.5174
+592,2019-01-30,wedding,gold,99,270,The Lacombe Gold Necklace,A100592,medium,baby,necklace,19.5174
+593,2019-01-30,wedding,gold,68,643,The Marx Gold Necklace,A100593,medium,baby,necklace,39.0348
+594,2018-11-19,wedding,gold,56,538,The Guevara Gold Necklace,A100594,medium,baby,necklace,32.528999999999996
+595,2019-02-05,wedding,gold,66,663,The Silas Bissell Gold Necklace,A100595,large,baby,necklace,26.0232
+596,2018-11-26,wedding,gold,64,953,The Boudin Gold Necklace,A100596,large,baby,necklace,19.5174
+597,2018-11-18,wedding,gold,5,790,The Lacombe Gold Necklace,A100597,large,baby,necklace,32.528999999999996
+598,2018-11-24,wedding,gold,74,898,The Marx Gold Necklace,A100598,large,baby,necklace,19.5174
+599,2018-11-16,wedding,gold,97,199,The Guevara Gold Necklace,A100599,large,baby,necklace,39.0348
+600,2019-01-17,wedding,pearl,50,709,The Silas Bissell Pearl Bracelet,A100600,small,baby,bracelet,14.718
+601,2019-01-15,wedding,pearl,8,469,The Boudin Pearl Bracelet,A100601,small,baby,bracelet,14.718
+602,2018-12-16,wedding,pearl,41,300,The Lacombe Pearl Bracelet,A100602,small,baby,bracelet,7.359
+603,2019-01-20,wedding,pearl,37,212,The Marx Pearl Bracelet,A100603,small,baby,bracelet,9.812000000000001
+604,2018-11-20,wedding,pearl,31,156,The Guevara Pearl Bracelet,A100604,small,baby,bracelet,9.812000000000001
+605,2019-01-20,wedding,pearl,26,399,The Silas Bissell Pearl Bracelet,A100605,medium,baby,bracelet,7.359
+606,2018-12-10,wedding,pearl,11,40,The Boudin Pearl Bracelet,A100606,medium,baby,bracelet,7.359
+607,2019-02-08,wedding,pearl,1,307,The Lacombe Pearl Bracelet,A100607,medium,baby,bracelet,14.718
+608,2019-02-02,wedding,pearl,76,179,The Marx Pearl Bracelet,A100608,medium,baby,bracelet,7.359
+609,2019-02-03,wedding,pearl,30,421,The Guevara Pearl Bracelet,A100609,medium,baby,bracelet,12.265
+610,2018-11-26,wedding,pearl,41,696,The Silas Bissell Pearl Bracelet,A100610,large,baby,bracelet,9.812000000000001
+611,2019-01-14,wedding,pearl,47,900,The Boudin Pearl Bracelet,A100611,large,baby,bracelet,12.265
+612,2019-01-14,wedding,pearl,14,454,The Lacombe Pearl Bracelet,A100612,large,baby,bracelet,7.359
+613,2019-01-13,wedding,pearl,57,786,The Marx Pearl Bracelet,A100613,large,baby,bracelet,7.359
+614,2018-11-26,wedding,pearl,0,836,The Guevara Pearl Bracelet,A100614,large,baby,bracelet,12.265
+615,2019-01-08,wedding,white,35,624,The Silas Bissell White Bracelet,A100615,small,baby,bracelet,9.812000000000001
+616,2018-11-12,wedding,white,52,875,The Boudin White Bracelet,A100616,small,baby,bracelet,9.812000000000001
+617,2018-11-16,wedding,white,67,74,The Lacombe White Bracelet,A100617,small,baby,bracelet,12.265
+618,2018-11-22,wedding,white,41,79,The Marx White Bracelet,A100618,small,baby,bracelet,14.718
+619,2018-11-19,wedding,white,73,645,The Guevara White Bracelet,A100619,small,baby,bracelet,12.265
+620,2018-12-02,wedding,white,9,645,The Silas Bissell White Bracelet,A100620,medium,baby,bracelet,14.718
+621,2019-01-20,wedding,white,63,330,The Boudin White Bracelet,A100621,medium,baby,bracelet,12.265
+622,2018-12-22,wedding,white,0,553,The Lacombe White Bracelet,A100622,medium,baby,bracelet,9.812000000000001
+623,2018-11-21,wedding,white,66,207,The Marx White Bracelet,A100623,medium,baby,bracelet,14.718
+624,2019-01-16,wedding,white,78,181,The Guevara White Bracelet,A100624,medium,baby,bracelet,14.718
+625,2019-01-19,wedding,white,4,45,The Silas Bissell White Bracelet,A100625,large,baby,bracelet,14.718
+626,2018-12-24,wedding,white,78,53,The Boudin White Bracelet,A100626,large,baby,bracelet,7.359
+627,2019-01-06,wedding,white,82,557,The Lacombe White Bracelet,A100627,large,baby,bracelet,14.718
+628,2018-12-07,wedding,white,60,635,The Marx White Bracelet,A100628,large,baby,bracelet,7.359
+629,2019-01-18,wedding,white,71,542,The Guevara White Bracelet,A100629,large,baby,bracelet,12.265
+630,2019-01-26,wedding,amber,55,915,The Silas Bissell Amber Bracelet,A100630,small,baby,bracelet,12.265
+631,2019-02-07,wedding,amber,39,782,The Boudin Amber Bracelet,A100631,small,baby,bracelet,7.359
+632,2019-01-15,wedding,amber,69,371,The Lacombe Amber Bracelet,A100632,small,baby,bracelet,14.718
+633,2018-12-19,wedding,amber,19,427,The Marx Amber Bracelet,A100633,small,baby,bracelet,14.718
+634,2019-01-24,wedding,amber,2,954,The Guevara Amber Bracelet,A100634,small,baby,bracelet,12.265
+635,2019-01-21,wedding,amber,65,138,The Silas Bissell Amber Bracelet,A100635,medium,baby,bracelet,12.265
+636,2019-01-15,wedding,amber,64,525,The Boudin Amber Bracelet,A100636,medium,baby,bracelet,7.359
+637,2019-02-08,wedding,amber,95,127,The Lacombe Amber Bracelet,A100637,medium,baby,bracelet,7.359
+638,2018-11-21,wedding,amber,62,482,The Marx Amber Bracelet,A100638,medium,baby,bracelet,9.812000000000001
+639,2019-01-30,wedding,amber,87,989,The Guevara Amber Bracelet,A100639,medium,baby,bracelet,12.265
+640,2018-12-18,wedding,amber,69,947,The Silas Bissell Amber Bracelet,A100640,large,baby,bracelet,14.718
+641,2018-12-25,wedding,amber,30,497,The Boudin Amber Bracelet,A100641,large,baby,bracelet,12.265
+642,2018-12-25,wedding,amber,10,287,The Lacombe Amber Bracelet,A100642,large,baby,bracelet,9.812000000000001
+643,2018-12-19,wedding,amber,5,370,The Marx Amber Bracelet,A100643,large,baby,bracelet,14.718
+644,2018-11-20,wedding,amber,47,550,The Guevara Amber Bracelet,A100644,large,baby,bracelet,14.718
+645,2018-11-18,wedding,gold,67,838,The Silas Bissell Gold Bracelet,A100645,small,baby,bracelet,13.7368
+646,2018-11-24,wedding,gold,37,230,The Boudin Gold Bracelet,A100646,small,baby,bracelet,13.7368
+647,2018-12-29,wedding,gold,43,652,The Lacombe Gold Bracelet,A100647,small,baby,bracelet,17.171
+648,2019-01-10,wedding,gold,2,950,The Marx Gold Bracelet,A100648,small,baby,bracelet,13.7368
+649,2019-01-26,wedding,gold,46,724,The Guevara Gold Bracelet,A100649,small,baby,bracelet,17.171
+650,2018-12-01,wedding,gold,67,530,The Silas Bissell Gold Bracelet,A100650,medium,baby,bracelet,10.3026
+651,2018-12-02,wedding,gold,92,663,The Boudin Gold Bracelet,A100651,medium,baby,bracelet,20.6052
+652,2018-12-28,wedding,gold,91,566,The Lacombe Gold Bracelet,A100652,medium,baby,bracelet,20.6052
+653,2019-02-07,wedding,gold,42,612,The Marx Gold Bracelet,A100653,medium,baby,bracelet,10.3026
+654,2019-01-31,wedding,gold,74,875,The Guevara Gold Bracelet,A100654,medium,baby,bracelet,13.7368
+655,2019-02-07,wedding,gold,20,803,The Silas Bissell Gold Bracelet,A100655,large,baby,bracelet,13.7368
+656,2018-12-09,wedding,gold,48,213,The Boudin Gold Bracelet,A100656,large,baby,bracelet,20.6052
+657,2019-01-06,wedding,gold,15,278,The Lacombe Gold Bracelet,A100657,large,baby,bracelet,17.171
+658,2018-11-17,wedding,gold,72,646,The Marx Gold Bracelet,A100658,large,baby,bracelet,17.171
+659,2018-12-14,wedding,gold,10,965,The Guevara Gold Bracelet,A100659,large,baby,bracelet,17.171
+660,2018-11-30,wedding,pearl,33,216,The Silas Bissell Pearl Ring,A100660,small,baby,ring,32.016
+661,2018-12-17,wedding,pearl,26,136,The Boudin Pearl Ring,A100661,small,baby,ring,32.016
+662,2019-01-22,wedding,pearl,23,860,The Lacombe Pearl Ring,A100662,small,baby,ring,32.016
+663,2019-01-06,wedding,pearl,41,788,The Marx Pearl Ring,A100663,small,baby,ring,16.008
+664,2018-12-20,wedding,pearl,61,751,The Guevara Pearl Ring,A100664,small,baby,ring,16.008
+665,2018-12-16,wedding,pearl,60,975,The Silas Bissell Pearl Ring,A100665,medium,baby,ring,32.016
+666,2019-01-16,wedding,pearl,0,55,The Boudin Pearl Ring,A100666,medium,baby,ring,26.68
+667,2018-12-09,wedding,pearl,69,189,The Lacombe Pearl Ring,A100667,medium,baby,ring,16.008
+668,2018-12-09,wedding,pearl,72,678,The Marx Pearl Ring,A100668,medium,baby,ring,32.016
+669,2019-01-24,wedding,pearl,22,90,The Guevara Pearl Ring,A100669,medium,baby,ring,26.68
+670,2019-01-09,wedding,pearl,19,558,The Silas Bissell Pearl Ring,A100670,large,baby,ring,21.344
+671,2019-01-12,wedding,pearl,25,773,The Boudin Pearl Ring,A100671,large,baby,ring,21.344
+672,2018-11-14,wedding,pearl,58,369,The Lacombe Pearl Ring,A100672,large,baby,ring,21.344
+673,2018-11-23,wedding,pearl,85,511,The Marx Pearl Ring,A100673,large,baby,ring,26.68
+674,2018-12-10,wedding,pearl,17,451,The Guevara Pearl Ring,A100674,large,baby,ring,16.008
+675,2018-11-28,wedding,white,94,655,The Silas Bissell White Ring,A100675,small,baby,ring,32.016
+676,2019-02-03,wedding,white,62,109,The Boudin White Ring,A100676,small,baby,ring,32.016
+677,2018-12-15,wedding,white,82,910,The Lacombe White Ring,A100677,small,baby,ring,26.68
+678,2019-01-17,wedding,white,63,493,The Marx White Ring,A100678,small,baby,ring,32.016
+679,2018-12-16,wedding,white,53,767,The Guevara White Ring,A100679,small,baby,ring,26.68
+680,2018-12-11,wedding,white,88,872,The Silas Bissell White Ring,A100680,medium,baby,ring,21.344
+681,2018-11-13,wedding,white,27,991,The Boudin White Ring,A100681,medium,baby,ring,26.68
+682,2019-02-03,wedding,white,65,208,The Lacombe White Ring,A100682,medium,baby,ring,21.344
+683,2018-12-06,wedding,white,1,140,The Marx White Ring,A100683,medium,baby,ring,32.016
+684,2019-01-06,wedding,white,54,835,The Guevara White Ring,A100684,medium,baby,ring,26.68
+685,2018-11-28,wedding,white,13,441,The Silas Bissell White Ring,A100685,large,baby,ring,26.68
+686,2019-02-05,wedding,white,85,344,The Boudin White Ring,A100686,large,baby,ring,26.68
+687,2018-11-21,wedding,white,48,140,The Lacombe White Ring,A100687,large,baby,ring,32.016
+688,2018-11-27,wedding,white,38,472,The Marx White Ring,A100688,large,baby,ring,26.68
+689,2019-02-02,wedding,white,99,287,The Guevara White Ring,A100689,large,baby,ring,32.016
+690,2019-01-15,wedding,amber,16,477,The Silas Bissell Amber Ring,A100690,small,baby,ring,16.008
+691,2018-11-17,wedding,amber,40,845,The Boudin Amber Ring,A100691,small,baby,ring,16.008
+692,2019-01-08,wedding,amber,91,365,The Lacombe Amber Ring,A100692,small,baby,ring,26.68
+693,2019-01-08,wedding,amber,4,168,The Marx Amber Ring,A100693,small,baby,ring,26.68
+694,2019-01-16,wedding,amber,11,858,The Guevara Amber Ring,A100694,small,baby,ring,26.68
+695,2018-12-30,wedding,amber,38,819,The Silas Bissell Amber Ring,A100695,medium,baby,ring,32.016
+696,2019-01-30,wedding,amber,98,795,The Boudin Amber Ring,A100696,medium,baby,ring,32.016
+697,2018-11-30,wedding,amber,32,424,The Lacombe Amber Ring,A100697,medium,baby,ring,16.008
+698,2019-02-07,wedding,amber,63,650,The Marx Amber Ring,A100698,medium,baby,ring,32.016
+699,2018-12-26,wedding,amber,30,522,The Guevara Amber Ring,A100699,medium,baby,ring,21.344
+700,2018-12-17,wedding,amber,11,989,The Silas Bissell Amber Ring,A100700,large,baby,ring,21.344
+701,2018-12-23,wedding,amber,15,462,The Boudin Amber Ring,A100701,large,baby,ring,32.016
+702,2018-12-07,wedding,amber,75,503,The Lacombe Amber Ring,A100702,large,baby,ring,21.344
+703,2018-12-15,wedding,amber,20,636,The Marx Amber Ring,A100703,large,baby,ring,26.68
+704,2018-11-30,wedding,amber,73,493,The Guevara Amber Ring,A100704,large,baby,ring,21.344
+705,2019-01-19,wedding,gold,64,356,The Silas Bissell Gold Ring,A100705,small,baby,ring,37.352
+706,2018-12-03,wedding,gold,64,108,The Boudin Gold Ring,A100706,small,baby,ring,44.822399999999995
+707,2018-12-14,wedding,gold,20,743,The Lacombe Gold Ring,A100707,small,baby,ring,37.352
+708,2018-11-25,wedding,gold,18,253,The Marx Gold Ring,A100708,small,baby,ring,44.822399999999995
+709,2018-12-18,wedding,gold,89,999,The Guevara Gold Ring,A100709,small,baby,ring,22.411199999999997
+710,2018-12-11,wedding,gold,97,248,The Silas Bissell Gold Ring,A100710,medium,baby,ring,37.352
+711,2019-02-06,wedding,gold,7,537,The Boudin Gold Ring,A100711,medium,baby,ring,22.411199999999997
+712,2018-11-15,wedding,gold,78,840,The Lacombe Gold Ring,A100712,medium,baby,ring,37.352
+713,2018-11-13,wedding,gold,5,869,The Marx Gold Ring,A100713,medium,baby,ring,44.822399999999995
+714,2018-11-28,wedding,gold,68,627,The Guevara Gold Ring,A100714,medium,baby,ring,22.411199999999997
+715,2018-12-24,wedding,gold,70,432,The Silas Bissell Gold Ring,A100715,large,baby,ring,44.822399999999995
+716,2018-12-02,wedding,gold,41,278,The Boudin Gold Ring,A100716,large,baby,ring,44.822399999999995
+717,2018-11-28,wedding,gold,59,815,The Lacombe Gold Ring,A100717,large,baby,ring,44.822399999999995
+718,2019-01-23,wedding,gold,14,885,The Marx Gold Ring,A100718,large,baby,ring,29.8816
+719,2018-12-19,wedding,gold,66,299,The Guevara Gold Ring,A100719,large,baby,ring,22.411199999999997
+720,2018-12-28,wedding,pearl,80,407,The Silas Bissell Pearl Earring,A100720,small,senior,earring,11.543999999999999
+721,2018-11-12,wedding,pearl,41,968,The Boudin Pearl Earring,A100721,small,senior,earring,11.543999999999999
+722,2019-01-26,wedding,pearl,23,144,The Lacombe Pearl Earring,A100722,small,senior,earring,9.62
+723,2019-02-08,wedding,pearl,92,170,The Marx Pearl Earring,A100723,small,senior,earring,9.62
+724,2018-12-26,wedding,pearl,71,372,The Guevara Pearl Earring,A100724,small,senior,earring,5.771999999999999
+725,2019-01-19,wedding,pearl,26,528,The Silas Bissell Pearl Earring,A100725,medium,senior,earring,7.696
+726,2018-12-28,wedding,pearl,49,850,The Boudin Pearl Earring,A100726,medium,senior,earring,5.771999999999999
+727,2018-11-30,wedding,pearl,4,559,The Lacombe Pearl Earring,A100727,medium,senior,earring,7.696
+728,2018-12-31,wedding,pearl,90,558,The Marx Pearl Earring,A100728,medium,senior,earring,5.771999999999999
+729,2019-01-29,wedding,pearl,90,554,The Guevara Pearl Earring,A100729,medium,senior,earring,5.771999999999999
+730,2018-12-07,wedding,pearl,96,186,The Silas Bissell Pearl Earring,A100730,large,senior,earring,5.771999999999999
+731,2019-01-09,wedding,pearl,83,220,The Boudin Pearl Earring,A100731,large,senior,earring,9.62
+732,2018-12-17,wedding,pearl,96,184,The Lacombe Pearl Earring,A100732,large,senior,earring,5.771999999999999
+733,2019-01-06,wedding,pearl,74,626,The Marx Pearl Earring,A100733,large,senior,earring,5.771999999999999
+734,2019-01-20,wedding,pearl,33,752,The Guevara Pearl Earring,A100734,large,senior,earring,7.696
+735,2019-01-26,wedding,white,51,246,The Silas Bissell White Earring,A100735,small,senior,earring,11.543999999999999
+736,2019-02-01,wedding,white,85,838,The Boudin White Earring,A100736,small,senior,earring,7.696
+737,2018-12-25,wedding,white,88,358,The Lacombe White Earring,A100737,small,senior,earring,9.62
+738,2019-02-02,wedding,white,51,293,The Marx White Earring,A100738,small,senior,earring,7.696
+739,2018-11-11,wedding,white,50,12,The Guevara White Earring,A100739,small,senior,earring,7.696
+740,2018-12-18,wedding,white,80,470,The Silas Bissell White Earring,A100740,medium,senior,earring,9.62
+741,2018-12-16,wedding,white,62,504,The Boudin White Earring,A100741,medium,senior,earring,7.696
+742,2019-01-25,wedding,white,52,618,The Lacombe White Earring,A100742,medium,senior,earring,7.696
+743,2018-11-11,wedding,white,64,415,The Marx White Earring,A100743,medium,senior,earring,5.771999999999999
+744,2018-12-15,wedding,white,62,125,The Guevara White Earring,A100744,medium,senior,earring,7.696
+745,2018-11-17,wedding,white,5,224,The Silas Bissell White Earring,A100745,large,senior,earring,9.62
+746,2018-11-21,wedding,white,95,956,The Boudin White Earring,A100746,large,senior,earring,11.543999999999999
+747,2018-11-23,wedding,white,26,517,The Lacombe White Earring,A100747,large,senior,earring,11.543999999999999
+748,2018-11-14,wedding,white,99,264,The Marx White Earring,A100748,large,senior,earring,7.696
+749,2019-01-28,wedding,white,12,985,The Guevara White Earring,A100749,large,senior,earring,11.543999999999999
+750,2019-01-23,wedding,amber,52,526,The Silas Bissell Amber Earring,A100750,small,senior,earring,9.62
+751,2019-01-09,wedding,amber,35,137,The Boudin Amber Earring,A100751,small,senior,earring,7.696
+752,2019-01-10,wedding,amber,69,255,The Lacombe Amber Earring,A100752,small,senior,earring,7.696
+753,2018-11-26,wedding,amber,7,776,The Marx Amber Earring,A100753,small,senior,earring,5.771999999999999
+754,2018-12-27,wedding,amber,47,173,The Guevara Amber Earring,A100754,small,senior,earring,11.543999999999999
+755,2018-12-22,wedding,amber,26,250,The Silas Bissell Amber Earring,A100755,medium,senior,earring,5.771999999999999
+756,2018-12-02,wedding,amber,73,666,The Boudin Amber Earring,A100756,medium,senior,earring,5.771999999999999
+757,2018-12-15,wedding,amber,4,864,The Lacombe Amber Earring,A100757,medium,senior,earring,5.771999999999999
+758,2018-11-25,wedding,amber,86,685,The Marx Amber Earring,A100758,medium,senior,earring,9.62
+759,2018-11-15,wedding,amber,8,675,The Guevara Amber Earring,A100759,medium,senior,earring,7.696
+760,2018-12-17,wedding,amber,89,996,The Silas Bissell Amber Earring,A100760,large,senior,earring,5.771999999999999
+761,2019-01-20,wedding,amber,28,605,The Boudin Amber Earring,A100761,large,senior,earring,7.696
+762,2018-12-17,wedding,amber,66,171,The Lacombe Amber Earring,A100762,large,senior,earring,7.696
+763,2018-12-08,wedding,amber,24,657,The Marx Amber Earring,A100763,large,senior,earring,9.62
+764,2018-12-06,wedding,amber,51,28,The Guevara Amber Earring,A100764,large,senior,earring,5.771999999999999
+765,2018-12-18,wedding,gold,24,323,The Silas Bissell Gold Earring,A100765,small,senior,earring,10.7744
+766,2018-12-11,wedding,gold,74,158,The Boudin Gold Earring,A100766,small,senior,earring,16.161599999999996
+767,2018-11-17,wedding,gold,87,338,The Lacombe Gold Earring,A100767,small,senior,earring,13.467999999999998
+768,2018-11-20,wedding,gold,86,127,The Marx Gold Earring,A100768,small,senior,earring,13.467999999999998
+769,2019-01-31,wedding,gold,92,883,The Guevara Gold Earring,A100769,small,senior,earring,8.080799999999998
+770,2018-12-19,wedding,gold,80,610,The Silas Bissell Gold Earring,A100770,medium,senior,earring,16.161599999999996
+771,2019-01-22,wedding,gold,20,453,The Boudin Gold Earring,A100771,medium,senior,earring,10.7744
+772,2018-12-23,wedding,gold,96,647,The Lacombe Gold Earring,A100772,medium,senior,earring,8.080799999999998
+773,2019-01-31,wedding,gold,17,469,The Marx Gold Earring,A100773,medium,senior,earring,8.080799999999998
+774,2018-12-14,wedding,gold,3,820,The Guevara Gold Earring,A100774,medium,senior,earring,8.080799999999998
+775,2019-01-28,wedding,gold,78,280,The Silas Bissell Gold Earring,A100775,large,senior,earring,10.7744
+776,2018-11-26,wedding,gold,15,719,The Boudin Gold Earring,A100776,large,senior,earring,10.7744
+777,2018-11-24,wedding,gold,13,174,The Lacombe Gold Earring,A100777,large,senior,earring,10.7744
+778,2018-11-19,wedding,gold,79,165,The Marx Gold Earring,A100778,large,senior,earring,16.161599999999996
+779,2018-12-16,wedding,gold,79,985,The Guevara Gold Earring,A100779,large,senior,earring,16.161599999999996
+780,2018-11-17,wedding,pearl,12,477,The Silas Bissell Pearl Necklace,A100780,small,senior,necklace,34.854
+781,2018-12-05,wedding,pearl,93,522,The Boudin Pearl Necklace,A100781,small,senior,necklace,29.045
+782,2018-11-25,wedding,pearl,52,849,The Lacombe Pearl Necklace,A100782,small,senior,necklace,34.854
+783,2018-12-29,wedding,pearl,32,76,The Marx Pearl Necklace,A100783,small,senior,necklace,29.045
+784,2018-11-13,wedding,pearl,47,766,The Guevara Pearl Necklace,A100784,small,senior,necklace,34.854
+785,2019-01-29,wedding,pearl,4,817,The Silas Bissell Pearl Necklace,A100785,medium,senior,necklace,23.236000000000004
+786,2019-01-18,wedding,pearl,29,774,The Boudin Pearl Necklace,A100786,medium,senior,necklace,17.427
+787,2018-12-03,wedding,pearl,15,233,The Lacombe Pearl Necklace,A100787,medium,senior,necklace,17.427
+788,2018-12-30,wedding,pearl,54,577,The Marx Pearl Necklace,A100788,medium,senior,necklace,34.854
+789,2018-11-21,wedding,pearl,30,322,The Guevara Pearl Necklace,A100789,medium,senior,necklace,34.854
+790,2019-01-19,wedding,pearl,24,229,The Silas Bissell Pearl Necklace,A100790,large,senior,necklace,34.854
+791,2019-02-03,wedding,pearl,23,406,The Boudin Pearl Necklace,A100791,large,senior,necklace,23.236000000000004
+792,2018-11-17,wedding,pearl,27,76,The Lacombe Pearl Necklace,A100792,large,senior,necklace,29.045
+793,2018-12-18,wedding,pearl,26,958,The Marx Pearl Necklace,A100793,large,senior,necklace,17.427
+794,2018-11-19,wedding,pearl,12,782,The Guevara Pearl Necklace,A100794,large,senior,necklace,29.045
+795,2018-11-24,wedding,white,3,405,The Silas Bissell White Necklace,A100795,small,senior,necklace,34.854
+796,2019-01-04,wedding,white,95,22,The Boudin White Necklace,A100796,small,senior,necklace,34.854
+797,2018-12-28,wedding,white,98,168,The Lacombe White Necklace,A100797,small,senior,necklace,23.236000000000004
+798,2018-12-11,wedding,white,4,973,The Marx White Necklace,A100798,small,senior,necklace,17.427
+799,2018-12-23,wedding,white,9,635,The Guevara White Necklace,A100799,small,senior,necklace,23.236000000000004
+800,2019-02-02,wedding,white,64,181,The Silas Bissell White Necklace,A100800,medium,senior,necklace,29.045
+801,2018-12-06,wedding,white,58,982,The Boudin White Necklace,A100801,medium,senior,necklace,34.854
+802,2018-11-16,wedding,white,51,6,The Lacombe White Necklace,A100802,medium,senior,necklace,17.427
+803,2019-01-08,wedding,white,41,758,The Marx White Necklace,A100803,medium,senior,necklace,17.427
+804,2018-11-24,wedding,white,68,513,The Guevara White Necklace,A100804,medium,senior,necklace,23.236000000000004
+805,2018-12-16,wedding,white,60,452,The Silas Bissell White Necklace,A100805,large,senior,necklace,34.854
+806,2019-01-27,wedding,white,34,417,The Boudin White Necklace,A100806,large,senior,necklace,17.427
+807,2018-11-19,wedding,white,17,727,The Lacombe White Necklace,A100807,large,senior,necklace,23.236000000000004
+808,2018-11-17,wedding,white,44,316,The Marx White Necklace,A100808,large,senior,necklace,29.045
+809,2019-01-05,wedding,white,85,256,The Guevara White Necklace,A100809,large,senior,necklace,34.854
+810,2018-12-18,wedding,amber,12,110,The Silas Bissell Amber Necklace,A100810,small,senior,necklace,34.854
+811,2019-01-09,wedding,amber,61,648,The Boudin Amber Necklace,A100811,small,senior,necklace,29.045
+812,2019-01-25,wedding,amber,68,340,The Lacombe Amber Necklace,A100812,small,senior,necklace,23.236000000000004
+813,2019-01-07,wedding,amber,92,689,The Marx Amber Necklace,A100813,small,senior,necklace,29.045
+814,2018-12-16,wedding,amber,22,100,The Guevara Amber Necklace,A100814,small,senior,necklace,23.236000000000004
+815,2018-12-15,wedding,amber,27,770,The Silas Bissell Amber Necklace,A100815,medium,senior,necklace,29.045
+816,2018-12-25,wedding,amber,69,385,The Boudin Amber Necklace,A100816,medium,senior,necklace,34.854
+817,2018-12-05,wedding,amber,80,891,The Lacombe Amber Necklace,A100817,medium,senior,necklace,29.045
+818,2018-12-17,wedding,amber,30,106,The Marx Amber Necklace,A100818,medium,senior,necklace,29.045
+819,2019-01-11,wedding,amber,47,594,The Guevara Amber Necklace,A100819,medium,senior,necklace,17.427
+820,2019-01-22,wedding,amber,54,70,The Silas Bissell Amber Necklace,A100820,large,senior,necklace,29.045
+821,2019-01-10,wedding,amber,78,447,The Boudin Amber Necklace,A100821,large,senior,necklace,34.854
+822,2018-12-25,wedding,amber,32,300,The Lacombe Amber Necklace,A100822,large,senior,necklace,29.045
+823,2018-12-19,wedding,amber,16,877,The Marx Amber Necklace,A100823,large,senior,necklace,34.854
+824,2018-12-25,wedding,amber,50,579,The Guevara Amber Necklace,A100824,large,senior,necklace,34.854
+825,2018-11-11,wedding,gold,79,966,The Silas Bissell Gold Necklace,A100825,small,senior,necklace,40.663
+826,2019-01-19,wedding,gold,41,687,The Boudin Gold Necklace,A100826,small,senior,necklace,24.397799999999997
+827,2018-12-05,wedding,gold,53,899,The Lacombe Gold Necklace,A100827,small,senior,necklace,40.663
+828,2018-12-30,wedding,gold,21,244,The Marx Gold Necklace,A100828,small,senior,necklace,24.397799999999997
+829,2019-01-12,wedding,gold,91,249,The Guevara Gold Necklace,A100829,small,senior,necklace,40.663
+830,2018-11-27,wedding,gold,66,558,The Silas Bissell Gold Necklace,A100830,medium,senior,necklace,24.397799999999997
+831,2019-01-23,wedding,gold,57,261,The Boudin Gold Necklace,A100831,medium,senior,necklace,48.79559999999999
+832,2019-01-03,wedding,gold,60,322,The Lacombe Gold Necklace,A100832,medium,senior,necklace,24.397799999999997
+833,2018-12-01,wedding,gold,64,962,The Marx Gold Necklace,A100833,medium,senior,necklace,40.663
+834,2019-01-07,wedding,gold,39,661,The Guevara Gold Necklace,A100834,medium,senior,necklace,48.79559999999999
+835,2018-11-29,wedding,gold,46,81,The Silas Bissell Gold Necklace,A100835,large,senior,necklace,48.79559999999999
+836,2019-01-11,wedding,gold,51,845,The Boudin Gold Necklace,A100836,large,senior,necklace,48.79559999999999
+837,2018-12-12,wedding,gold,60,972,The Lacombe Gold Necklace,A100837,large,senior,necklace,24.397799999999997
+838,2019-01-23,wedding,gold,60,87,The Marx Gold Necklace,A100838,large,senior,necklace,24.397799999999997
+839,2019-02-04,wedding,gold,54,465,The Guevara Gold Necklace,A100839,large,senior,necklace,32.5304
+840,2018-12-16,wedding,pearl,36,288,The Silas Bissell Pearl Bracelet,A100840,small,senior,bracelet,29.555
+841,2018-12-13,wedding,pearl,5,344,The Boudin Pearl Bracelet,A100841,small,senior,bracelet,23.644000000000002
+842,2018-11-12,wedding,pearl,75,583,The Lacombe Pearl Bracelet,A100842,small,senior,bracelet,17.733
+843,2019-01-20,wedding,pearl,4,395,The Marx Pearl Bracelet,A100843,small,senior,bracelet,29.555
+844,2019-01-11,wedding,pearl,57,185,The Guevara Pearl Bracelet,A100844,small,senior,bracelet,23.644000000000002
+845,2019-02-01,wedding,pearl,81,656,The Silas Bissell Pearl Bracelet,A100845,medium,senior,bracelet,23.644000000000002
+846,2019-01-19,wedding,pearl,27,974,The Boudin Pearl Bracelet,A100846,medium,senior,bracelet,35.466
+847,2019-01-01,wedding,pearl,89,932,The Lacombe Pearl Bracelet,A100847,medium,senior,bracelet,17.733
+848,2019-01-09,wedding,pearl,56,606,The Marx Pearl Bracelet,A100848,medium,senior,bracelet,23.644000000000002
+849,2018-12-19,wedding,pearl,96,141,The Guevara Pearl Bracelet,A100849,medium,senior,bracelet,23.644000000000002
+850,2019-01-17,wedding,pearl,35,942,The Silas Bissell Pearl Bracelet,A100850,large,senior,bracelet,35.466
+851,2019-01-05,wedding,pearl,60,834,The Boudin Pearl Bracelet,A100851,large,senior,bracelet,23.644000000000002
+852,2018-11-12,wedding,pearl,71,912,The Lacombe Pearl Bracelet,A100852,large,senior,bracelet,29.555
+853,2018-12-05,wedding,pearl,32,223,The Marx Pearl Bracelet,A100853,large,senior,bracelet,35.466
+854,2018-12-28,wedding,pearl,44,181,The Guevara Pearl Bracelet,A100854,large,senior,bracelet,17.733
+855,2019-01-13,wedding,white,32,371,The Silas Bissell White Bracelet,A100855,small,senior,bracelet,23.644000000000002
+856,2019-01-13,wedding,white,23,152,The Boudin White Bracelet,A100856,small,senior,bracelet,29.555
+857,2019-02-08,wedding,white,14,460,The Lacombe White Bracelet,A100857,small,senior,bracelet,23.644000000000002
+858,2018-12-19,wedding,white,14,367,The Marx White Bracelet,A100858,small,senior,bracelet,29.555
+859,2018-12-21,wedding,white,35,951,The Guevara White Bracelet,A100859,small,senior,bracelet,35.466
+860,2019-01-20,wedding,white,69,986,The Silas Bissell White Bracelet,A100860,medium,senior,bracelet,23.644000000000002
+861,2019-01-06,wedding,white,73,518,The Boudin White Bracelet,A100861,medium,senior,bracelet,23.644000000000002
+862,2019-01-05,wedding,white,41,410,The Lacombe White Bracelet,A100862,medium,senior,bracelet,23.644000000000002
+863,2019-02-06,wedding,white,2,702,The Marx White Bracelet,A100863,medium,senior,bracelet,29.555
+864,2018-11-11,wedding,white,50,346,The Guevara White Bracelet,A100864,medium,senior,bracelet,17.733
+865,2018-11-30,wedding,white,56,929,The Silas Bissell White Bracelet,A100865,large,senior,bracelet,23.644000000000002
+866,2018-12-16,wedding,white,47,754,The Boudin White Bracelet,A100866,large,senior,bracelet,17.733
+867,2019-01-20,wedding,white,24,921,The Lacombe White Bracelet,A100867,large,senior,bracelet,23.644000000000002
+868,2018-12-21,wedding,white,96,254,The Marx White Bracelet,A100868,large,senior,bracelet,35.466
+869,2018-11-18,wedding,white,85,815,The Guevara White Bracelet,A100869,large,senior,bracelet,23.644000000000002
+870,2019-01-17,wedding,amber,56,905,The Silas Bissell Amber Bracelet,A100870,small,senior,bracelet,29.555
+871,2018-11-30,wedding,amber,9,28,The Boudin Amber Bracelet,A100871,small,senior,bracelet,35.466
+872,2018-12-29,wedding,amber,40,890,The Lacombe Amber Bracelet,A100872,small,senior,bracelet,35.466
+873,2019-01-02,wedding,amber,2,82,The Marx Amber Bracelet,A100873,small,senior,bracelet,35.466
+874,2019-01-22,wedding,amber,36,462,The Guevara Amber Bracelet,A100874,small,senior,bracelet,35.466
+875,2019-01-02,wedding,amber,4,597,The Silas Bissell Amber Bracelet,A100875,medium,senior,bracelet,35.466
+876,2018-11-14,wedding,amber,23,211,The Boudin Amber Bracelet,A100876,medium,senior,bracelet,29.555
+877,2019-01-27,wedding,amber,39,820,The Lacombe Amber Bracelet,A100877,medium,senior,bracelet,29.555
+878,2018-11-25,wedding,amber,47,978,The Marx Amber Bracelet,A100878,medium,senior,bracelet,17.733
+879,2018-12-07,wedding,amber,20,150,The Guevara Amber Bracelet,A100879,medium,senior,bracelet,35.466
+880,2018-12-14,wedding,amber,37,498,The Silas Bissell Amber Bracelet,A100880,large,senior,bracelet,29.555
+881,2019-02-08,wedding,amber,41,365,The Boudin Amber Bracelet,A100881,large,senior,bracelet,29.555
+882,2019-02-06,wedding,amber,65,208,The Lacombe Amber Bracelet,A100882,large,senior,bracelet,23.644000000000002
+883,2018-11-18,wedding,amber,41,291,The Marx Amber Bracelet,A100883,large,senior,bracelet,23.644000000000002
+884,2019-02-05,wedding,amber,36,181,The Guevara Amber Bracelet,A100884,large,senior,bracelet,17.733
+885,2019-01-29,wedding,gold,18,472,The Silas Bissell Gold Bracelet,A100885,small,senior,bracelet,49.65239999999999
+886,2018-12-21,wedding,gold,57,596,The Boudin Gold Bracelet,A100886,small,senior,bracelet,41.376999999999995
+887,2019-01-21,wedding,gold,43,797,The Lacombe Gold Bracelet,A100887,small,senior,bracelet,41.376999999999995
+888,2018-12-01,wedding,gold,12,491,The Marx Gold Bracelet,A100888,small,senior,bracelet,33.1016
+889,2018-12-27,wedding,gold,34,242,The Guevara Gold Bracelet,A100889,small,senior,bracelet,49.65239999999999
+890,2018-12-29,wedding,gold,92,310,The Silas Bissell Gold Bracelet,A100890,medium,senior,bracelet,41.376999999999995
+891,2019-01-05,wedding,gold,75,322,The Boudin Gold Bracelet,A100891,medium,senior,bracelet,49.65239999999999
+892,2018-12-04,wedding,gold,31,191,The Lacombe Gold Bracelet,A100892,medium,senior,bracelet,49.65239999999999
+893,2018-12-18,wedding,gold,56,221,The Marx Gold Bracelet,A100893,medium,senior,bracelet,33.1016
+894,2018-11-18,wedding,gold,74,246,The Guevara Gold Bracelet,A100894,medium,senior,bracelet,41.376999999999995
+895,2018-12-01,wedding,gold,15,630,The Silas Bissell Gold Bracelet,A100895,large,senior,bracelet,33.1016
+896,2018-12-31,wedding,gold,85,396,The Boudin Gold Bracelet,A100896,large,senior,bracelet,33.1016
+897,2019-01-15,wedding,gold,65,146,The Lacombe Gold Bracelet,A100897,large,senior,bracelet,41.376999999999995
+898,2019-01-25,wedding,gold,43,525,The Marx Gold Bracelet,A100898,large,senior,bracelet,41.376999999999995
+899,2019-01-06,wedding,gold,16,285,The Guevara Gold Bracelet,A100899,large,senior,bracelet,33.1016
+900,2019-01-11,wedding,pearl,96,190,The Silas Bissell Pearl Ring,A100900,small,senior,ring,6.096
+901,2018-11-14,wedding,pearl,43,827,The Boudin Pearl Ring,A100901,small,senior,ring,6.096
+902,2019-01-11,wedding,pearl,12,891,The Lacombe Pearl Ring,A100902,small,senior,ring,10.16
+903,2019-01-21,wedding,pearl,67,585,The Marx Pearl Ring,A100903,small,senior,ring,10.16
+904,2018-12-28,wedding,pearl,1,90,The Guevara Pearl Ring,A100904,small,senior,ring,6.096
+905,2018-11-21,wedding,pearl,39,747,The Silas Bissell Pearl Ring,A100905,medium,senior,ring,6.096
+906,2019-02-03,wedding,pearl,78,82,The Boudin Pearl Ring,A100906,medium,senior,ring,8.128
+907,2019-01-12,wedding,pearl,70,693,The Lacombe Pearl Ring,A100907,medium,senior,ring,8.128
+908,2018-11-17,wedding,pearl,50,123,The Marx Pearl Ring,A100908,medium,senior,ring,12.192
+909,2018-11-28,wedding,pearl,99,271,The Guevara Pearl Ring,A100909,medium,senior,ring,10.16
+910,2018-12-07,wedding,pearl,73,21,The Silas Bissell Pearl Ring,A100910,large,senior,ring,10.16
+911,2019-01-21,wedding,pearl,34,369,The Boudin Pearl Ring,A100911,large,senior,ring,8.128
+912,2019-01-05,wedding,pearl,85,188,The Lacombe Pearl Ring,A100912,large,senior,ring,6.096
+913,2018-11-29,wedding,pearl,10,445,The Marx Pearl Ring,A100913,large,senior,ring,12.192
+914,2019-02-07,wedding,pearl,51,468,The Guevara Pearl Ring,A100914,large,senior,ring,8.128
+915,2018-11-25,wedding,white,48,864,The Silas Bissell White Ring,A100915,small,senior,ring,12.192
+916,2019-01-06,wedding,white,82,574,The Boudin White Ring,A100916,small,senior,ring,6.096
+917,2018-12-20,wedding,white,76,728,The Lacombe White Ring,A100917,small,senior,ring,12.192
+918,2018-11-29,wedding,white,70,462,The Marx White Ring,A100918,small,senior,ring,8.128
+919,2018-12-20,wedding,white,29,73,The Guevara White Ring,A100919,small,senior,ring,12.192
+920,2018-12-22,wedding,white,62,923,The Silas Bissell White Ring,A100920,medium,senior,ring,10.16
+921,2018-12-25,wedding,white,28,373,The Boudin White Ring,A100921,medium,senior,ring,8.128
+922,2019-01-01,wedding,white,7,549,The Lacombe White Ring,A100922,medium,senior,ring,10.16
+923,2019-01-01,wedding,white,35,449,The Marx White Ring,A100923,medium,senior,ring,10.16
+924,2019-01-23,wedding,white,70,456,The Guevara White Ring,A100924,medium,senior,ring,10.16
+925,2018-11-30,wedding,white,52,420,The Silas Bissell White Ring,A100925,large,senior,ring,8.128
+926,2018-12-26,wedding,white,69,38,The Boudin White Ring,A100926,large,senior,ring,8.128
+927,2019-01-24,wedding,white,77,569,The Lacombe White Ring,A100927,large,senior,ring,8.128
+928,2018-12-17,wedding,white,19,20,The Marx White Ring,A100928,large,senior,ring,10.16
+929,2019-01-31,wedding,white,17,865,The Guevara White Ring,A100929,large,senior,ring,12.192
+930,2018-12-29,wedding,amber,98,551,The Silas Bissell Amber Ring,A100930,small,senior,ring,10.16
+931,2019-01-31,wedding,amber,98,161,The Boudin Amber Ring,A100931,small,senior,ring,10.16
+932,2018-11-14,wedding,amber,49,636,The Lacombe Amber Ring,A100932,small,senior,ring,10.16
+933,2018-12-03,wedding,amber,0,635,The Marx Amber Ring,A100933,small,senior,ring,12.192
+934,2019-01-04,wedding,amber,44,32,The Guevara Amber Ring,A100934,small,senior,ring,12.192
+935,2018-11-22,wedding,amber,69,277,The Silas Bissell Amber Ring,A100935,medium,senior,ring,8.128
+936,2018-11-16,wedding,amber,35,476,The Boudin Amber Ring,A100936,medium,senior,ring,10.16
+937,2019-02-01,wedding,amber,94,341,The Lacombe Amber Ring,A100937,medium,senior,ring,10.16
+938,2019-02-04,wedding,amber,37,106,The Marx Amber Ring,A100938,medium,senior,ring,10.16
+939,2018-12-17,wedding,amber,48,711,The Guevara Amber Ring,A100939,medium,senior,ring,6.096
+940,2018-11-26,wedding,amber,56,173,The Silas Bissell Amber Ring,A100940,large,senior,ring,12.192
+941,2019-01-02,wedding,amber,85,392,The Boudin Amber Ring,A100941,large,senior,ring,12.192
+942,2018-11-15,wedding,amber,38,167,The Lacombe Amber Ring,A100942,large,senior,ring,10.16
+943,2019-01-04,wedding,amber,17,945,The Marx Amber Ring,A100943,large,senior,ring,12.192
+944,2018-11-27,wedding,amber,91,64,The Guevara Amber Ring,A100944,large,senior,ring,12.192
+945,2019-01-09,wedding,gold,86,271,The Silas Bissell Gold Ring,A100945,small,senior,ring,17.068799999999996
+946,2019-01-23,wedding,gold,89,951,The Boudin Gold Ring,A100946,small,senior,ring,14.223999999999998
+947,2019-01-24,wedding,gold,54,626,The Lacombe Gold Ring,A100947,small,senior,ring,11.379199999999999
+948,2019-02-02,wedding,gold,30,390,The Marx Gold Ring,A100948,small,senior,ring,11.379199999999999
+949,2018-12-10,wedding,gold,68,339,The Guevara Gold Ring,A100949,small,senior,ring,17.068799999999996
+950,2019-01-17,wedding,gold,91,986,The Silas Bissell Gold Ring,A100950,medium,senior,ring,8.534399999999998
+951,2018-11-23,wedding,gold,51,931,The Boudin Gold Ring,A100951,medium,senior,ring,8.534399999999998
+952,2018-12-21,wedding,gold,27,647,The Lacombe Gold Ring,A100952,medium,senior,ring,8.534399999999998
+953,2018-12-18,wedding,gold,22,728,The Marx Gold Ring,A100953,medium,senior,ring,11.379199999999999
+954,2018-11-12,wedding,gold,15,695,The Guevara Gold Ring,A100954,medium,senior,ring,8.534399999999998
+955,2018-12-01,wedding,gold,71,673,The Silas Bissell Gold Ring,A100955,large,senior,ring,17.068799999999996
+956,2019-01-04,wedding,gold,19,213,The Boudin Gold Ring,A100956,large,senior,ring,8.534399999999998
+957,2018-12-05,wedding,gold,91,21,The Lacombe Gold Ring,A100957,large,senior,ring,11.379199999999999
+958,2018-12-08,wedding,gold,44,729,The Marx Gold Ring,A100958,large,senior,ring,11.379199999999999
+959,2019-01-24,wedding,gold,46,717,The Guevara Gold Ring,A100959,large,senior,ring,8.534399999999998
+960,2019-01-16,casual,pearl,23,285,The Silas Bissell Pearl Earring,A100960,small,men,earring,25.072000000000003
+961,2019-01-14,casual,pearl,1,558,The Boudin Pearl Earring,A100961,small,men,earring,31.34
+962,2019-01-30,casual,pearl,87,276,The Lacombe Pearl Earring,A100962,small,men,earring,37.608
+963,2019-01-22,casual,pearl,60,498,The Marx Pearl Earring,A100963,small,men,earring,37.608
+964,2018-12-12,casual,pearl,85,219,The Guevara Pearl Earring,A100964,small,men,earring,25.072000000000003
+965,2019-02-07,casual,pearl,13,147,The Silas Bissell Pearl Earring,A100965,medium,men,earring,25.072000000000003
+966,2019-01-15,casual,pearl,87,538,The Boudin Pearl Earring,A100966,medium,men,earring,18.804
+967,2019-01-29,casual,pearl,73,168,The Lacombe Pearl Earring,A100967,medium,men,earring,31.34
+968,2019-01-27,casual,pearl,42,684,The Marx Pearl Earring,A100968,medium,men,earring,18.804
+969,2018-11-13,casual,pearl,51,663,The Guevara Pearl Earring,A100969,medium,men,earring,25.072000000000003
+970,2019-02-03,casual,pearl,59,740,The Silas Bissell Pearl Earring,A100970,large,men,earring,18.804
+971,2018-11-20,casual,pearl,45,13,The Boudin Pearl Earring,A100971,large,men,earring,25.072000000000003
+972,2019-01-31,casual,pearl,48,78,The Lacombe Pearl Earring,A100972,large,men,earring,25.072000000000003
+973,2018-12-13,casual,pearl,84,9,The Marx Pearl Earring,A100973,large,men,earring,37.608
+974,2018-11-14,casual,pearl,74,410,The Guevara Pearl Earring,A100974,large,men,earring,18.804
+975,2018-11-18,casual,white,38,330,The Silas Bissell White Earring,A100975,small,men,earring,37.608
+976,2018-11-15,casual,white,65,682,The Boudin White Earring,A100976,small,men,earring,25.072000000000003
+977,2019-02-06,casual,white,30,276,The Lacombe White Earring,A100977,small,men,earring,31.34
+978,2019-01-28,casual,white,97,944,The Marx White Earring,A100978,small,men,earring,18.804
+979,2018-11-27,casual,white,36,117,The Guevara White Earring,A100979,small,men,earring,37.608
+980,2019-02-08,casual,white,5,425,The Silas Bissell White Earring,A100980,medium,men,earring,37.608
+981,2018-11-15,casual,white,47,343,The Boudin White Earring,A100981,medium,men,earring,18.804
+982,2018-12-22,casual,white,14,1,The Lacombe White Earring,A100982,medium,men,earring,18.804
+983,2019-01-06,casual,white,55,229,The Marx White Earring,A100983,medium,men,earring,18.804
+984,2018-11-19,casual,white,9,302,The Guevara White Earring,A100984,medium,men,earring,25.072000000000003
+985,2018-12-21,casual,white,11,206,The Silas Bissell White Earring,A100985,large,men,earring,37.608
+986,2019-01-10,casual,white,73,208,The Boudin White Earring,A100986,large,men,earring,37.608
+987,2019-01-13,casual,white,97,455,The Lacombe White Earring,A100987,large,men,earring,37.608
+988,2018-11-16,casual,white,83,420,The Marx White Earring,A100988,large,men,earring,18.804
+989,2019-01-30,casual,white,15,566,The Guevara White Earring,A100989,large,men,earring,25.072000000000003
+990,2018-12-22,casual,amber,92,139,The Silas Bissell Amber Earring,A100990,small,men,earring,31.34
+991,2018-12-22,casual,amber,4,435,The Boudin Amber Earring,A100991,small,men,earring,37.608
+992,2019-01-13,casual,amber,89,820,The Lacombe Amber Earring,A100992,small,men,earring,18.804
+993,2018-12-23,casual,amber,9,475,The Marx Amber Earring,A100993,small,men,earring,25.072000000000003
+994,2019-02-01,casual,amber,97,125,The Guevara Amber Earring,A100994,small,men,earring,37.608
+995,2019-01-10,casual,amber,43,141,The Silas Bissell Amber Earring,A100995,medium,men,earring,31.34
+996,2019-01-24,casual,amber,35,58,The Boudin Amber Earring,A100996,medium,men,earring,25.072000000000003
+997,2019-01-19,casual,amber,63,444,The Lacombe Amber Earring,A100997,medium,men,earring,31.34
+998,2019-01-03,casual,amber,21,301,The Marx Amber Earring,A100998,medium,men,earring,25.072000000000003
+999,2019-01-18,casual,amber,77,619,The Guevara Amber Earring,A100999,medium,men,earring,37.608
+1000,2019-01-15,casual,amber,19,247,The Silas Bissell Amber Earring,A101000,large,men,earring,25.072000000000003
+1001,2018-12-15,casual,amber,37,106,The Boudin Amber Earring,A101001,large,men,earring,37.608
+1002,2018-12-12,casual,amber,0,821,The Lacombe Amber Earring,A101002,large,men,earring,37.608
+1003,2018-11-25,casual,amber,94,668,The Marx Amber Earring,A101003,large,men,earring,37.608
+1004,2018-12-11,casual,amber,64,151,The Guevara Amber Earring,A101004,large,men,earring,37.608
+1005,2019-01-17,casual,gold,14,468,The Silas Bissell Gold Earring,A101005,small,men,earring,52.651199999999996
+1006,2019-02-03,casual,gold,56,692,The Boudin Gold Earring,A101006,small,men,earring,52.651199999999996
+1007,2019-01-18,casual,gold,17,720,The Lacombe Gold Earring,A101007,small,men,earring,26.325599999999998
+1008,2018-11-25,casual,gold,87,679,The Marx Gold Earring,A101008,small,men,earring,35.1008
+1009,2018-12-14,casual,gold,87,814,The Guevara Gold Earring,A101009,small,men,earring,35.1008
+1010,2018-11-30,casual,gold,37,523,The Silas Bissell Gold Earring,A101010,medium,men,earring,26.325599999999998
+1011,2018-11-17,casual,gold,47,711,The Boudin Gold Earring,A101011,medium,men,earring,43.876
+1012,2019-01-09,casual,gold,85,245,The Lacombe Gold Earring,A101012,medium,men,earring,52.651199999999996
+1013,2018-12-05,casual,gold,65,651,The Marx Gold Earring,A101013,medium,men,earring,52.651199999999996
+1014,2018-11-18,casual,gold,24,646,The Guevara Gold Earring,A101014,medium,men,earring,35.1008
+1015,2018-12-25,casual,gold,77,837,The Silas Bissell Gold Earring,A101015,large,men,earring,52.651199999999996
+1016,2018-11-23,casual,gold,67,216,The Boudin Gold Earring,A101016,large,men,earring,26.325599999999998
+1017,2019-01-28,casual,gold,52,565,The Lacombe Gold Earring,A101017,large,men,earring,35.1008
+1018,2018-12-21,casual,gold,64,475,The Marx Gold Earring,A101018,large,men,earring,52.651199999999996
+1019,2019-02-08,casual,gold,29,790,The Guevara Gold Earring,A101019,large,men,earring,26.325599999999998
+1020,2019-02-08,casual,pearl,29,67,The Silas Bissell Pearl Necklace,A101020,small,men,necklace,14.706
+1021,2018-12-10,casual,pearl,1,147,The Boudin Pearl Necklace,A101021,small,men,necklace,9.804000000000002
+1022,2018-11-26,casual,pearl,35,189,The Lacombe Pearl Necklace,A101022,small,men,necklace,9.804000000000002
+1023,2018-12-28,casual,pearl,98,603,The Marx Pearl Necklace,A101023,small,men,necklace,9.804000000000002
+1024,2018-12-11,casual,pearl,23,228,The Guevara Pearl Necklace,A101024,small,men,necklace,14.706
+1025,2019-01-12,casual,pearl,95,948,The Silas Bissell Pearl Necklace,A101025,medium,men,necklace,7.353
+1026,2019-01-22,casual,pearl,93,305,The Boudin Pearl Necklace,A101026,medium,men,necklace,9.804000000000002
+1027,2019-01-10,casual,pearl,50,705,The Lacombe Pearl Necklace,A101027,medium,men,necklace,7.353
+1028,2018-11-15,casual,pearl,99,89,The Marx Pearl Necklace,A101028,medium,men,necklace,14.706
+1029,2019-01-06,casual,pearl,95,345,The Guevara Pearl Necklace,A101029,medium,men,necklace,12.255
+1030,2019-01-12,casual,pearl,6,832,The Silas Bissell Pearl Necklace,A101030,large,men,necklace,7.353
+1031,2018-12-06,casual,pearl,30,238,The Boudin Pearl Necklace,A101031,large,men,necklace,14.706
+1032,2018-12-25,casual,pearl,9,465,The Lacombe Pearl Necklace,A101032,large,men,necklace,12.255
+1033,2018-12-31,casual,pearl,29,859,The Marx Pearl Necklace,A101033,large,men,necklace,14.706
+1034,2019-01-11,casual,pearl,40,894,The Guevara Pearl Necklace,A101034,large,men,necklace,9.804000000000002
+1035,2018-11-19,casual,white,62,294,The Silas Bissell White Necklace,A101035,small,men,necklace,12.255
+1036,2019-01-20,casual,white,83,565,The Boudin White Necklace,A101036,small,men,necklace,12.255
+1037,2018-11-13,casual,white,99,735,The Lacombe White Necklace,A101037,small,men,necklace,9.804000000000002
+1038,2018-11-18,casual,white,38,773,The Marx White Necklace,A101038,small,men,necklace,7.353
+1039,2019-02-07,casual,white,32,32,The Guevara White Necklace,A101039,small,men,necklace,12.255
+1040,2018-11-27,casual,white,58,593,The Silas Bissell White Necklace,A101040,medium,men,necklace,9.804000000000002
+1041,2018-11-26,casual,white,96,146,The Boudin White Necklace,A101041,medium,men,necklace,7.353
+1042,2018-12-06,casual,white,98,182,The Lacombe White Necklace,A101042,medium,men,necklace,14.706
+1043,2019-01-18,casual,white,49,389,The Marx White Necklace,A101043,medium,men,necklace,14.706
+1044,2018-11-21,casual,white,0,516,The Guevara White Necklace,A101044,medium,men,necklace,12.255
+1045,2018-12-12,casual,white,48,915,The Silas Bissell White Necklace,A101045,large,men,necklace,14.706
+1046,2018-12-02,casual,white,1,110,The Boudin White Necklace,A101046,large,men,necklace,9.804000000000002
+1047,2019-01-29,casual,white,71,565,The Lacombe White Necklace,A101047,large,men,necklace,12.255
+1048,2018-12-05,casual,white,85,498,The Marx White Necklace,A101048,large,men,necklace,9.804000000000002
+1049,2018-11-23,casual,white,8,823,The Guevara White Necklace,A101049,large,men,necklace,9.804000000000002
+1050,2018-12-13,casual,amber,47,740,The Silas Bissell Amber Necklace,A101050,small,men,necklace,12.255
+1051,2019-01-24,casual,amber,79,337,The Boudin Amber Necklace,A101051,small,men,necklace,7.353
+1052,2019-02-02,casual,amber,9,792,The Lacombe Amber Necklace,A101052,small,men,necklace,12.255
+1053,2018-11-12,casual,amber,55,966,The Marx Amber Necklace,A101053,small,men,necklace,12.255
+1054,2018-11-25,casual,amber,10,145,The Guevara Amber Necklace,A101054,small,men,necklace,9.804000000000002
+1055,2018-12-20,casual,amber,17,61,The Silas Bissell Amber Necklace,A101055,medium,men,necklace,7.353
+1056,2018-11-27,casual,amber,81,823,The Boudin Amber Necklace,A101056,medium,men,necklace,9.804000000000002
+1057,2018-12-01,casual,amber,21,436,The Lacombe Amber Necklace,A101057,medium,men,necklace,12.255
+1058,2019-01-25,casual,amber,27,776,The Marx Amber Necklace,A101058,medium,men,necklace,12.255
+1059,2018-11-17,casual,amber,8,442,The Guevara Amber Necklace,A101059,medium,men,necklace,12.255
+1060,2019-01-25,casual,amber,38,627,The Silas Bissell Amber Necklace,A101060,large,men,necklace,14.706
+1061,2019-02-01,casual,amber,21,192,The Boudin Amber Necklace,A101061,large,men,necklace,9.804000000000002
+1062,2019-01-08,casual,amber,85,680,The Lacombe Amber Necklace,A101062,large,men,necklace,9.804000000000002
+1063,2018-12-05,casual,amber,79,491,The Marx Amber Necklace,A101063,large,men,necklace,7.353
+1064,2019-01-11,casual,amber,66,270,The Guevara Amber Necklace,A101064,large,men,necklace,12.255
+1065,2019-01-14,casual,gold,67,120,The Silas Bissell Gold Necklace,A101065,small,men,necklace,10.2942
+1066,2019-01-16,casual,gold,35,409,The Boudin Gold Necklace,A101066,small,men,necklace,17.157
+1067,2018-12-16,casual,gold,42,543,The Lacombe Gold Necklace,A101067,small,men,necklace,10.2942
+1068,2018-12-23,casual,gold,49,483,The Marx Gold Necklace,A101068,small,men,necklace,13.7256
+1069,2019-02-06,casual,gold,81,639,The Guevara Gold Necklace,A101069,small,men,necklace,13.7256
+1070,2019-01-26,casual,gold,47,590,The Silas Bissell Gold Necklace,A101070,medium,men,necklace,10.2942
+1071,2018-12-20,casual,gold,25,417,The Boudin Gold Necklace,A101071,medium,men,necklace,13.7256
+1072,2018-11-12,casual,gold,67,636,The Lacombe Gold Necklace,A101072,medium,men,necklace,13.7256
+1073,2018-12-22,casual,gold,91,364,The Marx Gold Necklace,A101073,medium,men,necklace,13.7256
+1074,2018-11-27,casual,gold,37,686,The Guevara Gold Necklace,A101074,medium,men,necklace,13.7256
+1075,2019-01-20,casual,gold,59,829,The Silas Bissell Gold Necklace,A101075,large,men,necklace,13.7256
+1076,2019-01-18,casual,gold,61,373,The Boudin Gold Necklace,A101076,large,men,necklace,17.157
+1077,2019-01-25,casual,gold,54,707,The Lacombe Gold Necklace,A101077,large,men,necklace,20.5884
+1078,2019-02-05,casual,gold,63,761,The Marx Gold Necklace,A101078,large,men,necklace,20.5884
+1079,2018-11-14,casual,gold,38,800,The Guevara Gold Necklace,A101079,large,men,necklace,13.7256
+1080,2018-12-25,casual,pearl,77,538,The Silas Bissell Pearl Bracelet,A101080,small,men,bracelet,36.096
+1081,2018-11-26,casual,pearl,37,9,The Boudin Pearl Bracelet,A101081,small,men,bracelet,18.048
+1082,2018-11-27,casual,pearl,0,0,The Lacombe Pearl Bracelet,A101082,small,men,bracelet,24.064
+1083,2018-11-13,casual,pearl,99,889,The Marx Pearl Bracelet,A101083,small,men,bracelet,18.048
+1084,2018-11-30,casual,pearl,47,117,The Guevara Pearl Bracelet,A101084,small,men,bracelet,24.064
+1085,2019-02-04,casual,pearl,10,480,The Silas Bissell Pearl Bracelet,A101085,medium,men,bracelet,18.048
+1086,2019-01-22,casual,pearl,42,109,The Boudin Pearl Bracelet,A101086,medium,men,bracelet,24.064
+1087,2018-11-18,casual,pearl,11,918,The Lacombe Pearl Bracelet,A101087,medium,men,bracelet,18.048
+1088,2019-01-31,casual,pearl,11,140,The Marx Pearl Bracelet,A101088,medium,men,bracelet,30.08
+1089,2019-01-25,casual,pearl,29,545,The Guevara Pearl Bracelet,A101089,medium,men,bracelet,18.048
+1090,2019-02-03,casual,pearl,16,574,The Silas Bissell Pearl Bracelet,A101090,large,men,bracelet,30.08
+1091,2018-11-16,casual,pearl,26,704,The Boudin Pearl Bracelet,A101091,large,men,bracelet,36.096
+1092,2018-12-28,casual,pearl,11,331,The Lacombe Pearl Bracelet,A101092,large,men,bracelet,24.064
+1093,2018-12-14,casual,pearl,17,572,The Marx Pearl Bracelet,A101093,large,men,bracelet,30.08
+1094,2019-01-29,casual,pearl,41,672,The Guevara Pearl Bracelet,A101094,large,men,bracelet,30.08
+1095,2019-02-01,casual,white,81,839,The Silas Bissell White Bracelet,A101095,small,men,bracelet,18.048
+1096,2018-11-29,casual,white,81,108,The Boudin White Bracelet,A101096,small,men,bracelet,36.096
+1097,2019-01-03,casual,white,94,849,The Lacombe White Bracelet,A101097,small,men,bracelet,24.064
+1098,2019-01-11,casual,white,14,395,The Marx White Bracelet,A101098,small,men,bracelet,36.096
+1099,2019-02-05,casual,white,87,452,The Guevara White Bracelet,A101099,small,men,bracelet,30.08
+1100,2019-02-01,casual,white,38,508,The Silas Bissell White Bracelet,A101100,medium,men,bracelet,36.096
+1101,2018-11-13,casual,white,92,100,The Boudin White Bracelet,A101101,medium,men,bracelet,30.08
+1102,2018-12-01,casual,white,42,179,The Lacombe White Bracelet,A101102,medium,men,bracelet,36.096
+1103,2018-12-08,casual,white,19,714,The Marx White Bracelet,A101103,medium,men,bracelet,36.096
+1104,2019-01-17,casual,white,11,140,The Guevara White Bracelet,A101104,medium,men,bracelet,36.096
+1105,2018-11-12,casual,white,88,388,The Silas Bissell White Bracelet,A101105,large,men,bracelet,30.08
+1106,2018-11-19,casual,white,89,811,The Boudin White Bracelet,A101106,large,men,bracelet,18.048
+1107,2019-01-08,casual,white,32,32,The Lacombe White Bracelet,A101107,large,men,bracelet,24.064
+1108,2019-01-03,casual,white,27,984,The Marx White Bracelet,A101108,large,men,bracelet,36.096
+1109,2018-11-18,casual,white,40,626,The Guevara White Bracelet,A101109,large,men,bracelet,24.064
+1110,2019-01-11,casual,amber,96,16,The Silas Bissell Amber Bracelet,A101110,small,men,bracelet,24.064
+1111,2018-12-21,casual,amber,77,533,The Boudin Amber Bracelet,A101111,small,men,bracelet,36.096
+1112,2018-11-27,casual,amber,51,440,The Lacombe Amber Bracelet,A101112,small,men,bracelet,24.064
+1113,2018-12-22,casual,amber,61,941,The Marx Amber Bracelet,A101113,small,men,bracelet,24.064
+1114,2019-01-31,casual,amber,3,471,The Guevara Amber Bracelet,A101114,small,men,bracelet,24.064
+1115,2018-11-11,casual,amber,35,144,The Silas Bissell Amber Bracelet,A101115,medium,men,bracelet,36.096
+1116,2018-12-27,casual,amber,96,872,The Boudin Amber Bracelet,A101116,medium,men,bracelet,30.08
+1117,2018-12-25,casual,amber,60,784,The Lacombe Amber Bracelet,A101117,medium,men,bracelet,30.08
+1118,2018-11-14,casual,amber,46,191,The Marx Amber Bracelet,A101118,medium,men,bracelet,24.064
+1119,2019-01-07,casual,amber,85,148,The Guevara Amber Bracelet,A101119,medium,men,bracelet,24.064
+1120,2018-11-13,casual,amber,80,965,The Silas Bissell Amber Bracelet,A101120,large,men,bracelet,18.048
+1121,2018-11-14,casual,amber,77,149,The Boudin Amber Bracelet,A101121,large,men,bracelet,36.096
+1122,2018-11-20,casual,amber,11,865,The Lacombe Amber Bracelet,A101122,large,men,bracelet,24.064
+1123,2018-12-17,casual,amber,95,630,The Marx Amber Bracelet,A101123,large,men,bracelet,18.048
+1124,2019-01-24,casual,amber,17,567,The Guevara Amber Bracelet,A101124,large,men,bracelet,30.08
+1125,2019-02-07,casual,gold,32,914,The Silas Bissell Gold Bracelet,A101125,small,men,bracelet,25.267199999999995
+1126,2018-11-28,casual,gold,58,741,The Boudin Gold Bracelet,A101126,small,men,bracelet,50.53439999999999
+1127,2018-11-28,casual,gold,88,608,The Lacombe Gold Bracelet,A101127,small,men,bracelet,50.53439999999999
+1128,2019-01-31,casual,gold,33,594,The Marx Gold Bracelet,A101128,small,men,bracelet,42.111999999999995
+1129,2019-01-23,casual,gold,8,106,The Guevara Gold Bracelet,A101129,small,men,bracelet,42.111999999999995
+1130,2019-01-01,casual,gold,72,134,The Silas Bissell Gold Bracelet,A101130,medium,men,bracelet,33.6896
+1131,2018-12-14,casual,gold,14,248,The Boudin Gold Bracelet,A101131,medium,men,bracelet,33.6896
+1132,2019-02-05,casual,gold,34,624,The Lacombe Gold Bracelet,A101132,medium,men,bracelet,33.6896
+1133,2018-12-30,casual,gold,93,391,The Marx Gold Bracelet,A101133,medium,men,bracelet,25.267199999999995
+1134,2018-12-01,casual,gold,46,821,The Guevara Gold Bracelet,A101134,medium,men,bracelet,50.53439999999999
+1135,2019-01-06,casual,gold,88,187,The Silas Bissell Gold Bracelet,A101135,large,men,bracelet,33.6896
+1136,2019-01-31,casual,gold,99,663,The Boudin Gold Bracelet,A101136,large,men,bracelet,50.53439999999999
+1137,2019-01-25,casual,gold,82,717,The Lacombe Gold Bracelet,A101137,large,men,bracelet,50.53439999999999
+1138,2018-11-24,casual,gold,99,511,The Marx Gold Bracelet,A101138,large,men,bracelet,25.267199999999995
+1139,2019-01-21,casual,gold,53,511,The Guevara Gold Bracelet,A101139,large,men,bracelet,50.53439999999999
+1140,2018-12-07,casual,pearl,63,689,The Silas Bissell Pearl Ring,A101140,small,men,ring,23.525
+1141,2018-12-02,casual,pearl,17,496,The Boudin Pearl Ring,A101141,small,men,ring,14.114999999999998
+1142,2018-11-17,casual,pearl,83,397,The Lacombe Pearl Ring,A101142,small,men,ring,18.82
+1143,2019-01-29,casual,pearl,76,231,The Marx Pearl Ring,A101143,small,men,ring,18.82
+1144,2019-01-23,casual,pearl,12,403,The Guevara Pearl Ring,A101144,small,men,ring,28.229999999999997
+1145,2018-12-18,casual,pearl,21,337,The Silas Bissell Pearl Ring,A101145,medium,men,ring,23.525
+1146,2019-01-05,casual,pearl,53,573,The Boudin Pearl Ring,A101146,medium,men,ring,14.114999999999998
+1147,2019-01-28,casual,pearl,7,945,The Lacombe Pearl Ring,A101147,medium,men,ring,23.525
+1148,2018-12-31,casual,pearl,55,447,The Marx Pearl Ring,A101148,medium,men,ring,18.82
+1149,2019-02-05,casual,pearl,3,961,The Guevara Pearl Ring,A101149,medium,men,ring,23.525
+1150,2018-12-05,casual,pearl,21,212,The Silas Bissell Pearl Ring,A101150,large,men,ring,18.82
+1151,2018-11-15,casual,pearl,16,606,The Boudin Pearl Ring,A101151,large,men,ring,14.114999999999998
+1152,2019-01-19,casual,pearl,3,394,The Lacombe Pearl Ring,A101152,large,men,ring,28.229999999999997
+1153,2018-12-09,casual,pearl,99,450,The Marx Pearl Ring,A101153,large,men,ring,28.229999999999997
+1154,2019-01-23,casual,pearl,86,379,The Guevara Pearl Ring,A101154,large,men,ring,23.525
+1155,2019-01-29,casual,white,93,286,The Silas Bissell White Ring,A101155,small,men,ring,23.525
+1156,2019-01-08,casual,white,91,472,The Boudin White Ring,A101156,small,men,ring,23.525
+1157,2018-12-30,casual,white,44,441,The Lacombe White Ring,A101157,small,men,ring,18.82
+1158,2019-01-26,casual,white,64,141,The Marx White Ring,A101158,small,men,ring,14.114999999999998
+1159,2019-01-26,casual,white,57,931,The Guevara White Ring,A101159,small,men,ring,14.114999999999998
+1160,2019-01-23,casual,white,41,87,The Silas Bissell White Ring,A101160,medium,men,ring,23.525
+1161,2019-01-31,casual,white,67,981,The Boudin White Ring,A101161,medium,men,ring,14.114999999999998
+1162,2018-11-15,casual,white,81,115,The Lacombe White Ring,A101162,medium,men,ring,14.114999999999998
+1163,2019-01-10,casual,white,40,625,The Marx White Ring,A101163,medium,men,ring,23.525
+1164,2019-01-15,casual,white,80,500,The Guevara White Ring,A101164,medium,men,ring,18.82
+1165,2019-01-21,casual,white,97,289,The Silas Bissell White Ring,A101165,large,men,ring,28.229999999999997
+1166,2018-12-10,casual,white,78,600,The Boudin White Ring,A101166,large,men,ring,14.114999999999998
+1167,2019-01-22,casual,white,96,778,The Lacombe White Ring,A101167,large,men,ring,18.82
+1168,2019-01-16,casual,white,35,838,The Marx White Ring,A101168,large,men,ring,28.229999999999997
+1169,2018-12-25,casual,white,76,841,The Guevara White Ring,A101169,large,men,ring,28.229999999999997
+1170,2018-12-08,casual,amber,14,126,The Silas Bissell Amber Ring,A101170,small,men,ring,23.525
+1171,2018-12-06,casual,amber,8,971,The Boudin Amber Ring,A101171,small,men,ring,23.525
+1172,2018-12-28,casual,amber,6,247,The Lacombe Amber Ring,A101172,small,men,ring,28.229999999999997
+1173,2018-11-24,casual,amber,87,878,The Marx Amber Ring,A101173,small,men,ring,14.114999999999998
+1174,2018-12-14,casual,amber,48,973,The Guevara Amber Ring,A101174,small,men,ring,18.82
+1175,2018-12-20,casual,amber,94,248,The Silas Bissell Amber Ring,A101175,medium,men,ring,14.114999999999998
+1176,2018-12-16,casual,amber,97,941,The Boudin Amber Ring,A101176,medium,men,ring,14.114999999999998
+1177,2018-12-01,casual,amber,90,260,The Lacombe Amber Ring,A101177,medium,men,ring,18.82
+1178,2019-02-07,casual,amber,52,844,The Marx Amber Ring,A101178,medium,men,ring,14.114999999999998
+1179,2018-11-11,casual,amber,14,553,The Guevara Amber Ring,A101179,medium,men,ring,23.525
+1180,2019-01-01,casual,amber,94,80,The Silas Bissell Amber Ring,A101180,large,men,ring,23.525
+1181,2019-01-14,casual,amber,49,705,The Boudin Amber Ring,A101181,large,men,ring,18.82
+1182,2018-12-27,casual,amber,7,158,The Lacombe Amber Ring,A101182,large,men,ring,14.114999999999998
+1183,2018-12-10,casual,amber,9,449,The Marx Amber Ring,A101183,large,men,ring,23.525
+1184,2018-11-16,casual,amber,59,723,The Guevara Amber Ring,A101184,large,men,ring,14.114999999999998
+1185,2019-01-15,casual,gold,45,341,The Silas Bissell Gold Ring,A101185,small,men,ring,39.52199999999999
+1186,2018-12-24,casual,gold,35,135,The Boudin Gold Ring,A101186,small,men,ring,39.52199999999999
+1187,2018-12-22,casual,gold,91,788,The Lacombe Gold Ring,A101187,small,men,ring,26.348
+1188,2019-01-14,casual,gold,17,701,The Marx Gold Ring,A101188,small,men,ring,32.934999999999995
+1189,2018-11-13,casual,gold,57,310,The Guevara Gold Ring,A101189,small,men,ring,19.760999999999996
+1190,2018-11-27,casual,gold,15,551,The Silas Bissell Gold Ring,A101190,medium,men,ring,32.934999999999995
+1191,2018-11-29,casual,gold,83,449,The Boudin Gold Ring,A101191,medium,men,ring,19.760999999999996
+1192,2018-11-19,casual,gold,65,845,The Lacombe Gold Ring,A101192,medium,men,ring,26.348
+1193,2019-01-14,casual,gold,24,8,The Marx Gold Ring,A101193,medium,men,ring,39.52199999999999
+1194,2018-11-25,casual,gold,51,78,The Guevara Gold Ring,A101194,medium,men,ring,26.348
+1195,2019-01-17,casual,gold,83,349,The Silas Bissell Gold Ring,A101195,large,men,ring,26.348
+1196,2018-11-21,casual,gold,76,407,The Boudin Gold Ring,A101196,large,men,ring,39.52199999999999
+1197,2019-01-26,casual,gold,92,537,The Lacombe Gold Ring,A101197,large,men,ring,19.760999999999996
+1198,2019-01-13,casual,gold,95,446,The Marx Gold Ring,A101198,large,men,ring,32.934999999999995
+1199,2018-12-29,casual,gold,75,225,The Guevara Gold Ring,A101199,large,men,ring,19.760999999999996
+1200,2018-12-27,casual,pearl,99,425,The Silas Bissell Pearl Earring,A101200,small,women,earring,19.035
+1201,2018-12-13,casual,pearl,84,957,The Boudin Pearl Earring,A101201,small,women,earring,22.842
+1202,2018-12-11,casual,pearl,37,122,The Lacombe Pearl Earring,A101202,small,women,earring,19.035
+1203,2018-11-23,casual,pearl,99,643,The Marx Pearl Earring,A101203,small,women,earring,22.842
+1204,2019-02-02,casual,pearl,90,247,The Guevara Pearl Earring,A101204,small,women,earring,19.035
+1205,2019-02-04,casual,pearl,74,762,The Silas Bissell Pearl Earring,A101205,medium,women,earring,19.035
+1206,2018-12-02,casual,pearl,35,967,The Boudin Pearl Earring,A101206,medium,women,earring,11.421
+1207,2018-12-14,casual,pearl,42,554,The Lacombe Pearl Earring,A101207,medium,women,earring,15.228000000000002
+1208,2019-01-24,casual,pearl,50,974,The Marx Pearl Earring,A101208,medium,women,earring,19.035
+1209,2018-12-24,casual,pearl,95,412,The Guevara Pearl Earring,A101209,medium,women,earring,11.421
+1210,2018-12-15,casual,pearl,19,131,The Silas Bissell Pearl Earring,A101210,large,women,earring,11.421
+1211,2019-01-29,casual,pearl,76,458,The Boudin Pearl Earring,A101211,large,women,earring,15.228000000000002
+1212,2019-01-21,casual,pearl,13,539,The Lacombe Pearl Earring,A101212,large,women,earring,15.228000000000002
+1213,2019-02-05,casual,pearl,98,117,The Marx Pearl Earring,A101213,large,women,earring,11.421
+1214,2018-12-07,casual,pearl,5,261,The Guevara Pearl Earring,A101214,large,women,earring,19.035
+1215,2018-11-25,casual,white,34,236,The Silas Bissell White Earring,A101215,small,women,earring,11.421
+1216,2018-11-11,casual,white,46,750,The Boudin White Earring,A101216,small,women,earring,22.842
+1217,2019-01-11,casual,white,1,933,The Lacombe White Earring,A101217,small,women,earring,22.842
+1218,2018-11-16,casual,white,43,640,The Marx White Earring,A101218,small,women,earring,15.228000000000002
+1219,2018-11-18,casual,white,62,53,The Guevara White Earring,A101219,small,women,earring,19.035
+1220,2018-11-19,casual,white,49,922,The Silas Bissell White Earring,A101220,medium,women,earring,15.228000000000002
+1221,2018-11-25,casual,white,10,865,The Boudin White Earring,A101221,medium,women,earring,11.421
+1222,2019-01-02,casual,white,1,394,The Lacombe White Earring,A101222,medium,women,earring,22.842
+1223,2018-11-11,casual,white,34,728,The Marx White Earring,A101223,medium,women,earring,22.842
+1224,2019-01-14,casual,white,45,25,The Guevara White Earring,A101224,medium,women,earring,22.842
+1225,2019-01-19,casual,white,52,6,The Silas Bissell White Earring,A101225,large,women,earring,11.421
+1226,2018-12-28,casual,white,98,450,The Boudin White Earring,A101226,large,women,earring,19.035
+1227,2019-01-06,casual,white,92,754,The Lacombe White Earring,A101227,large,women,earring,15.228000000000002
+1228,2019-01-12,casual,white,51,445,The Marx White Earring,A101228,large,women,earring,19.035
+1229,2019-01-25,casual,white,54,35,The Guevara White Earring,A101229,large,women,earring,22.842
+1230,2019-01-13,casual,amber,11,164,The Silas Bissell Amber Earring,A101230,small,women,earring,19.035
+1231,2018-12-28,casual,amber,38,367,The Boudin Amber Earring,A101231,small,women,earring,22.842
+1232,2018-12-26,casual,amber,15,837,The Lacombe Amber Earring,A101232,small,women,earring,15.228000000000002
+1233,2019-01-14,casual,amber,48,734,The Marx Amber Earring,A101233,small,women,earring,19.035
+1234,2019-01-26,casual,amber,17,327,The Guevara Amber Earring,A101234,small,women,earring,11.421
+1235,2019-02-02,casual,amber,9,747,The Silas Bissell Amber Earring,A101235,medium,women,earring,15.228000000000002
+1236,2019-01-23,casual,amber,68,693,The Boudin Amber Earring,A101236,medium,women,earring,15.228000000000002
+1237,2018-12-21,casual,amber,21,417,The Lacombe Amber Earring,A101237,medium,women,earring,11.421
+1238,2019-01-18,casual,amber,83,137,The Marx Amber Earring,A101238,medium,women,earring,22.842
+1239,2018-12-04,casual,amber,95,650,The Guevara Amber Earring,A101239,medium,women,earring,22.842
+1240,2019-01-29,casual,amber,7,331,The Silas Bissell Amber Earring,A101240,large,women,earring,19.035
+1241,2019-01-20,casual,amber,47,528,The Boudin Amber Earring,A101241,large,women,earring,22.842
+1242,2019-02-06,casual,amber,78,414,The Lacombe Amber Earring,A101242,large,women,earring,15.228000000000002
+1243,2018-12-09,casual,amber,91,603,The Marx Amber Earring,A101243,large,women,earring,15.228000000000002
+1244,2019-01-12,casual,amber,14,396,The Guevara Amber Earring,A101244,large,women,earring,22.842
+1245,2019-01-25,casual,gold,78,472,The Silas Bissell Gold Earring,A101245,small,women,earring,31.978799999999996
+1246,2018-12-29,casual,gold,15,766,The Boudin Gold Earring,A101246,small,women,earring,31.978799999999996
+1247,2019-01-04,casual,gold,39,581,The Lacombe Gold Earring,A101247,small,women,earring,15.989399999999998
+1248,2018-12-04,casual,gold,76,983,The Marx Gold Earring,A101248,small,women,earring,21.3192
+1249,2018-12-16,casual,gold,74,194,The Guevara Gold Earring,A101249,small,women,earring,31.978799999999996
+1250,2019-01-12,casual,gold,3,589,The Silas Bissell Gold Earring,A101250,medium,women,earring,26.648999999999997
+1251,2019-01-28,casual,gold,49,858,The Boudin Gold Earring,A101251,medium,women,earring,31.978799999999996
+1252,2018-12-20,casual,gold,29,271,The Lacombe Gold Earring,A101252,medium,women,earring,21.3192
+1253,2019-01-17,casual,gold,81,54,The Marx Gold Earring,A101253,medium,women,earring,26.648999999999997
+1254,2018-11-12,casual,gold,85,857,The Guevara Gold Earring,A101254,medium,women,earring,15.989399999999998
+1255,2018-12-23,casual,gold,35,674,The Silas Bissell Gold Earring,A101255,large,women,earring,21.3192
+1256,2019-02-06,casual,gold,80,731,The Boudin Gold Earring,A101256,large,women,earring,15.989399999999998
+1257,2018-12-29,casual,gold,5,800,The Lacombe Gold Earring,A101257,large,women,earring,21.3192
+1258,2018-11-18,casual,gold,18,183,The Marx Gold Earring,A101258,large,women,earring,21.3192
+1259,2019-01-19,casual,gold,66,388,The Guevara Gold Earring,A101259,large,women,earring,26.648999999999997
+1260,2018-11-17,casual,pearl,12,802,The Silas Bissell Pearl Necklace,A101260,small,women,necklace,28.575
+1261,2019-01-03,casual,pearl,43,336,The Boudin Pearl Necklace,A101261,small,women,necklace,22.86
+1262,2018-12-20,casual,pearl,58,633,The Lacombe Pearl Necklace,A101262,small,women,necklace,34.29
+1263,2018-11-19,casual,pearl,38,475,The Marx Pearl Necklace,A101263,small,women,necklace,34.29
+1264,2018-12-25,casual,pearl,46,779,The Guevara Pearl Necklace,A101264,small,women,necklace,28.575
+1265,2018-12-02,casual,pearl,70,35,The Silas Bissell Pearl Necklace,A101265,medium,women,necklace,34.29
+1266,2018-11-21,casual,pearl,12,283,The Boudin Pearl Necklace,A101266,medium,women,necklace,17.145
+1267,2018-12-25,casual,pearl,51,31,The Lacombe Pearl Necklace,A101267,medium,women,necklace,22.86
+1268,2018-11-17,casual,pearl,18,549,The Marx Pearl Necklace,A101268,medium,women,necklace,22.86
+1269,2018-12-11,casual,pearl,44,879,The Guevara Pearl Necklace,A101269,medium,women,necklace,28.575
+1270,2018-11-26,casual,pearl,81,9,The Silas Bissell Pearl Necklace,A101270,large,women,necklace,28.575
+1271,2018-12-29,casual,pearl,80,2,The Boudin Pearl Necklace,A101271,large,women,necklace,17.145
+1272,2019-01-23,casual,pearl,6,463,The Lacombe Pearl Necklace,A101272,large,women,necklace,17.145
+1273,2018-12-12,casual,pearl,98,99,The Marx Pearl Necklace,A101273,large,women,necklace,22.86
+1274,2018-11-24,casual,pearl,83,724,The Guevara Pearl Necklace,A101274,large,women,necklace,22.86
+1275,2019-02-01,casual,white,42,808,The Silas Bissell White Necklace,A101275,small,women,necklace,17.145
+1276,2019-01-03,casual,white,28,227,The Boudin White Necklace,A101276,small,women,necklace,17.145
+1277,2018-12-05,casual,white,34,298,The Lacombe White Necklace,A101277,small,women,necklace,22.86
+1278,2019-01-11,casual,white,82,166,The Marx White Necklace,A101278,small,women,necklace,22.86
+1279,2018-11-18,casual,white,26,621,The Guevara White Necklace,A101279,small,women,necklace,34.29
+1280,2018-12-24,casual,white,95,351,The Silas Bissell White Necklace,A101280,medium,women,necklace,22.86
+1281,2019-01-04,casual,white,34,292,The Boudin White Necklace,A101281,medium,women,necklace,17.145
+1282,2018-11-11,casual,white,75,244,The Lacombe White Necklace,A101282,medium,women,necklace,22.86
+1283,2018-11-24,casual,white,68,8,The Marx White Necklace,A101283,medium,women,necklace,28.575
+1284,2019-01-23,casual,white,9,933,The Guevara White Necklace,A101284,medium,women,necklace,17.145
+1285,2019-01-02,casual,white,39,185,The Silas Bissell White Necklace,A101285,large,women,necklace,28.575
+1286,2018-12-17,casual,white,48,209,The Boudin White Necklace,A101286,large,women,necklace,28.575
+1287,2018-12-15,casual,white,52,592,The Lacombe White Necklace,A101287,large,women,necklace,17.145
+1288,2018-12-22,casual,white,98,437,The Marx White Necklace,A101288,large,women,necklace,34.29
+1289,2018-11-19,casual,white,27,173,The Guevara White Necklace,A101289,large,women,necklace,17.145
+1290,2018-11-12,casual,amber,64,373,The Silas Bissell Amber Necklace,A101290,small,women,necklace,17.145
+1291,2019-02-04,casual,amber,17,699,The Boudin Amber Necklace,A101291,small,women,necklace,22.86
+1292,2018-12-23,casual,amber,91,336,The Lacombe Amber Necklace,A101292,small,women,necklace,34.29
+1293,2018-11-21,casual,amber,69,491,The Marx Amber Necklace,A101293,small,women,necklace,17.145
+1294,2018-12-25,casual,amber,46,331,The Guevara Amber Necklace,A101294,small,women,necklace,22.86
+1295,2019-01-30,casual,amber,57,467,The Silas Bissell Amber Necklace,A101295,medium,women,necklace,22.86
+1296,2018-11-26,casual,amber,84,720,The Boudin Amber Necklace,A101296,medium,women,necklace,34.29
+1297,2018-12-15,casual,amber,86,529,The Lacombe Amber Necklace,A101297,medium,women,necklace,17.145
+1298,2019-01-17,casual,amber,60,793,The Marx Amber Necklace,A101298,medium,women,necklace,17.145
+1299,2019-01-03,casual,amber,49,60,The Guevara Amber Necklace,A101299,medium,women,necklace,22.86
+1300,2019-01-10,casual,amber,25,787,The Silas Bissell Amber Necklace,A101300,large,women,necklace,17.145
+1301,2019-01-15,casual,amber,49,554,The Boudin Amber Necklace,A101301,large,women,necklace,17.145
+1302,2018-11-15,casual,amber,23,391,The Lacombe Amber Necklace,A101302,large,women,necklace,17.145
+1303,2019-01-25,casual,amber,85,230,The Marx Amber Necklace,A101303,large,women,necklace,34.29
+1304,2018-11-22,casual,amber,90,757,The Guevara Amber Necklace,A101304,large,women,necklace,34.29
+1305,2018-11-18,casual,gold,95,572,The Silas Bissell Gold Necklace,A101305,small,women,necklace,24.002999999999997
+1306,2018-12-02,casual,gold,21,490,The Boudin Gold Necklace,A101306,small,women,necklace,40.004999999999995
+1307,2019-02-08,casual,gold,29,562,The Lacombe Gold Necklace,A101307,small,women,necklace,48.00599999999999
+1308,2018-11-20,casual,gold,35,237,The Marx Gold Necklace,A101308,small,women,necklace,40.004999999999995
+1309,2019-01-16,casual,gold,47,713,The Guevara Gold Necklace,A101309,small,women,necklace,24.002999999999997
+1310,2018-12-24,casual,gold,98,153,The Silas Bissell Gold Necklace,A101310,medium,women,necklace,40.004999999999995
+1311,2018-12-12,casual,gold,72,927,The Boudin Gold Necklace,A101311,medium,women,necklace,48.00599999999999
+1312,2018-11-20,casual,gold,70,569,The Lacombe Gold Necklace,A101312,medium,women,necklace,32.004
+1313,2018-12-20,casual,gold,44,825,The Marx Gold Necklace,A101313,medium,women,necklace,40.004999999999995
+1314,2019-01-20,casual,gold,99,951,The Guevara Gold Necklace,A101314,medium,women,necklace,40.004999999999995
+1315,2018-11-16,casual,gold,62,657,The Silas Bissell Gold Necklace,A101315,large,women,necklace,32.004
+1316,2018-12-11,casual,gold,60,492,The Boudin Gold Necklace,A101316,large,women,necklace,40.004999999999995
+1317,2019-01-17,casual,gold,44,19,The Lacombe Gold Necklace,A101317,large,women,necklace,48.00599999999999
+1318,2018-12-05,casual,gold,56,98,The Marx Gold Necklace,A101318,large,women,necklace,24.002999999999997
+1319,2019-01-09,casual,gold,66,218,The Guevara Gold Necklace,A101319,large,women,necklace,32.004
+1320,2018-12-21,casual,pearl,59,827,The Silas Bissell Pearl Bracelet,A101320,small,women,bracelet,40.305
+1321,2019-01-18,casual,pearl,64,568,The Boudin Pearl Bracelet,A101321,small,women,bracelet,24.183
+1322,2019-01-07,casual,pearl,23,146,The Lacombe Pearl Bracelet,A101322,small,women,bracelet,48.366
+1323,2019-01-27,casual,pearl,2,372,The Marx Pearl Bracelet,A101323,small,women,bracelet,40.305
+1324,2018-12-25,casual,pearl,67,924,The Guevara Pearl Bracelet,A101324,small,women,bracelet,48.366
+1325,2019-01-27,casual,pearl,90,323,The Silas Bissell Pearl Bracelet,A101325,medium,women,bracelet,48.366
+1326,2019-01-25,casual,pearl,35,993,The Boudin Pearl Bracelet,A101326,medium,women,bracelet,32.244
+1327,2019-01-19,casual,pearl,36,511,The Lacombe Pearl Bracelet,A101327,medium,women,bracelet,40.305
+1328,2018-12-01,casual,pearl,2,902,The Marx Pearl Bracelet,A101328,medium,women,bracelet,24.183
+1329,2019-01-29,casual,pearl,80,513,The Guevara Pearl Bracelet,A101329,medium,women,bracelet,32.244
+1330,2019-01-17,casual,pearl,75,976,The Silas Bissell Pearl Bracelet,A101330,large,women,bracelet,24.183
+1331,2018-11-29,casual,pearl,96,218,The Boudin Pearl Bracelet,A101331,large,women,bracelet,32.244
+1332,2018-11-30,casual,pearl,34,565,The Lacombe Pearl Bracelet,A101332,large,women,bracelet,48.366
+1333,2019-01-25,casual,pearl,60,262,The Marx Pearl Bracelet,A101333,large,women,bracelet,32.244
+1334,2018-12-15,casual,pearl,56,904,The Guevara Pearl Bracelet,A101334,large,women,bracelet,24.183
+1335,2018-11-14,casual,white,39,891,The Silas Bissell White Bracelet,A101335,small,women,bracelet,24.183
+1336,2018-12-12,casual,white,16,365,The Boudin White Bracelet,A101336,small,women,bracelet,24.183
+1337,2019-01-09,casual,white,69,995,The Lacombe White Bracelet,A101337,small,women,bracelet,48.366
+1338,2018-12-29,casual,white,22,301,The Marx White Bracelet,A101338,small,women,bracelet,48.366
+1339,2018-11-24,casual,white,17,530,The Guevara White Bracelet,A101339,small,women,bracelet,48.366
+1340,2018-12-28,casual,white,76,480,The Silas Bissell White Bracelet,A101340,medium,women,bracelet,40.305
+1341,2018-12-30,casual,white,81,117,The Boudin White Bracelet,A101341,medium,women,bracelet,40.305
+1342,2018-12-23,casual,white,43,214,The Lacombe White Bracelet,A101342,medium,women,bracelet,32.244
+1343,2019-01-26,casual,white,45,476,The Marx White Bracelet,A101343,medium,women,bracelet,48.366
+1344,2018-11-20,casual,white,3,61,The Guevara White Bracelet,A101344,medium,women,bracelet,48.366
+1345,2019-01-14,casual,white,19,812,The Silas Bissell White Bracelet,A101345,large,women,bracelet,48.366
+1346,2018-12-21,casual,white,81,435,The Boudin White Bracelet,A101346,large,women,bracelet,48.366
+1347,2019-01-27,casual,white,24,289,The Lacombe White Bracelet,A101347,large,women,bracelet,32.244
+1348,2019-01-19,casual,white,49,54,The Marx White Bracelet,A101348,large,women,bracelet,24.183
+1349,2018-12-19,casual,white,54,208,The Guevara White Bracelet,A101349,large,women,bracelet,24.183
+1350,2019-01-31,casual,amber,31,991,The Silas Bissell Amber Bracelet,A101350,small,women,bracelet,40.305
+1351,2019-01-30,casual,amber,44,453,The Boudin Amber Bracelet,A101351,small,women,bracelet,48.366
+1352,2019-02-03,casual,amber,62,409,The Lacombe Amber Bracelet,A101352,small,women,bracelet,40.305
+1353,2019-01-07,casual,amber,51,289,The Marx Amber Bracelet,A101353,small,women,bracelet,24.183
+1354,2018-11-30,casual,amber,93,697,The Guevara Amber Bracelet,A101354,small,women,bracelet,24.183
+1355,2019-01-17,casual,amber,81,199,The Silas Bissell Amber Bracelet,A101355,medium,women,bracelet,40.305
+1356,2019-01-06,casual,amber,76,229,The Boudin Amber Bracelet,A101356,medium,women,bracelet,40.305
+1357,2018-12-02,casual,amber,29,737,The Lacombe Amber Bracelet,A101357,medium,women,bracelet,32.244
+1358,2019-01-28,casual,amber,95,584,The Marx Amber Bracelet,A101358,medium,women,bracelet,40.305
+1359,2019-01-14,casual,amber,3,80,The Guevara Amber Bracelet,A101359,medium,women,bracelet,48.366
+1360,2019-01-16,casual,amber,52,168,The Silas Bissell Amber Bracelet,A101360,large,women,bracelet,40.305
+1361,2018-11-24,casual,amber,55,292,The Boudin Amber Bracelet,A101361,large,women,bracelet,24.183
+1362,2018-11-28,casual,amber,60,61,The Lacombe Amber Bracelet,A101362,large,women,bracelet,40.305
+1363,2019-02-02,casual,amber,92,375,The Marx Amber Bracelet,A101363,large,women,bracelet,32.244
+1364,2019-01-13,casual,amber,96,913,The Guevara Amber Bracelet,A101364,large,women,bracelet,24.183
+1365,2019-02-05,casual,gold,45,31,The Silas Bissell Gold Bracelet,A101365,small,women,bracelet,33.856199999999994
+1366,2018-12-21,casual,gold,37,607,The Boudin Gold Bracelet,A101366,small,women,bracelet,45.1416
+1367,2018-12-04,casual,gold,50,676,The Lacombe Gold Bracelet,A101367,small,women,bracelet,33.856199999999994
+1368,2018-11-20,casual,gold,82,864,The Marx Gold Bracelet,A101368,small,women,bracelet,56.42699999999999
+1369,2018-12-25,casual,gold,53,801,The Guevara Gold Bracelet,A101369,small,women,bracelet,67.71239999999999
+1370,2018-12-01,casual,gold,57,53,The Silas Bissell Gold Bracelet,A101370,medium,women,bracelet,45.1416
+1371,2018-12-19,casual,gold,58,188,The Boudin Gold Bracelet,A101371,medium,women,bracelet,67.71239999999999
+1372,2018-12-09,casual,gold,76,642,The Lacombe Gold Bracelet,A101372,medium,women,bracelet,67.71239999999999
+1373,2019-02-06,casual,gold,79,353,The Marx Gold Bracelet,A101373,medium,women,bracelet,33.856199999999994
+1374,2019-02-05,casual,gold,48,14,The Guevara Gold Bracelet,A101374,medium,women,bracelet,33.856199999999994
+1375,2018-11-20,casual,gold,90,765,The Silas Bissell Gold Bracelet,A101375,large,women,bracelet,56.42699999999999
+1376,2019-01-28,casual,gold,8,957,The Boudin Gold Bracelet,A101376,large,women,bracelet,33.856199999999994
+1377,2019-01-27,casual,gold,18,536,The Lacombe Gold Bracelet,A101377,large,women,bracelet,45.1416
+1378,2019-01-22,casual,gold,4,400,The Marx Gold Bracelet,A101378,large,women,bracelet,67.71239999999999
+1379,2018-12-12,casual,gold,54,299,The Guevara Gold Bracelet,A101379,large,women,bracelet,45.1416
+1380,2018-11-28,casual,pearl,35,883,The Silas Bissell Pearl Ring,A101380,small,women,ring,59.77799999999999
+1381,2018-12-19,casual,pearl,19,832,The Boudin Pearl Ring,A101381,small,women,ring,29.888999999999996
+1382,2019-01-12,casual,pearl,51,836,The Lacombe Pearl Ring,A101382,small,women,ring,59.77799999999999
+1383,2019-01-03,casual,pearl,99,160,The Marx Pearl Ring,A101383,small,women,ring,29.888999999999996
+1384,2018-11-27,casual,pearl,59,508,The Guevara Pearl Ring,A101384,small,women,ring,49.815
+1385,2018-12-18,casual,pearl,12,120,The Silas Bissell Pearl Ring,A101385,medium,women,ring,49.815
+1386,2019-01-15,casual,pearl,97,544,The Boudin Pearl Ring,A101386,medium,women,ring,39.852000000000004
+1387,2019-02-01,casual,pearl,33,569,The Lacombe Pearl Ring,A101387,medium,women,ring,49.815
+1388,2018-12-30,casual,pearl,85,205,The Marx Pearl Ring,A101388,medium,women,ring,39.852000000000004
+1389,2019-01-27,casual,pearl,97,88,The Guevara Pearl Ring,A101389,medium,women,ring,49.815
+1390,2018-11-24,casual,pearl,12,20,The Silas Bissell Pearl Ring,A101390,large,women,ring,59.77799999999999
+1391,2018-12-03,casual,pearl,14,203,The Boudin Pearl Ring,A101391,large,women,ring,59.77799999999999
+1392,2018-12-04,casual,pearl,33,456,The Lacombe Pearl Ring,A101392,large,women,ring,59.77799999999999
+1393,2018-12-03,casual,pearl,62,151,The Marx Pearl Ring,A101393,large,women,ring,49.815
+1394,2018-11-15,casual,pearl,69,739,The Guevara Pearl Ring,A101394,large,women,ring,59.77799999999999
+1395,2018-12-25,casual,white,11,695,The Silas Bissell White Ring,A101395,small,women,ring,49.815
+1396,2019-01-21,casual,white,23,357,The Boudin White Ring,A101396,small,women,ring,59.77799999999999
+1397,2018-11-13,casual,white,58,171,The Lacombe White Ring,A101397,small,women,ring,39.852000000000004
+1398,2018-11-11,casual,white,31,876,The Marx White Ring,A101398,small,women,ring,39.852000000000004
+1399,2019-01-29,casual,white,16,365,The Guevara White Ring,A101399,small,women,ring,29.888999999999996
+1400,2018-11-26,casual,white,19,588,The Silas Bissell White Ring,A101400,medium,women,ring,49.815
+1401,2019-01-21,casual,white,6,730,The Boudin White Ring,A101401,medium,women,ring,49.815
+1402,2018-11-12,casual,white,55,135,The Lacombe White Ring,A101402,medium,women,ring,39.852000000000004
+1403,2018-12-17,casual,white,46,331,The Marx White Ring,A101403,medium,women,ring,39.852000000000004
+1404,2019-01-30,casual,white,25,637,The Guevara White Ring,A101404,medium,women,ring,39.852000000000004
+1405,2018-12-13,casual,white,9,645,The Silas Bissell White Ring,A101405,large,women,ring,39.852000000000004
+1406,2018-12-05,casual,white,3,453,The Boudin White Ring,A101406,large,women,ring,29.888999999999996
+1407,2019-02-03,casual,white,15,311,The Lacombe White Ring,A101407,large,women,ring,49.815
+1408,2018-12-05,casual,white,74,472,The Marx White Ring,A101408,large,women,ring,39.852000000000004
+1409,2018-12-27,casual,white,32,521,The Guevara White Ring,A101409,large,women,ring,49.815
+1410,2018-11-24,casual,amber,60,391,The Silas Bissell Amber Ring,A101410,small,women,ring,29.888999999999996
+1411,2018-12-22,casual,amber,55,867,The Boudin Amber Ring,A101411,small,women,ring,29.888999999999996
+1412,2019-01-24,casual,amber,18,933,The Lacombe Amber Ring,A101412,small,women,ring,29.888999999999996
+1413,2019-01-27,casual,amber,53,861,The Marx Amber Ring,A101413,small,women,ring,39.852000000000004
+1414,2019-01-25,casual,amber,78,384,The Guevara Amber Ring,A101414,small,women,ring,49.815
+1415,2018-12-13,casual,amber,3,772,The Silas Bissell Amber Ring,A101415,medium,women,ring,49.815
+1416,2019-01-19,casual,amber,22,932,The Boudin Amber Ring,A101416,medium,women,ring,29.888999999999996
+1417,2018-12-15,casual,amber,50,895,The Lacombe Amber Ring,A101417,medium,women,ring,39.852000000000004
+1418,2018-12-17,casual,amber,78,364,The Marx Amber Ring,A101418,medium,women,ring,49.815
+1419,2019-01-15,casual,amber,15,395,The Guevara Amber Ring,A101419,medium,women,ring,49.815
+1420,2019-01-13,casual,amber,5,437,The Silas Bissell Amber Ring,A101420,large,women,ring,39.852000000000004
+1421,2018-12-26,casual,amber,37,392,The Boudin Amber Ring,A101421,large,women,ring,49.815
+1422,2018-11-21,casual,amber,7,436,The Lacombe Amber Ring,A101422,large,women,ring,49.815
+1423,2018-11-21,casual,amber,19,18,The Marx Amber Ring,A101423,large,women,ring,59.77799999999999
+1424,2018-11-22,casual,amber,73,708,The Guevara Amber Ring,A101424,large,women,ring,49.815
+1425,2018-11-16,casual,gold,77,998,The Silas Bissell Gold Ring,A101425,small,women,ring,41.84459999999999
+1426,2019-01-29,casual,gold,12,381,The Boudin Gold Ring,A101426,small,women,ring,83.68919999999999
+1427,2018-11-25,casual,gold,79,547,The Lacombe Gold Ring,A101427,small,women,ring,41.84459999999999
+1428,2018-12-20,casual,gold,82,636,The Marx Gold Ring,A101428,small,women,ring,41.84459999999999
+1429,2018-11-25,casual,gold,9,670,The Guevara Gold Ring,A101429,small,women,ring,83.68919999999999
+1430,2018-12-27,casual,gold,0,600,The Silas Bissell Gold Ring,A101430,medium,women,ring,55.79279999999999
+1431,2018-11-23,casual,gold,4,591,The Boudin Gold Ring,A101431,medium,women,ring,69.74099999999999
+1432,2019-01-27,casual,gold,66,107,The Lacombe Gold Ring,A101432,medium,women,ring,41.84459999999999
+1433,2018-11-20,casual,gold,66,547,The Marx Gold Ring,A101433,medium,women,ring,69.74099999999999
+1434,2019-01-06,casual,gold,0,871,The Guevara Gold Ring,A101434,medium,women,ring,83.68919999999999
+1435,2019-01-08,casual,gold,90,52,The Silas Bissell Gold Ring,A101435,large,women,ring,83.68919999999999
+1436,2018-12-24,casual,gold,63,813,The Boudin Gold Ring,A101436,large,women,ring,69.74099999999999
+1437,2018-11-22,casual,gold,94,77,The Lacombe Gold Ring,A101437,large,women,ring,55.79279999999999
+1438,2019-02-08,casual,gold,1,421,The Marx Gold Ring,A101438,large,women,ring,55.79279999999999
+1439,2018-12-17,casual,gold,40,236,The Guevara Gold Ring,A101439,large,women,ring,69.74099999999999
+1440,2019-01-14,casual,pearl,51,586,The Silas Bissell Pearl Earring,A101440,small,baby,earring,15.264
+1441,2019-02-01,casual,pearl,51,61,The Boudin Pearl Earring,A101441,small,baby,earring,30.528
+1442,2019-01-30,casual,pearl,23,669,The Lacombe Pearl Earring,A101442,small,baby,earring,30.528
+1443,2018-12-28,casual,pearl,87,33,The Marx Pearl Earring,A101443,small,baby,earring,25.44
+1444,2019-02-05,casual,pearl,49,167,The Guevara Pearl Earring,A101444,small,baby,earring,20.352000000000004
+1445,2018-12-15,casual,pearl,3,425,The Silas Bissell Pearl Earring,A101445,medium,baby,earring,20.352000000000004
+1446,2019-01-26,casual,pearl,98,513,The Boudin Pearl Earring,A101446,medium,baby,earring,25.44
+1447,2018-11-22,casual,pearl,74,370,The Lacombe Pearl Earring,A101447,medium,baby,earring,25.44
+1448,2019-01-25,casual,pearl,15,794,The Marx Pearl Earring,A101448,medium,baby,earring,20.352000000000004
+1449,2018-12-02,casual,pearl,77,220,The Guevara Pearl Earring,A101449,medium,baby,earring,15.264
+1450,2018-11-16,casual,pearl,23,165,The Silas Bissell Pearl Earring,A101450,large,baby,earring,20.352000000000004
+1451,2018-12-11,casual,pearl,41,17,The Boudin Pearl Earring,A101451,large,baby,earring,20.352000000000004
+1452,2018-12-12,casual,pearl,73,706,The Lacombe Pearl Earring,A101452,large,baby,earring,25.44
+1453,2019-01-16,casual,pearl,45,30,The Marx Pearl Earring,A101453,large,baby,earring,15.264
+1454,2019-01-20,casual,pearl,75,870,The Guevara Pearl Earring,A101454,large,baby,earring,15.264
+1455,2018-12-03,casual,white,23,921,The Silas Bissell White Earring,A101455,small,baby,earring,30.528
+1456,2018-12-10,casual,white,96,344,The Boudin White Earring,A101456,small,baby,earring,15.264
+1457,2018-11-30,casual,white,24,100,The Lacombe White Earring,A101457,small,baby,earring,30.528
+1458,2018-12-23,casual,white,72,369,The Marx White Earring,A101458,small,baby,earring,25.44
+1459,2018-11-20,casual,white,63,17,The Guevara White Earring,A101459,small,baby,earring,25.44
+1460,2018-12-09,casual,white,3,454,The Silas Bissell White Earring,A101460,medium,baby,earring,30.528
+1461,2018-12-12,casual,white,18,350,The Boudin White Earring,A101461,medium,baby,earring,20.352000000000004
+1462,2018-12-01,casual,white,76,435,The Lacombe White Earring,A101462,medium,baby,earring,20.352000000000004
+1463,2018-12-30,casual,white,39,410,The Marx White Earring,A101463,medium,baby,earring,25.44
+1464,2018-12-09,casual,white,48,443,The Guevara White Earring,A101464,medium,baby,earring,15.264
+1465,2019-01-27,casual,white,52,288,The Silas Bissell White Earring,A101465,large,baby,earring,20.352000000000004
+1466,2018-11-20,casual,white,7,546,The Boudin White Earring,A101466,large,baby,earring,25.44
+1467,2018-11-17,casual,white,76,375,The Lacombe White Earring,A101467,large,baby,earring,30.528
+1468,2018-11-30,casual,white,45,611,The Marx White Earring,A101468,large,baby,earring,15.264
+1469,2018-12-23,casual,white,50,791,The Guevara White Earring,A101469,large,baby,earring,15.264
+1470,2019-01-01,casual,amber,48,311,The Silas Bissell Amber Earring,A101470,small,baby,earring,15.264
+1471,2019-01-19,casual,amber,75,33,The Boudin Amber Earring,A101471,small,baby,earring,25.44
+1472,2018-12-08,casual,amber,47,888,The Lacombe Amber Earring,A101472,small,baby,earring,30.528
+1473,2018-11-25,casual,amber,81,988,The Marx Amber Earring,A101473,small,baby,earring,15.264
+1474,2019-02-01,casual,amber,43,439,The Guevara Amber Earring,A101474,small,baby,earring,25.44
+1475,2018-12-22,casual,amber,94,985,The Silas Bissell Amber Earring,A101475,medium,baby,earring,25.44
+1476,2019-01-05,casual,amber,54,961,The Boudin Amber Earring,A101476,medium,baby,earring,25.44
+1477,2018-11-21,casual,amber,18,160,The Lacombe Amber Earring,A101477,medium,baby,earring,30.528
+1478,2018-11-23,casual,amber,26,193,The Marx Amber Earring,A101478,medium,baby,earring,25.44
+1479,2018-12-24,casual,amber,42,130,The Guevara Amber Earring,A101479,medium,baby,earring,15.264
+1480,2018-11-18,casual,amber,19,765,The Silas Bissell Amber Earring,A101480,large,baby,earring,20.352000000000004
+1481,2018-12-14,casual,amber,38,667,The Boudin Amber Earring,A101481,large,baby,earring,15.264
+1482,2019-01-02,casual,amber,24,866,The Lacombe Amber Earring,A101482,large,baby,earring,25.44
+1483,2019-02-04,casual,amber,10,151,The Marx Amber Earring,A101483,large,baby,earring,15.264
+1484,2018-12-03,casual,amber,80,888,The Guevara Amber Earring,A101484,large,baby,earring,15.264
+1485,2019-01-12,casual,gold,3,963,The Silas Bissell Gold Earring,A101485,small,baby,earring,35.616
+1486,2018-11-18,casual,gold,32,126,The Boudin Gold Earring,A101486,small,baby,earring,28.492800000000003
+1487,2018-12-10,casual,gold,64,221,The Lacombe Gold Earring,A101487,small,baby,earring,42.7392
+1488,2018-12-26,casual,gold,59,660,The Marx Gold Earring,A101488,small,baby,earring,42.7392
+1489,2019-01-06,casual,gold,43,278,The Guevara Gold Earring,A101489,small,baby,earring,35.616
+1490,2018-12-05,casual,gold,32,959,The Silas Bissell Gold Earring,A101490,medium,baby,earring,42.7392
+1491,2019-01-08,casual,gold,48,495,The Boudin Gold Earring,A101491,medium,baby,earring,35.616
+1492,2018-12-25,casual,gold,42,12,The Lacombe Gold Earring,A101492,medium,baby,earring,28.492800000000003
+1493,2018-11-13,casual,gold,42,451,The Marx Gold Earring,A101493,medium,baby,earring,42.7392
+1494,2018-11-19,casual,gold,12,768,The Guevara Gold Earring,A101494,medium,baby,earring,21.3696
+1495,2018-12-19,casual,gold,21,240,The Silas Bissell Gold Earring,A101495,large,baby,earring,35.616
+1496,2019-01-28,casual,gold,43,771,The Boudin Gold Earring,A101496,large,baby,earring,28.492800000000003
+1497,2018-12-07,casual,gold,76,655,The Lacombe Gold Earring,A101497,large,baby,earring,28.492800000000003
+1498,2019-01-29,casual,gold,63,285,The Marx Gold Earring,A101498,large,baby,earring,35.616
+1499,2019-01-17,casual,gold,4,852,The Guevara Gold Earring,A101499,large,baby,earring,28.492800000000003
+1500,2019-02-08,casual,pearl,51,813,The Silas Bissell Pearl Necklace,A101500,small,baby,necklace,13.467
+1501,2018-12-10,casual,pearl,77,690,The Boudin Pearl Necklace,A101501,small,baby,necklace,13.467
+1502,2018-12-13,casual,pearl,88,739,The Lacombe Pearl Necklace,A101502,small,baby,necklace,17.956
+1503,2019-01-20,casual,pearl,30,527,The Marx Pearl Necklace,A101503,small,baby,necklace,17.956
+1504,2018-12-27,casual,pearl,17,358,The Guevara Pearl Necklace,A101504,small,baby,necklace,13.467
+1505,2019-01-22,casual,pearl,35,117,The Silas Bissell Pearl Necklace,A101505,medium,baby,necklace,17.956
+1506,2018-11-20,casual,pearl,37,982,The Boudin Pearl Necklace,A101506,medium,baby,necklace,26.934
+1507,2018-11-30,casual,pearl,36,18,The Lacombe Pearl Necklace,A101507,medium,baby,necklace,17.956
+1508,2018-12-28,casual,pearl,0,237,The Marx Pearl Necklace,A101508,medium,baby,necklace,13.467
+1509,2019-01-31,casual,pearl,55,844,The Guevara Pearl Necklace,A101509,medium,baby,necklace,26.934
+1510,2018-11-26,casual,pearl,88,692,The Silas Bissell Pearl Necklace,A101510,large,baby,necklace,22.445
+1511,2019-01-19,casual,pearl,47,251,The Boudin Pearl Necklace,A101511,large,baby,necklace,22.445
+1512,2018-11-28,casual,pearl,82,848,The Lacombe Pearl Necklace,A101512,large,baby,necklace,26.934
+1513,2019-02-05,casual,pearl,85,89,The Marx Pearl Necklace,A101513,large,baby,necklace,26.934
+1514,2018-12-30,casual,pearl,61,178,The Guevara Pearl Necklace,A101514,large,baby,necklace,22.445
+1515,2018-11-11,casual,white,46,604,The Silas Bissell White Necklace,A101515,small,baby,necklace,22.445
+1516,2019-01-12,casual,white,58,391,The Boudin White Necklace,A101516,small,baby,necklace,13.467
+1517,2018-11-30,casual,white,94,223,The Lacombe White Necklace,A101517,small,baby,necklace,26.934
+1518,2019-01-11,casual,white,85,912,The Marx White Necklace,A101518,small,baby,necklace,22.445
+1519,2019-01-17,casual,white,94,402,The Guevara White Necklace,A101519,small,baby,necklace,17.956
+1520,2018-12-09,casual,white,68,796,The Silas Bissell White Necklace,A101520,medium,baby,necklace,26.934
+1521,2018-11-19,casual,white,44,66,The Boudin White Necklace,A101521,medium,baby,necklace,26.934
+1522,2019-02-08,casual,white,29,965,The Lacombe White Necklace,A101522,medium,baby,necklace,26.934
+1523,2019-01-10,casual,white,14,331,The Marx White Necklace,A101523,medium,baby,necklace,26.934
+1524,2019-02-05,casual,white,68,854,The Guevara White Necklace,A101524,medium,baby,necklace,13.467
+1525,2018-12-24,casual,white,76,850,The Silas Bissell White Necklace,A101525,large,baby,necklace,22.445
+1526,2018-12-12,casual,white,65,98,The Boudin White Necklace,A101526,large,baby,necklace,13.467
+1527,2019-02-03,casual,white,93,973,The Lacombe White Necklace,A101527,large,baby,necklace,13.467
+1528,2018-12-22,casual,white,56,346,The Marx White Necklace,A101528,large,baby,necklace,26.934
+1529,2019-01-20,casual,white,8,227,The Guevara White Necklace,A101529,large,baby,necklace,13.467
+1530,2019-01-16,casual,amber,75,747,The Silas Bissell Amber Necklace,A101530,small,baby,necklace,13.467
+1531,2018-11-16,casual,amber,94,717,The Boudin Amber Necklace,A101531,small,baby,necklace,17.956
+1532,2019-01-10,casual,amber,11,387,The Lacombe Amber Necklace,A101532,small,baby,necklace,26.934
+1533,2018-11-21,casual,amber,85,648,The Marx Amber Necklace,A101533,small,baby,necklace,13.467
+1534,2019-01-07,casual,amber,36,941,The Guevara Amber Necklace,A101534,small,baby,necklace,17.956
+1535,2018-11-21,casual,amber,6,764,The Silas Bissell Amber Necklace,A101535,medium,baby,necklace,26.934
+1536,2018-12-19,casual,amber,64,522,The Boudin Amber Necklace,A101536,medium,baby,necklace,22.445
+1537,2018-12-01,casual,amber,5,446,The Lacombe Amber Necklace,A101537,medium,baby,necklace,26.934
+1538,2019-01-23,casual,amber,73,704,The Marx Amber Necklace,A101538,medium,baby,necklace,13.467
+1539,2019-02-02,casual,amber,53,584,The Guevara Amber Necklace,A101539,medium,baby,necklace,17.956
+1540,2019-01-06,casual,amber,89,163,The Silas Bissell Amber Necklace,A101540,large,baby,necklace,26.934
+1541,2018-11-24,casual,amber,24,270,The Boudin Amber Necklace,A101541,large,baby,necklace,13.467
+1542,2019-02-06,casual,amber,9,554,The Lacombe Amber Necklace,A101542,large,baby,necklace,13.467
+1543,2018-12-17,casual,amber,9,380,The Marx Amber Necklace,A101543,large,baby,necklace,26.934
+1544,2018-12-06,casual,amber,54,995,The Guevara Amber Necklace,A101544,large,baby,necklace,22.445
+1545,2018-11-29,casual,gold,75,980,The Silas Bissell Gold Necklace,A101545,small,baby,necklace,37.7076
+1546,2018-11-21,casual,gold,63,256,The Boudin Gold Necklace,A101546,small,baby,necklace,18.8538
+1547,2019-01-14,casual,gold,25,123,The Lacombe Gold Necklace,A101547,small,baby,necklace,31.423
+1548,2018-11-21,casual,gold,41,517,The Marx Gold Necklace,A101548,small,baby,necklace,18.8538
+1549,2018-12-29,casual,gold,54,323,The Guevara Gold Necklace,A101549,small,baby,necklace,25.1384
+1550,2018-12-30,casual,gold,66,329,The Silas Bissell Gold Necklace,A101550,medium,baby,necklace,18.8538
+1551,2019-02-07,casual,gold,21,234,The Boudin Gold Necklace,A101551,medium,baby,necklace,25.1384
+1552,2018-11-21,casual,gold,34,535,The Lacombe Gold Necklace,A101552,medium,baby,necklace,18.8538
+1553,2019-02-05,casual,gold,71,386,The Marx Gold Necklace,A101553,medium,baby,necklace,31.423
+1554,2018-11-30,casual,gold,38,772,The Guevara Gold Necklace,A101554,medium,baby,necklace,37.7076
+1555,2018-12-11,casual,gold,60,519,The Silas Bissell Gold Necklace,A101555,large,baby,necklace,25.1384
+1556,2019-01-12,casual,gold,48,465,The Boudin Gold Necklace,A101556,large,baby,necklace,18.8538
+1557,2019-01-16,casual,gold,58,972,The Lacombe Gold Necklace,A101557,large,baby,necklace,25.1384
+1558,2018-11-15,casual,gold,41,707,The Marx Gold Necklace,A101558,large,baby,necklace,25.1384
+1559,2018-11-23,casual,gold,23,43,The Guevara Gold Necklace,A101559,large,baby,necklace,25.1384
+1560,2019-02-06,casual,pearl,20,872,The Silas Bissell Pearl Bracelet,A101560,small,baby,bracelet,22.284000000000002
+1561,2018-12-11,casual,pearl,1,871,The Boudin Pearl Bracelet,A101561,small,baby,bracelet,22.284000000000002
+1562,2018-11-15,casual,pearl,83,464,The Lacombe Pearl Bracelet,A101562,small,baby,bracelet,33.426
+1563,2018-11-11,casual,pearl,65,971,The Marx Pearl Bracelet,A101563,small,baby,bracelet,27.855
+1564,2019-01-15,casual,pearl,44,874,The Guevara Pearl Bracelet,A101564,small,baby,bracelet,33.426
+1565,2019-01-05,casual,pearl,69,466,The Silas Bissell Pearl Bracelet,A101565,medium,baby,bracelet,27.855
+1566,2019-01-20,casual,pearl,27,675,The Boudin Pearl Bracelet,A101566,medium,baby,bracelet,16.713
+1567,2018-12-04,casual,pearl,69,879,The Lacombe Pearl Bracelet,A101567,medium,baby,bracelet,16.713
+1568,2019-01-26,casual,pearl,72,789,The Marx Pearl Bracelet,A101568,medium,baby,bracelet,33.426
+1569,2018-12-28,casual,pearl,73,330,The Guevara Pearl Bracelet,A101569,medium,baby,bracelet,27.855
+1570,2018-11-25,casual,pearl,7,220,The Silas Bissell Pearl Bracelet,A101570,large,baby,bracelet,27.855
+1571,2018-12-18,casual,pearl,38,402,The Boudin Pearl Bracelet,A101571,large,baby,bracelet,33.426
+1572,2018-11-24,casual,pearl,42,572,The Lacombe Pearl Bracelet,A101572,large,baby,bracelet,33.426
+1573,2018-11-29,casual,pearl,2,468,The Marx Pearl Bracelet,A101573,large,baby,bracelet,33.426
+1574,2019-01-06,casual,pearl,54,657,The Guevara Pearl Bracelet,A101574,large,baby,bracelet,22.284000000000002
+1575,2018-12-23,casual,white,19,159,The Silas Bissell White Bracelet,A101575,small,baby,bracelet,27.855
+1576,2018-12-15,casual,white,38,581,The Boudin White Bracelet,A101576,small,baby,bracelet,33.426
+1577,2018-12-16,casual,white,47,329,The Lacombe White Bracelet,A101577,small,baby,bracelet,22.284000000000002
+1578,2018-12-03,casual,white,83,172,The Marx White Bracelet,A101578,small,baby,bracelet,16.713
+1579,2018-12-12,casual,white,38,756,The Guevara White Bracelet,A101579,small,baby,bracelet,33.426
+1580,2018-11-24,casual,white,1,914,The Silas Bissell White Bracelet,A101580,medium,baby,bracelet,22.284000000000002
+1581,2018-11-17,casual,white,76,881,The Boudin White Bracelet,A101581,medium,baby,bracelet,27.855
+1582,2018-11-19,casual,white,20,785,The Lacombe White Bracelet,A101582,medium,baby,bracelet,33.426
+1583,2018-12-30,casual,white,44,10,The Marx White Bracelet,A101583,medium,baby,bracelet,16.713
+1584,2018-11-14,casual,white,99,628,The Guevara White Bracelet,A101584,medium,baby,bracelet,16.713
+1585,2018-11-14,casual,white,76,59,The Silas Bissell White Bracelet,A101585,large,baby,bracelet,27.855
+1586,2019-01-12,casual,white,97,831,The Boudin White Bracelet,A101586,large,baby,bracelet,16.713
+1587,2019-01-17,casual,white,5,560,The Lacombe White Bracelet,A101587,large,baby,bracelet,27.855
+1588,2018-12-07,casual,white,71,183,The Marx White Bracelet,A101588,large,baby,bracelet,22.284000000000002
+1589,2019-01-11,casual,white,1,828,The Guevara White Bracelet,A101589,large,baby,bracelet,33.426
+1590,2019-02-06,casual,amber,73,895,The Silas Bissell Amber Bracelet,A101590,small,baby,bracelet,16.713
+1591,2018-12-16,casual,amber,37,167,The Boudin Amber Bracelet,A101591,small,baby,bracelet,16.713
+1592,2019-01-01,casual,amber,64,980,The Lacombe Amber Bracelet,A101592,small,baby,bracelet,22.284000000000002
+1593,2019-01-13,casual,amber,21,511,The Marx Amber Bracelet,A101593,small,baby,bracelet,27.855
+1594,2019-02-08,casual,amber,51,75,The Guevara Amber Bracelet,A101594,small,baby,bracelet,33.426
+1595,2018-12-16,casual,amber,49,909,The Silas Bissell Amber Bracelet,A101595,medium,baby,bracelet,22.284000000000002
+1596,2019-01-10,casual,amber,25,257,The Boudin Amber Bracelet,A101596,medium,baby,bracelet,33.426
+1597,2018-11-29,casual,amber,97,865,The Lacombe Amber Bracelet,A101597,medium,baby,bracelet,33.426
+1598,2019-02-07,casual,amber,78,395,The Marx Amber Bracelet,A101598,medium,baby,bracelet,33.426
+1599,2018-12-07,casual,amber,21,968,The Guevara Amber Bracelet,A101599,medium,baby,bracelet,27.855
+1600,2018-11-14,casual,amber,80,672,The Silas Bissell Amber Bracelet,A101600,large,baby,bracelet,27.855
+1601,2018-11-17,casual,amber,13,545,The Boudin Amber Bracelet,A101601,large,baby,bracelet,22.284000000000002
+1602,2019-01-20,casual,amber,90,782,The Lacombe Amber Bracelet,A101602,large,baby,bracelet,22.284000000000002
+1603,2018-11-11,casual,amber,13,912,The Marx Amber Bracelet,A101603,large,baby,bracelet,27.855
+1604,2019-01-27,casual,amber,95,772,The Guevara Amber Bracelet,A101604,large,baby,bracelet,27.855
+1605,2018-12-05,casual,gold,93,827,The Silas Bissell Gold Bracelet,A101605,small,baby,bracelet,38.997
+1606,2019-02-06,casual,gold,8,583,The Boudin Gold Bracelet,A101606,small,baby,bracelet,46.7964
+1607,2019-01-03,casual,gold,89,706,The Lacombe Gold Bracelet,A101607,small,baby,bracelet,31.1976
+1608,2018-12-28,casual,gold,33,775,The Marx Gold Bracelet,A101608,small,baby,bracelet,38.997
+1609,2018-11-20,casual,gold,93,166,The Guevara Gold Bracelet,A101609,small,baby,bracelet,31.1976
+1610,2019-01-31,casual,gold,16,285,The Silas Bissell Gold Bracelet,A101610,medium,baby,bracelet,46.7964
+1611,2019-02-01,casual,gold,42,557,The Boudin Gold Bracelet,A101611,medium,baby,bracelet,31.1976
+1612,2019-02-02,casual,gold,15,631,The Lacombe Gold Bracelet,A101612,medium,baby,bracelet,38.997
+1613,2019-01-15,casual,gold,66,813,The Marx Gold Bracelet,A101613,medium,baby,bracelet,23.3982
+1614,2018-11-14,casual,gold,26,997,The Guevara Gold Bracelet,A101614,medium,baby,bracelet,23.3982
+1615,2019-01-06,casual,gold,51,493,The Silas Bissell Gold Bracelet,A101615,large,baby,bracelet,31.1976
+1616,2019-01-09,casual,gold,93,38,The Boudin Gold Bracelet,A101616,large,baby,bracelet,31.1976
+1617,2019-01-24,casual,gold,52,934,The Lacombe Gold Bracelet,A101617,large,baby,bracelet,31.1976
+1618,2018-11-17,casual,gold,56,441,The Marx Gold Bracelet,A101618,large,baby,bracelet,46.7964
+1619,2018-11-15,casual,gold,30,949,The Guevara Gold Bracelet,A101619,large,baby,bracelet,38.997
+1620,2018-11-23,casual,pearl,64,56,The Silas Bissell Pearl Ring,A101620,small,baby,ring,11.046
+1621,2019-01-30,casual,pearl,40,963,The Boudin Pearl Ring,A101621,small,baby,ring,14.728000000000002
+1622,2018-12-30,casual,pearl,28,386,The Lacombe Pearl Ring,A101622,small,baby,ring,11.046
+1623,2018-12-12,casual,pearl,75,658,The Marx Pearl Ring,A101623,small,baby,ring,11.046
+1624,2019-01-18,casual,pearl,95,216,The Guevara Pearl Ring,A101624,small,baby,ring,14.728000000000002
+1625,2019-01-20,casual,pearl,56,705,The Silas Bissell Pearl Ring,A101625,medium,baby,ring,22.092
+1626,2019-01-25,casual,pearl,14,581,The Boudin Pearl Ring,A101626,medium,baby,ring,14.728000000000002
+1627,2018-12-04,casual,pearl,8,893,The Lacombe Pearl Ring,A101627,medium,baby,ring,11.046
+1628,2018-12-28,casual,pearl,62,52,The Marx Pearl Ring,A101628,medium,baby,ring,18.41
+1629,2019-01-31,casual,pearl,33,895,The Guevara Pearl Ring,A101629,medium,baby,ring,22.092
+1630,2019-01-21,casual,pearl,78,769,The Silas Bissell Pearl Ring,A101630,large,baby,ring,18.41
+1631,2019-01-02,casual,pearl,99,278,The Boudin Pearl Ring,A101631,large,baby,ring,18.41
+1632,2019-01-28,casual,pearl,72,261,The Lacombe Pearl Ring,A101632,large,baby,ring,14.728000000000002
+1633,2018-12-25,casual,pearl,80,615,The Marx Pearl Ring,A101633,large,baby,ring,18.41
+1634,2019-01-02,casual,pearl,43,866,The Guevara Pearl Ring,A101634,large,baby,ring,18.41
+1635,2018-12-31,casual,white,97,41,The Silas Bissell White Ring,A101635,small,baby,ring,11.046
+1636,2018-12-07,casual,white,37,498,The Boudin White Ring,A101636,small,baby,ring,18.41
+1637,2019-01-08,casual,white,5,193,The Lacombe White Ring,A101637,small,baby,ring,14.728000000000002
+1638,2018-12-24,casual,white,77,515,The Marx White Ring,A101638,small,baby,ring,18.41
+1639,2018-12-14,casual,white,69,976,The Guevara White Ring,A101639,small,baby,ring,14.728000000000002
+1640,2019-02-04,casual,white,11,117,The Silas Bissell White Ring,A101640,medium,baby,ring,18.41
+1641,2019-01-25,casual,white,27,807,The Boudin White Ring,A101641,medium,baby,ring,14.728000000000002
+1642,2018-12-23,casual,white,81,346,The Lacombe White Ring,A101642,medium,baby,ring,11.046
+1643,2019-01-11,casual,white,99,391,The Marx White Ring,A101643,medium,baby,ring,14.728000000000002
+1644,2018-12-05,casual,white,16,303,The Guevara White Ring,A101644,medium,baby,ring,22.092
+1645,2019-01-20,casual,white,81,741,The Silas Bissell White Ring,A101645,large,baby,ring,18.41
+1646,2018-12-30,casual,white,55,661,The Boudin White Ring,A101646,large,baby,ring,22.092
+1647,2019-01-23,casual,white,22,640,The Lacombe White Ring,A101647,large,baby,ring,11.046
+1648,2018-12-31,casual,white,22,574,The Marx White Ring,A101648,large,baby,ring,11.046
+1649,2018-12-17,casual,white,4,80,The Guevara White Ring,A101649,large,baby,ring,11.046
+1650,2019-01-04,casual,amber,18,919,The Silas Bissell Amber Ring,A101650,small,baby,ring,18.41
+1651,2018-12-10,casual,amber,51,734,The Boudin Amber Ring,A101651,small,baby,ring,22.092
+1652,2018-12-14,casual,amber,34,734,The Lacombe Amber Ring,A101652,small,baby,ring,18.41
+1653,2018-12-20,casual,amber,3,732,The Marx Amber Ring,A101653,small,baby,ring,14.728000000000002
+1654,2019-01-06,casual,amber,61,764,The Guevara Amber Ring,A101654,small,baby,ring,14.728000000000002
+1655,2019-01-20,casual,amber,78,819,The Silas Bissell Amber Ring,A101655,medium,baby,ring,14.728000000000002
+1656,2019-01-17,casual,amber,56,263,The Boudin Amber Ring,A101656,medium,baby,ring,14.728000000000002
+1657,2019-01-09,casual,amber,44,674,The Lacombe Amber Ring,A101657,medium,baby,ring,11.046
+1658,2018-12-15,casual,amber,75,941,The Marx Amber Ring,A101658,medium,baby,ring,22.092
+1659,2019-01-25,casual,amber,29,839,The Guevara Amber Ring,A101659,medium,baby,ring,14.728000000000002
+1660,2018-12-20,casual,amber,73,491,The Silas Bissell Amber Ring,A101660,large,baby,ring,22.092
+1661,2019-02-08,casual,amber,16,471,The Boudin Amber Ring,A101661,large,baby,ring,22.092
+1662,2018-11-20,casual,amber,64,13,The Lacombe Amber Ring,A101662,large,baby,ring,11.046
+1663,2019-01-29,casual,amber,57,451,The Marx Amber Ring,A101663,large,baby,ring,14.728000000000002
+1664,2018-11-24,casual,amber,6,769,The Guevara Amber Ring,A101664,large,baby,ring,18.41
+1665,2019-02-02,casual,gold,49,89,The Silas Bissell Gold Ring,A101665,small,baby,ring,25.773999999999997
+1666,2018-11-27,casual,gold,72,583,The Boudin Gold Ring,A101666,small,baby,ring,20.6192
+1667,2018-12-12,casual,gold,4,617,The Lacombe Gold Ring,A101667,small,baby,ring,30.928799999999995
+1668,2019-01-27,casual,gold,38,475,The Marx Gold Ring,A101668,small,baby,ring,30.928799999999995
+1669,2019-02-06,casual,gold,36,869,The Guevara Gold Ring,A101669,small,baby,ring,30.928799999999995
+1670,2019-02-08,casual,gold,45,997,The Silas Bissell Gold Ring,A101670,medium,baby,ring,15.464399999999998
+1671,2018-11-26,casual,gold,44,196,The Boudin Gold Ring,A101671,medium,baby,ring,25.773999999999997
+1672,2019-01-20,casual,gold,84,536,The Lacombe Gold Ring,A101672,medium,baby,ring,20.6192
+1673,2019-01-28,casual,gold,82,83,The Marx Gold Ring,A101673,medium,baby,ring,30.928799999999995
+1674,2019-01-18,casual,gold,67,907,The Guevara Gold Ring,A101674,medium,baby,ring,15.464399999999998
+1675,2018-12-10,casual,gold,63,804,The Silas Bissell Gold Ring,A101675,large,baby,ring,20.6192
+1676,2018-11-30,casual,gold,71,679,The Boudin Gold Ring,A101676,large,baby,ring,15.464399999999998
+1677,2019-01-04,casual,gold,5,842,The Lacombe Gold Ring,A101677,large,baby,ring,15.464399999999998
+1678,2019-01-18,casual,gold,53,967,The Marx Gold Ring,A101678,large,baby,ring,30.928799999999995
+1679,2019-01-01,casual,gold,1,265,The Guevara Gold Ring,A101679,large,baby,ring,25.773999999999997
+1680,2018-11-23,casual,pearl,11,529,The Silas Bissell Pearl Earring,A101680,small,senior,earring,10.097999999999999
+1681,2019-01-23,casual,pearl,8,347,The Boudin Pearl Earring,A101681,small,senior,earring,10.097999999999999
+1682,2018-12-15,casual,pearl,23,827,The Lacombe Pearl Earring,A101682,small,senior,earring,6.731999999999999
+1683,2019-01-04,casual,pearl,84,313,The Marx Pearl Earring,A101683,small,senior,earring,10.097999999999999
+1684,2018-12-25,casual,pearl,93,569,The Guevara Pearl Earring,A101684,small,senior,earring,5.0489999999999995
+1685,2018-11-11,casual,pearl,60,801,The Silas Bissell Pearl Earring,A101685,medium,senior,earring,8.415
+1686,2018-12-05,casual,pearl,25,654,The Boudin Pearl Earring,A101686,medium,senior,earring,10.097999999999999
+1687,2018-12-14,casual,pearl,84,647,The Lacombe Pearl Earring,A101687,medium,senior,earring,10.097999999999999
+1688,2018-12-20,casual,pearl,37,192,The Marx Pearl Earring,A101688,medium,senior,earring,6.731999999999999
+1689,2019-02-01,casual,pearl,38,210,The Guevara Pearl Earring,A101689,medium,senior,earring,10.097999999999999
+1690,2019-01-11,casual,pearl,26,605,The Silas Bissell Pearl Earring,A101690,large,senior,earring,8.415
+1691,2019-01-25,casual,pearl,74,659,The Boudin Pearl Earring,A101691,large,senior,earring,10.097999999999999
+1692,2018-12-19,casual,pearl,17,430,The Lacombe Pearl Earring,A101692,large,senior,earring,10.097999999999999
+1693,2018-11-20,casual,pearl,12,138,The Marx Pearl Earring,A101693,large,senior,earring,5.0489999999999995
+1694,2019-02-05,casual,pearl,85,479,The Guevara Pearl Earring,A101694,large,senior,earring,6.731999999999999
+1695,2019-01-30,casual,white,82,39,The Silas Bissell White Earring,A101695,small,senior,earring,10.097999999999999
+1696,2018-11-28,casual,white,38,251,The Boudin White Earring,A101696,small,senior,earring,8.415
+1697,2019-01-19,casual,white,78,946,The Lacombe White Earring,A101697,small,senior,earring,5.0489999999999995
+1698,2019-01-31,casual,white,58,737,The Marx White Earring,A101698,small,senior,earring,6.731999999999999
+1699,2018-12-20,casual,white,86,636,The Guevara White Earring,A101699,small,senior,earring,8.415
+1700,2019-01-02,casual,white,65,867,The Silas Bissell White Earring,A101700,medium,senior,earring,8.415
+1701,2019-01-26,casual,white,48,481,The Boudin White Earring,A101701,medium,senior,earring,5.0489999999999995
+1702,2018-12-11,casual,white,26,759,The Lacombe White Earring,A101702,medium,senior,earring,10.097999999999999
+1703,2019-01-23,casual,white,68,363,The Marx White Earring,A101703,medium,senior,earring,6.731999999999999
+1704,2019-01-21,casual,white,77,636,The Guevara White Earring,A101704,medium,senior,earring,5.0489999999999995
+1705,2019-02-06,casual,white,64,990,The Silas Bissell White Earring,A101705,large,senior,earring,6.731999999999999
+1706,2018-12-03,casual,white,70,676,The Boudin White Earring,A101706,large,senior,earring,5.0489999999999995
+1707,2019-01-10,casual,white,84,752,The Lacombe White Earring,A101707,large,senior,earring,10.097999999999999
+1708,2019-02-01,casual,white,63,418,The Marx White Earring,A101708,large,senior,earring,8.415
+1709,2018-12-11,casual,white,3,10,The Guevara White Earring,A101709,large,senior,earring,5.0489999999999995
+1710,2018-12-17,casual,amber,53,472,The Silas Bissell Amber Earring,A101710,small,senior,earring,8.415
+1711,2019-01-01,casual,amber,19,565,The Boudin Amber Earring,A101711,small,senior,earring,8.415
+1712,2018-11-11,casual,amber,83,435,The Lacombe Amber Earring,A101712,small,senior,earring,5.0489999999999995
+1713,2019-02-06,casual,amber,90,860,The Marx Amber Earring,A101713,small,senior,earring,8.415
+1714,2018-12-19,casual,amber,69,439,The Guevara Amber Earring,A101714,small,senior,earring,10.097999999999999
+1715,2018-11-29,casual,amber,7,423,The Silas Bissell Amber Earring,A101715,medium,senior,earring,10.097999999999999
+1716,2019-02-01,casual,amber,54,963,The Boudin Amber Earring,A101716,medium,senior,earring,5.0489999999999995
+1717,2019-01-06,casual,amber,95,3,The Lacombe Amber Earring,A101717,medium,senior,earring,8.415
+1718,2019-01-02,casual,amber,68,884,The Marx Amber Earring,A101718,medium,senior,earring,5.0489999999999995
+1719,2019-01-23,casual,amber,30,205,The Guevara Amber Earring,A101719,medium,senior,earring,5.0489999999999995
+1720,2018-11-16,casual,amber,71,838,The Silas Bissell Amber Earring,A101720,large,senior,earring,10.097999999999999
+1721,2019-01-04,casual,amber,96,698,The Boudin Amber Earring,A101721,large,senior,earring,5.0489999999999995
+1722,2019-01-01,casual,amber,3,764,The Lacombe Amber Earring,A101722,large,senior,earring,6.731999999999999
+1723,2018-12-17,casual,amber,21,435,The Marx Amber Earring,A101723,large,senior,earring,6.731999999999999
+1724,2018-11-26,casual,amber,64,468,The Guevara Amber Earring,A101724,large,senior,earring,10.097999999999999
+1725,2018-12-15,casual,gold,11,877,The Silas Bissell Gold Earring,A101725,small,senior,earring,11.780999999999999
+1726,2018-11-17,casual,gold,5,533,The Boudin Gold Earring,A101726,small,senior,earring,9.4248
+1727,2018-12-26,casual,gold,99,352,The Lacombe Gold Earring,A101727,small,senior,earring,14.137199999999998
+1728,2019-01-29,casual,gold,12,469,The Marx Gold Earring,A101728,small,senior,earring,7.068599999999999
+1729,2018-11-15,casual,gold,78,444,The Guevara Gold Earring,A101729,small,senior,earring,14.137199999999998
+1730,2018-11-22,casual,gold,92,783,The Silas Bissell Gold Earring,A101730,medium,senior,earring,11.780999999999999
+1731,2018-12-14,casual,gold,42,876,The Boudin Gold Earring,A101731,medium,senior,earring,11.780999999999999
+1732,2019-01-17,casual,gold,60,836,The Lacombe Gold Earring,A101732,medium,senior,earring,14.137199999999998
+1733,2019-01-15,casual,gold,36,551,The Marx Gold Earring,A101733,medium,senior,earring,14.137199999999998
+1734,2019-01-23,casual,gold,15,392,The Guevara Gold Earring,A101734,medium,senior,earring,11.780999999999999
+1735,2018-11-15,casual,gold,36,92,The Silas Bissell Gold Earring,A101735,large,senior,earring,11.780999999999999
+1736,2018-12-29,casual,gold,38,628,The Boudin Gold Earring,A101736,large,senior,earring,14.137199999999998
+1737,2018-11-27,casual,gold,56,964,The Lacombe Gold Earring,A101737,large,senior,earring,11.780999999999999
+1738,2018-12-30,casual,gold,72,196,The Marx Gold Earring,A101738,large,senior,earring,14.137199999999998
+1739,2019-01-11,casual,gold,11,17,The Guevara Gold Earring,A101739,large,senior,earring,11.780999999999999
+1740,2019-02-08,casual,pearl,83,100,The Silas Bissell Pearl Necklace,A101740,small,senior,necklace,13.46
+1741,2019-01-02,casual,pearl,51,332,The Boudin Pearl Necklace,A101741,small,senior,necklace,16.152
+1742,2019-01-30,casual,pearl,37,170,The Lacombe Pearl Necklace,A101742,small,senior,necklace,8.076
+1743,2019-01-29,casual,pearl,15,353,The Marx Pearl Necklace,A101743,small,senior,necklace,16.152
+1744,2018-11-13,casual,pearl,39,946,The Guevara Pearl Necklace,A101744,small,senior,necklace,16.152
+1745,2019-01-26,casual,pearl,34,228,The Silas Bissell Pearl Necklace,A101745,medium,senior,necklace,10.768
+1746,2018-12-01,casual,pearl,6,837,The Boudin Pearl Necklace,A101746,medium,senior,necklace,16.152
+1747,2018-12-16,casual,pearl,9,60,The Lacombe Pearl Necklace,A101747,medium,senior,necklace,8.076
+1748,2019-02-07,casual,pearl,83,217,The Marx Pearl Necklace,A101748,medium,senior,necklace,10.768
+1749,2018-12-21,casual,pearl,35,448,The Guevara Pearl Necklace,A101749,medium,senior,necklace,13.46
+1750,2019-01-28,casual,pearl,40,249,The Silas Bissell Pearl Necklace,A101750,large,senior,necklace,8.076
+1751,2019-01-30,casual,pearl,54,594,The Boudin Pearl Necklace,A101751,large,senior,necklace,13.46
+1752,2018-12-05,casual,pearl,19,241,The Lacombe Pearl Necklace,A101752,large,senior,necklace,13.46
+1753,2018-11-16,casual,pearl,56,907,The Marx Pearl Necklace,A101753,large,senior,necklace,13.46
+1754,2018-12-10,casual,pearl,95,896,The Guevara Pearl Necklace,A101754,large,senior,necklace,13.46
+1755,2018-12-23,casual,white,25,742,The Silas Bissell White Necklace,A101755,small,senior,necklace,13.46
+1756,2018-11-29,casual,white,1,459,The Boudin White Necklace,A101756,small,senior,necklace,13.46
+1757,2018-11-15,casual,white,80,157,The Lacombe White Necklace,A101757,small,senior,necklace,16.152
+1758,2018-12-07,casual,white,64,960,The Marx White Necklace,A101758,small,senior,necklace,16.152
+1759,2019-01-26,casual,white,48,544,The Guevara White Necklace,A101759,small,senior,necklace,16.152
+1760,2018-12-01,casual,white,0,188,The Silas Bissell White Necklace,A101760,medium,senior,necklace,10.768
+1761,2018-12-14,casual,white,2,729,The Boudin White Necklace,A101761,medium,senior,necklace,8.076
+1762,2018-11-26,casual,white,57,693,The Lacombe White Necklace,A101762,medium,senior,necklace,8.076
+1763,2018-12-05,casual,white,50,825,The Marx White Necklace,A101763,medium,senior,necklace,13.46
+1764,2018-12-24,casual,white,30,189,The Guevara White Necklace,A101764,medium,senior,necklace,16.152
+1765,2018-12-23,casual,white,96,927,The Silas Bissell White Necklace,A101765,large,senior,necklace,16.152
+1766,2018-12-11,casual,white,82,72,The Boudin White Necklace,A101766,large,senior,necklace,16.152
+1767,2019-02-04,casual,white,17,180,The Lacombe White Necklace,A101767,large,senior,necklace,8.076
+1768,2019-02-01,casual,white,69,798,The Marx White Necklace,A101768,large,senior,necklace,13.46
+1769,2019-01-01,casual,white,19,839,The Guevara White Necklace,A101769,large,senior,necklace,10.768
+1770,2018-11-26,casual,amber,49,260,The Silas Bissell Amber Necklace,A101770,small,senior,necklace,8.076
+1771,2018-11-13,casual,amber,88,815,The Boudin Amber Necklace,A101771,small,senior,necklace,13.46
+1772,2018-12-12,casual,amber,79,13,The Lacombe Amber Necklace,A101772,small,senior,necklace,16.152
+1773,2018-12-30,casual,amber,75,491,The Marx Amber Necklace,A101773,small,senior,necklace,8.076
+1774,2018-12-27,casual,amber,22,620,The Guevara Amber Necklace,A101774,small,senior,necklace,16.152
+1775,2019-01-05,casual,amber,5,457,The Silas Bissell Amber Necklace,A101775,medium,senior,necklace,16.152
+1776,2018-11-11,casual,amber,67,908,The Boudin Amber Necklace,A101776,medium,senior,necklace,8.076
+1777,2019-01-21,casual,amber,82,30,The Lacombe Amber Necklace,A101777,medium,senior,necklace,8.076
+1778,2018-11-22,casual,amber,27,232,The Marx Amber Necklace,A101778,medium,senior,necklace,8.076
+1779,2018-12-09,casual,amber,22,821,The Guevara Amber Necklace,A101779,medium,senior,necklace,13.46
+1780,2018-12-28,casual,amber,70,436,The Silas Bissell Amber Necklace,A101780,large,senior,necklace,16.152
+1781,2019-02-02,casual,amber,25,68,The Boudin Amber Necklace,A101781,large,senior,necklace,10.768
+1782,2018-12-11,casual,amber,39,207,The Lacombe Amber Necklace,A101782,large,senior,necklace,13.46
+1783,2018-11-15,casual,amber,67,529,The Marx Amber Necklace,A101783,large,senior,necklace,13.46
+1784,2019-01-14,casual,amber,47,759,The Guevara Amber Necklace,A101784,large,senior,necklace,8.076
+1785,2019-01-19,casual,gold,27,306,The Silas Bissell Gold Necklace,A101785,small,senior,necklace,11.3064
+1786,2019-01-11,casual,gold,74,229,The Boudin Gold Necklace,A101786,small,senior,necklace,18.844
+1787,2018-11-17,casual,gold,4,448,The Lacombe Gold Necklace,A101787,small,senior,necklace,18.844
+1788,2018-12-26,casual,gold,52,932,The Marx Gold Necklace,A101788,small,senior,necklace,22.6128
+1789,2019-01-06,casual,gold,23,894,The Guevara Gold Necklace,A101789,small,senior,necklace,22.6128
+1790,2019-01-17,casual,gold,18,536,The Silas Bissell Gold Necklace,A101790,medium,senior,necklace,22.6128
+1791,2018-11-17,casual,gold,16,652,The Boudin Gold Necklace,A101791,medium,senior,necklace,15.075200000000002
+1792,2018-12-10,casual,gold,59,465,The Lacombe Gold Necklace,A101792,medium,senior,necklace,22.6128
+1793,2018-11-15,casual,gold,78,685,The Marx Gold Necklace,A101793,medium,senior,necklace,11.3064
+1794,2018-11-28,casual,gold,99,557,The Guevara Gold Necklace,A101794,medium,senior,necklace,11.3064
+1795,2019-01-12,casual,gold,65,154,The Silas Bissell Gold Necklace,A101795,large,senior,necklace,18.844
+1796,2018-12-12,casual,gold,38,76,The Boudin Gold Necklace,A101796,large,senior,necklace,18.844
+1797,2018-12-16,casual,gold,80,460,The Lacombe Gold Necklace,A101797,large,senior,necklace,11.3064
+1798,2019-02-05,casual,gold,1,46,The Marx Gold Necklace,A101798,large,senior,necklace,18.844
+1799,2019-01-18,casual,gold,8,66,The Guevara Gold Necklace,A101799,large,senior,necklace,11.3064
+1800,2019-01-23,casual,pearl,10,223,The Silas Bissell Pearl Bracelet,A101800,small,senior,bracelet,13.64
+1801,2018-12-22,casual,pearl,3,772,The Boudin Pearl Bracelet,A101801,small,senior,bracelet,8.184
+1802,2018-11-20,casual,pearl,74,849,The Lacombe Pearl Bracelet,A101802,small,senior,bracelet,13.64
+1803,2019-01-01,casual,pearl,58,776,The Marx Pearl Bracelet,A101803,small,senior,bracelet,8.184
+1804,2019-01-03,casual,pearl,56,242,The Guevara Pearl Bracelet,A101804,small,senior,bracelet,8.184
+1805,2018-12-09,casual,pearl,19,744,The Silas Bissell Pearl Bracelet,A101805,medium,senior,bracelet,10.912
+1806,2018-11-25,casual,pearl,73,461,The Boudin Pearl Bracelet,A101806,medium,senior,bracelet,8.184
+1807,2018-12-07,casual,pearl,27,402,The Lacombe Pearl Bracelet,A101807,medium,senior,bracelet,16.368
+1808,2018-12-20,casual,pearl,72,339,The Marx Pearl Bracelet,A101808,medium,senior,bracelet,13.64
+1809,2018-11-17,casual,pearl,99,553,The Guevara Pearl Bracelet,A101809,medium,senior,bracelet,16.368
+1810,2019-02-03,casual,pearl,67,785,The Silas Bissell Pearl Bracelet,A101810,large,senior,bracelet,10.912
+1811,2019-01-03,casual,pearl,80,151,The Boudin Pearl Bracelet,A101811,large,senior,bracelet,16.368
+1812,2018-11-11,casual,pearl,97,66,The Lacombe Pearl Bracelet,A101812,large,senior,bracelet,10.912
+1813,2019-01-13,casual,pearl,93,36,The Marx Pearl Bracelet,A101813,large,senior,bracelet,10.912
+1814,2019-01-13,casual,pearl,44,614,The Guevara Pearl Bracelet,A101814,large,senior,bracelet,8.184
+1815,2018-11-19,casual,white,7,931,The Silas Bissell White Bracelet,A101815,small,senior,bracelet,10.912
+1816,2018-11-21,casual,white,33,962,The Boudin White Bracelet,A101816,small,senior,bracelet,16.368
+1817,2019-01-17,casual,white,99,934,The Lacombe White Bracelet,A101817,small,senior,bracelet,10.912
+1818,2018-12-27,casual,white,99,538,The Marx White Bracelet,A101818,small,senior,bracelet,10.912
+1819,2018-12-05,casual,white,6,951,The Guevara White Bracelet,A101819,small,senior,bracelet,13.64
+1820,2019-01-06,casual,white,5,787,The Silas Bissell White Bracelet,A101820,medium,senior,bracelet,13.64
+1821,2019-01-17,casual,white,94,896,The Boudin White Bracelet,A101821,medium,senior,bracelet,10.912
+1822,2019-01-12,casual,white,14,334,The Lacombe White Bracelet,A101822,medium,senior,bracelet,8.184
+1823,2018-11-19,casual,white,65,495,The Marx White Bracelet,A101823,medium,senior,bracelet,16.368
+1824,2018-11-13,casual,white,90,265,The Guevara White Bracelet,A101824,medium,senior,bracelet,16.368
+1825,2019-01-22,casual,white,42,265,The Silas Bissell White Bracelet,A101825,large,senior,bracelet,16.368
+1826,2018-11-18,casual,white,94,391,The Boudin White Bracelet,A101826,large,senior,bracelet,13.64
+1827,2019-01-07,casual,white,57,16,The Lacombe White Bracelet,A101827,large,senior,bracelet,13.64
+1828,2019-01-02,casual,white,65,742,The Marx White Bracelet,A101828,large,senior,bracelet,8.184
+1829,2018-12-15,casual,white,32,842,The Guevara White Bracelet,A101829,large,senior,bracelet,16.368
+1830,2019-02-08,casual,amber,78,591,The Silas Bissell Amber Bracelet,A101830,small,senior,bracelet,10.912
+1831,2019-01-05,casual,amber,94,69,The Boudin Amber Bracelet,A101831,small,senior,bracelet,8.184
+1832,2018-11-15,casual,amber,74,363,The Lacombe Amber Bracelet,A101832,small,senior,bracelet,13.64
+1833,2018-11-22,casual,amber,88,611,The Marx Amber Bracelet,A101833,small,senior,bracelet,16.368
+1834,2018-11-18,casual,amber,38,281,The Guevara Amber Bracelet,A101834,small,senior,bracelet,13.64
+1835,2018-11-27,casual,amber,68,41,The Silas Bissell Amber Bracelet,A101835,medium,senior,bracelet,8.184
+1836,2019-02-08,casual,amber,87,502,The Boudin Amber Bracelet,A101836,medium,senior,bracelet,16.368
+1837,2018-12-22,casual,amber,3,743,The Lacombe Amber Bracelet,A101837,medium,senior,bracelet,13.64
+1838,2018-12-24,casual,amber,96,690,The Marx Amber Bracelet,A101838,medium,senior,bracelet,13.64
+1839,2019-02-05,casual,amber,61,699,The Guevara Amber Bracelet,A101839,medium,senior,bracelet,10.912
+1840,2019-01-12,casual,amber,16,846,The Silas Bissell Amber Bracelet,A101840,large,senior,bracelet,8.184
+1841,2019-02-06,casual,amber,73,874,The Boudin Amber Bracelet,A101841,large,senior,bracelet,16.368
+1842,2018-12-21,casual,amber,39,490,The Lacombe Amber Bracelet,A101842,large,senior,bracelet,8.184
+1843,2019-01-21,casual,amber,17,963,The Marx Amber Bracelet,A101843,large,senior,bracelet,10.912
+1844,2019-01-14,casual,amber,12,310,The Guevara Amber Bracelet,A101844,large,senior,bracelet,16.368
+1845,2019-02-05,casual,gold,24,513,The Silas Bissell Gold Bracelet,A101845,small,senior,bracelet,22.9152
+1846,2019-01-14,casual,gold,10,644,The Boudin Gold Bracelet,A101846,small,senior,bracelet,15.276800000000001
+1847,2019-01-01,casual,gold,64,197,The Lacombe Gold Bracelet,A101847,small,senior,bracelet,19.096
+1848,2018-12-09,casual,gold,85,184,The Marx Gold Bracelet,A101848,small,senior,bracelet,11.4576
+1849,2019-01-26,casual,gold,79,2,The Guevara Gold Bracelet,A101849,small,senior,bracelet,11.4576
+1850,2018-12-11,casual,gold,88,361,The Silas Bissell Gold Bracelet,A101850,medium,senior,bracelet,19.096
+1851,2018-12-31,casual,gold,81,827,The Boudin Gold Bracelet,A101851,medium,senior,bracelet,15.276800000000001
+1852,2018-12-26,casual,gold,97,623,The Lacombe Gold Bracelet,A101852,medium,senior,bracelet,11.4576
+1853,2019-01-13,casual,gold,14,852,The Marx Gold Bracelet,A101853,medium,senior,bracelet,19.096
+1854,2018-12-20,casual,gold,81,421,The Guevara Gold Bracelet,A101854,medium,senior,bracelet,15.276800000000001
+1855,2019-01-10,casual,gold,68,532,The Silas Bissell Gold Bracelet,A101855,large,senior,bracelet,15.276800000000001
+1856,2018-11-28,casual,gold,61,72,The Boudin Gold Bracelet,A101856,large,senior,bracelet,22.9152
+1857,2019-01-06,casual,gold,10,909,The Lacombe Gold Bracelet,A101857,large,senior,bracelet,11.4576
+1858,2019-01-07,casual,gold,49,312,The Marx Gold Bracelet,A101858,large,senior,bracelet,15.276800000000001
+1859,2019-01-17,casual,gold,94,748,The Guevara Gold Bracelet,A101859,large,senior,bracelet,15.276800000000001
+1860,2019-02-04,casual,pearl,84,437,The Silas Bissell Pearl Ring,A101860,small,senior,ring,18.844
+1861,2018-11-19,casual,pearl,23,978,The Boudin Pearl Ring,A101861,small,senior,ring,23.555
+1862,2019-01-18,casual,pearl,53,79,The Lacombe Pearl Ring,A101862,small,senior,ring,28.266
+1863,2018-11-11,casual,pearl,86,209,The Marx Pearl Ring,A101863,small,senior,ring,28.266
+1864,2019-01-14,casual,pearl,6,395,The Guevara Pearl Ring,A101864,small,senior,ring,23.555
+1865,2018-12-22,casual,pearl,88,591,The Silas Bissell Pearl Ring,A101865,medium,senior,ring,14.133
+1866,2018-12-15,casual,pearl,25,134,The Boudin Pearl Ring,A101866,medium,senior,ring,23.555
+1867,2018-11-18,casual,pearl,45,574,The Lacombe Pearl Ring,A101867,medium,senior,ring,28.266
+1868,2019-01-23,casual,pearl,64,285,The Marx Pearl Ring,A101868,medium,senior,ring,14.133
+1869,2018-11-18,casual,pearl,76,51,The Guevara Pearl Ring,A101869,medium,senior,ring,18.844
+1870,2018-12-26,casual,pearl,57,97,The Silas Bissell Pearl Ring,A101870,large,senior,ring,18.844
+1871,2018-12-31,casual,pearl,16,683,The Boudin Pearl Ring,A101871,large,senior,ring,14.133
+1872,2019-02-01,casual,pearl,37,879,The Lacombe Pearl Ring,A101872,large,senior,ring,23.555
+1873,2019-02-08,casual,pearl,63,63,The Marx Pearl Ring,A101873,large,senior,ring,28.266
+1874,2019-01-07,casual,pearl,99,831,The Guevara Pearl Ring,A101874,large,senior,ring,23.555
+1875,2019-01-21,casual,white,33,553,The Silas Bissell White Ring,A101875,small,senior,ring,23.555
+1876,2018-11-26,casual,white,42,585,The Boudin White Ring,A101876,small,senior,ring,18.844
+1877,2019-01-02,casual,white,25,179,The Lacombe White Ring,A101877,small,senior,ring,18.844
+1878,2018-12-02,casual,white,67,989,The Marx White Ring,A101878,small,senior,ring,23.555
+1879,2018-12-13,casual,white,71,183,The Guevara White Ring,A101879,small,senior,ring,14.133
+1880,2018-11-22,casual,white,89,130,The Silas Bissell White Ring,A101880,medium,senior,ring,14.133
+1881,2019-01-30,casual,white,83,722,The Boudin White Ring,A101881,medium,senior,ring,18.844
+1882,2018-12-18,casual,white,26,547,The Lacombe White Ring,A101882,medium,senior,ring,14.133
+1883,2018-11-17,casual,white,93,935,The Marx White Ring,A101883,medium,senior,ring,18.844
+1884,2018-12-16,casual,white,28,360,The Guevara White Ring,A101884,medium,senior,ring,28.266
+1885,2018-12-10,casual,white,30,498,The Silas Bissell White Ring,A101885,large,senior,ring,28.266
+1886,2019-02-03,casual,white,64,182,The Boudin White Ring,A101886,large,senior,ring,18.844
+1887,2019-02-02,casual,white,10,507,The Lacombe White Ring,A101887,large,senior,ring,14.133
+1888,2018-11-26,casual,white,93,909,The Marx White Ring,A101888,large,senior,ring,14.133
+1889,2019-01-13,casual,white,84,314,The Guevara White Ring,A101889,large,senior,ring,28.266
+1890,2018-11-24,casual,amber,15,252,The Silas Bissell Amber Ring,A101890,small,senior,ring,14.133
+1891,2018-11-15,casual,amber,5,741,The Boudin Amber Ring,A101891,small,senior,ring,18.844
+1892,2019-01-03,casual,amber,47,505,The Lacombe Amber Ring,A101892,small,senior,ring,23.555
+1893,2018-11-16,casual,amber,15,79,The Marx Amber Ring,A101893,small,senior,ring,18.844
+1894,2018-11-17,casual,amber,49,960,The Guevara Amber Ring,A101894,small,senior,ring,28.266
+1895,2019-01-13,casual,amber,88,732,The Silas Bissell Amber Ring,A101895,medium,senior,ring,28.266
+1896,2018-11-21,casual,amber,9,88,The Boudin Amber Ring,A101896,medium,senior,ring,14.133
+1897,2019-01-20,casual,amber,82,430,The Lacombe Amber Ring,A101897,medium,senior,ring,28.266
+1898,2018-11-11,casual,amber,70,904,The Marx Amber Ring,A101898,medium,senior,ring,28.266
+1899,2019-01-06,casual,amber,63,104,The Guevara Amber Ring,A101899,medium,senior,ring,18.844
+1900,2018-12-06,casual,amber,0,426,The Silas Bissell Amber Ring,A101900,large,senior,ring,23.555
+1901,2018-11-26,casual,amber,75,342,The Boudin Amber Ring,A101901,large,senior,ring,18.844
+1902,2018-12-06,casual,amber,64,534,The Lacombe Amber Ring,A101902,large,senior,ring,28.266
+1903,2018-11-15,casual,amber,12,194,The Marx Amber Ring,A101903,large,senior,ring,28.266
+1904,2018-11-28,casual,amber,92,150,The Guevara Amber Ring,A101904,large,senior,ring,14.133
+1905,2019-02-05,casual,gold,47,747,The Silas Bissell Gold Ring,A101905,small,senior,ring,19.786199999999997
+1906,2019-01-15,casual,gold,81,208,The Boudin Gold Ring,A101906,small,senior,ring,39.572399999999995
+1907,2018-12-22,casual,gold,74,185,The Lacombe Gold Ring,A101907,small,senior,ring,39.572399999999995
+1908,2019-01-30,casual,gold,3,643,The Marx Gold Ring,A101908,small,senior,ring,26.3816
+1909,2019-02-04,casual,gold,50,996,The Guevara Gold Ring,A101909,small,senior,ring,32.977
+1910,2019-02-04,casual,gold,35,702,The Silas Bissell Gold Ring,A101910,medium,senior,ring,32.977
+1911,2018-12-01,casual,gold,87,649,The Boudin Gold Ring,A101911,medium,senior,ring,39.572399999999995
+1912,2018-11-12,casual,gold,27,399,The Lacombe Gold Ring,A101912,medium,senior,ring,32.977
+1913,2018-11-19,casual,gold,69,33,The Marx Gold Ring,A101913,medium,senior,ring,32.977
+1914,2018-12-03,casual,gold,10,931,The Guevara Gold Ring,A101914,medium,senior,ring,32.977
+1915,2018-11-15,casual,gold,70,7,The Silas Bissell Gold Ring,A101915,large,senior,ring,32.977
+1916,2019-01-03,casual,gold,58,71,The Boudin Gold Ring,A101916,large,senior,ring,39.572399999999995
+1917,2019-01-01,casual,gold,23,720,The Lacombe Gold Ring,A101917,large,senior,ring,39.572399999999995
+1918,2019-02-04,casual,gold,9,702,The Marx Gold Ring,A101918,large,senior,ring,32.977
+1919,2018-11-25,casual,gold,31,622,The Guevara Gold Ring,A101919,large,senior,ring,39.572399999999995
