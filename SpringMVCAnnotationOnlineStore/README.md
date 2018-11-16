@@ -138,3 +138,4 @@ After project deadline (12/18/2018) this project will be licensed under the MIT 
 ## Acknowledgments
 
 * Java Spring Setup Reference - https://o7planning.org
+* Font Style - https://pixelify.net/downloads/coldiac/

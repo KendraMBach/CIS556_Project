@@ -5774,6 +5774,18 @@ textarea.form-control {
   color: #EB5E28;
 }
 
+.fa-instagram {
+  color: white;
+}
+
+.fa-github {
+  color: white;
+}
+
+.fa-facebook {
+  color: white;
+}
+
 .register-card label {
   margin-top: 15px;
 }

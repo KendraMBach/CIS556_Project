@@ -7,8 +7,8 @@
     prefix="c"
     uri="http://java.sun.com/jsp/jstl/core" 
 %> 
- 
- <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="300">
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
 			<div class="navbar-translate">
 				<a class="navbar-brand" href="${pageContext.request.contextPath}/">Junction Jewelers</a>
@@ -39,25 +39,25 @@
 	                
 					<li class="nav-item">
                         <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
-                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-twitter" style="color:white;"></i>
                             <p class="d-lg-none">Twitter</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
-                            <i class="fa fa-facebook-square"></i>
+                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/" target="_blank">
+                            <i class="fa fa-facebook-square" style="color:white;"></i>
                             <p class="d-lg-none">Facebook</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
-                            <i class="fa fa-instagram"></i>
+                        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/" target="_blank">
+                            <i class="fa fa-instagram" style="color:white;"></i>
                             <p class="d-lg-none">Instagram</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="https://www.github.com/CreativeTimOfficial" target="_blank">
-                            <i class="fa fa-github"></i>
+                        <a class="nav-link" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="https://github.com/CooperStansbury/CIS556_Project" target="_blank">
+                            <i class="fa fa-github" style="color:white;"></i>
                             <p class="d-lg-none">GitHub</p>
                         </a>
                     </li>

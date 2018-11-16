@@ -20,24 +20,35 @@
 <script src="${pageContext.request.contextPath}/resources/js/popper.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
 
-<!--  Paper Kit Initialization snd functons -->
+<!--  Paper Kit Initialization and functions -->
 <script src="${pageContext.request.contextPath}/resources/js/paper-kit.js?v=2.1.0"></script>
 
+<!--  
+<style>
+      @font-face { font-family: Coldiac; src: url('${pageContext.request.contextPath}/resources/fonts/Coldiac.otf'); } 
+      h1 {
+         font-family: Coldiac;
+         font-size: 5em; 
+      }
+</style>
+-->
  
 </head>
 <jsp:include page="_menu.jsp" />
 <body>
  
 
-		<div class="page-header" data-parallax="true" style="background-image: url('${pageContext.request.contextPath}/resources/img/daniel-olahh.jpg');">
+		<div class="page-header" data-parallax="true" style="background-image: url('${pageContext.request.contextPath}/resources/img/index01.jpg');">
 			<div class="filter"></div>
 			<div class="container">
-			    <div class="motto text-center">
-			        <h1>Junction Jewelers</h1>
-			        <h3>Just Buy It.</h3>
-			        <br />
-			        <a href="${pageContext.request.contextPath}/productList" class="btn btn-outline-neutral btn-round"><i class="fa fa-play"></i>Shop</a>
-			        <button type="button" class="btn btn-outline-neutral btn-round">Do Something</button>
+			 <!--  
+			    <div class="motto text-centered">
+			     
+			        <h1 style="font-size:5em">Junction Jewelers</h1> 
+			        <br /> 
+			        -->
+			       <!-- <a href="${pageContext.request.contextPath}/productList" class="btn btn-outline-neutral btn-round"><i class="fa fa-play"></i>Shop</a>
+			         <button type="button" class="btn btn-outline-neutral btn-round">Do Something</button> -->
 			    </div>
 			</div>
     	</div>
@@ -46,59 +57,59 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto">
-                        <h2 class="title">The Finest of Jewelry</h2>
-                        <h5 class="description">You'll probably like it.</h5>
+                        <h2 class="title">Righteous Selection.</h2>
+                        <h5 class="description">Rock Solid Elegance.</h5>
                         <br>
-                        <a href="#paper-kit" class="btn btn-danger btn-round">See Details</a>
+                        <a href="${pageContext.request.contextPath}/productList" class="btn btn-warning btn-round">Shop Now</a>
                     </div>
                 </div>
 				<br/><br/>
 				<div class="row">
 					<div class="col-md-3">
 						<div class="info">
-							<div class="icon icon-danger">
+							<div class="icon icon-warning">
 								<i class="nc-icon nc-album-2"></i>
 							</div>
 							<div class="description">
 								<h4 class="info-title">The latest and greatest</h4>
 								<p class="description">All that you want for double the price.</p>
-								<a href="#pkp" class="btn btn-link btn-danger">See more</a>
+								<a href="#pkp" class="btn btn-link btn-warning">See more</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-3">
 						<div class="info">
-							<div class="icon icon-danger">
+							<div class="icon icon-warning">
 								<i class="nc-icon nc-bulb-63"></i>
 							</div>
 							<div class="description">
 								<h4 class="info-title">New pieces for everyone</h4>
 								<p>Trust me, it's not worth the price.</p>
-								<a href="#pkp" class="btn btn-link btn-danger">See more</a>
+								<a href="#pkp" class="btn btn-link btn-warning">See more</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-3">
 						<div class="info">
-							<div class="icon icon-danger">
+							<div class="icon icon-warning">
 								<i class="nc-icon nc-chart-bar-32"></i>
 							</div>
 							<div class="description">
 								<h4 class="info-title">For Mother</h4>
 								<p>Choose from a variety of colors and designs.</p>
-								<a href="#pkp" class="btn btn-link btn-danger">See more</a>
+								<a href="#pkp" class="btn btn-link btn-warning">See more</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-3">
 						<div class="info">
-							<div class="icon icon-danger">
+							<div class="icon icon-warning">
 								<i class="nc-icon nc-sun-fog-29"></i>
 							</div>
 							<div class="description">
 								<h4 class="info-title">For Grandmother</h4>
-								<p>Rad stuff for your rad g-ma.</p>
-								<a href="#pkp" class="btn btn-link btn-danger">See more</a>
+								<p>Unique items for all everyone.</p>
+								<a href="#pkp" class="btn btn-link btn-warning">See more</a>
 							</div>
 						</div>
 					</div>
@@ -109,7 +120,7 @@
 
 		<div class="section section-dark text-center">
             <div class="container">
-                <h2 class="title">Let's talk about us</h2>
+                <h2 class="title">The Founders:</h2>
 				<div class="row">
     				<div class="col-md-4">
                         <div class="card card-profile card-plain">
@@ -124,7 +135,7 @@
                                     </div>
                                 </a>
                                 <p class="card-description text-center">
-                                Insert cool quote here.
+                                [Insert Something]
                                 </p>
                             </div>
                             <div class="card-footer text-center">
@@ -148,7 +159,7 @@
                                     </div>
                                 </a>
                                 <p class="card-description text-center">
-                                I'll insert something great here someday.
+                                [Insert Something]
                                 </p>
                             </div>
                             <div class="card-footer text-center">
@@ -172,7 +183,7 @@
                                     </div>
                                 </a>
                                 <p class="card-description text-center">
-                                Imagine that this is another cool quote.
+                                [Insert Something]
                                 </p>
                             </div>
                             <div class="card-footer text-center">
@@ -183,6 +194,62 @@
                         </div>
     				</div>
     			</div>
+    			</div>
+    			
+    			<!--  Must Update -->
+    			<div class="container">
+    			<div class="row">
+    				<div class="col-md-4">
+                        <div class="card card-profile card-plain">
+                            <div class="card-avatar">
+                                <a href="#avatar"><img src="" alt="..."></a>
+                            </div>
+                            <div class="card-body">
+                                <a href="#paper-kit">
+                                    <div class="author">
+                                        <h4 class="card-title">Nick</h4>
+                                        <h6 class="card-category">Techie</h6>
+                                    </div>
+                                </a>
+                                <p class="card-description text-center">
+                                [Insert Something]
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
+                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
+                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+    				</div>
+
+    				<div class="col-md-4">
+                        <div class="card card-profile card-plain">
+                            <div class="card-avatar">
+                                <a href="#avatar"><img src="" alt="..."></a>
+                            </div>
+                            <div class="card-body">
+                                <a href="#paper-kit">
+                                    <div class="author">
+                                        <h4 class="card-title">Nolan</h4>
+                                        <h6 class="card-category">Project Techie</h6>
+                                    </div>
+                                </a>
+                                <p class="card-description text-center">
+                                [Insert Something]
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
+                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
+                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+    				</div>
+    			</div>
+    			</div>
+    			
+    			
         	</div>
     	</div>
 
@@ -216,7 +283,7 @@
                                 <textarea class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..."></textarea>
                                 <div class="row">
                                     <div class="col-md-4 ml-auto mr-auto">
-                                        <button class="btn btn-danger btn-lg btn-fill">Send Message</button>
+                                        <button class="btn btn-default btn-lg btn-fill">Send Message</button>
                                     </div>
                                 </div>
                             </form>
@@ -225,12 +292,14 @@
                 </div>
             </div>
         </div>
- 
+<!--  
    <div class="page-title">Shopping Cart Demo</div>
   <button type="button" class="btn btn-outline-default btn-round" data-toggle="modal" data-target="#myModal">
     Launch demo modal
 	</button>
-	<!-- Modal -->
+	Modal
+	
+ 	
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -257,16 +326,18 @@
                 </div>
                 <div class="divider"></div>
                 <div class="right-side">
-                    <button type="button" class="btn btn-danger btn-link">Delete</button>
+                    <button type="button" class="btn btn-default btn-link">Delete</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+-->
   
   
    <jsp:include page="_footer.jsp" />
- 
+   <!--  
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> 
+-->
 </body>
 </html>
