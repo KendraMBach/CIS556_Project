@@ -23,16 +23,34 @@
 <!--  Paper Kit Initialization and functions -->
 <script src="${pageContext.request.contextPath}/resources/js/paper-kit.js?v=2.1.0"></script>
 
-<!--  
+  
 <style>
-      @font-face { font-family: Coldiac; src: url('${pageContext.request.contextPath}/resources/fonts/Coldiac.otf'); } 
+      @font-face { font-family: Otama-ep; src: url('${pageContext.request.contextPath}/resources/fonts/Otama-ep.otf'); } 
+      
       h1 {
-         font-family: Coldiac;
-         font-size: 5em; 
+         font-family: Otama-ep;
+         font-size: 8em;
+	     opacity: 0.75;
+	     -webkit-animation-name: fade_in; /* Safari 4.0 - 8.0 */
+	     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+	     animation-name: fade_in;
+	     animation-duration: 4s;
       }
+      
+	
+	/* Safari 4.0 - 8.0 */
+	@-webkit-keyframes fade_in {
+	    from {opacity: 0;}
+	    to {opacity: 0.75;}
+	}
+	
+	/* Standard syntax */
+	@keyframes fade_in {
+	    from {opacity: 0;}
+	    to {opacity: 0.75;}
+	}
 </style>
--->
- 
+
 </head>
 <jsp:include page="_menu.jsp" />
 <body>
@@ -40,13 +58,12 @@
 
 		<div class="page-header" data-parallax="true" style="background-image: url('${pageContext.request.contextPath}/resources/img/index01.jpg');">
 			<div class="filter"></div>
-			<div class="container">
-			 <!--  
+			<div class="container" style="display:inline-block;vertical-align:middle">
+			  
 			    <div class="motto text-centered">
-			     
-			        <h1 style="font-size:5em">Junction Jewelers</h1> 
+			        	<h1>Junction Jewelers</h1> 
 			        <br /> 
-			        -->
+			        
 			       <!-- <a href="${pageContext.request.contextPath}/productList" class="btn btn-outline-neutral btn-round"><i class="fa fa-play"></i>Shop</a>
 			         <button type="button" class="btn btn-outline-neutral btn-round">Do Something</button> -->
 			    </div>
@@ -68,11 +85,11 @@
 					<div class="col-md-3">
 						<div class="info">
 							<div class="icon icon-warning">
-								<i class="nc-icon nc-album-2"></i>
+								<i class="nc-icon nc-diamond"></i>
 							</div>
 							<div class="description">
-								<h4 class="info-title">The latest and greatest</h4>
-								<p class="description">All that you want for double the price.</p>
+								<h4 class="info-title">A Unique Selection</h4>
+								<p class="description">Choose from a variety of customizable items.</p>
 								<a href="#pkp" class="btn btn-link btn-warning">See more</a>
 							</div>
 						</div>
@@ -80,11 +97,11 @@
 					<div class="col-md-3">
 						<div class="info">
 							<div class="icon icon-warning">
-								<i class="nc-icon nc-bulb-63"></i>
+								<i class="nc-icon nc-diamond"></i>
 							</div>
 							<div class="description">
-								<h4 class="info-title">New pieces for everyone</h4>
-								<p>Trust me, it's not worth the price.</p>
+								<h4 class="info-title">New Items</h4>
+								<p>New arrivals just in.</p>
 								<a href="#pkp" class="btn btn-link btn-warning">See more</a>
 							</div>
 						</div>
@@ -92,11 +109,11 @@
 					<div class="col-md-3">
 						<div class="info">
 							<div class="icon icon-warning">
-								<i class="nc-icon nc-chart-bar-32"></i>
+								<i class="nc-icon nc-diamond"></i>
 							</div>
 							<div class="description">
 								<h4 class="info-title">For Mother</h4>
-								<p>Choose from a variety of colors and designs.</p>
+								<p>Let our hand-crafted bracelets be her next favorite accessory.</p>
 								<a href="#pkp" class="btn btn-link btn-warning">See more</a>
 							</div>
 						</div>
@@ -104,11 +121,11 @@
 					<div class="col-md-3">
 						<div class="info">
 							<div class="icon icon-warning">
-								<i class="nc-icon nc-sun-fog-29"></i>
+								<i class="nc-icon nc-diamond"></i>
 							</div>
 							<div class="description">
 								<h4 class="info-title">For Grandmother</h4>
-								<p>Unique items for all everyone.</p>
+								<p>Make your next gift be one she can take with her always.</p>
 								<a href="#pkp" class="btn btn-link btn-warning">See more</a>
 							</div>
 						</div>

@@ -29,6 +29,32 @@
 <!--  Paper Kit Initialization and functions -->
 <script src="${pageContext.request.contextPath}/resources/js/paper-kit.js?v=2.1.0"></script>
 
+<style>
+      @font-face { font-family: Otama-ep; src: url('${pageContext.request.contextPath}/resources/fonts/Otama-ep.otf'); } 
+      
+      h1 {
+         font-family: Otama-ep;
+         
+	     -webkit-animation-name: fade_in; /* Safari 4.0 - 8.0 */
+	     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+	     animation-name: fade_in;
+	     animation-duration: 4s;
+      }
+      
+	
+	/* Safari 4.0 - 8.0 */
+	@-webkit-keyframes fade_in {
+	    from {opacity: 0;}
+	    to {opacity: 1;}
+	}
+	
+	/* Standard syntax */
+	@keyframes fade_in {
+	    from {opacity: 0;}
+	    to {opacity: 1;}
+	}
+</style>
+
 </head>
 <jsp:include page="_menu.jsp" />
 <body style="padding:100px;">
@@ -158,13 +184,6 @@
     </div>
     <!-- /.container -->
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Wundermen Underground</p>
-      </div>
-      <!-- /.container -->
-    </footer>
 
    <jsp:include page="_footer.jsp" />
  
