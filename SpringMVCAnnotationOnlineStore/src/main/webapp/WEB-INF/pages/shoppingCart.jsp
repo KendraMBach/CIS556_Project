@@ -22,7 +22,7 @@
    <div class="page-title">My Cart</div>
  
    <c:if test="${empty cartForm or empty cartForm.cartLines}">
-       <h2>There is no items in Cart</h2>
+       <h2>There are no items in Cart</h2>
        <a href="${pageContext.request.contextPath}/productList">Show
            Product List</a>
    </c:if>

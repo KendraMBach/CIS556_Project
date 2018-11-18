@@ -22,6 +22,8 @@
 
 <!--  Paper Kit Initialization and functions -->
 <script src="${pageContext.request.contextPath}/resources/js/paper-kit.js?v=2.1.0"></script>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
 
   
 <style>
@@ -58,7 +60,7 @@
 
 		<div class="page-header" data-parallax="true" style="background-image: url('${pageContext.request.contextPath}/resources/img/index01.jpg');">
 			<div class="filter"></div>
-			<div class="container" style="display:inline-block;vertical-align:middle">
+			<div class="container">
 			  
 			    <div class="motto text-centered">
 			        	<h1>Junction Jewelers</h1> 

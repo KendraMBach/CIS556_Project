@@ -4,9 +4,11 @@ import java.io.IOException;
  
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
- 
+
+import org.o7planning.springmvconlinestore.dao.AccountDAO;
 import org.o7planning.springmvconlinestore.dao.OrderDAO;
 import org.o7planning.springmvconlinestore.dao.ProductDAO;
+import org.o7planning.springmvconlinestore.entity.Account;
 import org.o7planning.springmvconlinestore.entity.Product;
 import org.o7planning.springmvconlinestore.model.CartInfo;
 import org.o7planning.springmvconlinestore.model.CustomerInfo;
@@ -42,6 +44,9 @@ public class MainController {
  
     @Autowired
     private ProductDAO productDAO;
+    
+    @Autowired
+    private AccountDAO accountDAO;
  
     @Autowired
     private CustomerInfoValidator customerInfoValidator;
@@ -92,7 +97,43 @@ public class MainController {
         model.addAttribute("paginationProducts", result);
         return "productList";
     }
+    
+ // New User Registration.
+    @RequestMapping(value = {"/register" }, method = RequestMethod.GET)
+    public String newUserRegistration(Model model) {
  
+        CustomerInfo newUser = new CustomerInfo();
+ 
+        model.addAttribute("newUserForm", newUser);
+        return "register";
+    }
+    
+ // POST: Process new user.
+    @RequestMapping(value = { "/register" }, method = RequestMethod.POST)
+    @Transactional(propagation = Propagation.NEVER)
+    public String processNewUser(HttpServletRequest request, //
+            Model model, //
+            @ModelAttribute("newUserForm") @Validated CustomerInfo userInfo, //
+            BindingResult result, //
+            final RedirectAttributes redirectAttributes) {
+    	
+
+        if (result.hasErrors()) {
+            return "register";
+        }
+    	try {
+        accountDAO.registerNewUser(userInfo);
+    	}
+    	catch (Exception e) {
+            
+            String message = e.getMessage();
+            model.addAttribute("message", message);
+            return "register";
+    	}
+        return "redirect:/";
+    	
+    }
+    
     @RequestMapping({ "/buyProduct" })
     public String listProductHandler(HttpServletRequest request, Model model, //
             @RequestParam(value = "code", defaultValue = "") String code) {

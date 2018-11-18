@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
  
 <!DOCTYPE html>
 <html>
@@ -48,16 +49,21 @@
 										<i class="fa fa-twitter"></i>
 									</a>
                                 </div>
+                                <form:form id="loginForm" modelAttribute="user" action="login" method="post"> 
                                 <form class="register-form">
                                     <label>Email</label>
                                     <input type="text" class="form-control" placeholder="Email">
 
                                     <label>Password</label>
-                                    <input type="password" class="form-control" placeholder="Password">
-                                    <button class="btn btn-danger btn-block btn-round">Register</button>
+                                    <form:input path="password" name="password" id="password" type="password" class="form-control" placeholder="Password"/>
+                                    <form:button id="login" name="login" class="btn btn-danger btn-block btn-round">Login</form:button>
                                 </form>
+                                </form:form>
+                                <c:if test= "${not empty error }">
+                                		<span class="label label-danger">${error }</span>
+                                	</c:if>
                                 <div class="forgot">
-                                    <a href="#" class="btn btn-link btn-danger">Forgot password?</a>
+                                    <a href="${pageContext.request.contextPath}/register" class="btn btn-link btn-danger">New User?</a>
                                 </div>
                             </div>
                         </div>
@@ -71,14 +77,14 @@
 </body>
  
  
- 
+ <!--  
    <div class="page-title">Login (For Employee, Manager)</div>
  
    <div class="login-container">
  
        <h3>Enter username and password</h3>
        <br>
-       <!-- /login?error=true -->
+        /login?error=true 
        <c:if test="${param.error == 'true'}">
            <div style="color: red; margin: 10px 0px;">
  
@@ -93,7 +99,7 @@
            <table>
                <tr>
                    <td>User Name *</td>
-                   <td><input name="userName" /></td>
+                   <td><input name="email" /></td>
                </tr>
  
                <tr>
@@ -112,7 +118,7 @@
        <span class="error-message">${error }</span>
  
    </div>
- 
+ -->
  
    <jsp:include page="_footer.jsp" />
  

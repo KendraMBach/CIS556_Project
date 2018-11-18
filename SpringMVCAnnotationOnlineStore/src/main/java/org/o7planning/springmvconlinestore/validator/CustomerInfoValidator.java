@@ -24,10 +24,12 @@ public class CustomerInfoValidator implements Validator {
         CustomerInfo custInfo = (CustomerInfo) target;
  
         // Check the fields of CustomerInfo class.
-        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "name", "NotEmpty.customerForm.name");
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "firstName", "NotEmpty.customerForm.name");
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "lastName", "NotEmpty.customerForm.name");
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "password", "NotEmpty.customerForm.name");
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "email", "NotEmpty.customerForm.email");
-        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "address", "NotEmpty.customerForm.address");
-        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "phone", "NotEmpty.customerForm.phone");
+        //ValidationUtils.rejectIfEmptyOrWhitespace(errors, "address", "NotEmpty.customerForm.address");
+        //ValidationUtils.rejectIfEmptyOrWhitespace(errors, "phone", "NotEmpty.customerForm.phone");
  
         if (!emailValidator.isValid(custInfo.getEmail())) {
             errors.rejectValue("email", "Pattern.customerForm.email");

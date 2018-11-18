@@ -1,9 +1,11 @@
 package org.o7planning.springmvconlinestore.controller;
  
 import java.util.List;
- 
+
+import org.o7planning.springmvconlinestore.dao.AccountDAO;
 import org.o7planning.springmvconlinestore.dao.OrderDAO;
 import org.o7planning.springmvconlinestore.dao.ProductDAO;
+import org.o7planning.springmvconlinestore.model.CustomerInfo;
 import org.o7planning.springmvconlinestore.model.OrderDetailInfo;
 import org.o7planning.springmvconlinestore.model.OrderInfo;
 import org.o7planning.springmvconlinestore.model.PaginationResult;
@@ -41,6 +43,9 @@ public class AdminController {
  
     @Autowired
     private ProductDAO productDAO;
+    
+    @Autowired
+    private AccountDAO accountDAO;
  
     @Autowired
     private ProductInfoValidator productInfoValidator;
@@ -67,9 +72,35 @@ public class AdminController {
     // GET: Show Login Page
     @RequestMapping(value = { "/login" }, method = RequestMethod.GET)
     public String login(Model model) {
- 
+    	CustomerInfo user = new CustomerInfo();
+    	model.addAttribute("user", user);
         return "login";
     }
+    
+ // POST: Show Login Page
+    @RequestMapping(value = { "/login" }, method = RequestMethod.POST)
+    @Transactional(propagation = Propagation.NEVER)
+    public String confirmLogin(Model model, //
+    	    @ModelAttribute("user") CustomerInfo userInfo, //
+    	    BindingResult result, //
+    	    final RedirectAttributes redirectAttributes) {
+    	
+    	if (result.hasErrors()) {
+            return "login";
+        }
+    	try {
+        accountDAO.findAccountWithPass(userInfo.getEmail(), userInfo.getPassword());
+    	}
+    	catch (Exception e) {
+            
+            String message = e.getMessage();
+            model.addAttribute("message", message);
+            return "login";
+    	}
+        return "redirect:/";
+    	
+    }
+    
  
     @RequestMapping(value = { "/accountInfo" }, method = RequestMethod.GET)
     public String accountInfo(Model model) {

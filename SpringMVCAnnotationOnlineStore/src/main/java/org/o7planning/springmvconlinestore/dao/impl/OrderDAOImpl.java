@@ -56,7 +56,8 @@ public class OrderDAOImpl implements OrderDAO {
         order.setAmount(cartInfo.getAmountTotal());
  
         CustomerInfo customerInfo = cartInfo.getCustomerInfo();
-        order.setCustomerName(customerInfo.getName());
+        order.setCustomerName(customerInfo.getFirstName());
+        order.setCustomerName(customerInfo.getLastName());
         order.setCustomerEmail(customerInfo.getEmail());
         order.setCustomerPhone(customerInfo.getPhone());
         order.setCustomerAddress(customerInfo.getAddress());
@@ -81,7 +82,6 @@ public class OrderDAOImpl implements OrderDAO {
         }
  
         // Set OrderNum for report.
-        // Set OrderNum để thông báo cho người dùng.
         cartInfo.setOrderNum(orderNum);
     }
  
