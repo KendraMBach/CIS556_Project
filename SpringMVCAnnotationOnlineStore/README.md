@@ -2,7 +2,7 @@
 # Online Jewelry Store
 
 A Java Spring MVC eCommerce website for customers to view Jewelry inventory and place orders.
-Dependencies include Java 1.8, Maven, Spring, Hibernate, Tomcat 7, Eclipse IDE (ie Photon), SQL Server, Docker and Azure Data Studio.  
+Dependencies include Java 1.8, Maven, Spring, Hibernate, Tomcat 7, Eclipse IDE (ie Photon), SQL Server, MySQL, MySQL Workbench  
 
 ## Getting Started
 
@@ -92,7 +92,46 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.181-b13, mixed mode)
 
 Navigate to http://localhost:8080/SpringMVCAnnotationOnlineStore in your browser.
 If you receive a stack trace with a 500 error - do not fret! Just contact Kendra Bach instead.
-Or feel free to research the error you're getting. If it's a 404, refer back to you "Console" on Eclipse and see what error you are receiving there. More than likely, it's an easy config fix.
+Or feel free to research the error you're getting. If it's a 404, refer back to you "Console" on Eclipse and see what error you are receiving there. More than likely, it's an easy config fix, or terminal command (refer to "Potential Errors" section below).
+
+9. Last Notes
+  - Every time the pom.xml is reconfigured (usually by Kendra), a Maven build is necessary
+    - You can perform this via the following steps:
+      1. Right click on the project in Eclipse
+      2. Navigate down to where you see "Maven" (6th item from the bottom of the menu)
+      3. Select it and choose "Update Project..."
+
+### Potential Errors
+
+1. You may observe a 500 error along with output in Eclipse Console that states:
+```
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["http-bio-8080"]
+java.net.BindException: Address already in use (Bind failed) <null>:8080
+```
+  **Fix:**
+    1. Hit the red button on Eclipse's Console window
+    2. Open new terminal window
+    3. Run the following:
+    ```
+    lsof -i :8080 | grep LISTEN
+    ```
+    4. If you observe output similar to the following:
+    ```
+    java      5748 UserName  127u  IPv6 0x607148bec30d6e71      0t0  TCP *:http-alt (LISTEN)
+    ```
+    Run the command:
+    ```
+    kill -15 5748
+    ```
+    **Note-** The number will different than what you see above, so just copy and paste it from the output command to your command
+
+    5. Run the first command again to ensure the process was properly terminated
+        - If you receive an empty response (i.e. no processes show) then you're in the clear to back-step to Step 8 and run the process again
+        - If you still see the same process lingering, run:
+          ```
+          kill -9 5748
+          ```
+
 
 ## Built With
 
@@ -101,7 +140,8 @@ Or feel free to research the error you're getting. If it's a 404, refer back to 
 * [Eclipse](https://www.eclipse.org) - Deployment IDE
 * [Tomcat7](https://tomcat.apache.org) - Java Servlet / JSP Deployment
 * [Docker](https://store.docker.com) - Database (SQL Server) Consolidation and Connectivity
-* [SQL Operations Studio](https://github.com/Microsoft/sqlopsstudio) - Mac DB Interface
+* [MySQL Community Server](https://dev.mysql.com/downloads/mysql/) - Open source DB
+* [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) - DB GUI
 
 
 ## Contributing
