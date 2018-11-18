@@ -48,56 +48,33 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.181-b13, mixed mode)
       - In the Tomcat installation directory section click Browse... and pick up the directory where you installed Tomcat,
     - Click Finish.
 
-5. Setup SQL Server and Docker
-  - Download and install Docker via https://store.docker.com/editions/community/docker-ce-desktop-mac (for mac only)
-  - Open Terminal and execute:
-```
-sudo docker pull microsoft/mssql-server-linux:2017-latest
-```
-  - Launch Docker
-  - When it has finished launching (it usually takes a moment) select the new whale icon at the top of your screen
-  - Click "Preferences > Advanced"
-  - Allocate at least 3.25 MB (Note that this is for SQL Server, Docker by default has 2 MB allocated to it already)
-  - Select "Apply and Restart"
-  - From the terminal execute:
-```
-sudo docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=YourStrong!Passw0rd' -p 1401:1433 --name sqlserver1 -d microsoft/mssql-server-linux:2017-latest
-```
-  **Leave YourStrong!Passw0rd as it is to avoid extra source-control issues going forward**
-  - Run:
-```
-docker ps -a
-```
-  - Ensure your SQL Server image has a status of "Up _ seconds" and not "Exited"
+5. Setup MySQL and setup MySQL Workbench with test script
+  - Download and install MySQL: https://dev.mysql.com/downloads/mysql/
+    - When prompted for a password, use: YourStrong!Passw0rd
+      - This will eliminate version control issues
+    - Ensure the box asking to start MySQL now (or something to that effect) is checked
 
-6. Install SQL Operations Studio (aka Azure Data Studio)
-  - Install from https://github.com/Microsoft/sqlopsstudio
-  - Unpack and install
-  - Open the app
-  - You will be presented with a Connection screen
-  - Use "localhost" for the server, "sa" for the User name, "YourStrong!Passw0rd" for the password
-  - Click Advanced
-    - Scroll to the "General" section
-    - Type "1401" for the port
-  - Click Apply > Connect
+**The following block is strictly for those who have chosen to save their project in the eclipse-workspace folder**    
+  - Open and instance of Finder (Mac Only)
+    - Select Finder > Preferences > Sidebar > Ensure "macowner" next to the small house icon is checked
+    - Exit Preferences
+      - This will all make sense later
+**End**
 
-  ![SQL Operations Studio Connection Screen]
-  https://static1.squarespace.com/static/58c821ad197aeab4514c904f/t/5ab98a6e8a922d0efd9b05c9/1522109050997/03ops_studio_connect.png?format=2500w
-
-  - Upload data (Optional?)
-    - I believe this is optional prior to running the program, but if it's not then I'll include test scripts in the repo
-
-7. Import Maven project
-    - From Eclipse's Workbench, select "File > Import"
-    - Select "Existing Maven Projects"
-    - Select "browse.."
-    - Choose "CIS556_Project" in the current workspace > Select Open
-    - Ensure Project is selected and then press "Finish"
-    - Now right click the project in the workspace
-    - Select "Maven > Update Project...""
-
-    ![Eclipse Workbench > Maven > Update Project]
-    https://i.stack.imgur.com/9RLv5.png
+  - Now download and install MySQL Workbench: https://dev.mysql.com/downloads/workbench/
+  - Once installed, run the application
+    - Double click on your local instance 3306 on initial screen
+      - From the MySQLWorkbench toolbar select: File > Run SQL script...
+**If your project exists inside eclipse-workspace**
+        - Navigate to "macowner" from the sidebar
+          - Choose: eclipse-workspace > CIS556_Project > SpringMVCAnnotationOnlineStore > TestScript.sql
+          - Select "Open"
+          - Select "Run"
+**Otherwise...**
+        - Navigate to your project folder
+          - Choose: CIS556_Project > SpringMVCAnnotationOnlineStore > TestScript.sql
+          - Select "Open"
+          - Select "Run"
 
 ### Run
 
