@@ -125,7 +125,7 @@ java.net.BindException: Address already in use (Bind failed) <null>:8080
     ```
     **Note-** The number will different than what you see above, so just copy and paste it from the output command to your command
 
-    5. Run the first command again to ensure the process was properly terminated
+   5. Run the first command again to ensure the process was properly terminated
         - If you receive an empty response (i.e. no processes show) then you're in the clear to back-step to Step 8 and run the process again
         - If you still see the same process lingering, run:
           ```
