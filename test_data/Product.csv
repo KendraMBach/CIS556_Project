@@ -1,0 +1,77 @@
+Product_ID,Product_Name,Product_Color,Product_Category,Gender,Image_Filename,Product_Size,Number_In_Stock,Product_Base_Wholesale_Price,Product_Retail_Price,Product_Description ,Option_Name_Engraving,Option_Birthstone,Option_Charm_1,Option_Charm_2,Option_Charm_3,Option_Charm_4
+20001,Mother's Bracelet,Gold,Bracelet,Women,gold_mothers_bracelet.png,7 inch,100,27.50,68.75,"A bracelet with a customn name engraving, a birthstone. Up to 4 Optional Charms.",1,0,1,1,1,1
+20002,Mother's Bracelet,Silver,Bracelet,Women,silver_mothers_bracelet.png,7 inch,100,25.00,62.50,"A bracelet with a customn name engraving, a birthstone. Up to 4 Optional Charms.",1,0,1,1,1,1
+20003,Mother's Bracelet,Gold,Bracelet,Women,gold_mothers_bracelet.png,8.5 inch,100,27.50,68.75,"A bracelet with a customn name engraving, a birthstone. Up to 4 Optional Charms.",1,0,1,1,1,1
+20004,Mother's Bracelet,Silver,Bracelet,Women,silver_mothers_bracelet.png,8.5 inch,100,25.00,62.50,"A bracelet with a customn name engraving, a birthstone. Up to 4 Optional Charms.",1,0,1,1,1,1
+20005,Grandmother's Bracelet,Gold,Bracelet,Women,gold_grandmothers_bracelet.png,7 inch,100,27.50,68.75,"A bracelet with a customn name engraving, a birthstone. Up to 4 Optional Charms.",1,0,1,1,1,1
+20006,Grandmother's Bracelet,Silver,Bracelet,Women,silver_grandmothers_bracelet.png,7 inch,100,25.00,62.50,"A bracelet with a customn name engraving, a birthstone. Up to 4 Optional Charms.",1,0,1,1,1,1
+20007,Grandmother's Bracelet,Gold,Bracelet,Women,gold_grandmothers_bracelet.png,8.5 inch,100,27.50,68.75,"A bracelet with a customn name engraving, a birthstone. Up to 4 Optional Charms.",1,0,1,1,1,1
+20008,Grandmother's Bracelet,Silver,Bracelet,Women,silver_grandmothers_bracelet.png,8.5 inch,100,25.00,62.50,"A bracelet with a customn name engraving, a birthstone. Up to 4 Optional Charms.",1,0,1,1,1,1
+20009,Christening Bracelet,Gold,Bracelet,Baby,baby_bracelets.png,Small,100,22.00,44.00,A bracelet with a name. Optional Charm.,1,1,1,1,1,1
+20010,Christening Bracelet,Pink,Bracelet,Baby,baby_bracelets.png,Small,100,20.00,40.00,A bracelet with a name. Optional Charm.,1,1,1,1,1,1
+20011,Christening Bracelet,Silver,Bracelet,Baby,baby_bracelets.png,Small,100,20.00,40.00,A bracelet with a name. Optional Charm.,1,1,1,1,1,1
+20012,Christening Bracelet,Gold,Bracelet,Baby,baby_bracelets.png,Medium,100,22.00,44.00,A bracelet with a name. Optional Charm.,1,1,1,1,1,1
+20013,Christening Bracelet,Pink,Bracelet,Baby,baby_bracelets.png,Medium,100,20.00,40.00,A bracelet with a name. Optional Charm.,1,1,1,1,1,1
+20014,Christening Bracelet,Silver,Bracelet,Baby,baby_bracelets.png,Medium,100,20.00,40.00,A bracelet with a name. Optional Charm.,1,1,1,1,1,1
+20015,Wedding Band,Gold,Ring,Men,mens_gold_wedding_band.png,7,100,110.00,220.00,A wedding band for men. ,1,0,0,0,0,0
+20016,Wedding Band,White Gold,Ring,Men,mens_white_gold_wedding_band.png,7,100,100.00,200.00,A wedding band for men. ,1,0,0,0,0,0
+20017,Wedding Band,Silver,Ring,Men,mens_silver_wedding_band.png,7,100,100.00,200.00,A wedding band for men. ,1,0,0,0,0,0
+20018,Wedding Band,Gold,Ring,Men,mens_gold_wedding_band.png,8,100,110.00,220.00,A wedding band for men. ,1,0,0,0,0,0
+20019,Wedding Band,White Gold,Ring,Men,mens_white_gold_wedding_band.png,8,100,100.00,200.00,A wedding band for men. ,1,0,0,0,0,0
+20020,Wedding Band,Silver,Ring,Men,mens_silver_wedding_band.png,8,100,100.00,200.00,A wedding band for men. ,1,0,0,0,0,0
+20021,Wedding Band,Gold,Ring,Men,mens_gold_wedding_band.png,9,100,110.00,220.00,A wedding band for men. ,1,0,0,0,0,0
+20022,Wedding Band,White Gold,Ring,Men,mens_white_gold_wedding_band.png,9,100,100.00,200.00,A wedding band for men. ,1,0,0,0,0,0
+20023,Wedding Band,Silver,Ring,Men,mens_silver_wedding_band.png,9,100,100.00,200.00,A wedding band for men. ,1,0,0,0,0,0
+20024,Wedding Band,Gold,Ring,Men,mens_gold_wedding_band.png,10,100,110.00,220.00,A wedding band for men. ,1,0,0,0,0,0
+20025,Wedding Band,White Gold,Ring,Men,mens_white_gold_wedding_band.png,10,100,100.00,200.00,A wedding band for men. ,1,0,0,0,0,0
+20026,Wedding Band,Silver,Ring,Men,mens_silver_wedding_band.png,10,100,100.00,200.00,A wedding band for men. ,1,0,0,0,0,0
+20027,Wedding Ring,Gold,Ring,Women,womens_gold_wedding_ring.png,5,100,187.00,467.50,A women's wedding ring.,1,0,0,0,0,0
+20028,Wedding Ring,White Gold,Ring,Women,womens_wgold_wedding_ring.png,5,100,170.00,425.00,A women's wedding ring.,1,0,0,0,0,0
+20029,Wedding Ring,Silver,Ring,Women,womens_silver_wedding_ring.png,5,100,170.00,425.00,A women's wedding ring.,1,0,0,0,0,0
+20030,Wedding Ring,Gold,Ring,Women,womens_gold_wedding_ring.png,6,100,187.00,467.50,A women's wedding ring.,1,0,0,0,0,0
+20031,Wedding Ring,White Gold,Ring,Women,womens_wgold_wedding_ring.png,6,100,170.00,425.00,A women's wedding ring.,1,0,0,0,0,0
+20032,Wedding Ring,Silver,Ring,Women,womens_silver_wedding_ring.png,6,100,170.00,425.00,A women's wedding ring.,1,0,0,0,0,0
+20033,Wedding Ring,Gold,Ring,Women,womens_gold_wedding_ring.png,7,100,187.00,467.50,A women's wedding ring.,1,0,0,0,0,0
+20034,Wedding Ring,White Gold,Ring,Women,womens_wgold_wedding_ring.png,7,100,170.00,425.00,A women's wedding ring.,1,0,0,0,0,0
+20035,Wedding Ring,Silver,Ring,Women,womens_silver_wedding_ring.png,7,100,170.00,425.00,A women's wedding ring.,1,0,0,0,0,0
+20036,Wedding Ring,Gold,Ring,Women,womens_gold_wedding_ring.png,8,100,187.00,467.50,A women's wedding ring.,1,0,0,0,0,0
+20037,Wedding Ring,White Gold,Ring,Women,womens_wgold_wedding_ring.png,8,100,170.00,425.00,A women's wedding ring.,1,0,0,0,0,0
+20038,Wedding Ring,Silver,Ring,Women,womens_silver_wedding_ring.png,8,100,170.00,425.00,A women's wedding ring.,1,0,0,0,0,0
+20039,Stud Earrings,Silver,Earings,Men,mens_silver_stud_earrings.png,One Size,100,18.00,36.00,A small piece of jewelry that is worn through a small hole in the earlobe.,0,0,0,0,0,0
+20040,Stud Earrings,Gold,Earings,Men,mens_gold_stud_earrings.png,One Size,100,19.80,39.60,A small piece of jewelry that is worn through a small hole in the earlobe.,0,0,0,0,0,0
+20041,Stud Earrings,Black,Earings,Men,mens_black_stud_earrings.png,One Size,100,18.00,36.00,A small piece of jewelry that is worn through a small hole in the earlobe.,0,0,0,0,0,0
+20042,Stud Earrings,Silver,Earings,Women,womens_silver_stud_earrings.png,One Size,100,18.00,45.00,A small piece of jewelry that is worn through a small hole in the earlobe.,0,0,0,0,0,0
+20043,Stud Earrings,Gold,Earings,Women,womens_gold_stud_earrings.png,One Size,100,19.80,49.50,A small piece of jewelry that is worn through a small hole in the earlobe.,0,0,0,0,0,0
+20044,Stud Earrings,Pink,Earings,Women,pink_stud_earrings.png,One Size,100,18.00,45.00,A small piece of jewelry that is worn through a small hole in the earlobe.,0,0,0,0,0,0
+20045,Hoop Ear Rings,Silver,Earings,Women,silver_hoops.png,One Size,100,22.00,55.00,A small piece of jewelry that is worn through a small hole in the earlobe.,0,0,0,0,0,0
+20046,Hoop Ear Rings,Gold,Earings,Women,gold_hoops.png,One Size,100,24.20,60.50,A small piece of jewelry that is worn through a small hole in the earlobe.,0,0,0,0,0,0
+20047,Hoop Ear Rings,Pink,Earings,Women,pink_hoops.png,One Size,100,22.00,55.00,A small piece of jewelry that is worn through a small hole in the earlobe.,0,0,0,0,0,0
+20048,Pendant Set,Gold,Set,Women,gold_pendent_set.png,One Size,100,55.00,137.50,A matching necklace and earring set.,0,0,0,0,0,0
+20049,Pendant Set,Silver,Set,Women,silver_pendant_set.png,One Size,100,50.00,125.00,A matching necklace and earring set.,0,0,0,0,0,0
+20050,Pearl Set,White,Set,Women,pearl_set.png,One Size,100,75.00,187.50,A matching necklace and earring set.,0,0,0,0,0,0
+20051,Pendant Necklace,Gold,Necklace,Women,gold_pendant_necklace.png,16 inches,100,66.00,165.00,A piece of jewelry that hangs from a chain worn around the neck.,0,0,0,0,0,0
+20052,Pendant Necklace,Gold,Necklace,Women,gold_pendant_necklace.png,18 inches,100,66.00,165.00,A piece of jewelry that hangs from a chain worn around the neck.,0,0,0,0,0,0
+20053,Pendant Necklace,Gold,Necklace,Women,gold_pendant_necklace.png,20 inches,100,66.00,165.00,A piece of jewelry that hangs from a chain worn around the neck.,0,0,0,0,0,0
+20054,Pendant Necklace,Gold,Necklace,Women,gold_pendant_necklace.png,22 inches,100,66.00,165.00,A piece of jewelry that hangs from a chain worn around the neck.,0,0,0,0,0,0
+20055,Pendant Necklace,Silver,Necklace,Women,silver_pendant_necklace.png,16 inches,100,60.00,150.00,A piece of jewelry that hangs from a chain worn around the neck.,0,0,0,0,0,0
+20056,Pendant Necklace,Silver,Necklace,Women,silver_pendant_necklace.png,18 inches,100,60.00,150.00,A piece of jewelry that hangs from a chain worn around the neck.,0,0,0,0,0,0
+20057,Pendant Necklace,Silver,Necklace,Women,silver_pendant_necklace.png,20 inches,100,60.00,150.00,A piece of jewelry that hangs from a chain worn around the neck.,0,0,0,0,0,0
+20058,Pendant Necklace,Silver,Necklace,Women,silver_pendant_necklace.png,22 inches,100,60.00,150.00,A piece of jewelry that hangs from a chain worn around the neck.,0,0,0,0,0,0
+20059,Pearl Necklace,Pearl,Necklace,Women,pearl_necklace.png,16 inches,100,85.00,212.50,A piece of jewelry that hangs from a chain worn around the neck.,0,0,0,0,0,0
+20060,Pearl Necklace,Pearl,Necklace,Women,pearl_necklace.png,18 inches,100,85.00,212.50,A piece of jewelry that hangs from a chain worn around the neck.,0,0,0,0,0,0
+20061,Pearl Necklace,Pearl,Necklace,Women,pearl_necklace.png,20 inches,100,85.00,212.50,A piece of jewelry that hangs from a chain worn around the neck.,0,0,0,0,0,0
+20062,Pearl Necklace,Pearl,Necklace,Women,pearl_necklace.png,22 inches,100,85.00,212.50,A piece of jewelry that hangs from a chain worn around the neck.,0,0,0,0,0,0
+20063,Crystal Necklace,Crystal,Necklace,Women,crystal_necklace.png,16 inches,100,100.00,250.00,A piece of jewelry that hangs from a chain worn around the neck.,0,0,0,0,0,0
+20064,Crystal Necklace,Crystal,Necklace,Women,crystal_necklace.png,18 inches,100,100.00,250.00,A piece of jewelry that hangs from a chain worn around the neck.,0,0,0,0,0,0
+20065,Crystal Necklace,Crystal,Necklace,Women,crystal_necklace.png,20 inches,100,100.00,250.00,A piece of jewelry that hangs from a chain worn around the neck.,0,0,0,0,0,0
+20066,Crystal Necklace,Crystal,Necklace,Women,crystal_necklace.png,22 inches,100,100.00,250.00,A piece of jewelry that hangs from a chain worn around the neck.,0,0,0,0,0,0
+20067,Owl Pendant Necklace,Owl,Everyday,Women,owl_pendant_necklace.png,16 inches,100,22.00,55.00,A very cool owl necklace.,0,0,0,0,0,0
+20068,Owl Pendant Necklace,Owl,Everyday,Women,owl_pendant_necklace.png,18 inches,100,22.00,55.00,A very cool owl necklace.,0,0,0,0,0,0
+20069,Owl Pendant Necklace,Owl,Everyday,Women,owl_pendant_necklace.png,20 inches,100,22.00,55.00,A very cool owl necklace.,0,0,0,0,0,0
+20070,Owl Pendant Necklace,Owl,Everyday,Women,owl_pendant_necklace.png,22 inches,100,22.00,55.00,A very cool owl necklace.,0,0,0,0,0,0
+20071,Rose Stud Earings,Rose,Everyday,Women,rose_ear_rings.png,One Size,100,10.00,25.00,Sassy studs for studs.,0,0,0,0,0,0
+20072,Cat Ring,Purrr-ple,Everyday,Women,cat_ring.png,5,100,11.00,27.50,"Meow! Look out, a paw-some ring will amaze your babysitter.",0,0,0,0,0,0
+20073,Cat Ring,Purrr-ple,Everyday,Women,cat_ring.png,6,100,11.00,27.50,"Meow! Look out, a paw-some ring will amaze your babysitter.",0,0,0,0,0,0
+20074,Cat Ring,Purrr-ple,Everyday,Women,cat_ring.png,7,100,11.00,27.50,"Meow! Look out, a paw-some ring will amaze your babysitter.",0,0,0,0,0,0
+20075,Cat Ring,Purrr-ple,Everyday,Women,cat_ring.png,8,100,11.00,27.50,"Meow! Look out, a paw-some ring will amaze your babysitter.",0,0,0,0,0,0
+20076,Silver Bangles,Silver,Everyday,Women,silver_bangle.png,One Size,100,44.00,110.00,Enjoy with white wine.,0,0,0,0,0,0
