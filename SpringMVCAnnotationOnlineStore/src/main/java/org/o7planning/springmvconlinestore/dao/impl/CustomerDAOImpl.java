@@ -6,8 +6,8 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
-import org.o7planning.springmvconlinestore.dao.AccountDAO;
-import org.o7planning.springmvconlinestore.entity.Account;
+import org.o7planning.springmvconlinestore.dao.CustomerDAO;
+import org.o7planning.springmvconlinestore.entity.Customer;
 import org.o7planning.springmvconlinestore.entity.Product;
 import org.o7planning.springmvconlinestore.model.CustomerInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,23 +15,23 @@ import org.springframework.transaction.annotation.Transactional;
  
 // Transactional for Hibernate
 @Transactional
-public class AccountDAOImpl implements AccountDAO {
+public class CustomerDAOImpl implements CustomerDAO {
     
     @Autowired
     private SessionFactory sessionFactory;
 
-    public Account findAccount(String email ) {
+    public Customer findAccount(String email ) {
         Session session = sessionFactory.getCurrentSession();
         @SuppressWarnings("deprecation")
-		Criteria crit = session.createCriteria(Account.class);
+		Criteria crit = session.createCriteria(Customer.class);
         crit.add(Restrictions.eq("email", email));
-        return (Account) crit.uniqueResult();
+        return (Customer) crit.uniqueResult();
     }
 
 	@Override
 	public void registerNewUser(CustomerInfo newUser) {
 		
-		Account user = null;
+		Customer user = null;
 		String email = newUser.getEmail(); 
  
         boolean isNew = false;
@@ -40,12 +40,16 @@ public class AccountDAOImpl implements AccountDAO {
         }
         if (user == null) {
             isNew = true;
-            user = new Account();
+            user = new Customer();
         }
         user.setEmail(email);
         user.setFirstName(newUser.getFirstName());
         user.setLastName(newUser.getLastName());
         user.setPassword(newUser.getPassword());
+        user.setAddress(newUser.getAddress());
+        user.setCity(newUser.getCity());
+        user.setState(newUser.getState());
+        user.setZip(newUser.getZip());
  
         
         if (isNew) {
@@ -56,13 +60,34 @@ public class AccountDAOImpl implements AccountDAO {
     }
 
 	@Override
-	public Account findAccountWithPass(String email, String password) {
+	public Customer findAccountWithPass(String email, String password) {
 		Session session = sessionFactory.getCurrentSession();
         @SuppressWarnings("deprecation")
-		Criteria crit = session.createCriteria(Account.class);
+		Criteria crit = session.createCriteria(Customer.class);
         crit.add(Restrictions.eq("email", email));
         crit.add(Restrictions.eq("password", password));
-        return (Account) crit.uniqueResult();
+        return (Customer) crit.uniqueResult();
+	}
+	
+	@Override
+	public int findCustomerId(String email, String password)
+	{
+		Session session = sessionFactory.getCurrentSession();
+        @SuppressWarnings("deprecation")
+		Criteria crit = session.createCriteria(Customer.class);
+        crit.add(Restrictions.eq("email", email));
+        crit.add(Restrictions.eq("password", password));
+        Customer thisCustomer = (Customer) crit.uniqueResult();
+        return(thisCustomer.getCustomerID());
+	}
+	
+	@Override
+	public Customer lookUpCustomerWithID(int id) {
+		Session session = sessionFactory.getCurrentSession();
+        @SuppressWarnings("deprecation")
+		Criteria crit = session.createCriteria(Customer.class);
+        crit.add(Restrictions.eq("Customer_ID", id));
+        return((Customer) crit.uniqueResult());
 	}
  
 }

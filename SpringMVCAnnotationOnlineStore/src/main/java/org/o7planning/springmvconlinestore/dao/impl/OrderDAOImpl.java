@@ -1,5 +1,6 @@
 package org.o7planning.springmvconlinestore.dao.impl;
  
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -9,8 +10,10 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
+import org.o7planning.springmvconlinestore.dao.CustomerDAO;
 import org.o7planning.springmvconlinestore.dao.OrderDAO;
 import org.o7planning.springmvconlinestore.dao.ProductDAO;
+import org.o7planning.springmvconlinestore.entity.Customer;
 import org.o7planning.springmvconlinestore.entity.Order;
 import org.o7planning.springmvconlinestore.entity.OrderDetail;
 import org.o7planning.springmvconlinestore.entity.Product;
@@ -32,6 +35,9 @@ public class OrderDAOImpl implements OrderDAO {
  
     @Autowired
     private ProductDAO productDAO;
+    
+    @Autowired
+    private CustomerDAO customerDAO;
  
     private int getMaxOrderNum() {
         String sql = "Select max(o.orderNum) from " + Order.class.getName() + " o ";
@@ -46,35 +52,40 @@ public class OrderDAOImpl implements OrderDAO {
  
     public void saveOrder(CartInfo cartInfo) {
         Session session = sessionFactory.getCurrentSession();
+        
+        Calendar today = Calendar.getInstance();
+		today.set(Calendar.HOUR_OF_DAY, 0);
+		
  
         int orderNum = this.getMaxOrderNum() + 1;
         Order order = new Order();
  
-        order.setId(UUID.randomUUID().toString());
-        order.setOrderNum(orderNum);
-        order.setOrderDate(new Date());
-        order.setAmount(cartInfo.getAmountTotal());
+        order.setAmount(cartInfo.getQuantityTotal());
+        order.setProdRetailPrice(cartInfo.getAmountTotal()); //Skewed logic - Have Total Field instead?
  
         CustomerInfo customerInfo = cartInfo.getCustomerInfo();
+        
+        int customerId = customerDAO.findCustomerId(customerInfo.getEmail(), customerInfo.getPassword());
+        order.setCustomerID(customerId);
+        /*
         order.setCustomerName(customerInfo.getFirstName());
         order.setCustomerName(customerInfo.getLastName());
         order.setCustomerEmail(customerInfo.getEmail());
         order.setCustomerPhone(customerInfo.getPhone());
         order.setCustomerAddress(customerInfo.getAddress());
- 
+ 		*/
         session.persist(order);
  
         List<CartLineInfo> lines = cartInfo.getCartLines();
  
         for (CartLineInfo line : lines) {
             OrderDetail detail = new OrderDetail();
-            detail.setId(UUID.randomUUID().toString());
             detail.setOrder(order);
             detail.setAmount(line.getAmount());
             detail.setPrice(line.getProductInfo().getPrice());
             detail.setQuanity(line.getQuantity());
  
-            String code = line.getProductInfo().getCode();
+            int code = line.getProductInfo().getCode();
             Product product = this.productDAO.findProduct(code);
             detail.setProduct(product);
  
@@ -99,24 +110,34 @@ public class OrderDAOImpl implements OrderDAO {
         return new PaginationResult<OrderInfo>(query, page, maxResult, maxNavigationPage);
     }
  
-    public Order findOrder(String orderId) {
+    public Order findSingleOrder(int orderId) {
         Session session = sessionFactory.getCurrentSession();
         Criteria crit = session.createCriteria(Order.class);
-        crit.add(Restrictions.eq("id", orderId));
+        crit.add(Restrictions.eq("Order_ID", orderId));
+        return (Order) crit.uniqueResult();
+    }
+    
+    public Order findOrderForCustomer(int orderId, int customerId) {
+    	Session session = sessionFactory.getCurrentSession();
+        Criteria crit = session.createCriteria(Order.class);
+        crit.add(Restrictions.eq("Order_ID", orderId));
+        crit.add(Restrictions.eq("Customer_ID", customerId));
         return (Order) crit.uniqueResult();
     }
  
-    public OrderInfo getOrderInfo(String orderId) {
-        Order order = this.findOrder(orderId);
+    public OrderInfo getOrderInfo(int orderId) {
+        Order order = this.findSingleOrder(orderId);
         if (order == null) {
             return null;
         }
+        Customer customer = customerDAO.lookUpCustomerWithID(order.getCustomerID());
         return new OrderInfo(order.getId(), order.getOrderDate(), //
-                order.getOrderNum(), order.getAmount(), order.getCustomerName(), //
-                order.getCustomerAddress(), order.getCustomerEmail(), order.getCustomerPhone());
+                order.getId(), order.getAmount(), customer.getFirstName(), //
+                customer.getLastName(), customer.getAddress(), customer.getCity(), customer.getState(), //
+                customer.getZip(), customer.getEmail(), customer.getPhone());
     }
  
-    public List<OrderDetailInfo> listOrderDetailInfos(String orderId) {
+    public List<OrderDetailInfo> listOrderDetailInfos(int orderId) {
         String sql = "Select new " + OrderDetailInfo.class.getName() //
                 + "(d.id, d.product.code, d.product.name , d.quanity,d.price,d.amount) "//
                 + " from " + OrderDetail.class.getName() + " d "//
@@ -129,5 +150,7 @@ public class OrderDAOImpl implements OrderDAO {
  
         return query.list();
     }
+
+	
  
 }

@@ -4,37 +4,35 @@ import org.o7planning.springmvconlinestore.entity.Product;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
  
 public class ProductInfo {
-    private String code;
+    private int code;
     private String name;
     private double price;
  
     private boolean newProduct=false;
  
     // Upload file.
-    private CommonsMultipartFile fileData;
+    private String fileData;
  
     public ProductInfo() {
     }
  
     public ProductInfo(Product product) {
-        this.code = product.getCode();
+        this.code = product.getId();
         this.name = product.getName();
-        this.price = product.getPrice();
+        this.price = product.getPriceRetail();
     }
  
-    // Không thay đổi Constructor này,
-    // nó được sử dụng trong Hibernate query.
-    public ProductInfo(String code, String name, double price) {
+    public ProductInfo(int code, String name, double price) {
         this.code = code;
         this.name = name;
         this.price = price;
     }
  
-    public String getCode() {
+    public int getCode() {
         return code;
     }
  
-    public void setCode(String code) {
+    public void setCode(int code) {
         this.code = code;
     }
  
@@ -54,11 +52,11 @@ public class ProductInfo {
         this.price = price;
     }
  
-    public CommonsMultipartFile getFileData() {
+    public String getFileData() {
         return fileData;
     }
  
-    public void setFileData(CommonsMultipartFile fileData) {
+    public void setFileData(String fileData) {
         this.fileData = fileData;
     }
  

@@ -7,9 +7,9 @@ import org.o7planning.springmvconlinestore.model.ProductInfo;
 public interface ProductDAO {
  
     
-    public Product findProduct(String code);
+    public Product findProduct(int code);
     
-    public ProductInfo findProductInfo(String code) ;
+    public ProductInfo findProductInfo(int code) ;
   
     
     public PaginationResult<ProductInfo> queryProducts(int page,

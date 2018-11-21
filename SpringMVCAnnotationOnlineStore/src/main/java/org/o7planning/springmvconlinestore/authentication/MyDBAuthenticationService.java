@@ -3,8 +3,8 @@ package org.o7planning.springmvconlinestore.authentication;
 import java.util.ArrayList;
 import java.util.List;
  
-import org.o7planning.springmvconlinestore.dao.AccountDAO;
-import org.o7planning.springmvconlinestore.entity.Account;
+import org.o7planning.springmvconlinestore.dao.CustomerDAO;
+import org.o7planning.springmvconlinestore.entity.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -18,10 +18,10 @@ import org.springframework.stereotype.Service;
 public class MyDBAuthenticationService implements UserDetailsService {
  
     @Autowired
-    private AccountDAO accountDAO;
+    private CustomerDAO accountDAO;
  
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        Account account = accountDAO.findAccount(username);
+        Customer account = accountDAO.findAccount(username);
         System.out.println("Account= " + account);
  
         if (account == null) {

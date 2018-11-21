@@ -21,42 +21,46 @@ public class ProductDAOImpl implements ProductDAO {
     @Autowired
     private SessionFactory sessionFactory;
  
-    public Product findProduct(String code) {
+    public Product findProduct(int code) {
         Session session = sessionFactory.getCurrentSession();
         Criteria crit = session.createCriteria(Product.class);
-        crit.add(Restrictions.eq("code", code));
+        crit.add(Restrictions.eq("Product_ID", code));
         return (Product) crit.uniqueResult();
     }
  
-    public ProductInfo findProductInfo(String code) {
+    public ProductInfo findProductInfo(int code) {
         Product product = this.findProduct(code);
         if (product == null) {
             return null;
         }
-        return new ProductInfo(product.getCode(), product.getName(), product.getPrice());
+        return new ProductInfo(product.getId(), product.getName(), product.getPriceRetail());
     }
  
     public void save(ProductInfo productInfo) {
-        String code = productInfo.getCode();
+        int code = productInfo.getCode();
  
         Product product = null;
  
         boolean isNew = false;
-        if (code != null) {
+        try {
             product = this.findProduct(code);
+        }
+        catch(Exception e) {
+        	System.out.println("Null Pointer in Product DAO");
+        	System.out.println(e);
         }
         if (product == null) {
             isNew = true;
             product = new Product();
             product.setCreateDate(new Date());
         }
-        product.setCode(code);
+        product.setId(code);
         product.setName(productInfo.getName());
-        product.setPrice(productInfo.getPrice());
+        product.setPriceRetail(productInfo.getPrice());
  
         if (productInfo.getFileData() != null) {
-            byte[] image = productInfo.getFileData().getBytes();
-            if (image != null && image.length > 0) {
+            String image = productInfo.getFileData();
+            if (image != null) {
                 product.setImage(image);
             }
         }

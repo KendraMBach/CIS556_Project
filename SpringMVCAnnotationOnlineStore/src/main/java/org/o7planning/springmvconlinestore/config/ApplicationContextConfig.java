@@ -5,10 +5,10 @@ import java.util.Properties;
 import javax.sql.DataSource;
  
 import org.hibernate.SessionFactory;
-import org.o7planning.springmvconlinestore.dao.AccountDAO;
+import org.o7planning.springmvconlinestore.dao.CustomerDAO;
 import org.o7planning.springmvconlinestore.dao.OrderDAO;
 import org.o7planning.springmvconlinestore.dao.ProductDAO;
-import org.o7planning.springmvconlinestore.dao.impl.AccountDAOImpl;
+import org.o7planning.springmvconlinestore.dao.impl.CustomerDAOImpl;
 import org.o7planning.springmvconlinestore.dao.impl.OrderDAOImpl;
 import org.o7planning.springmvconlinestore.dao.impl.ProductDAOImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -111,9 +111,9 @@ public class ApplicationContextConfig {
         return transactionManager;
     }
  
-    @Bean(name = "accountDAO")
-    public AccountDAO getApplicantDAO() {
-        return new AccountDAOImpl();
+    @Bean(name = "customerDAO")
+    public CustomerDAO getCustomerDAO() {
+        return new CustomerDAOImpl();
     }
  
     @Bean(name = "productDAO")
@@ -126,9 +126,5 @@ public class ApplicationContextConfig {
         return new OrderDAOImpl();
     }
      
-    @Bean(name = "accountDAO")
-    public AccountDAO getAccountDAO()  {
-        return new AccountDAOImpl();
-    }
  
 }

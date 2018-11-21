@@ -5,10 +5,10 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.o7planning.springmvconlinestore.dao.AccountDAO;
+import org.o7planning.springmvconlinestore.dao.CustomerDAO;
 import org.o7planning.springmvconlinestore.dao.OrderDAO;
 import org.o7planning.springmvconlinestore.dao.ProductDAO;
-import org.o7planning.springmvconlinestore.entity.Account;
+import org.o7planning.springmvconlinestore.entity.Customer;
 import org.o7planning.springmvconlinestore.entity.Product;
 import org.o7planning.springmvconlinestore.model.CartInfo;
 import org.o7planning.springmvconlinestore.model.CustomerInfo;
@@ -46,7 +46,7 @@ public class MainController {
     private ProductDAO productDAO;
     
     @Autowired
-    private AccountDAO accountDAO;
+    private CustomerDAO accountDAO;
  
     @Autowired
     private CustomerInfoValidator customerInfoValidator;

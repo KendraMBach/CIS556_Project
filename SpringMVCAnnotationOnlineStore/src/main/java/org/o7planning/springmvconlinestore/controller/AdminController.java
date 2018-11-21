@@ -2,7 +2,7 @@ package org.o7planning.springmvconlinestore.controller;
  
 import java.util.List;
 
-import org.o7planning.springmvconlinestore.dao.AccountDAO;
+import org.o7planning.springmvconlinestore.dao.CustomerDAO;
 import org.o7planning.springmvconlinestore.dao.OrderDAO;
 import org.o7planning.springmvconlinestore.dao.ProductDAO;
 import org.o7planning.springmvconlinestore.model.CustomerInfo;
@@ -45,7 +45,7 @@ public class AdminController {
     private ProductDAO productDAO;
     
     @Autowired
-    private AccountDAO accountDAO;
+    private CustomerDAO accountDAO;
  
     @Autowired
     private ProductInfoValidator productInfoValidator;

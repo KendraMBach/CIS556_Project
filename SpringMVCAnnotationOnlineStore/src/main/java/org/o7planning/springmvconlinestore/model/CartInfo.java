@@ -35,9 +35,9 @@ public class CartInfo {
         return this.cartLines;
     }
  
-    private CartLineInfo findLineByCode(String code) {
+    private CartLineInfo findLineByCode(int code) {
         for (CartLineInfo line : this.cartLines) {
-            if (line.getProductInfo().getCode().equals(code)) {
+            if (line.getProductInfo().getCode() == code) {
                 return line;
             }
         }
@@ -65,7 +65,7 @@ public class CartInfo {
  
     }
  
-    public void updateProduct(String code, int quantity) {
+    public void updateProduct(int code, int quantity) {
         CartLineInfo line = this.findLineByCode(code);
  
         if (line != null) {
@@ -89,7 +89,7 @@ public class CartInfo {
     }
  
     public boolean isValidCustomer() {
-        return this.customerInfo != null && this.customerInfo.isValid();
+        return this.customerInfo != null;
     }
  
     public int getQuantityTotal() {

@@ -1,7 +1,8 @@
 package org.o7planning.springmvconlinestore.dao;
  
 import java.util.List;
- 
+
+import org.o7planning.springmvconlinestore.entity.Order;
 import org.o7planning.springmvconlinestore.model.CartInfo;
 import org.o7planning.springmvconlinestore.model.OrderDetailInfo;
 import org.o7planning.springmvconlinestore.model.OrderInfo;
@@ -14,8 +15,10 @@ public interface OrderDAO {
     public PaginationResult<OrderInfo> listOrderInfo(int page,
             int maxResult, int maxNavigationPage);
     
-    public OrderInfo getOrderInfo(String orderId);
+    public Order findSingleOrder(int orderId);
     
-    public List<OrderDetailInfo> listOrderDetailInfos(String orderId);
+    public Order findOrderForCustomer(int orderId, int customerId);
+    
+    public List<OrderDetailInfo> listOrderDetailInfos(int orderId);
  
 }
