@@ -2,17 +2,202 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
  
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+ 
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+ 
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
- 
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
 <title>Shopping Cart</title>
  
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/styles.css">
+<link href="${pageContext.request.contextPath}/resources/css/paper-kit.css" rel="stylesheet" >
+<link href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css" rel="stylesheet" >
+<link href="${pageContext.request.contextPath}/resources/css/nucleo-icons.css" rel="stylesheet" >
+<link href="${pageContext.request.contextPath}/resources/css/demo.css" rel="stylesheet" > 
+<link href="${pageContext.request.contextPath}/resources/css/shop-homepage.css" rel="stylesheet" >
+
+<!-- Core JS Files -->
+<script src="${pageContext.request.contextPath}/resources/js/jquery-3.2.1.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/jquery-ui-1.12.1.custom.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/popper.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
+
+
+<!--  Paper Kit Initialization and functions -->
+<script src="${pageContext.request.contextPath}/resources/js/paper-kit.js?v=2.1.0"></script>
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#myModal').modal('show');
+    });
+</script>
+
+<style>
+#stay {
+	   position:absolute;
+	   bottom:0;
+	   width:100%;
+	   height:60px;   /* Height of the footer */
+	   background:#6cf;
+	}
+
+</style> 
  
 </head>
+
+<jsp:include page="_menu.jsp" />
 <body>
+<main style="margin:100px">
+<div class="container">
+
+	<div class="row">
+
+	<div class="col-lg-12">
+
+           
+      <!-- If Cart is Empty -->
+       <c:if test="${empty cartForm or empty cartForm.cartLines}">
+       	<div class="row" id="modals">
+						<div class="col-md-6">
+							<!-- Button trigger modal -->
+							<button type="button" style="display: none;" data-toggle="modal" data-target="#myModal">
+							    
+							</button>
+							<!-- Modal -->
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-center" id="exampleModalLabel">Empty Cart Alert</h5>
+                                            <button onclick="${pageContext.request.contextPath}/" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body"> 
+                                        	Your shopping cart is empty! Let's do something about that.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="left-side">
+                                                <a href="${pageContext.request.contextPath}/productList" class="btn btn-default btn-link">Okay, cool</a>
+                                            </div>
+                                            <div class="divider"></div>
+                                            <div class="right-side">
+                                                <a href="${pageContext.request.contextPath}/" class="btn btn-danger btn-link">Nah, I'm good</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+							</div>
+							</div>
+	       
+	       <h2>There are no items in your cart</h2>
+	       
+	       <a href="${pageContext.request.contextPath}/productList">Show
+	           Product List</a>
+	       
+	           
+   		</c:if>
+   		
+   		<!-- If Cart is Not Empty -->
+ <div class="table-responsive">
+  <table class="table table-shopping">
+   		
+   		 <c:if test="${not empty cartForm and not empty cartForm.cartLines   }">
+   		 <thead>
+          <tr>
+              <th class="text-center"></th>
+              <th>Product</th>
+              <th class="th-description">Color</th>
+              <th class="th-description">Size</th>
+              <th class="text-right">Price</th>
+              <th class="text-right">Qty</th>
+              <th class="text-right">Amount</th>
+              <th></th>
+          </tr>
+      	</thead>
+   		 <tbody>
+	       <form:form method="POST" modelAttribute="cartForm" action="${pageContext.request.contextPath}/shoppingCart">
+ 		
+           <c:forEach items="${cartForm.cartLines}" var="cartLineInfo" varStatus="varStatus">
+           <form:hidden path="cartLines[${varStatus.index}].productInfo.code" />
+           <input type="hidden" id="price" value="${cartLineInfo.productInfo.price}">
+           <input type="hidden" id="quantity" value="1"> <!-- Update to Quantity -->
+           
+          <tr>
+              <td>
+                  <div>
+                      <img class="img-responsive img-thumbnail" src="${pageContext.request.contextPath}/resources/img/jewelryImages/${cartLineInfo.productInfo.fileData}" width="50px" height="50px" alt="...">
+                  </div>
+              </td>
+              <td class="td-name">
+                  <a href="${pageContext.request.contextPath}/product?code=${cartLineInfo.productInfo.code}">${cartLineInfo.productInfo.name}</a>
+                  <br><small>by Junction Jewelers</small>
+              </td>
+              <td>
+                  ${cartLineInfo.productInfo.color}
+              </td>
+              <td>
+                  Insert size <!-- Insert Size Here -->
+              </td>
+              <td class="td-number">
+                  <fmt:formatNumber value="${cartLineInfo.productInfo.price}" type="currency"/>
+              </td>
+              <td class="td-number">
+              		
+                  	<form:input path="cartLines[${varStatus.index}].quantity" />
+                  <div class="btn-group">
+                      <button class="btn btn-info btn-sm" type="submit" value="Update Quantity"> <i class="nc-icon nc-simple-delete"></i> </button>
+                      <button class="btn btn-info btn-sm" type="submit" value="Update Quantity"> <i class="nc-icon nc-simple-add"></i> </button>
+                  </div>
+              </td>
+              <td class="td-number">
+                  <fmt:formatNumber value="${cartLineInfo.amount}" type="currency"/>
+              </td>
+              <td class="td-actions">
+                  
+                      <a href="${pageContext.request.contextPath}/shoppingCartRemoveProduct?code=${cartLineInfo.productInfo.code}">
+                      <i class="nc-icon nc-simple-remove"></i>
+                      </a>
+                  
+              </td>
+          </tr>
+          </c:forEach>
+          </form:form>
+      <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>
+      	
+           <a class="navi-item"
+               href="${pageContext.request.contextPath}/shoppingCartCustomer">Enter Customer Info</a>
+               </td>
+               <td>
+           <a class="navi-item"
+               href="${pageContext.request.contextPath}/productList">Checkout</a>
+               </td>
+               </tr>
+               </tbody>
+   </c:if>
+  </table>
+</div>
+</div>
+</div>
+
+
+
+
+<!--  
    <jsp:include page="_header.jsp" />
   
    <jsp:include page="_menu.jsp" />
@@ -77,7 +262,12 @@
    </c:if>
  
  
-   <jsp:include page="_footer.jsp" />
- 
+  
+ -->
+ </div>
+ </main>
+ <div id="stay">
+ <jsp:include page="_footer.jsp" />
+ </div>
 </body>
 </html>

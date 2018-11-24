@@ -41,9 +41,20 @@ public class ProductInfo {
     }
  
     public ProductInfo(Product product) {
-        this.code = product.getId();
-        this.name = product.getName();
-        this.price = product.getPriceRetail();
+    	this.code = product.getId();
+		this.name = product.getName();
+		this.price = product.getPriceRetail();
+		this.description = product.getDescription();
+		//this.newProduct = newProduct;
+		this.fileData = product.getImage();
+		this.category = product.getCategory();
+		this.setColor(product.getColor());
+		this.setInStock(true);
+		this.setBirthstone(product.getOptBirthstone());
+		this.setCharm1(product.getOptCharm1());
+		this.setCharm2(product.getOptCharm2());
+		this.setCharm3(product.getOptCharm3());
+		this.setCharm4(product.getOptCharm4());
     }
  
     public ProductInfo(int code, String name, double price) {
