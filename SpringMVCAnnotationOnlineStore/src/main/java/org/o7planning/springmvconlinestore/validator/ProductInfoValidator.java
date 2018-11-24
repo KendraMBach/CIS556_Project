@@ -30,12 +30,13 @@ public class ProductInfoValidator implements Validator {
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "name", "NotEmpty.productForm.name");
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "price", "NotEmpty.productForm.price");
  
-        String code = productInfo.getCode();
+        String code = String.valueOf(productInfo.getCode());
+        
         if (code != null && code.length() > 0) {
             if (code.matches("\\s+")) {
                 errors.rejectValue("code", "Pattern.productForm.code");
             } else if(productInfo.isNewProduct()) {
-                Product product = productDAO.findProduct(code);
+                Product product = productDAO.findProduct(Integer.valueOf(code));
                 if (product != null) {
                     errors.rejectValue("code", "Duplicate.productForm.code");
                 }

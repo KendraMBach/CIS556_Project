@@ -15,6 +15,13 @@ public class Charm implements Serializable {
 	/**
 	 * 
 	 */
+	public Charm() {
+		
+	}
+
+	/**
+	 * 
+	 */
 	private static final long serialVersionUID = 8328306079219543687L;
 
 
@@ -36,6 +43,10 @@ public class Charm implements Serializable {
     }
     
 
+    public void setID(int id) {
+        this.id = id;
+    }
+    
     @Column(name = "charm", nullable = false)
 	public String getType() {
 		return type;

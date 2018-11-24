@@ -24,7 +24,7 @@ import javax.persistence.UniqueConstraint;
  
 @Entity
 @Table(name = "Orders", //
-uniqueConstraints = { @UniqueConstraint(columnNames = "Order_ID, Product_ID, Customer_ID") })
+uniqueConstraints = { @UniqueConstraint(columnNames = {"Order_ID", "Product_ID", "Customer_ID"}) })
 public class Order implements Serializable {
  
     /**
@@ -32,8 +32,8 @@ public class Order implements Serializable {
 	 */
 	public Order(Date orderDate, String orderStatus, int amount, int prodId, Double prodRetailPrice,
 			int customerID, String customerName, String customerAddress, String customerEmail, String customerPhone,
-			String nameEngraving, int birthstoneID, int charmId1, int charmId2, int charmId3,
-			int charmId4, Customer customer, Product product) {
+			String nameEngraving, String birthstoneID, String charmId1, String charmId2, String charmId3,
+			String charmId4, Customer customer, Product product) {
 		super();
 		Calendar today = Calendar.getInstance();
 		today.set(Calendar.HOUR_OF_DAY, 0);
@@ -89,18 +89,14 @@ public class Order implements Serializable {
     private Double prodRetailPrice;
     
     private String nameEngraving; 
-    private int birthstoneID;
-    private int charmId1;
-    private int charmId2;
-    private int charmId3;
-    private int charmId4;
+    private String birthstoneID;
+    private String charmId1;
+    private String charmId2;
+    private String charmId3;
+    private String charmId4;
     
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "Customer_Id") 
     private int customerID;
     
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "Product_Id") 
     private int prodId;
 
  
@@ -146,7 +142,7 @@ public class Order implements Serializable {
  
     
     
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(targetEntity=Product.class, fetch = FetchType.LAZY)
     @JoinColumn(name = "Product_ID", nullable = false, foreignKey = @ForeignKey(name = "Product_ID"))
     public int getProdId() {
 		return this.prodId;
@@ -175,51 +171,51 @@ public class Order implements Serializable {
 	}
 
 	@Column(name = "Customer_Choice_Birthstone_ID", nullable = true)
-	public int getBirthstoneID() {
+	public String getBirthstoneID() {
 		return birthstoneID;
 	}
 
-	public void setBirthstoneID(int birthstoneID) {
+	public void setBirthstoneID(String birthstoneID) {
 		this.birthstoneID = birthstoneID;
 	}
 
 	@Column(name = "Customer_Choice_Charm_ID_1", nullable = true)
-	public int getCharmId1() {
+	public String getCharmId1() {
 		return charmId1;
 	}
 
-	public void setCharmId1(int charmId1) {
+	public void setCharmId1(String charmId1) {
 		this.charmId1 = charmId1;
 	}
 
 	@Column(name = "Customer_Choice_Charm_ID_2", nullable = true)
-	public int getCharmId2() {
+	public String getCharmId2() {
 		return charmId2;
 	}
 
-	public void setCharmId2(int charmId2) {
+	public void setCharmId2(String charmId2) {
 		this.charmId2 = charmId2;
 	}
 
 	@Column(name = "Customer_Choice_Charm_ID_3", nullable = true)
-	public int getCharmId3() {
+	public String getCharmId3() {
 		return charmId3;
 	}
 
-	public void setCharmId3(int charmId3) {
+	public void setCharmId3(String charmId3) {
 		this.charmId3 = charmId3;
 	}
 
 	@Column(name = "Customer_Choice_Charm_ID_4", nullable = true)
-	public int getCharmId4() {
+	public String getCharmId4() {
 		return charmId4;
 	}
 
-	public void setCharmId4(int charmId4) {
+	public void setCharmId4(String charmId4) {
 		this.charmId4 = charmId4;
 	}
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(targetEntity=Customer.class, fetch = FetchType.LAZY)
     @JoinColumn(name = "Customer_ID", nullable = false, foreignKey = @ForeignKey(name = "Customer_ID"))
 	public int getCustomerID() {
 		return this.customerID;

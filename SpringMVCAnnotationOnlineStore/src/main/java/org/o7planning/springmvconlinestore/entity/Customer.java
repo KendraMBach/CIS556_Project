@@ -62,7 +62,7 @@ public class Customer implements Serializable {
         this.ID = customerID;
     }
  
-    @Column(name = "Password", length = 20, nullable = false)
+    @Column(name = "password", length = 45, nullable = false)
     public String getPassword() {
         return password;
     }

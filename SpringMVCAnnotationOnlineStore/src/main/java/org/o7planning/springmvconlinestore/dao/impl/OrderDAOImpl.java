@@ -15,7 +15,7 @@ import org.o7planning.springmvconlinestore.dao.OrderDAO;
 import org.o7planning.springmvconlinestore.dao.ProductDAO;
 import org.o7planning.springmvconlinestore.entity.Customer;
 import org.o7planning.springmvconlinestore.entity.Order;
-import org.o7planning.springmvconlinestore.entity.OrderDetail;
+
 import org.o7planning.springmvconlinestore.entity.Product;
 import org.o7planning.springmvconlinestore.model.CartInfo;
 import org.o7planning.springmvconlinestore.model.CartLineInfo;
@@ -60,8 +60,8 @@ public class OrderDAOImpl implements OrderDAO {
         int orderNum = this.getMaxOrderNum() + 1;
         Order order = new Order();
  
-        order.setAmount(cartInfo.getQuantityTotal());
-        order.setProdRetailPrice(cartInfo.getAmountTotal()); //Skewed logic - Have Total Field instead?
+        //order.setAmount(cartInfo.getQuantityTotal());
+        //order.setProdRetailPrice(cartInfo.getAmountTotal()); 
  
         CustomerInfo customerInfo = cartInfo.getCustomerInfo();
         
@@ -74,22 +74,24 @@ public class OrderDAOImpl implements OrderDAO {
         order.setCustomerPhone(customerInfo.getPhone());
         order.setCustomerAddress(customerInfo.getAddress());
  		*/
-        session.persist(order);
- 
+        
+        //session.persist(order);
+        
         List<CartLineInfo> lines = cartInfo.getCartLines();
  
         for (CartLineInfo line : lines) {
-            OrderDetail detail = new OrderDetail();
-            detail.setOrder(order);
-            detail.setAmount(line.getAmount());
-            detail.setPrice(line.getProductInfo().getPrice());
-            detail.setQuanity(line.getQuantity());
+        	Order thisItem = new Order();
+        	thisItem = order;
+        	
+            thisItem.setAmount(line.getQuantity());
+            thisItem.setProdRetailPrice(line.getProductInfo().getPrice());
+            //thisItem.setQuanity(line.getQuantity());
  
             int code = line.getProductInfo().getCode();
             Product product = this.productDAO.findProduct(code);
-            detail.setProduct(product);
+            thisItem.setProdId(product.getId());
  
-            session.persist(detail);
+            session.persist(thisItem);
         }
  
         // Set OrderNum for report.
@@ -137,10 +139,12 @@ public class OrderDAOImpl implements OrderDAO {
                 customer.getZip(), customer.getEmail(), customer.getPhone());
     }
  
-    public List<OrderDetailInfo> listOrderDetailInfos(int orderId) {
-        String sql = "Select new " + OrderDetailInfo.class.getName() //
-                + "(d.id, d.product.code, d.product.name , d.quanity,d.price,d.amount) "//
-                + " from " + OrderDetail.class.getName() + " d "//
+    //
+    @SuppressWarnings("deprecation")
+	public List<Order> listAllOrderItemsForSingleOrder(int orderId) {
+        String sql = "Select new " + Order.class.getName() //
+                + "(d.id, d.product.id, d.customer.id) "//
+                + " from " + Order.class.getName() + " d "//
                 + " where d.order.id = :orderId ";
  
         Session session = this.sessionFactory.getCurrentSession();
@@ -150,7 +154,6 @@ public class OrderDAOImpl implements OrderDAO {
  
         return query.list();
     }
-
 	
  
 }

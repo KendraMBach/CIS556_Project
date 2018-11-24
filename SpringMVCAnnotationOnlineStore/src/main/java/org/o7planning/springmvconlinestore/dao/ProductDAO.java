@@ -20,4 +20,10 @@ public interface ProductDAO {
  
     public void save(ProductInfo productInfo);
     
+    public PaginationResult<ProductInfo> queryCategoryProducts(int page, int maxResult, int maxNavigationPage,
+            String likeName, String category);
+    
+    public PaginationResult<ProductInfo> queryBySubCategoryProducts(int page, int maxResult, int maxNavigationPage,
+            String likeName, String mainCategory, String subCategory);
+    
 }

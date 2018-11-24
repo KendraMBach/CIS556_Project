@@ -1,7 +1,9 @@
 package org.o7planning.springmvconlinestore.dao.impl;
  
+import java.util.Arrays;
 import java.util.Date;
- 
+import java.util.List;
+
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -24,7 +26,7 @@ public class ProductDAOImpl implements ProductDAO {
     public Product findProduct(int code) {
         Session session = sessionFactory.getCurrentSession();
         Criteria crit = session.createCriteria(Product.class);
-        crit.add(Restrictions.eq("Product_ID", code));
+        crit.add(Restrictions.eq("id", code));
         return (Product) crit.uniqueResult();
     }
  
@@ -33,7 +35,10 @@ public class ProductDAOImpl implements ProductDAO {
         if (product == null) {
             return null;
         }
-        return new ProductInfo(product.getId(), product.getName(), product.getPriceRetail());
+        //return new ProductInfo(product.getId(), product.getName(), product.getPriceRetail());
+        return new ProductInfo(product.getId(), product.getName(), product.getPriceRetail(), product.getDescription(), product.getImage(),
+    			product.getCategory(), product.getColor(), product.getInStock(), product.getOptBirthstone(), product.getOptCharm1(), //
+    			product.getOptCharm2(), product.getOptCharm3(), product.getOptCharm4());
     }
  
     public void save(ProductInfo productInfo) {
@@ -52,7 +57,7 @@ public class ProductDAOImpl implements ProductDAO {
         if (product == null) {
             isNew = true;
             product = new Product();
-            product.setCreateDate(new Date());
+            //product.setCreateDate(new Date());
         }
         product.setId(code);
         product.setName(productInfo.getName());
@@ -72,14 +77,14 @@ public class ProductDAOImpl implements ProductDAO {
     }
  
     public PaginationResult<ProductInfo> queryProducts(int page, int maxResult, int maxNavigationPage,
-            String likeName) {
+            String likeName) { 
         String sql = "Select new " + ProductInfo.class.getName() //
-                + "(p.code, p.name, p.price) " + " from "//
+                + "(p.id, p.name, p.priceRetail, p.description, p.image, p.category, p.color) " + " from "//
                 + Product.class.getName() + " p ";
         if (likeName != null && likeName.length() > 0) {
             sql += " Where lower(p.name) like :likeName ";
         }
-        sql += " order by p.createDate desc ";
+        sql += " order by p.priceRetail asc ";
         //
         Session session = sessionFactory.getCurrentSession();
  
@@ -89,9 +94,62 @@ public class ProductDAOImpl implements ProductDAO {
         }
         return new PaginationResult<ProductInfo>(query, page, maxResult, maxNavigationPage);
     }
+    
+    public PaginationResult<ProductInfo> queryCategoryProducts(int page, int maxResult, int maxNavigationPage,
+            String likeName, String category) { 
+    	
+        String sql = "Select new " + ProductInfo.class.getName() //
+                + "(p.id, p.name, p.priceRetail, p.description, p.image, p.category, p.color) " + " from "//
+                + Product.class.getName() + " p " //
+                + " Where lower(p.category) = :category";
+        	sql += " order by p.priceRetail asc ";
+        //
+        Session session = sessionFactory.getCurrentSession();
+ 
+        Query query = session.createQuery(sql);
+        if (category != null && category.length() > 0) {
+            query.setParameter("category", category.toLowerCase());
+        }
+        return new PaginationResult<ProductInfo>(query, page, maxResult, maxNavigationPage);
+    }
  
     public PaginationResult<ProductInfo> queryProducts(int page, int maxResult, int maxNavigationPage) {
         return queryProducts(page, maxResult, maxNavigationPage, null);
+    }
+    
+    public PaginationResult<ProductInfo> queryBySubCategoryProducts(int page, int maxResult, int maxNavigationPage,
+            String likeName, String mainCategory, String subCategory) { 
+    	
+    	Query query = null;
+    	
+    	
+        String sql = "Select distinct new " + ProductInfo.class.getName() //
+                + "(p.id, p.name, p.priceRetail, p.description, p.image, p.category, p.color) " + " from "//
+                + Product.class.getName() + " p " //
+                + " Where lower(p.category) = :mainCategory";
+        if(subCategory.equals("all")) {
+        	
+        	sql += " order by p.priceRetail asc ";
+        //
+        Session session = sessionFactory.getCurrentSession();
+ 
+        query = session.createQuery(sql);
+        query.setParameter("mainCategory", mainCategory.toLowerCase());
+        	
+        }
+        else {
+        	
+        	sql += " and lower(p.name) = :subCategory";
+        	
+        	sql += " order by p.priceRetail asc ";
+            //
+            Session session = sessionFactory.getCurrentSession();
+     
+            query = session.createQuery(sql);
+            query.setParameter("mainCategory", mainCategory.toLowerCase());
+            query.setParameter("subCategory", subCategory.toLowerCase());
+        }
+        return new PaginationResult<ProductInfo>(query, page, maxResult, maxNavigationPage);
     }
     
 }

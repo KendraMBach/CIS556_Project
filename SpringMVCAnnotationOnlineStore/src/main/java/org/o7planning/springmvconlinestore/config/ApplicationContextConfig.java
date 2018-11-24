@@ -5,12 +5,18 @@ import java.util.Properties;
 import javax.sql.DataSource;
  
 import org.hibernate.SessionFactory;
+import org.o7planning.springmvconlinestore.dao.BirthstoneDAO;
+import org.o7planning.springmvconlinestore.dao.CharmDAO;
 import org.o7planning.springmvconlinestore.dao.CustomerDAO;
 import org.o7planning.springmvconlinestore.dao.OrderDAO;
 import org.o7planning.springmvconlinestore.dao.ProductDAO;
+import org.o7planning.springmvconlinestore.dao.ShippingCostsDAO;
+import org.o7planning.springmvconlinestore.dao.impl.BirthstoneDAOImpl;
+import org.o7planning.springmvconlinestore.dao.impl.CharmDAOImpl;
 import org.o7planning.springmvconlinestore.dao.impl.CustomerDAOImpl;
 import org.o7planning.springmvconlinestore.dao.impl.OrderDAOImpl;
 import org.o7planning.springmvconlinestore.dao.impl.ProductDAOImpl;
+import org.o7planning.springmvconlinestore.dao.impl.ShippingCostsDAOImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -124,6 +130,21 @@ public class ApplicationContextConfig {
     @Bean(name = "orderDAO")
     public OrderDAO getOrderDAO() {
         return new OrderDAOImpl();
+    }
+    
+    @Bean(name = "birthstoneDAO")
+    public BirthstoneDAO getBirthstoneDAO() {
+        return new BirthstoneDAOImpl();
+    }
+    
+    @Bean(name = "charmDAO")
+    public CharmDAO getCharmDAO() {
+        return new CharmDAOImpl();
+    }
+    
+    @Bean(name = "shippingCostsDAO")
+    public ShippingCostsDAO getShippingCostsDAO() {
+        return new ShippingCostsDAOImpl();
     }
      
  

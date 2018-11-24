@@ -18,34 +18,35 @@ import org.springframework.stereotype.Service;
 public class MyDBAuthenticationService implements UserDetailsService {
  
     @Autowired
-    private CustomerDAO accountDAO;
+    private CustomerDAO customerDAO;
  
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        Customer account = accountDAO.findAccount(username);
-        System.out.println("Account= " + account);
+        //Customer account = accountDAO.findAccount(username);
+        Customer customer = customerDAO.findAccount(username);
+        System.out.println("Account= " + customer);
  
-        if (account == null) {
+        if (customer == null) {
             throw new UsernameNotFoundException("User " //
                     + username + " was not found in the database");
         }
  
         // EMPLOYEE,MANAGER,..
-        String role = account.getUserRole();
+        //String role = account.getUserRole();
  
         List<GrantedAuthority> grantList = new ArrayList<GrantedAuthority>();
  
         // ROLE_EMPLOYEE, ROLE_MANAGER
-        GrantedAuthority authority = new SimpleGrantedAuthority("ROLE_" + role);
+        //GrantedAuthority authority = new SimpleGrantedAuthority("ROLE_" + role);
  
-        grantList.add(authority);
+        //grantList.add(authority);
  
-        boolean enabled = account.isActive();
+        boolean enabled = true;
         boolean accountNonExpired = true;
         boolean credentialsNonExpired = true;
         boolean accountNonLocked = true;
  
-        UserDetails userDetails = (UserDetails) new User(account.getUserID(), //
-                account.getPassword(), enabled, accountNonExpired, //
+        UserDetails userDetails = (UserDetails) new User(String.valueOf(customer.getCustomerID()), //
+        		customer.getPassword(), enabled, accountNonExpired, //
                 credentialsNonExpired, accountNonLocked, grantList);
  
         return userDetails;

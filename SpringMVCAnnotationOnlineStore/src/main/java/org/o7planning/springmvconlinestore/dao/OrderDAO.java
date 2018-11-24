@@ -19,6 +19,6 @@ public interface OrderDAO {
     
     public Order findOrderForCustomer(int orderId, int customerId);
     
-    public List<OrderDetailInfo> listOrderDetailInfos(int orderId);
+    public List<Order> listAllOrderItemsForSingleOrder(int orderId);
  
 }

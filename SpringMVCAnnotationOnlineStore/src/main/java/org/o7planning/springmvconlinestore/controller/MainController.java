@@ -1,7 +1,9 @@
 package org.o7planning.springmvconlinestore.controller;
 
 import java.io.IOException;
- 
+import java.util.Arrays;
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -83,20 +85,40 @@ public class MainController {
         return "index";
     }
  
-    // Product List page.
-    @RequestMapping({ "/productList" })
-    public String listProductHandler(Model model, //
+    // Initial Product List page.
+    @RequestMapping(value = { "/productList" }, method = {RequestMethod.GET, RequestMethod.POST})
+    public String listProductHandler(HttpServletRequest request, Model model, //
             @RequestParam(value = "name", defaultValue = "") String likeName,
-            @RequestParam(value = "page", defaultValue = "1") int page) {
+            @RequestParam(value = "page", defaultValue = "1") int page, @RequestParam(value = "filter", // 
+            defaultValue = "all") String filter) {
+    	PaginationResult<ProductInfo> result = null;
+    	String subCategory = "";
+    	
         final int maxResult = 6;
         final int maxNavigationPage = 10;
- 
-        PaginationResult<ProductInfo> result = productDAO.queryProducts(page, //
+
+        List<String> type = Arrays.asList(filter.split(","));
+        String mainCategory = type.get(0);
+        if(type.size() > 1) {
+        	subCategory = type.get(1);
+        	
+        	result = productDAO.queryBySubCategoryProducts(page, maxResult, maxNavigationPage, likeName, mainCategory, subCategory);
+        }
+        else if(mainCategory.equals("all")) {
+        result = productDAO.queryProducts(page, //
                 maxResult, maxNavigationPage, likeName);
- 
+        }
+        else {
+        	result = productDAO.queryCategoryProducts(page, maxResult, maxNavigationPage, likeName, mainCategory);
+        }
+        
         model.addAttribute("paginationProducts", result);
+        model.addAttribute("filter", filter);
+        model.addAttribute("mainCategory", mainCategory);
+        model.addAttribute("subCategory", subCategory);
         return "productList";
     }
+    
     
  // New User Registration.
     @RequestMapping(value = {"/register" }, method = RequestMethod.GET)
@@ -136,10 +158,10 @@ public class MainController {
     
     @RequestMapping({ "/buyProduct" })
     public String listProductHandler(HttpServletRequest request, Model model, //
-            @RequestParam(value = "code", defaultValue = "") String code) {
+            @RequestParam(value = "code", defaultValue = "") int code) {
  
         Product product = null;
-        if (code != null && code.length() > 0) {
+        if (code > 0) {
             product = productDAO.findProduct(code);
         }
         if (product != null) {
@@ -157,9 +179,9 @@ public class MainController {
  
     @RequestMapping({ "/shoppingCartRemoveProduct" })
     public String removeProductHandler(HttpServletRequest request, Model model, //
-            @RequestParam(value = "code", defaultValue = "") String code) {
+            @RequestParam(value = "code", defaultValue = "") int code) {
         Product product = null;
-        if (code != null && code.length() > 0) {
+        if (code > 0) {
             product = productDAO.findProduct(code);
         }
         if (product != null) {
@@ -228,15 +250,15 @@ public class MainController {
             @ModelAttribute("customerForm") @Validated CustomerInfo customerForm, //
             BindingResult result, //
             final RedirectAttributes redirectAttributes) {
-  
+    		
         // If has Errors.
         if (result.hasErrors()) {
-            customerForm.setValid(false);
+            //customerForm.setValid(false);
             // Forward to reenter customer info.
             return "shoppingCartCustomer";
         }
  
-        customerForm.setValid(true);
+        //customerForm.setValid(true);
         CartInfo cartInfo = Utils.getCartInSession(request);
  
         cartInfo.setCustomerInfo(customerForm);
@@ -304,19 +326,19 @@ public class MainController {
  
         return "shoppingCartFinalize";
     }
- 
+ /*
     @RequestMapping(value = { "/productImage" }, method = RequestMethod.GET)
     public void productImage(HttpServletRequest request, HttpServletResponse response, Model model,
-            @RequestParam("code") String code) throws IOException {
+            @RequestParam("code") int code) throws IOException {
         Product product = null;
-        if (code != null) {
-            product = this.productDAO.findProduct(code);
-        }
+        product = this.productDAO.findProduct(code);
+        
         if (product != null && product.getImage() != null) {
             response.setContentType("image/jpeg, image/jpg, image/png, image/gif");
             response.getOutputStream().write(product.getImage());
         }
         response.getOutputStream().close();
     }
+    */
      
 }

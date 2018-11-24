@@ -15,6 +15,13 @@ public class ShippingCost implements Serializable {
 	/**
 	 * 
 	 */
+	public ShippingCost() {
+		super();
+	}
+
+	/**
+	 * 
+	 */
 	private static final long serialVersionUID = 8328306079219543687L;
 
 
@@ -30,13 +37,16 @@ public class ShippingCost implements Serializable {
     
  
     @Id
-    @Column(name = "charm_id", nullable = false)
+    @Column(name = "shipping_code_id", nullable = false)
     public int getID() {
         return this.id;
     }
     
+    public void setID(int id) {
+        this.id = id;
+    }
 
-    @Column(name = "charm", nullable = false)
+    @Column(name = "state_code", nullable = false)
 	public String getType() {
 		return type;
 	}
@@ -46,7 +56,7 @@ public class ShippingCost implements Serializable {
 		this.type = type;
 	}
 
-    @Column(name = "charm_price", nullable = false)
+    @Column(name = "shipping_cost", nullable = false)
 	public Double getCost() {
 		return cost;
 	}

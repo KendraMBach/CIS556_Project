@@ -15,8 +15,16 @@ public class Birthstone implements Serializable {
 	/**
 	 * 
 	 */
+	public Birthstone() {
+		
+	}
+
+	/**
+	 * 
+	 */
 	private static final long serialVersionUID = 3781425868564854478L;
 
+	
 
 	public Birthstone(int id, String month, String type, Double cost) {
 		this.id = id;
@@ -35,6 +43,10 @@ public class Birthstone implements Serializable {
     @Column(name = "birthstone_id", nullable = false)
     public int getID() {
         return this.id;
+    }
+    
+    public void setID(int id) {
+        this.id = id;
     }
     
     @Column(name = "month", nullable = false)

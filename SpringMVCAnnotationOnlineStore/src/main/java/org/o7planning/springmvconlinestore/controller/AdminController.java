@@ -5,6 +5,7 @@ import java.util.List;
 import org.o7planning.springmvconlinestore.dao.CustomerDAO;
 import org.o7planning.springmvconlinestore.dao.OrderDAO;
 import org.o7planning.springmvconlinestore.dao.ProductDAO;
+import org.o7planning.springmvconlinestore.entity.Order;
 import org.o7planning.springmvconlinestore.model.CustomerInfo;
 import org.o7planning.springmvconlinestore.model.OrderDetailInfo;
 import org.o7planning.springmvconlinestore.model.OrderInfo;
@@ -138,11 +139,12 @@ public class AdminController {
         ProductInfo productInfo = null;
  
         if (code != null && code.length() > 0) {
-            productInfo = productDAO.findProductInfo(code);
+        	
+            productInfo = productDAO.findProductInfo(Integer.parseInt(code));
         }
         if (productInfo == null) {
             productInfo = new ProductInfo();
-            productInfo.setNewProduct(true);
+            //productInfo.setNewProduct(true);
         }
         model.addAttribute("productForm", productInfo);
         return "product";
@@ -175,17 +177,18 @@ public class AdminController {
  
     @RequestMapping(value = { "/order" }, method = RequestMethod.GET)
     public String orderView(Model model, @RequestParam("orderId") String orderId) {
-        OrderInfo orderInfo = null;
+        Order orderInfo = null;
         if (orderId != null) {
-            orderInfo = this.orderDAO.getOrderInfo(orderId);
+            orderInfo = this.orderDAO.findSingleOrder(Integer.parseInt(orderId));
         }
         if (orderInfo == null) {
             return "redirect:/orderList";
         }
-        List<OrderDetailInfo> details = this.orderDAO.listOrderDetailInfos(orderId);
-        orderInfo.setDetails(details);
+        List<Order> details = this.orderDAO.listAllOrderItemsForSingleOrder(Integer.parseInt(orderId));
+        //orderInfo.setDetails(details);
  
         model.addAttribute("orderInfo", orderInfo);
+        model.addAttribute(details);
  
         return "order";
     }

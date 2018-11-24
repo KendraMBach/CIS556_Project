@@ -12,33 +12,13 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
  
 @Entity
-@Table(name = "Products")
+@Table(name = "Product")
 public class Product implements Serializable {
  
-    /**
-	 * @param id
-	 * @param name
-	 * @param description
-	 * @param color
-	 * @param category
-	 * @param gender
-	 * @param size
-	 * @param inStock
-	 * @param priceWholeSale
-	 * @param priceRetail
-	 * @param image
-	 * @param prodOptDesc
-	 * @param optEngrave
-	 * @param optBirthstone
-	 * @param optCharm1
-	 * @param optCharm2
-	 * @param optCharm3
-	 * @param optCharm4
-	 * @param createDate
-	 */
+    
 	public Product(int id, String name, String description, String color, String category, String gender, String size,
 			int inStock, double priceWholeSale, double priceRetail, String image, String prodOptDesc, int optEngrave,
-			int optBirthstone, int optCharm1, int optCharm2, int optCharm3, int optCharm4, Date createDate) {
+			int optBirthstone, int optCharm1, int optCharm2, int optCharm3, int optCharm4) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -58,7 +38,7 @@ public class Product implements Serializable {
 		this.optCharm2 = optCharm2;
 		this.optCharm3 = optCharm3;
 		this.optCharm4 = optCharm4;
-		this.createDate = createDate;
+
 	}
 	
 	
@@ -84,8 +64,6 @@ public class Product implements Serializable {
     private int optCharm3;
     private int optCharm4;
     
-    // For sort.
-    private Date createDate;
  
     public Product() {
     }
@@ -127,15 +105,6 @@ public class Product implements Serializable {
         this.priceWholeSale = price;
     }
  
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "Create_Date", nullable = false)
-    public Date getCreateDate() {
-        return createDate;
-    }
- 
-    public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
-    }
  
     @Column(name = "Image_Filename", nullable = false)
     public String getImage() {
@@ -191,11 +160,11 @@ public class Product implements Serializable {
 	public void setColor(String color) {
 		this.color = color;
 	}
-	
+	/*
 	public boolean isInStock() {
 		return(getInStock()<= 0);
 	}
-
+	*/
 	@Column(name = "Product_Retail_Price", nullable = false)
 	public double getPriceRetail() {
 		return priceRetail;
