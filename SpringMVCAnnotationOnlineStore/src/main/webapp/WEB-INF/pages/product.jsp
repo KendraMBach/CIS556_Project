@@ -29,12 +29,13 @@
 
 <!--  Paper Kit Initialization and functions -->
 <script src="${pageContext.request.contextPath}/resources/js/paper-kit.js?v=2.1.0"></script>
-
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
 <style>
-      @font-face { font-family: Otama-ep; src: url('${pageContext.request.contextPath}/resources/fonts/Otama-ep.otf'); } 
+      
       
       h1 {
-         font-family: Otama-ep;
+         
          
 	     -webkit-animation-name: fade_in; /* Safari 4.0 - 8.0 */
 	     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
@@ -78,7 +79,7 @@
         <div class="col-lg-3">
         
 		<form:form method="POST" action="${pageContext.request.contextPath}/productList">
-          <h1 class="my-4">Junction Jewelers</h1>
+          <h1 class="card-title" style="font-weight: bold;">Junction Jewelers</h1>
           <div class="list-group">
 			    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Bracelets</button>
 			    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -121,15 +122,153 @@
               <p class="card-text">${productForm.description}</p>
               <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
               4.0 stars
-              <form:form modelAttribute="productForm" method="POST" enctype="multipart/form-data">
               </br>
-              <a href="${pageContext.request.contextPath}/buyProduct?code=${productForm.code}" class="btn btn-info">Add to Cart</a>
-            </form:form>
+              </br>
+              
+  <form:form modelAttribute="productForm" method="POST" action="buyProduct" enctype="multipart/form-data">
+  <div>             
+   	<div class="form-row">
+    		
+            <div class="mx-sm-3 mb-2 dropdown">
+			    <form:select name="size" path="size" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			        Size
+			        <b class="caret"></b>
+			    
+			    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="z-index:1000">
+			        <form:option value="" class="dropdown-header">Select Size</form:option>
+			        
+			        <c:forEach items="${sizes}" var="size">
+				        <form:option value="${size}" class="dropdown-item">${size}</form:option>
+				        <div class="dropdown-divider"></div>
+			        </c:forEach>
+			        
+			    </ul>
+			</form:select>
+		</div>
+		</div>
+		</br>
+		
+		<div class="form-row" style="padding-right:350px">
+		<c:if test="${engraving == 1}">
+		<div class="mx-sm-3 mb-2 col">
+			    <label>Engraving Option: </label>
+		</div> 
+		<div class="col"> 
+			    <form:input path="engraving" name="engraving" id="engraving" type="text" class="form-control" placeholder="type engraving here"></form:input>
+
+		</div>
+		</c:if>
+		</div>
+		</br>
+		<c:if test="${not empty birthstones}">
+		<div class="form-row">
+		<div class="mx-sm-3 mb-2 dropdown">
+			    <form:select path="birthstone" name="birthstone" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			        Birthstone
+			        <b class="caret"></b>
+			  
+			    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			        
+			        <form:option disabled="disabled" selected="selected" value="0" class="dropdown-header">Select Birthstone</form:option>
+			        
+			        <c:forEach items="${birthstones}" var="stone">
+				        <form:option name="birthstone" value="${stone.id}" class="dropdown-item">${stone.month}</form:option>
+				        <div class="dropdown-divider"></div>
+			        </c:forEach>
+			    </ul>
+			</form:select>
+		</div>
+		 </div>
+		 
+		</br> 
+		 
+		</c:if>
+		<div class="form-row"> 
+		<c:if test="${charm1 == 1}">
+		<div class="mx-sm-3 mb-2 dropdown">
+			    <form:select path="charm1" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			        Charm 1
+			        
+			    
+			    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			        <form:option selected="selected" value="0" class="dropdown-header">Select Charm 1</form:option>
+			        <c:forEach items="${charmList}" var="charm">
+				        <form:option name="charm1" value="${charm.id}" class="dropdown-item">${charm.type} - <fmt:formatNumber value="${charm.cost}" type="currency"/></form:option>
+				        <div class="dropdown-divider"></div>
+			        </c:forEach>
+			    </ul>
+		</form:select>
+		</div>
+		</c:if>
+		<c:if test="${charm2 == 1}">
+		<div class="dropdown">
+			    <form:select path="charm2" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			        Charm 2
+			        
+			    
+			    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			        <form:option selected="selected" value="0" class="dropdown-header">Select Charm 2</form:option>
+			        <c:forEach items="${charmList}" var="charm">
+				        <form:option name="charm2" value="${charm.id}" class="dropdown-item">${charm.type} - <fmt:formatNumber value="${charm.cost}" type="currency"/></form:option>
+				        <div class="dropdown-divider"></div>
+			        </c:forEach>
+			    </ul>
+		</form:select>
+		</div>
+		</c:if>
+		
+		<c:if test="${charm3 == 1}">
+		<div class="mx-sm-3 mb-2 dropdown">
+			    <form:select path="charm3" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			        Charm 3
+			        
+			    
+			    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			        <form:option selected="selected" value="0" class="dropdown-header">Select Charm 3</form:option>
+			        <c:forEach items="${charmList}" var="charm">
+				        <form:option name="charm3" value="${charm.id}" class="dropdown-item">${charm.type} - <fmt:formatNumber value="${charm.cost}" type="currency"/></form:option>
+				        <div class="dropdown-divider"></div>
+			        </c:forEach>
+			    </ul>
+		</form:select>
+		
+		</div>
+		</c:if>
+		
+		<c:if test="${charm4 == 1}">
+		<div class="mx-sm-3 mb-2 dropdown">
+			    <form:select path="charm4" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			        Charm 4
+			        
+			    
+			    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			        <form:option selected="selected" value="0" class="dropdown-header">Select Charm 4</form:option>
+			        <c:forEach items="${charmList}" var="charm">
+				        <form:option name="charm4" value="${charm.id}" class="dropdown-item">${charm.type} - <fmt:formatNumber value="${charm.cost}" type="currency"/></form:option>
+				        <div class="dropdown-divider"></div>
+			        </c:forEach>
+			    </ul>
+		</form:select>
+		</div>
+		
+		</c:if>
+		</div>
+		<hr>
+		<div class="form-group row">
+			<div class="col" style="padding-top:20px;">
+			<form:hidden path="code" id="code" name="code" value="${productForm.code}" />
+			
+              <form:button id="buyProduct" name="buyProduct" class="btn btn-info">Add to Cart</form:button>
+   				</div>
+   				</div>
+   			</div>
+		</form:form>
             </div>
+            
           </div>
           <!-- /.card -->
 
-          <div class="card card-outline-secondary my-4">
+          <div class="card card-outline-secondary my-4" style="z-index:0">
             <div class="card-header">
               Product Reviews
             </div>

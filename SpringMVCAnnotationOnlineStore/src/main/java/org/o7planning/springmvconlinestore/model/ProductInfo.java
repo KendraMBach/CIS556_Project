@@ -1,24 +1,12 @@
 package org.o7planning.springmvconlinestore.model;
  
+import org.o7planning.springmvconlinestore.entity.Birthstone;
+import org.o7planning.springmvconlinestore.entity.Charm;
 import org.o7planning.springmvconlinestore.entity.Product;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
  
 public class ProductInfo {
     
-	
-
-	public ProductInfo(int code, String name, double price, String description, String fileData,
-			String category, String color) {
-		super();
-		this.code = code;
-		this.name = name;
-		this.price = price;
-		this.description = description;
-		//this.newProduct = newProduct;
-		this.fileData = fileData;
-		this.category = category;
-		this.setColor(color);
-	}
 
 	private int code;
     private String name;
@@ -36,9 +24,30 @@ public class ProductInfo {
 	private int charm2;
 	private int charm3;
 	private int charm4;
- 
+	private String size;
+	private String engraving;
+	private Birthstone birthstoneSelected;
+	private Charm charmSelected1;
+	private Charm charmSelected2;
+	private Charm charmSelected3;
+	private Charm charmSelected4;
+	private double totalOptionsPrice;
+	
     public ProductInfo() {
     }
+    
+    public ProductInfo(int code, String name, double price, String description, String fileData,
+			String category, String color) {
+		super();
+		this.code = code;
+		this.name = name;
+		this.price = price;
+		this.description = description;
+		//this.newProduct = newProduct;
+		this.fileData = fileData;
+		this.category = category;
+		this.setColor(color);
+	}
  
     public ProductInfo(Product product) {
     	this.code = product.getId();
@@ -49,6 +58,7 @@ public class ProductInfo {
 		this.fileData = product.getImage();
 		this.category = product.getCategory();
 		this.setColor(product.getColor());
+		this.setSize(product.getSize());
 		this.setInStock(true);
 		this.setBirthstone(product.getOptBirthstone());
 		this.setCharm1(product.getOptCharm1());
@@ -201,6 +211,70 @@ public class ProductInfo {
 
 	public void setCharm4(int charm4) {
 		this.charm4 = charm4;
+	}
+
+	public String getSize() {
+		return size;
+	}
+
+	public void setSize(String size) {
+		this.size = size;
+	}
+
+	public String getEngraving() {
+		return engraving;
+	}
+
+	public void setEngraving(String engraving) {
+		this.engraving = engraving;
+	}
+
+	public Birthstone getBirthstoneSelected() {
+		return birthstoneSelected;
+	}
+
+	public void setBirthstoneSelected(Birthstone birthstoneSelected) {
+		this.birthstoneSelected = birthstoneSelected;
+	}
+
+	public Charm getCharmSelected1() {
+		return charmSelected1;
+	}
+
+	public void setCharmSelected1(Charm charmSelected1) {
+		this.charmSelected1 = charmSelected1;
+	}
+
+	public Charm getCharmSelected2() {
+		return charmSelected2;
+	}
+
+	public void setCharmSelected2(Charm charmSelected2) {
+		this.charmSelected2 = charmSelected2;
+	}
+
+	public Charm getCharmSelected3() {
+		return charmSelected3;
+	}
+
+	public void setCharmSelected3(Charm charmSelected3) {
+		this.charmSelected3 = charmSelected3;
+	}
+
+	public Charm getCharmSelected4() {
+		return charmSelected4;
+	}
+
+	public void setCharmSelected4(Charm charmSelected4) {
+		this.charmSelected4 = charmSelected4;
+	}
+
+	public double getTotalOptionsPrice() {
+		return totalOptionsPrice;
+	}
+
+	public void setTotalOptionsPrice(double totalPrice) {
+		this.totalOptionsPrice = totalPrice;
 	}
  
 }

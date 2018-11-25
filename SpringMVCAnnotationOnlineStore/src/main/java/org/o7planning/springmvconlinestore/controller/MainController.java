@@ -7,9 +7,13 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.o7planning.springmvconlinestore.dao.BirthstoneDAO;
+import org.o7planning.springmvconlinestore.dao.CharmDAO;
 import org.o7planning.springmvconlinestore.dao.CustomerDAO;
 import org.o7planning.springmvconlinestore.dao.OrderDAO;
 import org.o7planning.springmvconlinestore.dao.ProductDAO;
+import org.o7planning.springmvconlinestore.entity.Birthstone;
+import org.o7planning.springmvconlinestore.entity.Charm;
 import org.o7planning.springmvconlinestore.entity.Customer;
 import org.o7planning.springmvconlinestore.entity.Product;
 import org.o7planning.springmvconlinestore.model.CartInfo;
@@ -49,6 +53,12 @@ public class MainController {
     
     @Autowired
     private CustomerDAO accountDAO;
+    
+    @Autowired
+    private BirthstoneDAO birthstoneDAO;
+    
+    @Autowired
+    private CharmDAO charmDAO;
  
     @Autowired
     private CustomerInfoValidator customerInfoValidator;
@@ -158,19 +168,56 @@ public class MainController {
     
     @RequestMapping({ "/buyProduct" })
     public String listProductHandler(HttpServletRequest request, Model model, //
-            @RequestParam(value = "code", defaultValue = "") int code) {
- 
+            @RequestParam(value = "code", defaultValue = "") int code, @ModelAttribute("productForm") //
+    		ProductInfo prodInfo, BindingResult result) {
+    		
+    	
         Product product = null;
         if (code > 0) {
             product = productDAO.findProduct(code);
         }
         if (product != null) {
- 
+        	Double totalPrice = 0.00;
+			
             // Cart info stored in Session.
             CartInfo cartInfo = Utils.getCartInSession(request);
  
             ProductInfo productInfo = new ProductInfo(product);
- 
+            
+            
+           //Update user selections
+            productInfo.setSize(request.getParameter("size"));
+            
+            if(request.getParameter("engraving") != null)
+            {
+            	productInfo.setEngraving(request.getParameter("engraving"));
+            }
+            if(request.getParameter("birthstone") != null) {
+	            Birthstone birthstone = birthstoneDAO.findOne(Integer.valueOf(request.getParameter("birthstone")));
+	            productInfo.setBirthstoneSelected(birthstone);
+	            totalPrice += birthstone.getCost();
+            }
+            if(request.getParameter("charm1") != null) {
+            	Charm charm1 = charmDAO.findOne(Integer.valueOf(request.getParameter("charm1")));
+            	productInfo.setCharmSelected1(charm1);
+            	totalPrice += charm1.getCost();
+            }
+            if(request.getParameter("charm2") != null) {
+            	Charm charm2 = charmDAO.findOne(Integer.valueOf(request.getParameter("charm2")));
+            	productInfo.setCharmSelected2(charm2);
+            	totalPrice += charm2.getCost();
+            }
+            if(request.getParameter("charm3") != null) {
+            	Charm charm3 = charmDAO.findOne(Integer.valueOf(request.getParameter("charm3")));
+            	productInfo.setCharmSelected3(charm3);
+            	totalPrice += charm3.getCost();
+            }
+            if(request.getParameter("charm4") != null) {
+            	Charm charm4 = charmDAO.findOne(Integer.valueOf(request.getParameter("charm4")));
+            	productInfo.setCharmSelected4(charm4);
+            	totalPrice += charm4.getCost();
+            }
+            productInfo.setTotalOptionsPrice(totalPrice);
             cartInfo.addProduct(productInfo, 1);
         }
         // Redirect to shoppingCart page.
@@ -215,7 +262,7 @@ public class MainController {
     @RequestMapping(value = { "/shoppingCart" }, method = RequestMethod.GET)
     public String shoppingCartHandler(HttpServletRequest request, Model model) {
         CartInfo myCart = Utils.getCartInSession(request);
- 
+        
         model.addAttribute("cartForm", myCart);
         return "shoppingCart";
     }

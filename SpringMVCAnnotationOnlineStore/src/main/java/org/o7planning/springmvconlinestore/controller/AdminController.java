@@ -2,10 +2,15 @@ package org.o7planning.springmvconlinestore.controller;
  
 import java.util.List;
 
+import org.o7planning.springmvconlinestore.dao.BirthstoneDAO;
+import org.o7planning.springmvconlinestore.dao.CharmDAO;
 import org.o7planning.springmvconlinestore.dao.CustomerDAO;
 import org.o7planning.springmvconlinestore.dao.OrderDAO;
 import org.o7planning.springmvconlinestore.dao.ProductDAO;
+import org.o7planning.springmvconlinestore.entity.Birthstone;
+import org.o7planning.springmvconlinestore.entity.Charm;
 import org.o7planning.springmvconlinestore.entity.Order;
+import org.o7planning.springmvconlinestore.entity.Product;
 import org.o7planning.springmvconlinestore.model.CustomerInfo;
 import org.o7planning.springmvconlinestore.model.OrderDetailInfo;
 import org.o7planning.springmvconlinestore.model.OrderInfo;
@@ -47,6 +52,12 @@ public class AdminController {
     
     @Autowired
     private CustomerDAO accountDAO;
+    
+    @Autowired
+    private BirthstoneDAO birthstoneDAO;
+    
+    @Autowired
+    private CharmDAO charmDAO;
  
     @Autowired
     private ProductInfoValidator productInfoValidator;
@@ -137,16 +148,49 @@ public class AdminController {
     @RequestMapping(value = { "/product" }, method = RequestMethod.GET)
     public String product(Model model, @RequestParam(value = "code", defaultValue = "") String code) {
         ProductInfo productInfo = null;
+        List<String> sizes = null;
+        Product thisProduct = null;
+        
+        int engraving = 0;
+        List<Birthstone> birthstones = null;
+        List<Charm> charms = null;
  
         if (code != null && code.length() > 0) {
         	
             productInfo = productDAO.findProductInfo(Integer.parseInt(code));
+            sizes = productDAO.allSizes(productInfo.getName());
+            thisProduct = productDAO.findProduct(Integer.valueOf(code));
+            
+         
+            
+            if(thisProduct.getOptEngrave() != 0) {
+            	engraving = 1;
+            }
+            if(thisProduct.getOptBirthstone() != 0) {
+            	birthstones = birthstoneDAO.retrieveAll();
+            }
+            if(thisProduct.hasCharmOpt()) {
+            	
+            	charms = charmDAO.getCharmList();
+            	
+            	
+            }
         }
         if (productInfo == null) {
             productInfo = new ProductInfo();
             //productInfo.setNewProduct(true);
         }
+        
+        
         model.addAttribute("productForm", productInfo);
+        model.addAttribute("sizes", sizes);
+        model.addAttribute("engraving", engraving);
+        model.addAttribute("birthstones", birthstones);
+        model.addAttribute("charm1", thisProduct.getOptCharm1());
+        model.addAttribute("charm2", thisProduct.getOptCharm2());
+        model.addAttribute("charm3", thisProduct.getOptCharm3());
+        model.addAttribute("charm4", thisProduct.getOptCharm4());
+        model.addAttribute("charmList", charms);
         return "product";
     }
  

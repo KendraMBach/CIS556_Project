@@ -38,12 +38,12 @@ public class Charm implements Serializable {
  
     @Id
     @Column(name = "charm_id", nullable = false)
-    public int getID() {
-        return this.id;
+    public int getId() {
+        return id;
     }
     
 
-    public void setID(int id) {
+    public void setId(int id) {
         this.id = id;
     }
     

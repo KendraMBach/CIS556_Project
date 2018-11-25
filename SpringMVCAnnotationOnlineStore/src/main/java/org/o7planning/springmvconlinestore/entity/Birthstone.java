@@ -41,11 +41,11 @@ public class Birthstone implements Serializable {
  
     @Id
     @Column(name = "birthstone_id", nullable = false)
-    public int getID() {
-        return this.id;
+    public int getId() {
+        return id;
     }
     
-    public void setID(int id) {
+    public void setId(int id) {
         this.id = id;
     }
     

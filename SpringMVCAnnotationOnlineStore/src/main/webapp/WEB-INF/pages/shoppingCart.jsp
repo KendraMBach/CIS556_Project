@@ -33,6 +33,9 @@
 
 <!--  Paper Kit Initialization and functions -->
 <script src="${pageContext.request.contextPath}/resources/js/paper-kit.js?v=2.1.0"></script>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+
 <script type="text/javascript">
     $(window).on('load',function(){
         $('#myModal').modal('show');
@@ -117,9 +120,9 @@
               <th>Product</th>
               <th class="th-description">Color</th>
               <th class="th-description">Size</th>
-              <th class="text-right">Price</th>
-              <th class="text-right">Qty</th>
-              <th class="text-right">Amount</th>
+              <th class="text-center">Price</th>
+              <th class="text-left">Qty</th>
+              <th class="text-center">Amount</th>
               <th></th>
           </tr>
       	</thead>
@@ -142,17 +145,17 @@
                   <br><small>by Junction Jewelers</small>
               </td>
               <td>
-                  ${cartLineInfo.productInfo.color}
+                 ${cartLineInfo.productInfo.color} 
               </td>
               <td>
-                  Insert size <!-- Insert Size Here -->
+                 ${cartLineInfo.productInfo.size}
               </td>
               <td class="td-number">
                   <fmt:formatNumber value="${cartLineInfo.productInfo.price}" type="currency"/>
               </td>
               <td class="td-number">
               		
-                  	<form:input path="cartLines[${varStatus.index}].quantity" />
+                  	<form:input size="2" path="cartLines[${varStatus.index}].quantity" />
                   <div class="btn-group">
                       <button class="btn btn-info btn-sm" type="submit" value="Update Quantity"> <i class="nc-icon nc-simple-delete"></i> </button>
                       <button class="btn btn-info btn-sm" type="submit" value="Update Quantity"> <i class="nc-icon nc-simple-add"></i> </button>
@@ -168,6 +171,28 @@
                       </a>
                   
               </td>
+          </tr>
+          <tr>
+          	<td class="th-description">Options:</td>
+          
+          	<td><c:if test="${not empty cartLineInfo.productInfo.engraving}">Engraving: "${cartLineInfo.productInfo.engraving}"  <fmt:formatNumber value="0" type="currency"/></c:if></td>
+          	
+          	
+          	<td><c:if test="${not empty cartLineInfo.productInfo.birthstoneSelected}">Birthstone: ${cartLineInfo.productInfo.birthstoneSelected.month}  <fmt:formatNumber value="${cartLineInfo.productInfo.birthstoneSelected.cost}" type="currency"/></c:if></td>
+          	
+          	
+          	<td><c:if test="${not empty cartLineInfo.productInfo.charmSelected1}">Charm: ${cartLineInfo.productInfo.charmSelected1.type}  <fmt:formatNumber value="${cartLineInfo.productInfo.charmSelected1.cost}" type="currency"/></c:if></td>
+          	
+          	
+          	<td><c:if test="${not empty cartLineInfo.productInfo.charmSelected2}">Charm: ${cartLineInfo.productInfo.charmSelected2.type}  <fmt:formatNumber value="${cartLineInfo.productInfo.charmSelected2.cost}" type="currency"/></c:if></td>
+          	
+          	
+          	<td><c:if test="${not empty cartLineInfo.productInfo.charmSelected3}">Charm: ${cartLineInfo.productInfo.charmSelected3.type}  <fmt:formatNumber value="${cartLineInfo.productInfo.charmSelected3.cost}" type="currency"/></c:if></td>
+          	
+          	
+          	<td><c:if test="${not empty cartLineInfo.productInfo.charmSelected4}">Charm: ${cartLineInfo.productInfo.charmSelected4.type}  <fmt:formatNumber value="${cartLineInfo.productInfo.charmSelected4.cost}" type="currency"/></c:if></td>
+          	
+          	
           </tr>
           </c:forEach>
           </form:form>

@@ -29,13 +29,14 @@
 
 <!--  Paper Kit Initialization and functions -->
 <script src="${pageContext.request.contextPath}/resources/js/paper-kit.js?v=2.1.0"></script>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
 
 <style>
-      @font-face { font-family: Otama-ep; src: url('${pageContext.request.contextPath}/resources/fonts/Otama-ep.otf'); } 
+      
       
       h1 {
-         font-family: Otama-ep;
-         
+
 	     -webkit-animation-name: fade_in; /* Safari 4.0 - 8.0 */
 	     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
 	     animation-name: fade_in;
@@ -77,7 +78,7 @@
         <div class="col-lg-3">
         
 		<form:form method="POST" action="${pageContext.request.contextPath}/productList">
-          <h1 class="my-4">Junction Jewelers</h1>
+          <h1 class="card-title" style="font-weight: bold;">Junction Jewelers</h1>
           <div class="list-group">
 			    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Bracelets</button>
 			    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -166,7 +167,7 @@
 	<c:forEach items="${paginationProducts.list}" var="prodInfo">
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="${pageContext.request.contextPath}/resources/img/jewelryImages/${prodInfo.fileData}" alt=""></a>
+                <a href="${pageContext.request.contextPath}/product?code=${prodInfo.code}"><img class="card-img-top" src="${pageContext.request.contextPath}/resources/img/jewelryImages/${prodInfo.fileData}" alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title">
                     <a href="${pageContext.request.contextPath}/product?code=${prodInfo.code}">${prodInfo.name}</a>

@@ -1,13 +1,17 @@
 package org.o7planning.springmvconlinestore.dao.impl;
  
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+
+import javax.persistence.TypedQuery;
 
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 import org.o7planning.springmvconlinestore.dao.ProductDAO;
 import org.o7planning.springmvconlinestore.entity.Product;
@@ -29,6 +33,17 @@ public class ProductDAOImpl implements ProductDAO {
         crit.add(Restrictions.eq("id", code));
         return (Product) crit.uniqueResult();
     }
+    
+    public List<String> allSizes(String name) {
+    	Session session = sessionFactory.getCurrentSession();
+    	String sql = "select distinct p.size from " + Product.class.getName() + " p where lower(p.name) = :name";
+    	Query query = session.createQuery(sql);
+    	query.setParameter("name", name.toLowerCase());
+    	List<String> rows = query.list();
+    	
+        return rows;
+    }
+    
  
     public ProductInfo findProductInfo(int code) {
         Product product = this.findProduct(code);
