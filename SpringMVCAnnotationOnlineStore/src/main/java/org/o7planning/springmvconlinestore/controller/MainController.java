@@ -373,6 +373,14 @@ public class MainController {
  
         return "shoppingCartFinalize";
     }
+    
+    @RequestMapping(value = { "/reports" }, method = RequestMethod.GET)
+    public String reportsHandler(HttpServletRequest request, Model model) {
+        
+        
+        //model.addAttribute("report", test); Will need if reports are immediately present
+        return "reports";
+    }
  /*
     @RequestMapping(value = { "/productImage" }, method = RequestMethod.GET)
     public void productImage(HttpServletRequest request, HttpServletResponse response, Model model,

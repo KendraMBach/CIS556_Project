@@ -64,6 +64,10 @@
                             <p class="d-lg-none">GitHub</p>
                         </a>
                     </li>
+                    </li>
+	                <li class="nav-item">
+	                <a class="nav-link" href="${pageContext.request.contextPath}/reports">Reports</a>
+	                </li>
 	            </ul>
 	        </div>
 		</div>
