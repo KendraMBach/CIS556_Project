@@ -26,8 +26,11 @@
 	                
 	                <c:if test="${pageContext.request.userPrincipal.name != null}">
 			        <li class="nav-item">
-	                    <a href="${pageContext.request.contextPath}/accountInfo" target="_blank" class="nav-link"><i class="nc-icon nc-single-02"></i>Hello ${pageContext.request.userPrincipal.name}</a>
-	                	<a href="${pageContext.request.contextPath}/logout">Logout</a>
+	                    <a href="${pageContext.request.contextPath}/accountInfo" target="_blank" class="nav-link"><i class="nc-icon nc-single-02"></i>Welcome Back</a>
+	                	
+	                </li>
+	                <li class="nav-item">
+	                <a class="nav-link" href="${pageContext.request.contextPath}/logout">Logout</a>
 	                </li>
 			 
 			        </c:if>

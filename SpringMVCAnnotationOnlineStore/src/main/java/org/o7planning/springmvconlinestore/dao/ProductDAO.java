@@ -1,5 +1,7 @@
 package org.o7planning.springmvconlinestore.dao;
  
+import java.util.List;
+
 import org.o7planning.springmvconlinestore.entity.Product;
 import org.o7planning.springmvconlinestore.model.PaginationResult;
 import org.o7planning.springmvconlinestore.model.ProductInfo;
@@ -7,10 +9,13 @@ import org.o7planning.springmvconlinestore.model.ProductInfo;
 public interface ProductDAO {
  
     
-    public Product findProduct(String code);
+    public Product findProduct(int code);
     
-    public ProductInfo findProductInfo(String code) ;
+    public ProductInfo findProductInfo(int code) ;
+    
+    public List<String> allSizes(String name);
   
+    //public Product allOptions(int id);
     
     public PaginationResult<ProductInfo> queryProducts(int page,
                        int maxResult, int maxNavigationPage  );
@@ -19,5 +24,11 @@ public interface ProductDAO {
                        int maxNavigationPage, String likeName);
  
     public void save(ProductInfo productInfo);
+    
+    public PaginationResult<ProductInfo> queryCategoryProducts(int page, int maxResult, int maxNavigationPage,
+            String likeName, String category);
+    
+    public PaginationResult<ProductInfo> queryBySubCategoryProducts(int page, int maxResult, int maxNavigationPage,
+            String likeName, String mainCategory, String subCategory);
     
 }

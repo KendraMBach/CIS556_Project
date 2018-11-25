@@ -2,6 +2,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
  
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
  
 <!DOCTYPE html>
 <html>
@@ -28,13 +29,14 @@
 
 <!--  Paper Kit Initialization and functions -->
 <script src="${pageContext.request.contextPath}/resources/js/paper-kit.js?v=2.1.0"></script>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
 
 <style>
-      @font-face { font-family: Otama-ep; src: url('${pageContext.request.contextPath}/resources/fonts/Otama-ep.otf'); } 
+      
       
       h1 {
-         font-family: Otama-ep;
-         
+
 	     -webkit-animation-name: fade_in; /* Safari 4.0 - 8.0 */
 	     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
 	     animation-name: fade_in;
@@ -57,10 +59,15 @@
 
 </head>
 <jsp:include page="_menu.jsp" />
-<body style="padding:100px;">
+<body>
+<main style="padding:100px;">
  
   
    <fmt:setLocale value="en_US" scope="session"/>
+   
+   <input type="hidden" id="filter" name="filter" value="${filter}">
+   <input type="hidden" id="paginationProducts" name="paginationProducts" value="${paginationProducts}">
+   
 
 
     <!-- Page Content -->
@@ -70,21 +77,36 @@
 
         <div class="col-lg-3">
         
-
-          <h1 class="my-4">Junction Jewelers</h1>
+		<form:form method="POST" action="${pageContext.request.contextPath}/productList">
+          <h1 class="card-title" style="font-weight: bold;">Junction Jewelers</h1>
           <div class="list-group">
-            <a href="#" class="list-group-item">Mother's Bracelets</a>
-            <a href="#" class="list-group-item">Baby Bracelets</a>
-            <a href="#" class="list-group-item">Grandmother's Bracelets</a>
-            <a href="#" class="list-group-item">Wedding Bracelets</a>
-            <a href="#" class="list-group-item">Most popular</a>
-            <a href="#" class="list-group-item">Earrings</a>
-            <a href="#" class="list-group-item">Necklaces</a>
-            <a href="#" class="list-group-item">Sets</a>
-            <a href="#" class="list-group-item">Everyday Jewelry</a>
+			    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Bracelets</button>
+			    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			        <li class="dropdown-header">Bracelet Types</li>
+			        <button type="submit" name="filter" value="bracelet,all" class="btn dropdown-item">All Bracelets</button>
+			        <div class="dropdown-divider"></div>
+			        <button type="submit" name="filter" value="bracelet,mother's bracelet" class="btn dropdown-item">Mother's Bracelets</button>
+            		<div class="dropdown-divider"></div>
+            		<button type="submit" name="filter" value="bracelet,christening bracelet" class="btn dropdown-item">Baby Bracelets</button>
+            		<div class="dropdown-divider"></div>
+            		<button type="submit" name="filter" value="bracelet,grandmother's bracelet" class="btn dropdown-item">Grandmother's Bracelets</button>
+			        
+			    </ul>
+            </br>
+            <button type="submit" name="filter" value="ring" class="btn btn-info">Wedding Rings</button>
+            </br>
+            <button type="submit" name="filter" value="necklace" class="btn btn-info">Most popular</button>
+            </br>
+            <button type="submit" name="filter" value="earrings" class="btn btn-info">Earrings</button>
+            </br>
+            <button type="submit" name="filter" value="necklace" class="btn btn-info">Necklaces</button>
+            </br>
+            <button type="submit" name="filter" value="set" class="btn btn-info">Sets</button>
+            </br>
+            <button type="submit" name="filter" value="everyday" class="btn btn-info">Everyday Jewelry</button>
 
           </div>
-
+		</form:form>
         </div>
         <!-- /.col-lg-3 -->
 
@@ -145,11 +167,13 @@
 	<c:forEach items="${paginationProducts.list}" var="prodInfo">
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="${pageContext.request.contextPath}/productImage?code=${prodInfo.code}" alt=""></a>
+                <a href="${pageContext.request.contextPath}/product?code=${prodInfo.code}"><img class="card-img-top" src="${pageContext.request.contextPath}/resources/img/jewelryImages/${prodInfo.fileData}" alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title">
-                    <a href="#">${prodInfo.name}</a>
+                    <a href="${pageContext.request.contextPath}/product?code=${prodInfo.code}">${prodInfo.name}</a>
                   </h4>
+                  <h5>${prodInfo.description}</h5>
+                  </br>
                   <h5>Price: <fmt:formatNumber value="${prodInfo.price}" type="currency"/></h5>
                   <p class="card-text"> </p>
                 </div>
@@ -166,7 +190,7 @@
        <div class="page-navigator">
           <c:forEach items="${paginationProducts.navigationPages}" var = "page">
               <c:if test="${page != -1 }">
-                <a href="productList?page=${page}" class="nav-item">${page}</a>
+                <a href="productList?page=${page}&filter=${filter}" class="nav-item">${page}</a>
               </c:if>
               <c:if test="${page == -1 }">
                 <span class="nav-item"> ... </span>
@@ -184,7 +208,7 @@
     </div>
     <!-- /.container -->
 
-
+	</main>
    <jsp:include page="_footer.jsp" />
  
 </body>

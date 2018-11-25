@@ -139,7 +139,6 @@ java.net.BindException: Address already in use (Bind failed) <null>:8080
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Eclipse](https://www.eclipse.org) - Deployment IDE
 * [Tomcat7](https://tomcat.apache.org) - Java Servlet / JSP Deployment
-* [Docker](https://store.docker.com) - Database (SQL Server) Consolidation and Connectivity
 * [MySQL Community Server](https://dev.mysql.com/downloads/mysql/) - Open source DB
 * [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) - DB GUI
 

@@ -5,11 +5,13 @@ public class CustomerInfo {
     private String firstName;
     private String lastName;
     private String address;
+    private String city;
+    private String state;
+    private String zip;
     private String email;
     private String phone;
     private String password;
     
-    private boolean valid;
  
  
     public String getFirstName() {
@@ -52,13 +54,6 @@ public class CustomerInfo {
         this.phone = phone;
     }
     
-    public boolean isValid() {
-        return valid;
-    }
- 
-    public void setValid(boolean valid) {
-        this.valid = valid;
-    }
 
     public void setPassword(String password) {
     	this.password = password;
@@ -66,6 +61,30 @@ public class CustomerInfo {
     
 	public String getPassword() {
 		return this.password;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getZip() {
+		return zip;
+	}
+
+	public void setZip(String zip) {
+		this.zip = zip;
 	}
  
 }

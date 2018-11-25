@@ -2,9 +2,19 @@ package org.o7planning.springmvconlinestore.controller;
  
 import java.util.List;
 
-import org.o7planning.springmvconlinestore.dao.AccountDAO;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.o7planning.springmvconlinestore.dao.BirthstoneDAO;
+import org.o7planning.springmvconlinestore.dao.CharmDAO;
+import org.o7planning.springmvconlinestore.dao.CustomerDAO;
 import org.o7planning.springmvconlinestore.dao.OrderDAO;
 import org.o7planning.springmvconlinestore.dao.ProductDAO;
+import org.o7planning.springmvconlinestore.entity.Birthstone;
+import org.o7planning.springmvconlinestore.entity.Charm;
+import org.o7planning.springmvconlinestore.entity.Customer;
+import org.o7planning.springmvconlinestore.entity.Order;
+import org.o7planning.springmvconlinestore.entity.Product;
 import org.o7planning.springmvconlinestore.model.CustomerInfo;
 import org.o7planning.springmvconlinestore.model.OrderDetailInfo;
 import org.o7planning.springmvconlinestore.model.OrderInfo;
@@ -13,8 +23,14 @@ import org.o7planning.springmvconlinestore.model.ProductInfo;
 import org.o7planning.springmvconlinestore.validator.ProductInfoValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.ResourceBundleMessageSource;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.authentication.event.AuthenticationSuccessEvent;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.web.authentication.WebAuthenticationDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -45,7 +61,13 @@ public class AdminController {
     private ProductDAO productDAO;
     
     @Autowired
-    private AccountDAO accountDAO;
+    private CustomerDAO accountDAO;
+    
+    @Autowired
+    private BirthstoneDAO birthstoneDAO;
+    
+    @Autowired
+    private CharmDAO charmDAO;
  
     @Autowired
     private ProductInfoValidator productInfoValidator;
@@ -80,8 +102,8 @@ public class AdminController {
  // POST: Show Login Page
     @RequestMapping(value = { "/login" }, method = RequestMethod.POST)
     @Transactional(propagation = Propagation.NEVER)
-    public String confirmLogin(Model model, //
-    	    @ModelAttribute("user") CustomerInfo userInfo, //
+    public String confirmLogin(HttpServletRequest request, Model model, //
+    	    @ModelAttribute("user") @Validated CustomerInfo userInfo, //
     	    BindingResult result, //
     	    final RedirectAttributes redirectAttributes) {
     	
@@ -89,7 +111,12 @@ public class AdminController {
             return "login";
         }
     	try {
-        accountDAO.findAccountWithPass(userInfo.getEmail(), userInfo.getPassword());
+    		Customer customer = accountDAO.findAccountWithPass(userInfo.getEmail(), userInfo.getPassword());
+        if(customer == null) {
+        	String message = "Invalid Credentials";
+            model.addAttribute("message", message);
+            return "login";
+        	}
     	}
     	catch (Exception e) {
             
@@ -97,6 +124,8 @@ public class AdminController {
             model.addAttribute("message", message);
             return "login";
     	}
+    	
+    	
         return "redirect:/";
     	
     }
@@ -136,15 +165,49 @@ public class AdminController {
     @RequestMapping(value = { "/product" }, method = RequestMethod.GET)
     public String product(Model model, @RequestParam(value = "code", defaultValue = "") String code) {
         ProductInfo productInfo = null;
+        List<String> sizes = null;
+        Product thisProduct = null;
+        
+        int engraving = 0;
+        List<Birthstone> birthstones = null;
+        List<Charm> charms = null;
  
         if (code != null && code.length() > 0) {
-            productInfo = productDAO.findProductInfo(code);
+        	
+            productInfo = productDAO.findProductInfo(Integer.parseInt(code));
+            sizes = productDAO.allSizes(productInfo.getName());
+            thisProduct = productDAO.findProduct(Integer.valueOf(code));
+            
+         
+            
+            if(thisProduct.getOptEngrave() != 0) {
+            	engraving = 1;
+            }
+            if(thisProduct.getOptBirthstone() != 0) {
+            	birthstones = birthstoneDAO.retrieveAll();
+            }
+            if(thisProduct.hasCharmOpt()) {
+            	
+            	charms = charmDAO.getCharmList();
+            	
+            	
+            }
         }
         if (productInfo == null) {
             productInfo = new ProductInfo();
-            productInfo.setNewProduct(true);
+            //productInfo.setNewProduct(true);
         }
+        
+        
         model.addAttribute("productForm", productInfo);
+        model.addAttribute("sizes", sizes);
+        model.addAttribute("engraving", engraving);
+        model.addAttribute("birthstones", birthstones);
+        model.addAttribute("charm1", thisProduct.getOptCharm1());
+        model.addAttribute("charm2", thisProduct.getOptCharm2());
+        model.addAttribute("charm3", thisProduct.getOptCharm3());
+        model.addAttribute("charm4", thisProduct.getOptCharm4());
+        model.addAttribute("charmList", charms);
         return "product";
     }
  
@@ -175,17 +238,18 @@ public class AdminController {
  
     @RequestMapping(value = { "/order" }, method = RequestMethod.GET)
     public String orderView(Model model, @RequestParam("orderId") String orderId) {
-        OrderInfo orderInfo = null;
+        Order orderInfo = null;
         if (orderId != null) {
-            orderInfo = this.orderDAO.getOrderInfo(orderId);
+            orderInfo = this.orderDAO.findSingleOrder(Integer.parseInt(orderId));
         }
         if (orderInfo == null) {
             return "redirect:/orderList";
         }
-        List<OrderDetailInfo> details = this.orderDAO.listOrderDetailInfos(orderId);
-        orderInfo.setDetails(details);
+        List<Order> details = this.orderDAO.listAllOrderItemsForSingleOrder(Integer.parseInt(orderId));
+        //orderInfo.setDetails(details);
  
         model.addAttribute("orderInfo", orderInfo);
+        model.addAttribute(details);
  
         return "order";
     }
