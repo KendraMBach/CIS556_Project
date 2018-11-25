@@ -36,9 +36,9 @@ public class MyDBAuthenticationService implements UserDetailsService {
         List<GrantedAuthority> grantList = new ArrayList<GrantedAuthority>();
  
         // ROLE_EMPLOYEE, ROLE_MANAGER
-        //GrantedAuthority authority = new SimpleGrantedAuthority("ROLE_" + role);
+        GrantedAuthority authority = new SimpleGrantedAuthority("ROLE_USER");
  
-        //grantList.add(authority);
+        grantList.add(authority);
  
         boolean enabled = true;
         boolean accountNonExpired = true;
@@ -46,7 +46,7 @@ public class MyDBAuthenticationService implements UserDetailsService {
         boolean accountNonLocked = true;
  
         UserDetails userDetails = (UserDetails) new User(String.valueOf(customer.getCustomerID()), //
-        		customer.getPassword(), enabled, accountNonExpired, //
+        		"{noop}"+customer.getPassword(), enabled, accountNonExpired, //
                 credentialsNonExpired, accountNonLocked, grantList);
  
         return userDetails;

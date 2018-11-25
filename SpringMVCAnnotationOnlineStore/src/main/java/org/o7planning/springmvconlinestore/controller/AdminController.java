@@ -2,6 +2,9 @@ package org.o7planning.springmvconlinestore.controller;
  
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import org.o7planning.springmvconlinestore.dao.BirthstoneDAO;
 import org.o7planning.springmvconlinestore.dao.CharmDAO;
 import org.o7planning.springmvconlinestore.dao.CustomerDAO;
@@ -9,6 +12,7 @@ import org.o7planning.springmvconlinestore.dao.OrderDAO;
 import org.o7planning.springmvconlinestore.dao.ProductDAO;
 import org.o7planning.springmvconlinestore.entity.Birthstone;
 import org.o7planning.springmvconlinestore.entity.Charm;
+import org.o7planning.springmvconlinestore.entity.Customer;
 import org.o7planning.springmvconlinestore.entity.Order;
 import org.o7planning.springmvconlinestore.entity.Product;
 import org.o7planning.springmvconlinestore.model.CustomerInfo;
@@ -19,8 +23,14 @@ import org.o7planning.springmvconlinestore.model.ProductInfo;
 import org.o7planning.springmvconlinestore.validator.ProductInfoValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.ResourceBundleMessageSource;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.authentication.event.AuthenticationSuccessEvent;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.web.authentication.WebAuthenticationDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -92,8 +102,8 @@ public class AdminController {
  // POST: Show Login Page
     @RequestMapping(value = { "/login" }, method = RequestMethod.POST)
     @Transactional(propagation = Propagation.NEVER)
-    public String confirmLogin(Model model, //
-    	    @ModelAttribute("user") CustomerInfo userInfo, //
+    public String confirmLogin(HttpServletRequest request, Model model, //
+    	    @ModelAttribute("user") @Validated CustomerInfo userInfo, //
     	    BindingResult result, //
     	    final RedirectAttributes redirectAttributes) {
     	
@@ -101,7 +111,12 @@ public class AdminController {
             return "login";
         }
     	try {
-        accountDAO.findAccountWithPass(userInfo.getEmail(), userInfo.getPassword());
+    		Customer customer = accountDAO.findAccountWithPass(userInfo.getEmail(), userInfo.getPassword());
+        if(customer == null) {
+        	String message = "Invalid Credentials";
+            model.addAttribute("message", message);
+            return "login";
+        	}
     	}
     	catch (Exception e) {
             
@@ -109,6 +124,8 @@ public class AdminController {
             model.addAttribute("message", message);
             return "login";
     	}
+    	
+    	
         return "redirect:/";
     	
     }

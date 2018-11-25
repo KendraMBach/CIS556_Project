@@ -203,13 +203,17 @@
       <td></td>
       <td></td>
       <td>
-      	
+      	<c:if test="${pageContext.request.userPrincipal.name == null}">
            <a class="navi-item"
-               href="${pageContext.request.contextPath}/shoppingCartCustomer">Enter Customer Info</a>
+               href="${pageContext.request.contextPath}/login">Login to Checkout</a>
+           </c:if>
+           <c:if test="${pageContext.request.userPrincipal.name != null}">
+           <a class="navi-item" href="${pageContext.request.contextPath}/productList">Checkout</a>
+           </c:if>
                </td>
+       
                <td>
-           <a class="navi-item"
-               href="${pageContext.request.contextPath}/productList">Checkout</a>
+          
                </td>
                </tr>
                </tbody>

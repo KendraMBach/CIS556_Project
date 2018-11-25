@@ -49,11 +49,13 @@
 										<i class="fa fa-twitter"></i>
 									</a>
                                 </div>
-                                <form:form id="loginForm" modelAttribute="user" action="login" method="post"> 
+                                <form:form id="loginForm" modelAttribute="user" action="${pageContext.request.contextPath}/j_spring_security_check" method="post"> 
                                 <form class="register-form">
                                     <label>Email</label>
-                                    <input type="text" class="form-control" placeholder="Email">
-
+                                    <form:input path="email" name="email" id="email" type="text" class="form-control" placeholder="Email"/>
+									<c:if test= "${not empty message}">
+                                		<span class="label label-danger">${message}</span>
+                                	</c:if>
                                     <label>Password</label>
                                     <form:input path="password" name="password" id="password" type="password" class="form-control" placeholder="Password"/>
                                     <form:button id="login" name="login" class="btn btn-danger btn-block btn-round">Login</form:button>
@@ -62,6 +64,7 @@
                                 <c:if test= "${not empty error }">
                                 		<span class="label label-danger">${error }</span>
                                 	</c:if>
+                                	
                                 <div class="forgot">
                                     <a href="${pageContext.request.contextPath}/register" class="btn btn-link btn-danger">New User?</a>
                                 </div>

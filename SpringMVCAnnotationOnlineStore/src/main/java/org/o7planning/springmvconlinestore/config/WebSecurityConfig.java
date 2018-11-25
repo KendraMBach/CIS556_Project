@@ -21,6 +21,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
  
        // For User in database.
        auth.userDetailsService(myDBAauthenticationService);
+       auth.inMemoryAuthentication()
+       .withUser("user").password("{noop}password").roles("USER");
  
    }
  

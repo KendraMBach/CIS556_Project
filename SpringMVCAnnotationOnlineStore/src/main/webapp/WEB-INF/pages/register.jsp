@@ -50,16 +50,28 @@
 									</a>
                                 </div>
                                  <form:form id="regForm" modelAttribute="newUserForm" action="register" method="post"> 
-                                	<label>First Name</label>
+                                	
                                     <form:input path="firstName" name="firstName" id="firstName" type="text" class="form-control" placeholder="First Name"/>
                                 
-                                	<label>Last Name</label>
+                                	
                                     <form:input path="lastName" name="lastName" id="lastName" type="text" class="form-control" placeholder="Last Name"/>
+                                    
+                                    <hr>
+                                    <form:input path="address" name="address" id="address" type="text" class="form-control" placeholder="Address"/>
+                                    
+                                    
+                                    <form:input path="city" name="city" id="city" type="text" class="form-control" placeholder="City"/>
+                                    
+                                    
+                                    <form:input path="state" name="state" id="state" type="text" class="form-control" placeholder="State"/>
+                                    
+                                    
+                                    <form:input path="zip" name="zip" id="zip" type="text" class="form-control" placeholder="Zip"/>
                                 
-                                    <label>Email</label>
+                                    <hr>
                                     <form:input path="email" name="email" id="email" type="text" class="form-control" placeholder="Email"/>
                                     
-                                    <label>Password</label>
+                                    
                                     <form:input path="password" name="password" id="password" type="password" class="form-control" placeholder="Password"/>
                                     <form:button id="register" name="register" class="btn btn-danger btn-block btn-round">Register</form:button>
                                   </form:form>
@@ -76,7 +88,12 @@
 						<h6>&copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by Weatherman Underground</h6>
 					</div>
                 </div>
+                </br>
+    </br>
         </div>
+        
     </div>
+    
+  <jsp:include page="_footer.jsp" />   
 </body>
  
