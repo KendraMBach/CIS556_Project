@@ -64,6 +64,35 @@ public class PaginationResult<E> {
        this.calcNavigationPages();
    }
  
+   
+   public PaginationResult(List<ProductInfo> infoList) {
+       final int pageIndex = 1;
+ 
+       int fromRecordIndex = 1;
+       int maxRecordIndex = 1;
+ 
+       List<ProductInfo> resultScroll = infoList;
+ 
+       List results = new ArrayList();
+       for(int i=0; i < infoList.size(); i++) {
+    	   results.add(infoList.get(i));
+       }
+ 
+       
+       // Total records.
+       this.totalRecords = resultScroll.size();
+       this.currentPage = pageIndex + 1;
+       this.list = results;
+       this.maxResult = maxResult;
+ 
+       this.totalPages = 1;
+       this.maxNavigationPage = 1;
+ 
+       
+ 
+       this.calcNavigationPages();
+   }
+   
    private void calcNavigationPages() {
  
        this.navigationPages = new ArrayList<Integer>();

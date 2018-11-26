@@ -95,7 +95,7 @@
             </br>
             <button type="submit" name="filter" value="ring" class="btn btn-info">Wedding Rings</button>
             </br>
-            <button type="submit" name="filter" value="necklace" class="btn btn-info">Most popular</button>
+            <button type="submit" name="filter" value="popular" class="btn btn-info">Most popular</button>
             </br>
             <button type="submit" name="filter" value="earrings" class="btn btn-info">Earrings</button>
             </br>

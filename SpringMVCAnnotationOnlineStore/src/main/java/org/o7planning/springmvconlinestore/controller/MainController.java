@@ -1,6 +1,7 @@
 package org.o7planning.springmvconlinestore.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -15,9 +16,11 @@ import org.o7planning.springmvconlinestore.dao.ProductDAO;
 import org.o7planning.springmvconlinestore.entity.Birthstone;
 import org.o7planning.springmvconlinestore.entity.Charm;
 import org.o7planning.springmvconlinestore.entity.Customer;
+import org.o7planning.springmvconlinestore.entity.Order;
 import org.o7planning.springmvconlinestore.entity.Product;
 import org.o7planning.springmvconlinestore.model.CartInfo;
 import org.o7planning.springmvconlinestore.model.CustomerInfo;
+import org.o7planning.springmvconlinestore.model.OrderInfo;
 import org.o7planning.springmvconlinestore.model.PaginationResult;
 import org.o7planning.springmvconlinestore.model.ProductInfo;
 import org.o7planning.springmvconlinestore.util.Utils;
@@ -117,6 +120,21 @@ public class MainController {
         else if(mainCategory.equals("all")) {
         result = productDAO.queryProducts(page, //
                 maxResult, maxNavigationPage, likeName);
+        }
+        else if(mainCategory.equals("popular")) {
+        	//Display Popular Hack
+        	
+        	List<ProductInfo> popularResult =  new ArrayList<ProductInfo>();
+        	
+        	List<Product> test = orderDAO.listAllOrderItemsForAllOrders();
+        	for(int i=0; i<4; i++) {
+        		{
+        		ProductInfo productInfo = new ProductInfo(test.get(i));
+        			popularResult.add(productInfo);
+        		}
+        		result = new PaginationResult(popularResult);
+        		 
+        	}
         }
         else {
         	result = productDAO.queryCategoryProducts(page, maxResult, maxNavigationPage, likeName, mainCategory);

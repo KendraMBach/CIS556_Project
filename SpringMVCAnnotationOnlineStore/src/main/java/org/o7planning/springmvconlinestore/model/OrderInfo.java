@@ -6,7 +6,7 @@ import java.util.List;
 public class OrderInfo {
  
     private int id;
-    private Date orderDate;
+    private String orderDate;
     private int orderNum;
     private double amount;
  
@@ -26,7 +26,7 @@ public class OrderInfo {
     }
  
     // Using for Hibernate Query.
-    public OrderInfo(int id, Date orderDate, int orderNum, //
+    public OrderInfo(int id, String orderDate, int orderNum, //
             int amount, String customerFirstName, String customerLastName, String customerAddress, String customerCity, //
             String customerState, String customerZip, String customerEmail, String customerPhone) {
         this.id = id;
@@ -49,11 +49,11 @@ public class OrderInfo {
         this.id = id;
     }
  
-    public Date getOrderDate() {
+    public String getOrderDate() {
         return orderDate;
     }
  
-    public void setOrderDate(Date orderDate) {
+    public void setOrderDate(String orderDate) {
         this.orderDate = orderDate;
     }
  
