@@ -3,6 +3,7 @@ package org.o7planning.springmvconlinestore.dao.impl;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
  
 import org.hibernate.Criteria;
@@ -13,6 +14,7 @@ import org.hibernate.criterion.Restrictions;
 import org.o7planning.springmvconlinestore.dao.CustomerDAO;
 import org.o7planning.springmvconlinestore.dao.OrderDAO;
 import org.o7planning.springmvconlinestore.dao.ProductDAO;
+import org.o7planning.springmvconlinestore.entity.Charm;
 import org.o7planning.springmvconlinestore.entity.Customer;
 import org.o7planning.springmvconlinestore.entity.Order;
 
@@ -65,8 +67,9 @@ public class OrderDAOImpl implements OrderDAO {
  
         CustomerInfo customerInfo = cartInfo.getCustomerInfo();
         
-        int customerId = customerDAO.findCustomerId(customerInfo.getEmail(), customerInfo.getPassword());
-        order.setCustomerID(customerId);
+        Customer customer = customerDAO.findAccount(customerInfo.getEmail());
+        //int customerId = customerDAO.findCustomerId(customerInfo.getEmail(), customerInfo.getPassword());
+        order.setCustomerId(customer);
         /*
         order.setCustomerName(customerInfo.getFirstName());
         order.setCustomerName(customerInfo.getLastName());
@@ -89,7 +92,7 @@ public class OrderDAOImpl implements OrderDAO {
  
             int code = line.getProductInfo().getCode();
             Product product = this.productDAO.findProduct(code);
-            thisItem.setProdId(product.getId());
+            thisItem.setProdId(product);
  
             session.persist(thisItem);
         }
@@ -132,7 +135,7 @@ public class OrderDAOImpl implements OrderDAO {
         if (order == null) {
             return null;
         }
-        Customer customer = customerDAO.lookUpCustomerWithID(order.getCustomerID());
+        Customer customer = customerDAO.lookUpCustomerWithID(order.getCustomerId().getCustomerID());
         return new OrderInfo(order.getId(), order.getOrderDate(), //
                 order.getId(), order.getAmount(), customer.getFirstName(), //
                 customer.getLastName(), customer.getAddress(), customer.getCity(), customer.getState(), //
@@ -154,6 +157,23 @@ public class OrderDAOImpl implements OrderDAO {
  
         return query.list();
     }
+    
+    
+	public List<Product> listAllOrderItemsForAllOrders() {
+		
+        String sql = "select d.prodId "//
+                + "from " + Order.class.getName() + " d group by "
+                		+ "d.prodId order by count(d.prodId) desc";
+ 
+        Session session = this.sessionFactory.getCurrentSession();
+ 
+        Query query = session.createQuery(sql);
+        
+ 
+        return (List<Product>) query.list();
+    }
+    
+    
 	
  
 }
