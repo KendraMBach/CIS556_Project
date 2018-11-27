@@ -193,7 +193,8 @@
                   <h4 class="card-title">
                     <a href="${pageContext.request.contextPath}/product?code=${prodInfo.code}">${prodInfo.name}</a>
                   </h4>
-                  <h5>${prodInfo.description}</h5>
+                  <hr>
+                  <p><font size=+1>Color: ${prodInfo.color}</font></p>
                   </br>
                   <h5>Price: <fmt:formatNumber value="${prodInfo.price}" type="currency"/></h5>
                   <p class="card-text"> </p>

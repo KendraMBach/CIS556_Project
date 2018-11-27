@@ -139,8 +139,9 @@ public class MainController {
         	}
         }
         else {
-        	
-        	result = productDAO.queryCategoryProducts(page, maxResult, maxNavigationPage, likeName, mainCategory);
+        	PaginationResult<ProductInfo> finalResult = null;
+        	finalResult = productDAO.queryCategoryProducts(page, maxResult, maxNavigationPage, likeName, mainCategory);
+        	result = new PaginationResult<ProductInfo>(finalResult.returnTwoUnique());
         	
         }
         
