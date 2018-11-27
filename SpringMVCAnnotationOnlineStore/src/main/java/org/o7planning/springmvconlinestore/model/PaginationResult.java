@@ -148,11 +148,11 @@ public class PaginationResult<E> {
    }
    
    public List<ProductInfo> returnTwoUnique(){
-	   List<Double> unique = null;
-	   List<ProductInfo> uniqueProds = null;
+	   List<Double> unique = new ArrayList<Double>();
+	   List<ProductInfo> uniqueProds = new ArrayList<ProductInfo>();
 	   
 	   for(ProductInfo item : (List<ProductInfo>) this.getList()) {
-		   if(!unique.contains(item.getPrice())) {
+		   if(unique.isEmpty() || !unique.contains(item.getPrice())) {
 		   unique.add(item.getPrice());
 		   uniqueProds.add(item);
 		   } 
