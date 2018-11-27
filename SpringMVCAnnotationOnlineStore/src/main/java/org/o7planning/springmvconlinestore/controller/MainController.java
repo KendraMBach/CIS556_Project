@@ -117,8 +117,10 @@ public class MainController {
         String mainCategory = type.get(0);
         if(type.size() > 1) {
         	subCategory = type.get(1);
+        	PaginationResult<ProductInfo> finalResult = null;
         	
-        	result = productDAO.queryBySubCategoryProducts(page, maxResult, maxNavigationPage, likeName, mainCategory, subCategory);
+        	finalResult = productDAO.queryBySubCategoryProducts(page, maxResult, maxNavigationPage, likeName, mainCategory, subCategory);
+        	result = new PaginationResult<ProductInfo>(finalResult.returnTwoUnique());
         }
         else if(mainCategory.equals("all")) {
         result = productDAO.queryProducts(page, //
@@ -140,11 +142,8 @@ public class MainController {
         	}
         }
         else {
-        	PaginationResult<ProductInfo> finalResult = null;
         	
-    		finalResult = productDAO.queryProducts(page, maxResult, maxNavigationPage, likeName);
-    		result = new PaginationResult<ProductInfo>(finalResult.returnTwoUnique());
-        	//result = productDAO.queryCategoryProducts(page, maxResult, maxNavigationPage, likeName, mainCategory);
+        	result = productDAO.queryCategoryProducts(page, maxResult, maxNavigationPage, likeName, mainCategory);
         	
         }
         
