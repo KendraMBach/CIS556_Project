@@ -59,6 +59,9 @@ public class MainController {
     
     @Autowired
     private CharmDAO charmDAO;
+    
+    @Autowired
+    private CustomerDAO customerDAO;
  
     @Autowired
     private CustomerInfoValidator customerInfoValidator;
@@ -380,6 +383,14 @@ public class MainController {
         
         //model.addAttribute("report", test); Will need if reports are immediately present
         return "reports";
+    }
+    
+    @RequestMapping(value = { "/reportRendering" }, method = RequestMethod.GET)
+    public String reportRenderingHandler(HttpServletRequest request, Model model) {
+        
+        List<Customer> customers = customerDAO.findAll();
+        model.addAttribute("customers", customers); //Adds all customers to page
+        return "reportRendering";
     }
  /*
     @RequestMapping(value = { "/productImage" }, method = RequestMethod.GET)

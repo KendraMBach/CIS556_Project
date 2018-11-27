@@ -51,7 +51,7 @@ public class Order implements Serializable {
 		this.charmId2 = charmId2;
 		this.charmId3 = charmId3;
 		this.charmId4 = charmId4;
-		this.customerID = customer.getCustomerID();
+		this.customerID = customer.getId();
 		this.prodId = product.getId();
 	}
 	
@@ -69,7 +69,7 @@ public class Order implements Serializable {
 		this.prodId = product.getId();
 		this.prodRetailPrice = product.getPriceRetail();
 		
-		this.customerID = customer.getCustomerID();
+		this.customerID = customer.getId();
 		
 		
 	}
