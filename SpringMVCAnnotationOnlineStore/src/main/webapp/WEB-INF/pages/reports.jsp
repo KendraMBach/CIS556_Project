@@ -25,7 +25,7 @@
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
  
- <style>
+<style>
 #stay {
 	   position:absolute;
 	   bottom:0;
@@ -42,20 +42,46 @@
  <main style="padding:100px">
    
  <div class="container">
-   <div class="page-title">Reports</div>
- 
-   <div class="account-container">
- 
- 
-       <ul>
-           <li>Report: </li>
-           <li>Description:
-               <ul>
-               		Test
-               </ul>
-           </li>
-       </ul>
-   </div>
+   <!--<div class="page-title">Reports</div>
+  
+   <div class="account-container">-->
+     <h5>Monthly Sales</h5>
+     <form action="monthlySales.html" target = "_blank" id="form1">
+     First Month: <input type="text" name="month1">
+     Last Month: <input type="text" name="month2"><br>
+     <input type="submit" value="Generate">
+     </form>
+     <br>    
+     <h5>Yearly Sales</h5>
+     <form action="/Reports.php" id="form2">
+     First Year: <input type="text" name="year1">
+     Last Year: <input type="text" name="year2"><br>
+     <input type="submit" value="Generate">
+     </form>
+     <br>     
+     <h5>Inventory Levels</h5>
+     <form action="/Reports.php" id="form3">
+     Product Name: <input type="text" name="product"><br>
+     <input type="submit" value="Generate">
+     </form>
+     <br>
+     <h5>Inventory Costs</h5>
+     <form action="/Reports.php" id="form4">
+     Product Name: <input type="text" name="product2"><br>
+     <input type="submit" value="Generate">
+     </form>
+     <br>
+     <h5>Customer List</h5>
+     <form action="/Reports.php" id="form4">
+     <input type="submit" value="Generate">
+     </form>
+     <br>
+     <h5>Mailing Labels</h5>
+     <form action="/Reports.php" id="form6">
+     Customer ID: <input type="text" name="customerID"><br>
+     <input type="submit" value="Generate">
+     </form>
+  <!--</div>-->
  
  </div>
  </main>  
