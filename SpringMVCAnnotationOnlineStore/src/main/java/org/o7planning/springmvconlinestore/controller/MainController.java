@@ -130,7 +130,7 @@ public class MainController {
         	List<ProductInfo> popularResult =  new ArrayList<ProductInfo>();
         	
         	List<Product> test = orderDAO.listAllOrderItemsForAllOrders();
-        	for(int i=0; i<4; i++) {
+        	for(int i=0; i<6; i++) {
         		{
         		ProductInfo productInfo = new ProductInfo(test.get(i));
         			popularResult.add(productInfo);
@@ -140,7 +140,12 @@ public class MainController {
         	}
         }
         else {
-        	result = productDAO.queryCategoryProducts(page, maxResult, maxNavigationPage, likeName, mainCategory);
+        	PaginationResult<ProductInfo> finalResult = null;
+        	
+    		finalResult = productDAO.queryProducts(page, maxResult, maxNavigationPage, likeName);
+    		result = new PaginationResult<ProductInfo>(finalResult.returnTwoUnique());
+        	//result = productDAO.queryCategoryProducts(page, maxResult, maxNavigationPage, likeName, mainCategory);
+        	
         }
         
         model.addAttribute("paginationProducts", result);
@@ -150,6 +155,26 @@ public class MainController {
         return "productList";
     }
     
+    @RequestMapping(value = { "/productSearch" }, method = {RequestMethod.GET})
+    public String searchProductHandler(HttpServletRequest request, Model model, //
+            @RequestParam(defaultValue = "") String likeName,
+            @RequestParam(value = "page", defaultValue = "1") int page, @RequestParam(value = "filter", // 
+            defaultValue = "all") String filter) {
+    	
+    		final int maxResult = 6;
+    		final int maxNavigationPage = 10;
+    		PaginationResult<ProductInfo> result = null;
+    	
+    		result = productDAO.queryProducts(page, maxResult, maxNavigationPage, likeName);
+    	
+	    	model.addAttribute("paginationProducts", result);
+	        model.addAttribute("filter", "");
+	        model.addAttribute("mainCategory", "");
+	        model.addAttribute("subCategory", "");
+    	
+				return "productList";
+    	
+    }
     
  // New User Registration.
     @RequestMapping(value = {"/register" }, method = RequestMethod.GET)

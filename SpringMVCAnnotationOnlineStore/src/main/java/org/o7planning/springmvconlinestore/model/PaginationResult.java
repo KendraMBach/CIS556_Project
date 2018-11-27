@@ -146,5 +146,18 @@ public class PaginationResult<E> {
    public List<Integer> getNavigationPages() {
        return navigationPages;
    }
+   
+   public List<ProductInfo> returnTwoUnique(){
+	   List<Double> unique = null;
+	   List<ProductInfo> uniqueProds = null;
+	   
+	   for(ProductInfo item : (List<ProductInfo>) this.getList()) {
+		   if(!unique.contains(item.getPrice())) {
+		   unique.add(item.getPrice());
+		   uniqueProds.add(item);
+		   } 
+	   }
+	   return uniqueProds;
+   }
   
 }
