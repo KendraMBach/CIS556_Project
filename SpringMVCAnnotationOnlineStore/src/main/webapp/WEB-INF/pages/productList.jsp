@@ -106,7 +106,26 @@
             <button type="submit" name="filter" value="everyday" class="btn btn-info">Everyday Jewelry</button>
 
           </div>
+          </br>
+           <!-- Search form -->
+           </form:form>
+           <form:form method="GET" action="${pageContext.request.contextPath}/productSearch">
+		<div class="col-md-12">
+        <div class="form-group">
+        <div class="row">
+        
+            <input type="text" name="likeName" class="form-control" placeholder="Search">
+            <div class="col"></div>
+        	<div class="col"></div>
+        	
+            <button type="submit" class="btn btn-info" style="margin-top:10px">Go</button>
+        </div>    
+        </div>
 		</form:form>
+		
+		
+		
+    </div>
         </div>
         <!-- /.col-lg-3 -->
 
@@ -138,6 +157,8 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
+          
+         
 <!--  
 <c:forEach items="${paginationProducts.list}" var="prodInfo">
        <div class="product-preview-container">
