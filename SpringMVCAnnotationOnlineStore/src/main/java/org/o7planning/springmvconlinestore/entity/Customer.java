@@ -40,7 +40,7 @@ public class Customer implements Serializable {
 	private static final long serialVersionUID = -2054386655979281969L;
  
  
-    private int ID;
+    private int id;
     private String password;
     private String firstName;
     private String lastName;
@@ -54,12 +54,12 @@ public class Customer implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "Customer_ID", nullable = false)
-    public int getCustomerID() {
-        return ID;
+    public int getId() {
+        return id;
     }
  
-    public void setCustomerID(int customerID) {
-        this.ID = customerID;
+    public void setId(int customerID) {
+        this.id = customerID;
     }
  
     @Column(name = "password", length = 45, nullable = false)
