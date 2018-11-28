@@ -46,41 +46,53 @@
   
    <div class="account-container">-->
      <h5>Monthly Sales</h5>
-     <form action="monthlySales.html" target = "_blank" id="form1">
-     First Month: <input type="text" name="month1">
-     Last Month: <input type="text" name="month2"><br>
+     <form action="reportRendering" id="form1">
+     First Month: <input type="number" name="month1">
+     Last Month: <input type="number" name="month2"><br>
+     <input type="hidden" name="type" value="monthlySales">
      <input type="submit" value="Generate">
      </form>
      <br>    
+
      <h5>Yearly Sales</h5>
-     <form action="/Reports.php" id="form2">
-     First Year: <input type="text" name="year1">
-     Last Year: <input type="text" name="year2"><br>
+     <form action="reportRendering" id="form2">
+     First Year: <input type="number" name="year1">
+     Last Year: <input type="number" name="year2"><br>
+     <input type="hidden" name="type" value="yearlySales">
      <input type="submit" value="Generate">
      </form>
      <br>     
+
      <h5>Inventory Levels</h5>
-     <form action="/Reports.php" id="form3">
+     <form action="reportRendering" id="form3">
      Product Name: <input type="text" name="product"><br>
+     <input type="hidden" name="type" value="inventoryLevels">
      <input type="submit" value="Generate">
      </form>
      <br>
+
      <h5>Inventory Costs</h5>
-     <form action="/Reports.php" id="form4">
-     Product Name: <input type="text" name="product2"><br>
+     <form action="reportRendering" id="form4">
+     Product Name: <input type="text" name="product"><br>
+     <input type="hidden" name="type" value="inventoryCosts">
      <input type="submit" value="Generate">
      </form>
      <br>
+
      <h5>Customer List</h5>
-     <form action="/Reports.php" id="form4">
+     <form action="reportRendering" id="form4">
+     <input type="submit" value="Generate">
+     <input type="hidden" name="type" value="customerList">
+     </form>
+     <br>
+
+     <h5>Mailing Labels</h5>
+     <form action="reportRendering" id="form6">
+     Customer ID: <input type="text" name="customerID"><br>
+     <input type="hidden" name="type" value="mailingLabels">
      <input type="submit" value="Generate">
      </form>
      <br>
-     <h5>Mailing Labels</h5>
-     <form action="/Reports.php" id="form6">
-     Customer ID: <input type="text" name="customerID"><br>
-     <input type="submit" value="Generate">
-     </form>
   <!--</div>-->
  
  </div>
