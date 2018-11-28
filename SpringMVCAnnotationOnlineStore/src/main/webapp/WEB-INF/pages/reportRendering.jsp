@@ -1,4 +1,7 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page import = "java.io.*,java.util.*,java.sql.*"%>
+<%@ page import = "javax.servlet.http.*,javax.servlet.*" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix = "c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix = "sql"%>
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
  
 <!DOCTYPE html>
@@ -46,10 +49,142 @@
  	</br>
    <div class>
  
- 		<c:forEach items="${customers}" var="customer">
+ 	<!--	<c:forEach items="${customers}" var="customer">
  			<p> Customer ID: ${customer.id} </p>
  			<p> Customer Name: ${customer.firstName} ${customer.lastName} </p>
- 		</c:forEach>
+ 		</c:forEach>-->
+ 	  <sql:setDataSource var = "snapshot" driver = "com.mysql.jdbc.Driver"
+         url = "jdbc:mysql://localhost/jewlz"
+         user = "root"  password = "YourStrong!Passw0rd"/>
+ 
+	  <c:if test="${param.type == 'monthlySales'}">
+      <sql:query dataSource = "${snapshot}" var = "result">
+         SELECT * from customer;
+      </sql:query>
+ 
+      <table border = "1" width = "100%">
+         <tr>
+            <th>Customer ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+         </tr>
+         
+         <c:forEach var = "row" items = "${result.rows}">
+            <tr>
+               <td><c:out value = "${row.Customer_ID}"/></td>
+               <td><c:out value = "${row.Customer_First_Name}"/></td>
+               <td><c:out value = "${row.Customer_Last_Name}"/></td>
+            </tr>
+         </c:forEach>
+      </table>
+   	  </c:if>
+
+   	  <c:if test="${param.type == 'yearlySales'}">
+      <sql:query dataSource = "${snapshot}" var = "result">
+         SELECT YEAR(STR_TO_DATE(Order_Date, "%m/%d/%Y")) AS Order_Year, SUM(CONVERT(Product_Retail_Price, DECIMAL(10,2))) AS Price
+         from orders 
+         where Order_Status = 'Complete'
+         group by YEAR(STR_TO_DATE(Order_Date, "%m/%d/%Y"))
+         having Order_Year = 2018
+      </sql:query>
+      <table border = "1" width = "100%">
+         <tr>
+            <th>Year</th>
+            <th>Total Sales</th>
+         </tr>
+         
+         <c:forEach var = "row" items = "${result.rows}">
+            <tr>
+               <td><c:out value = "${row.Order_Year}"/></td>
+               <td><c:out value = "${row.Price}"/></td>
+            </tr>
+         </c:forEach>
+      </table>
+   	  </c:if>
+
+   	  <c:if test="${param.type == 'inventoryLevels'}">
+      <sql:query dataSource = "${snapshot}" var = "result">
+         SELECT * from customer;
+      </sql:query>
+      <table border = "1" width = "100%">
+         <tr>
+            <th>Customer ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+         </tr>
+         
+         <c:forEach var = "row" items = "${result.rows}">
+            <tr>
+               <td><c:out value = "${row.Customer_ID}"/></td>
+               <td><c:out value = "${row.Customer_First_Name}"/></td>
+               <td><c:out value = "${row.Customer_Last_Name}"/></td>
+            </tr>
+         </c:forEach>
+      </table>
+   	  </c:if>
+
+   	  <c:if test="${param.type == 'inventoryCosts'}">
+      <sql:query dataSource = "${snapshot}" var = "result">
+         SELECT * from customer;
+      </sql:query>
+      <table border = "1" width = "100%">
+         <tr>
+            <th>Customer ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+         </tr>
+         
+         <c:forEach var = "row" items = "${result.rows}">
+            <tr>
+               <td><c:out value = "${row.Customer_ID}"/></td>
+               <td><c:out value = "${row.Customer_First_Name}"/></td>
+               <td><c:out value = "${row.Customer_Last_Name}"/></td>
+            </tr>
+         </c:forEach>
+      </table>
+   	  </c:if>
+
+   	  <c:if test="${param.type == 'customerList'}">
+      <sql:query dataSource = "${snapshot}" var = "result">
+         SELECT * from customer;
+      </sql:query>
+      <table border = "1" width = "100%">
+         <tr>
+            <th>Customer ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+         </tr>
+         
+         <c:forEach var = "row" items = "${result.rows}">
+            <tr>
+               <td><c:out value = "${row.Customer_ID}"/></td>
+               <td><c:out value = "${row.Customer_First_Name}"/></td>
+               <td><c:out value = "${row.Customer_Last_Name}"/></td>
+            </tr>
+         </c:forEach>
+      </table>
+   	  </c:if>
+
+   	  <c:if test="${param.type == 'mailingLabels'}">
+      <sql:query dataSource = "${snapshot}" var = "result">
+         SELECT * from customer where Customer_ID = ;
+      </sql:query> 
+      <table border = "1" width = "100%">
+         <tr>
+            <th>Customer ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+         </tr>
+         
+         <c:forEach var = "row" items = "${result.rows}">
+            <tr>
+               <td><c:out value = "${row.Customer_ID}"/></td>
+               <td><c:out value = "${row.Customer_First_Name}"/></td>
+               <td><c:out value = "${row.Customer_Last_Name}"/></td>
+            </tr>
+         </c:forEach>
+      </table>
+   	  </c:if>
    </div>
  
  </div>

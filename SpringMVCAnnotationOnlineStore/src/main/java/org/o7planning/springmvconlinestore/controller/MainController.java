@@ -541,8 +541,8 @@ public class MainController {
     @RequestMapping(value = { "/reportRendering" }, method = RequestMethod.GET)
     public String reportRenderingHandler(HttpServletRequest request, Model model) {
         
-        List<Customer> customers = customerDAO.findAll();
-        model.addAttribute("customers", customers); //Adds all customers to page
+        /*List<Customer> customers = customerDAO.findAll();
+        model.addAttribute("customers", customers); //Adds all customers to page */
         return "reportRendering";
     }
  
