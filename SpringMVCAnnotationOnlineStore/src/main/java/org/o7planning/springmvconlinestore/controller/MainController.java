@@ -101,7 +101,7 @@ public class MainController {
         return "index";
     }
  
-    // Initial Product List page.
+ // Initial Product List page.
     @RequestMapping(value = { "/productList" }, method = {RequestMethod.GET, RequestMethod.POST})
     public String listProductHandler(HttpServletRequest request, Model model, //
             @RequestParam(value = "name", defaultValue = "") String likeName,
@@ -117,10 +117,8 @@ public class MainController {
         String mainCategory = type.get(0);
         if(type.size() > 1) {
         	subCategory = type.get(1);
-        	PaginationResult<ProductInfo> finalResult = null;
         	
-        	finalResult = productDAO.queryBySubCategoryProducts(page, maxResult, maxNavigationPage, likeName, mainCategory, subCategory);
-        	result = new PaginationResult<ProductInfo>(finalResult.returnTwoUnique());
+        	result = productDAO.queryBySubCategoryProducts(page, maxResult, maxNavigationPage, likeName, mainCategory, subCategory);
         }
         else if(mainCategory.equals("all")) {
         result = productDAO.queryProducts(page, //
@@ -142,10 +140,7 @@ public class MainController {
         	}
         }
         else {
-        	PaginationResult<ProductInfo> finalResult = null;
-        	finalResult = productDAO.queryCategoryProducts(page, maxResult, maxNavigationPage, likeName, mainCategory);
-        	result = new PaginationResult<ProductInfo>(finalResult.returnTwoUnique());
-        	
+        	result = productDAO.queryCategoryProducts(page, maxResult, maxNavigationPage, likeName, mainCategory);
         }
         
         model.addAttribute("paginationProducts", result);
