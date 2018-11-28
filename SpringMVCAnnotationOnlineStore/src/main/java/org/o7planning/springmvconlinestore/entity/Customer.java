@@ -52,7 +52,7 @@ public class Customer implements Serializable {
     private String zip;
  
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Customer_ID", nullable = false)
     public int getCustomerID() {
         return ID;

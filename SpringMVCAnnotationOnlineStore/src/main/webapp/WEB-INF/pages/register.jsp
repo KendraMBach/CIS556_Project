@@ -57,6 +57,9 @@
                                     <form:input path="lastName" name="lastName" id="lastName" type="text" class="form-control" placeholder="Last Name"/>
                                     
                                     <hr>
+                                    <form:input path="phone" name="phone" id="phone" type="text" class="form-control" placeholder="Phone"/>
+                                    
+                                    
                                     <form:input path="address" name="address" id="address" type="text" class="form-control" placeholder="Address"/>
                                     
                                     

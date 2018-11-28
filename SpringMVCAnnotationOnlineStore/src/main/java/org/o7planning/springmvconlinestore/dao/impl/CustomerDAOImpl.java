@@ -50,6 +50,7 @@ public class CustomerDAOImpl implements CustomerDAO {
         user.setCity(newUser.getCity());
         user.setState(newUser.getState());
         user.setZip(newUser.getZip());
+        user.setPhone(newUser.getPhone());
  
         
         if (isNew) {
