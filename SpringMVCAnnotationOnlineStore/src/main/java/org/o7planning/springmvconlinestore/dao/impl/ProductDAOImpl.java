@@ -92,15 +92,20 @@ public class ProductDAOImpl implements ProductDAO {
         // If error in DB, Exceptions will be thrown out immediately
         this.sessionFactory.getCurrentSession().flush();
     }
- 
+   
     public PaginationResult<ProductInfo> queryProducts(int page, int maxResult, int maxNavigationPage,
             String likeName) { 
         String sql = "Select new " + ProductInfo.class.getName() //
                 + "(p.id, p.name, p.priceRetail, p.description, p.image, p.category, p.color) " + " from "//
                 + Product.class.getName() + " p ";
         if (likeName != null && likeName.length() > 0) {
-            sql += " Where lower(p.name) like :likeName ";
+            sql += " Where lower(p.name) like :likeName and ";
         }
+        else {
+        	sql+= " Where ";
+        }
+        sql += "p.id IN (select max(p2.id) from " + Product.class.getName()
+        		+ " as p2 group by p2.name, p2.color, p2.description, p2.priceRetail)";
         sql += " order by p.priceRetail asc ";
         //
         Session session = sessionFactory.getCurrentSession();
@@ -119,6 +124,8 @@ public class ProductDAOImpl implements ProductDAO {
                 + "(p.id, p.name, p.priceRetail, p.description, p.image, p.category, p.color) " + " from "//
                 + Product.class.getName() + " p " //
                 + " Where lower(p.category) = :category";
+        	sql += " and p.id IN (select max(p2.id) from " + Product.class.getName()
+        		+ " as p2 group by p2.name, p2.color, p2.description, p2.priceRetail)";
         	sql += " order by p.priceRetail asc ";
         //
         Session session = sessionFactory.getCurrentSession();
@@ -145,7 +152,8 @@ public class ProductDAOImpl implements ProductDAO {
                 + Product.class.getName() + " p " //
                 + " Where lower(p.category) = :mainCategory";
         if(subCategory.equals("all")) {
-        	
+        	sql += " and p.id IN (select max(p2.id) from " + Product.class.getName()
+            		+ " as p2 group by p2.name, p2.color, p2.description, p2.priceRetail)";
         	sql += " order by p.priceRetail asc ";
         //
         Session session = sessionFactory.getCurrentSession();
@@ -157,7 +165,8 @@ public class ProductDAOImpl implements ProductDAO {
         else {
         	
         	sql += " and lower(p.name) = :subCategory";
-        	
+        	sql += " and p.id IN (select max(p2.id) from " + Product.class.getName()
+            		+ " as p2 group by p2.name, p2.color, p2.description, p2.priceRetail)";
         	sql += " order by p.priceRetail asc ";
             //
             Session session = sessionFactory.getCurrentSession();
