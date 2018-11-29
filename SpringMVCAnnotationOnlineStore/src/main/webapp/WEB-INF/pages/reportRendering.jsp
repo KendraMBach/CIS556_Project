@@ -59,21 +59,23 @@
  
 	  <c:if test="${param.type == 'monthlySales'}">
       <sql:query dataSource = "${snapshot}" var = "result">
-         SELECT * from customer;
+         SELECT DATE_FORMAT(STR_TO_DATE(Order_Date, "%m/%d/%Y"), '%M %Y') AS Order_Month, 
+         SUM(CONVERT(Product_Retail_Price, DECIMAL(10,2))) AS Price
+         from orders 
+         where Order_Status = 'Complete'
+         group by DATE_FORMAT(STR_TO_DATE(Order_Date, "%m/%d/%Y"), '%M %Y')
       </sql:query>
  
       <table border = "1" width = "100%">
          <tr>
-            <th>Customer ID</th>
-            <th>First Name</th>
-            <th>Last Name</th>
+            <th>Month</th>
+            <th>Total Sales</th>
          </tr>
          
          <c:forEach var = "row" items = "${result.rows}">
             <tr>
-               <td><c:out value = "${row.Customer_ID}"/></td>
-               <td><c:out value = "${row.Customer_First_Name}"/></td>
-               <td><c:out value = "${row.Customer_Last_Name}"/></td>
+               <td><c:out value = "${row.Order_Month}"/></td>
+               <td><c:out value = "${row.Price}"/></td>
             </tr>
          </c:forEach>
       </table>
@@ -85,7 +87,6 @@
          from orders 
          where Order_Status = 'Complete'
          group by YEAR(STR_TO_DATE(Order_Date, "%m/%d/%Y"))
-         having Order_Year = 2018
       </sql:query>
       <table border = "1" width = "100%">
          <tr>
@@ -104,20 +105,24 @@
 
    	  <c:if test="${param.type == 'inventoryLevels'}">
       <sql:query dataSource = "${snapshot}" var = "result">
-         SELECT * from customer;
+         SELECT Product_ID, Product_Name, Product_Color, Product_Size, Number_In_Stock from product;
       </sql:query>
       <table border = "1" width = "100%">
          <tr>
-            <th>Customer ID</th>
-            <th>First Name</th>
-            <th>Last Name</th>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Color</th>
+            <th>Size</th>
+            <th>Stock</th>
          </tr>
          
          <c:forEach var = "row" items = "${result.rows}">
             <tr>
-               <td><c:out value = "${row.Customer_ID}"/></td>
-               <td><c:out value = "${row.Customer_First_Name}"/></td>
-               <td><c:out value = "${row.Customer_Last_Name}"/></td>
+               <td><c:out value = "${row.Product_ID}"/></td>
+               <td><c:out value = "${row.Product_Name}"/></td>
+               <td><c:out value = "${row.Product_Color}"/></td>
+               <td><c:out value = "${row.Product_Size}"/></td>
+               <td><c:out value = "${row.Number_In_Stock}"/></td>
             </tr>
          </c:forEach>
       </table>
@@ -125,20 +130,24 @@
 
    	  <c:if test="${param.type == 'inventoryCosts'}">
       <sql:query dataSource = "${snapshot}" var = "result">
-         SELECT * from customer;
+         SELECT Product_ID, Product_Name, Product_Color, Product_Size, Product_Retail_Price * Number_In_Stock AS Inventory_Cost from product;
       </sql:query>
       <table border = "1" width = "100%">
          <tr>
-            <th>Customer ID</th>
-            <th>First Name</th>
-            <th>Last Name</th>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Color</th>
+            <th>Size</th>
+            <th>Inventory Cost</th>
          </tr>
          
          <c:forEach var = "row" items = "${result.rows}">
             <tr>
-               <td><c:out value = "${row.Customer_ID}"/></td>
-               <td><c:out value = "${row.Customer_First_Name}"/></td>
-               <td><c:out value = "${row.Customer_Last_Name}"/></td>
+               <td><c:out value = "${row.Product_ID}"/></td>
+               <td><c:out value = "${row.Product_Name}"/></td>
+               <td><c:out value = "${row.Product_Color}"/></td>
+               <td><c:out value = "${row.Product_Size}"/></td>
+               <td><c:out value = "${row.Inventory_Cost}"/></td>
             </tr>
          </c:forEach>
       </table>
@@ -167,21 +176,27 @@
 
    	  <c:if test="${param.type == 'mailingLabels'}">
       <sql:query dataSource = "${snapshot}" var = "result">
-         SELECT * from customer where Customer_ID = ;
+         SELECT CONCAT(Customer_First_Name, ' ', Customer_Last_Name) AS Customer_Full_Name, Customer_Street_Address, 
+         CONCAT(Customer_City, ', ', Customer_State, ' ', Customer_Zip) AS Customer_CSZ from customer where Customer_ID = ?;
+         <sql:param value="${param.customerID}" />
       </sql:query> 
       <table border = "1" width = "100%">
-         <tr>
-            <th>Customer ID</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-         </tr>
-         
          <c:forEach var = "row" items = "${result.rows}">
             <tr>
-               <td><c:out value = "${row.Customer_ID}"/></td>
-               <td><c:out value = "${row.Customer_First_Name}"/></td>
-               <td><c:out value = "${row.Customer_Last_Name}"/></td>
+               <td align="center"><c:out value = "${row.Customer_Full_Name}"/><br><c:out value = "${row.Customer_Street_Address}"/><br><c:out value = "${row.Customer_CSZ}"/></td>
+               <td align="center"><c:out value = "${row.Customer_Full_Name}"/><br><c:out value = "${row.Customer_Street_Address}"/><br><c:out value = "${row.Customer_CSZ}"/></td>
+               <td align="center"><c:out value = "${row.Customer_Full_Name}"/><br><c:out value = "${row.Customer_Street_Address}"/><br><c:out value = "${row.Customer_CSZ}"/></td>
             </tr>
+            <tr>
+               <td align="center"><c:out value = "${row.Customer_Full_Name}"/><br><c:out value = "${row.Customer_Street_Address}"/><br><c:out value = "${row.Customer_CSZ}"/></td>
+               <td align="center"><c:out value = "${row.Customer_Full_Name}"/><br><c:out value = "${row.Customer_Street_Address}"/><br><c:out value = "${row.Customer_CSZ}"/></td>
+               <td align="center"><c:out value = "${row.Customer_Full_Name}"/><br><c:out value = "${row.Customer_Street_Address}"/><br><c:out value = "${row.Customer_CSZ}"/></td>
+            </tr>
+            <tr>
+               <td align="center"><c:out value = "${row.Customer_Full_Name}"/><br><c:out value = "${row.Customer_Street_Address}"/><br><c:out value = "${row.Customer_CSZ}"/></td>
+               <td align="center"><c:out value = "${row.Customer_Full_Name}"/><br><c:out value = "${row.Customer_Street_Address}"/><br><c:out value = "${row.Customer_CSZ}"/></td>
+               <td align="center"><c:out value = "${row.Customer_Full_Name}"/><br><c:out value = "${row.Customer_Street_Address}"/><br><c:out value = "${row.Customer_CSZ}"/></td>
+            </tr>            
          </c:forEach>
       </table>
    	  </c:if>

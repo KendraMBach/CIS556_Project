@@ -47,8 +47,8 @@
    <div class="account-container">-->
      <h5>Monthly Sales</h5>
      <form action="reportRendering" id="form1">
-     First Month: <input type="number" name="month1">
-     Last Month: <input type="number" name="month2"><br>
+     <!--First Month: <input type="number" name="month1">
+     Last Month: <input type="number" name="month2">-->
      <input type="hidden" name="type" value="monthlySales">
      <input type="submit" value="Generate">
      </form>
@@ -56,8 +56,8 @@
 
      <h5>Yearly Sales</h5>
      <form action="reportRendering" id="form2">
-     First Year: <input type="number" name="year1">
-     Last Year: <input type="number" name="year2"><br>
+     <!--First Year: <input type="number" name="year1">
+     Last Year: <input type="number" name="year2">-->
      <input type="hidden" name="type" value="yearlySales">
      <input type="submit" value="Generate">
      </form>
@@ -65,7 +65,7 @@
 
      <h5>Inventory Levels</h5>
      <form action="reportRendering" id="form3">
-     Product Name: <input type="text" name="product"><br>
+     <!--Product ID: <input type="text" name="productID">-->
      <input type="hidden" name="type" value="inventoryLevels">
      <input type="submit" value="Generate">
      </form>
@@ -73,7 +73,7 @@
 
      <h5>Inventory Costs</h5>
      <form action="reportRendering" id="form4">
-     Product Name: <input type="text" name="product"><br>
+     <!--Product ID: <input type="text" name="productID">-->
      <input type="hidden" name="type" value="inventoryCosts">
      <input type="submit" value="Generate">
      </form>
@@ -88,7 +88,7 @@
 
      <h5>Mailing Labels</h5>
      <form action="reportRendering" id="form6">
-     Customer ID: <input type="text" name="customerID"><br>
+     Customer ID: <input type="text" name="customerID">
      <input type="hidden" name="type" value="mailingLabels">
      <input type="submit" value="Generate">
      </form>
