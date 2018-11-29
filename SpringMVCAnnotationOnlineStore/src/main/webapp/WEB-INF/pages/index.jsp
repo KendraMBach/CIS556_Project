@@ -92,7 +92,7 @@
 							<div class="description">
 								<h4 class="info-title">A Unique Selection</h4>
 								<p class="description">Choose from a variety of customizable items.</p>
-								<a href="#pkp" class="btn btn-link btn-warning">See more</a>
+								<a href="${pageContext.request.contextPath}/productList" class="btn btn-link btn-warning">See more</a>
 							</div>
 						</div>
 					</div>
@@ -102,8 +102,8 @@
 								<i class="nc-icon nc-diamond"></i>
 							</div>
 							<div class="description">
-								<h4 class="info-title">New Items</h4>
-								<p>New arrivals just in.</p>
+								<h4 class="info-title">Most Popular</h4>
+								<p>Things that other trendsetters like, be unique!</p>
 								<a href="#pkp" class="btn btn-link btn-warning">See more</a>
 							</div>
 						</div>
@@ -116,7 +116,7 @@
 							<div class="description">
 								<h4 class="info-title">For Mother</h4>
 								<p>Let our hand-crafted bracelets be her next favorite accessory.</p>
-								<a href="#pkp" class="btn btn-link btn-warning">See more</a>
+								<a href="${pageContext.request.contextPath}/product?code=20002" class="btn btn-link btn-warning">See more</a>
 							</div>
 						</div>
 					</div>
@@ -128,7 +128,7 @@
 							<div class="description">
 								<h4 class="info-title">For Grandmother</h4>
 								<p>Make your next gift be one she can take with her always.</p>
-								<a href="#pkp" class="btn btn-link btn-warning">See more</a>
+								<a href="${pageContext.request.contextPath}/product?code=20006" class="btn btn-link btn-warning">See more</a>
 							</div>
 						</div>
 					</div>
@@ -144,23 +144,15 @@
     				<div class="col-md-4">
                         <div class="card card-profile card-plain">
                             <div class="card-avatar">
-                                <a href="#avatar"><img src="${pageContext.request.contextPath}/resources/img/faces/clem-onojeghuo-3.jpg" alt="..."></a>
+                                <a href="#avatar"><img src="${pageContext.request.contextPath}/resources/img/faces/mark.png" alt="..."></a>
                             </div>
                             <div class="card-body">
                                 <a href="#paper-kit">
                                     <div class="author">
                                         <h4 class="card-title">Mark</h4>
-                                        <h6 class="card-category">Product Manager/Techie</h6>
+                                        <h6 class="card-category">Team Lead/Techie</h6>
                                     </div>
                                 </a>
-                                <p class="card-description text-center">
-                                [Insert Something]
-                                </p>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
                             </div>
                         </div>
     				</div>
@@ -168,7 +160,7 @@
     				<div class="col-md-4">
                         <div class="card card-profile card-plain">
                             <div class="card-avatar">
-                                <a href="#avatar"><img src="${pageContext.request.contextPath}/resources/img/faces/joe-gardner-2.jpg" alt="..."></a>
+                                <a href="#avatar"><img src="${pageContext.request.contextPath}/resources/img/faces/kendra.png" alt="..."></a>
                             </div>
                             <div class="card-body">
                                 <a href="#paper-kit">
@@ -177,14 +169,6 @@
                                         <h6 class="card-category">Techie</h6>
                                     </div>
                                 </a>
-                                <p class="card-description text-center">
-                                [Insert Something]
-                                </p>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
                             </div>
                         </div>
     				</div>
@@ -192,23 +176,15 @@
     				<div class="col-md-4">
                         <div class="card card-profile card-plain">
                             <div class="card-avatar">
-                                <a href="#avatar"><img src="${pageContext.request.contextPath}/resources/img/faces/erik-lucatero-2.jpg" alt="..."></a>
+                                <a href="#avatar"><img src="${pageContext.request.contextPath}/resources/img/faces/cooper.png" alt="..."></a>
                             </div>
                             <div class="card-body">
                                 <a href="#paper-kit">
                                     <div class="author">
                                         <h4 class="card-title">Cooper</h4>
-                                        <h6 class="card-category">Project Manager/Techie</h6>
+                                        <h6 class="card-category">Techie</h6>
                                     </div>
                                 </a>
-                                <p class="card-description text-center">
-                                [Insert Something]
-                                </p>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
                             </div>
                         </div>
     				</div>
@@ -221,7 +197,7 @@
     				<div class="col-md-4">
                         <div class="card card-profile card-plain">
                             <div class="card-avatar">
-                                <a href="#avatar"><img src="" alt="..."></a>
+                                <a href="#avatar"><img src="${pageContext.request.contextPath}/resources/img/faces/nick.png" alt="..."></a>
                             </div>
                             <div class="card-body">
                                 <a href="#paper-kit">
@@ -230,14 +206,6 @@
                                         <h6 class="card-category">Techie</h6>
                                     </div>
                                 </a>
-                                <p class="card-description text-center">
-                                [Insert Something]
-                                </p>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
                             </div>
                         </div>
     				</div>
@@ -245,23 +213,15 @@
     				<div class="col-md-4">
                         <div class="card card-profile card-plain">
                             <div class="card-avatar">
-                                <a href="#avatar"><img src="" alt="..."></a>
+                                <a href="#avatar"><img src="${pageContext.request.contextPath}/resources/img/faces/nolan.png" alt="..."></a>
                             </div>
                             <div class="card-body">
                                 <a href="#paper-kit">
                                     <div class="author">
                                         <h4 class="card-title">Nolan</h4>
-                                        <h6 class="card-category">Project Techie</h6>
+                                        <h6 class="card-category">Techie</h6>
                                     </div>
                                 </a>
-                                <p class="card-description text-center">
-                                [Insert Something]
-                                </p>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
                             </div>
                         </div>
     				</div>
@@ -276,7 +236,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 ml-auto mr-auto">
-                            <h2 class="text-center">Keep in touch?</h2>
+                            <h2 class="text-center">Sign up for our newsletter!</h2>
                             <form class="contact-form">
                                 <div class="row">
                                     <div class="col-md-6">
@@ -296,13 +256,6 @@
 											</span>
 											<input type="text" class="form-control" placeholder="Email">
 										</div>
-                                    </div>
-                                </div>
-                                <label>Message</label>
-                                <textarea class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..."></textarea>
-                                <div class="row">
-                                    <div class="col-md-4 ml-auto mr-auto">
-                                        <button class="btn btn-default btn-lg btn-fill">Send Message</button>
                                     </div>
                                 </div>
                             </form>
