@@ -37,21 +37,13 @@ public class Order implements Serializable {
 		super();
 		Calendar today = Calendar.getInstance();
 		today.set(Calendar.HOUR_OF_DAY, 0);
-<<<<<<< HEAD
 
-=======
-		
->>>>>>> b6eb5b93eaea8d80437d88574658b372e62febe5
 		this.orderDate = String.valueOf(today.getTime());
 		this.orderStatus = orderStatus;
 		this.amount = amount;
 		;
 		this.prodRetailPrice = prodRetailPrice;
-<<<<<<< HEAD
 
-=======
-		
->>>>>>> b6eb5b93eaea8d80437d88574658b372e62febe5
 
 		this.nameEngraving = nameEngraving;
 		this.birthstoneID = birthstoneID;
@@ -69,7 +61,6 @@ public class Order implements Serializable {
 	public Order(int id, Date orderDate, String orderStatus, int amount, Product product, double productPrice, Customer customer) {
 		Calendar today = Calendar.getInstance();
 		today.set(Calendar.HOUR_OF_DAY, 0);
-<<<<<<< HEAD
 
 		this.orderDate = String.valueOf(today.getTime());
 		this.orderStatus = orderStatus;
@@ -78,26 +69,9 @@ public class Order implements Serializable {
 		this.prodId = product;
 		this.prodRetailPrice = productPrice;
 
-<<<<<<< 292597b52eca0238cd30cc28939794d24147913e
-		this.customerID = customer.getId();
-=======
-		this.customerId = customer;
->>>>>>> Popular search hack implemented
 
-
-=======
-		
-		this.orderDate = String.valueOf(today.getTime());
-		this.orderStatus = orderStatus;
-		this.amount = amount;
-		
-		this.prodId = product;
-		this.prodRetailPrice = productPrice;
-		
 		this.customerId = customer;
-		
-		
->>>>>>> b6eb5b93eaea8d80437d88574658b372e62febe5
+
 	}
 
 	public Order() {
@@ -120,13 +94,7 @@ public class Order implements Serializable {
     private String charmId2;
     private String charmId3;
     private String charmId4;
-<<<<<<< HEAD
-=======
-    
-    private Customer customerId;
-    
-    private Product prodId;
->>>>>>> b6eb5b93eaea8d80437d88574658b372e62febe5
+
 
     private Customer customerId;
 
@@ -143,22 +111,12 @@ public class Order implements Serializable {
     public void setId(int id) {
         this.id = id;
     }
-<<<<<<< HEAD
 
-
-=======
-  
-    
->>>>>>> b6eb5b93eaea8d80437d88574658b372e62febe5
     @Column(name = "Order_Date", nullable = false)
     public String getOrderDate() {
         return orderDate;
     }
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> b6eb5b93eaea8d80437d88574658b372e62febe5
     public void setOrderDate(String orderDate) {
         this.orderDate = orderDate;
     }

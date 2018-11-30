@@ -135,7 +135,7 @@ public class OrderDAOImpl implements OrderDAO {
         if (order == null) {
             return null;
         }
-        Customer customer = customerDAO.lookUpCustomerWithID(order.getCustomerId().getCustomerID());
+        Customer customer = customerDAO.lookUpCustomerWithID(order.getCustomerId().getId());
         return new OrderInfo(order.getId(), order.getOrderDate(), //
                 order.getId(), order.getAmount(), customer.getFirstName(), //
                 customer.getLastName(), customer.getAddress(), customer.getCity(), customer.getState(), //
