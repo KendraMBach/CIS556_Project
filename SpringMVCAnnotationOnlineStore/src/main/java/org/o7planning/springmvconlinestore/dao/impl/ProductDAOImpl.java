@@ -177,20 +177,7 @@ public class ProductDAOImpl implements ProductDAO {
         }
         return new PaginationResult<ProductInfo>(query, page, maxResult, maxNavigationPage);
     }
-    /*
-    public PaginationResult<ProductInfo> queryPopularProducts(int page, int maxResult, int maxNavigationPage) { 
-    	
-        String sql = "Select new " + ProductInfo.class.getName() //
-                + "(p.id, p.name, p.priceRetail, p.description, p.image, p.category, p.color) " + " from "//
-                + Product.class.getName() + " p inner join " + Order.class.getName() + " o ";
-        	sql += " order by count(*) ";
-        //
-        Session session = sessionFactory.getCurrentSession();
- 
-        Query query = session.createQuery(sql);
-        query.setMaxResults(5);
-        return new PaginationResult<ProductInfo>(query, page, maxResult, maxNavigationPage);
-        */
+    
     
     
 }

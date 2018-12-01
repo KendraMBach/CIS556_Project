@@ -1,6 +1,8 @@
 package org.o7planning.springmvconlinestore.entity;
 
 import java.io.Serializable;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -23,8 +25,7 @@ import javax.persistence.TemporalType;
 import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(name = "Orders") //
-//uniqueConstraints = { @UniqueConstraint(columnNames = {"Order_ID", "Product_ID", "Customer_ID"}) })
+@Table(name = "Orders") 
 public class Order implements Serializable {
 
     /**
@@ -35,8 +36,11 @@ public class Order implements Serializable {
 			String nameEngraving, String birthstoneID, String charmId1, String charmId2, String charmId3,
 			String charmId4, Product product, Customer customer) {
 		super();
+		
+		
+		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		Calendar today = Calendar.getInstance();
-		today.set(Calendar.HOUR_OF_DAY, 0);
+		dateFormat.format(today);
 
 		this.orderDate = String.valueOf(today.getTime());
 		this.orderStatus = orderStatus;
@@ -59,8 +63,10 @@ public class Order implements Serializable {
 	 * Minimal Constructor
 	 */
 	public Order(int id, Date orderDate, String orderStatus, int amount, Product product, double productPrice, Customer customer) {
+		
+		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		Calendar today = Calendar.getInstance();
-		today.set(Calendar.HOUR_OF_DAY, 0);
+		dateFormat.format(today);
 
 		this.orderDate = String.valueOf(today.getTime());
 		this.orderStatus = orderStatus;
