@@ -99,7 +99,7 @@ public class Order implements Serializable {
     private String orderDate;
     private String orderStatus;
 
-    private int amount;
+    private double amount;
 
     private Double prodRetailPrice;
 
@@ -147,12 +147,12 @@ public class Order implements Serializable {
 
 
     @Column(name = "Product_Quantity", nullable = false)
-    public int getAmount() {
+    public double getAmount() {
         return amount;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
+    public void setAmount(double d) {
+        this.amount = d;
     }
 
 

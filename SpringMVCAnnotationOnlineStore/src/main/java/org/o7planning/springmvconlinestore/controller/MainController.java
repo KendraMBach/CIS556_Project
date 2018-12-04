@@ -405,7 +405,7 @@ public class MainController {
             // Redirect to shoppingCart page.
             return "redirect:/shoppingCart";
         } 
-        
+       
             orderDAO.saveOrder(cartInfo);
         /* catch (Exception e) {
             // Need: Propagation.NEVER?

@@ -14,11 +14,13 @@ import org.hibernate.criterion.Restrictions;
 import org.o7planning.springmvconlinestore.dao.CustomerDAO;
 import org.o7planning.springmvconlinestore.dao.OrderDAO;
 import org.o7planning.springmvconlinestore.dao.ProductDAO;
+import org.o7planning.springmvconlinestore.dao.ShippingCostsDAO;
 import org.o7planning.springmvconlinestore.entity.Charm;
 import org.o7planning.springmvconlinestore.entity.Customer;
 import org.o7planning.springmvconlinestore.entity.Order;
 
 import org.o7planning.springmvconlinestore.entity.Product;
+import org.o7planning.springmvconlinestore.entity.ShippingCost;
 import org.o7planning.springmvconlinestore.model.CartInfo;
 import org.o7planning.springmvconlinestore.model.CartLineInfo;
 import org.o7planning.springmvconlinestore.model.CustomerInfo;
@@ -40,6 +42,9 @@ public class OrderDAOImpl implements OrderDAO {
     
     @Autowired
     private CustomerDAO customerDAO;
+    
+    @Autowired
+    private ShippingCostsDAO shippingCostDAO;
  
     private int getMaxOrderNum() {
         String sql = "Select max(o.id) from " + Order.class.getName() + " o ";
@@ -54,6 +59,7 @@ public class OrderDAOImpl implements OrderDAO {
  
     public void saveOrder(CartInfo cartInfo) {
         Session session = sessionFactory.getCurrentSession();
+        ShippingCost shippingCost = null;
         
         Calendar today = Calendar.getInstance();
 		today.set(Calendar.HOUR_OF_DAY, 0);
@@ -71,6 +77,8 @@ public class OrderDAOImpl implements OrderDAO {
         Customer customer = customerDAO.findAccount(customerInfo.getEmail());
         //int customerId = customerDAO.findCustomerId(customerInfo.getEmail(), customerInfo.getPassword());
         order.setCustomer(customer);
+        
+        shippingCost = shippingCostDAO.findByState(customer.getState());
         /*
         order.setCustomerName(customerInfo.getFirstName());
         order.setCustomerName(customerInfo.getLastName());
@@ -84,18 +92,21 @@ public class OrderDAOImpl implements OrderDAO {
         List<CartLineInfo> lines = cartInfo.getCartLines();
  
         for (CartLineInfo line : lines) {
-        	int code = line.getProductInfo().getCode();
+        	//int code = line.getProductInfo().getCode();
         	String size = line.getProductInfo().getSize();
-            Product product = this.productDAO.findProductBySize(code, size);
+        	String name = line.getProductInfo().getName();
+        	String color = line.getProductInfo().getColor();
+            Product product = this.productDAO.findProductBySize(name, size, color);
             
         	order.setProduct(product);
         	Order thisItem = new Order(order);
         	
         	
             thisItem.setAmount(line.getQuantity());
-            thisItem.setProdRetailPrice(line.getAmount());
+            thisItem.setProdRetailPrice(cartInfo.getFinalizedTotal(shippingCost.getCost()));
             
-            if(product.getOptEngrave() != 1) {
+            
+            if(product.getOptEngrave() == 1) {
             	thisItem.setNameEngraving(line.getProductInfo().getEngraving());
             }
             if(product.hasBirthstoneOpt()) {
