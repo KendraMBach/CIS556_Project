@@ -88,11 +88,11 @@
                                         </div>
                                         <div class="modal-footer">
                                             <div class="left-side">
-                                                <a href="${pageContext.request.contextPath}/productList" class="btn btn-default btn-link">Okay, cool</a>
+                                                <a href="${pageContext.request.contextPath}/productList" class="btn btn-info btn-link">Okay, cool</a>
                                             </div>
                                             <div class="divider"></div>
                                             <div class="right-side">
-                                                <a href="${pageContext.request.contextPath}/" class="btn btn-danger btn-link">Nah, I'm good</a>
+                                                <a href="${pageContext.request.contextPath}/" class="btn btn-default btn-link">Nah, I'm good</a>
                                             </div>
                                         </div>
                                     </div>
@@ -100,11 +100,18 @@
 							</div>
 							</div>
 							</div>
-	       
-	       <h2>There are no items in your cart</h2>
-	       
-	       <a href="${pageContext.request.contextPath}/productList">Show
-	           Product List</a>
+			
+		   <div class="container">
+		       <h1 class="text-center text-info">There are no items in your cart!</h1>
+		       <hr>
+		       <p class="text-center" style="font-size:20px; margin:35px">Feel free to keep <b class="text-info"><u>shopping</u></b> and <b class="text-info"><u>spending</u></b>.</p>
+		       <hr>
+		       <div class="container col-xs-4 text-center"">
+		       	<a href="${pageContext.request.contextPath}/productList" class="btn btn-info btn-round" style="margin:10px">Shop</a>
+		       	<a href="${pageContext.request.contextPath}/" class="btn btn-default btn-round" style="margin:10px">Home</a>
+		       </div>
+		   </div>
+	      
 	       
 	           
    		</c:if>
@@ -209,8 +216,8 @@
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
+      
+      <td><a class="navi-item" href="${pageContext.request.contextPath}/productList">Keep Shopping</a></td>
       <td>
       	<c:if test="${pageContext.request.userPrincipal.name == null}">
            <a class="navi-item"
@@ -224,6 +231,7 @@
                <td>
           
                </td>
+               <td></td>
                </tr>
                </tbody>
    </c:if>

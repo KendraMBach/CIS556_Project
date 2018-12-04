@@ -156,7 +156,7 @@ public class Order implements Serializable {
     }
 
 
-
+    @Id
     @ManyToOne(targetEntity=Product.class, fetch = FetchType.LAZY)
     @JoinColumn(name = "Product_ID", nullable = false)
     public Product getProdId() {
@@ -229,7 +229,8 @@ public class Order implements Serializable {
 	public void setCharmId4(String charmId4) {
 		this.charmId4 = charmId4;
 	}
-
+	
+	@Id
 	@ManyToOne(targetEntity=Customer.class, fetch = FetchType.LAZY)
     @JoinColumn(name = "Customer_ID", nullable = false)
 	public Customer getCustomerId() {

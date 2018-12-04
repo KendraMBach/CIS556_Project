@@ -36,6 +36,14 @@ public class ProductDAOImpl implements ProductDAO {
         return (Product) crit.uniqueResult();
     }
     
+    public Product findProductBySize(int code, String size) {
+        Session session = sessionFactory.getCurrentSession();
+        Criteria crit = session.createCriteria(Product.class);
+        crit.add(Restrictions.eq("id", code));
+        crit.add(Restrictions.eq("size", size));
+        return (Product) crit.uniqueResult();
+    }
+    
     public List<String> allSizes(String name) {
     	Session session = sessionFactory.getCurrentSession();
     	String sql = "select distinct p.size from " + Product.class.getName() + " p where lower(p.name) = :name";

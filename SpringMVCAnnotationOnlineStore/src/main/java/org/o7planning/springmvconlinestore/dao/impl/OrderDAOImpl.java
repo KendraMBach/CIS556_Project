@@ -85,7 +85,8 @@ public class OrderDAOImpl implements OrderDAO {
  
         for (CartLineInfo line : lines) {
         	int code = line.getProductInfo().getCode();
-            Product product = this.productDAO.findProduct(code);
+        	String size = line.getProductInfo().getSize();
+            Product product = this.productDAO.findProductBySize(code, size);
             
         	order.setProduct(product);
         	Order thisItem = new Order(order);
@@ -94,7 +95,7 @@ public class OrderDAOImpl implements OrderDAO {
             thisItem.setAmount(line.getQuantity());
             thisItem.setProdRetailPrice(line.getAmount());
             
-            if(product.hasEngravingOpt()) {
+            if(product.getOptEngrave() != 1) {
             	thisItem.setNameEngraving(line.getProductInfo().getEngraving());
             }
             if(product.hasBirthstoneOpt()) {
@@ -111,11 +112,14 @@ public class OrderDAOImpl implements OrderDAO {
             }
             
             //thisItem.setQuanity(line.getQuantity());
- 
+            
             session.persist(thisItem);
+            //session.clear();
+            //session.flush();
         }
  
         // Set OrderNum for report.
+        
         cartInfo.setOrderNum(orderNum);
     }
  
