@@ -38,17 +38,6 @@
                         <div class="col-lg-4 ml-auto mr-auto">
                             <div class="card card-register">
                                 <h3 class="title">Sign Up!</h3>
-								<div class="social-line text-center">
-                                    <a href="#pablo" class="btn btn-neutral btn-facebook btn-just-icon">
-                                        <i class="fa fa-facebook-square"></i>
-                                    </a>
-                                    <a href="#pablo" class="btn btn-neutral btn-google btn-just-icon">
-                                        <i class="fa fa-google-plus"></i>
-                                    </a>
-									<a href="#pablo" class="btn btn-neutral btn-twitter btn-just-icon">
-										<i class="fa fa-twitter"></i>
-									</a>
-                                </div>
                                  <form:form id="regForm" modelAttribute="newUserForm" action="register" method="post"> 
                                 	
                                     <form:input path="firstName" name="firstName" id="firstName" type="text" class="form-control" placeholder="First Name"/>
