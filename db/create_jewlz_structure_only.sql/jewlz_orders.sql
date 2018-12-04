@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `orders`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `orders` (
-  `Order_ID` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Order ID is used to group all items (records) for an order. Order ID does not constitute a PK by itself. ',
+  `Order_ID` int(11) NOT NULL COMMENT 'Order ID is used to group all items (records) for an order. Order ID does not constitute a PK by itself. ',
   `Order_Date` datetime NOT NULL COMMENT 'The date the order was SUBMITTED. ',
   `Order_Status` text NOT NULL COMMENT 'Current status of the order. ‘Open’ means that ‘Submit order’ has not yet been clicked. ',
   `Product_ID` int(11) NOT NULL COMMENT 'The FK for the product being purchased. ',
