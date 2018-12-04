@@ -2,12 +2,12 @@
 This is the developer site for Junction Jewelers. This repository includes all Java models, logic and MySQL statements needed to run the website on LocalHost.The code is a Java Spring MVC eCommerce website for customers to view Jewelry inventory and place orders. Dependencies include Java 1.8, Maven, Spring, Hibernate, Tomcat 7, Eclipse IDE (ie Photon), MySQL Server, MySQL, MySQL Workbench.
 
 ## Contents
-1. Java controllers are here: [SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/controller](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/controller/)
-1. 1. Java DAO are here: [SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/dao](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/dao/)
-1. Java entities are here:[SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/entity](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/entity/)
-1. Java model is here: [SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/model](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/model/)
+1. Java controllers are here: [controller](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/controller/)
+1. Java DAO are here: [dao](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/dao/)
+1. Java entities are here:[entity](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/entity/)
+1. Java model is here: [model](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/model/)
 1. Database SQL is here: [db/](db)
-1. Data Dictionary is here: [http://htmlpreview.github.io/?Data_Dictionary.html](Data_Dictionary.html)
+1. Data Dictionary is here: [Data_Dictionary.html](http://htmlpreview.github.io/?https://github.com/CooperStansbury/CIS556_Project/blob/DB-Update/Data_Dictionary.html)
 
 ## Development
 
