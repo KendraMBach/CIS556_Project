@@ -26,16 +26,7 @@
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
  
- <style>
-#stay {
-	   position:absolute;
-	   bottom:0;
-	   width:100%;
-	   height:60px;   /* Height of the footer */
-	   background:#6cf;
-	}
-
-</style> 
+ 
 </head>
 <jsp:include page="_menu.jsp" />
 <body>
@@ -199,8 +190,9 @@
   </table>
   
  </main>
-</body>
-<div id="stay">
+
   <jsp:include page="_footer.jsp" />
-  </div>
+ 
+</body>
+
 </html>

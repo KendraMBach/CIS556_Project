@@ -24,6 +24,8 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.UniqueConstraint;
 
+import org.o7planning.springmvconlinestore.model.OrderInfo;
+
 @Entity
 @Table(name = "Orders") 
 public class Order implements Serializable {
@@ -76,14 +78,20 @@ public class Order implements Serializable {
 
 	}
 
-	public Order() {
+	public Order(OrderInfo orderInfo) {
 		String date = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
 		
 		this.orderDate = date;
+		this.id = orderInfo.getOrderNum();
 		this.orderStatus = "Open";
+		this.customerId = orderInfo.getCustomer();
+		this.prodId = orderInfo.getProduct();
+		this.prodRetailPrice = 0.0; //default
+		this.amount = 0; //default
 		
 
 	}
+	
 
 	private static final long serialVersionUID = -2576670215015463100L;
 

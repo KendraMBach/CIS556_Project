@@ -60,7 +60,8 @@ public class OrderDAOImpl implements OrderDAO {
 		
  
         int orderNum = this.getMaxOrderNum() + 1;
-        Order order = new Order();
+        OrderInfo order = new OrderInfo();
+        order.setOrderNum(orderNum);
  
         //order.setAmount(cartInfo.getQuantityTotal());
         //order.setProdRetailPrice(cartInfo.getAmountTotal()); 
@@ -69,7 +70,7 @@ public class OrderDAOImpl implements OrderDAO {
         
         Customer customer = customerDAO.findAccount(customerInfo.getEmail());
         //int customerId = customerDAO.findCustomerId(customerInfo.getEmail(), customerInfo.getPassword());
-        order.setCustomerId(customer);
+        order.setCustomer(customer);
         /*
         order.setCustomerName(customerInfo.getFirstName());
         order.setCustomerName(customerInfo.getLastName());
@@ -83,18 +84,33 @@ public class OrderDAOImpl implements OrderDAO {
         List<CartLineInfo> lines = cartInfo.getCartLines();
  
         for (CartLineInfo line : lines) {
-        	Order thisItem = new Order();
+        	int code = line.getProductInfo().getCode();
+            Product product = this.productDAO.findProduct(code);
+            
+        	order.setProduct(product);
+        	Order thisItem = new Order(order);
         	
-        	thisItem = order;
         	
             thisItem.setAmount(line.getQuantity());
             thisItem.setProdRetailPrice(line.getAmount());
             
+            if(product.hasEngravingOpt()) {
+            	thisItem.setNameEngraving(line.getProductInfo().getEngraving());
+            }
+            if(product.hasBirthstoneOpt()) {
+            	thisItem.setBirthstoneID(String.valueOf(line.getProductInfo().getBirthstoneSelected().getId()));
+            }
+            if(product.hasCharmOpt()) {
+            	thisItem.setCharmId1(String.valueOf(line.getProductInfo().getCharm1()));
+            
+            	thisItem.setCharmId2(String.valueOf(line.getProductInfo().getCharm2()));
+            
+            	thisItem.setCharmId3(String.valueOf(line.getProductInfo().getCharm3()));
+            
+            	thisItem.setCharmId4(String.valueOf(line.getProductInfo().getCharm4()));
+            }
+            
             //thisItem.setQuanity(line.getQuantity());
- 
-            int code = line.getProductInfo().getCode();
-            Product product = this.productDAO.findProduct(code);
-            thisItem.setProdId(product);
  
             session.persist(thisItem);
         }
@@ -131,7 +147,7 @@ public class OrderDAOImpl implements OrderDAO {
         crit.add(Restrictions.eq("Customer_ID", customerId));
         return (Order) crit.uniqueResult();
     }
- 
+ /*
     public OrderInfo getOrderInfo(int orderId) {
         Order order = this.findSingleOrder(orderId);
         if (order == null) {
@@ -143,6 +159,7 @@ public class OrderDAOImpl implements OrderDAO {
                 customer.getLastName(), customer.getAddress(), customer.getCity(), customer.getState(), //
                 customer.getZip(), customer.getEmail(), customer.getPhone());
     }
+    */
  
     //
     @SuppressWarnings("deprecation")
