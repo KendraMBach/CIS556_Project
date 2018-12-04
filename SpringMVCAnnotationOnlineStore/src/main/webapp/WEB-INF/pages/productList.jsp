@@ -95,7 +95,7 @@
             </br>
             <button type="submit" name="filter" value="ring" class="btn btn-info">Wedding Rings</button>
             </br>
-            <button type="submit" name="filter" value="necklace" class="btn btn-info">Most popular</button>
+            <button type="submit" name="filter" value="popular" class="btn btn-info">Most popular</button>
             </br>
             <button type="submit" name="filter" value="earrings" class="btn btn-info">Earrings</button>
             </br>
@@ -106,7 +106,26 @@
             <button type="submit" name="filter" value="everyday" class="btn btn-info">Everyday Jewelry</button>
 
           </div>
+          </br>
+           <!-- Search form -->
+           </form:form>
+           <form:form method="GET" action="${pageContext.request.contextPath}/productSearch">
+		<div class="col-md-12">
+        <div class="form-group">
+        <div class="row">
+        
+            <input type="text" name="likeName" class="form-control" placeholder="Search">
+            <div class="col"></div>
+        	<div class="col"></div>
+        	
+            <button type="submit" class="btn btn-info" style="margin-top:10px">Go</button>
+        </div>    
+        </div>
 		</form:form>
+		
+		
+		
+    </div>
         </div>
         <!-- /.col-lg-3 -->
 
@@ -138,6 +157,8 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
+          
+         
 <!--  
 <c:forEach items="${paginationProducts.list}" var="prodInfo">
        <div class="product-preview-container">
@@ -172,7 +193,8 @@
                   <h4 class="card-title">
                     <a href="${pageContext.request.contextPath}/product?code=${prodInfo.code}">${prodInfo.name}</a>
                   </h4>
-                  <h5>${prodInfo.description}</h5>
+                  <hr>
+                  <p><font size=+1>Color: ${prodInfo.color}</font></p>
                   </br>
                   <h5>Price: <fmt:formatNumber value="${prodInfo.price}" type="currency"/></h5>
                   <p class="card-text"> </p>

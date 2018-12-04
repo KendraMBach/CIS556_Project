@@ -1,6 +1,8 @@
 package org.o7planning.springmvconlinestore.entity;
- 
+
 import java.io.Serializable;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -21,29 +23,31 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.UniqueConstraint;
- 
+
 @Entity
-@Table(name = "Orders", //
-uniqueConstraints = { @UniqueConstraint(columnNames = {"Order_ID", "Product_ID", "Customer_ID"}) })
+@Table(name = "Orders") 
 public class Order implements Serializable {
- 
+
     /**
 	 * Maximal Constructor
 	 */
-	public Order(Date orderDate, String orderStatus, int amount, int prodId, Double prodRetailPrice,
-			int customerID, String customerName, String customerAddress, String customerEmail, String customerPhone,
+	public Order(Date orderDate, String orderStatus, int amount, Double prodRetailPrice,
+			String customerName, String customerAddress, String customerEmail, String customerPhone,
 			String nameEngraving, String birthstoneID, String charmId1, String charmId2, String charmId3,
-			String charmId4, Customer customer, Product product) {
+			String charmId4, Product product, Customer customer) {
 		super();
-		Calendar today = Calendar.getInstance();
-		today.set(Calendar.HOUR_OF_DAY, 0);
 		
-		this.orderDate = today.getTime();
+		
+		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		Calendar today = Calendar.getInstance();
+		dateFormat.format(today);
+
+		this.orderDate = String.valueOf(today.getTime());
 		this.orderStatus = orderStatus;
 		this.amount = amount;
-		this.prodId = prodId;
+		;
 		this.prodRetailPrice = prodRetailPrice;
-		this.customerID = customerID;
+
 
 		this.nameEngraving = nameEngraving;
 		this.birthstoneID = birthstoneID;
@@ -51,104 +55,106 @@ public class Order implements Serializable {
 		this.charmId2 = charmId2;
 		this.charmId3 = charmId3;
 		this.charmId4 = charmId4;
-		this.customerID = customer.getCustomerID();
-		this.prodId = product.getId();
+		this.customerId = customer;
+		this.prodId = product;
 	}
-	
+
 	/**
 	 * Minimal Constructor
 	 */
-	public Order(int id, Date orderDate, String orderStatus, int amount, Product product, Customer customer) {
-		Calendar today = Calendar.getInstance();
-		today.set(Calendar.HOUR_OF_DAY, 0);
+	public Order(int id, Date orderDate, String orderStatus, int amount, Product product, double productPrice, Customer customer) {
 		
-		this.orderDate = today.getTime();
+		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		Calendar today = Calendar.getInstance();
+		dateFormat.format(today);
+
+		this.orderDate = String.valueOf(today.getTime());
 		this.orderStatus = orderStatus;
 		this.amount = amount;
-		
-		this.prodId = product.getId();
-		this.prodRetailPrice = product.getPriceRetail();
-		
-		this.customerID = customer.getCustomerID();
-		
-		
+
+		this.prodId = product;
+		this.prodRetailPrice = productPrice;
+
+
+		this.customerId = customer;
+
 	}
 
 	public Order() {
-		
+
 	}
 
 	private static final long serialVersionUID = -2576670215015463100L;
- 
+
     private int id;
-    private Date orderDate;
+    private String orderDate;
     private String orderStatus;
-    
+
     private int amount;
 
     private Double prodRetailPrice;
-    
-    private String nameEngraving; 
+
+    private String nameEngraving;
     private String birthstoneID;
     private String charmId1;
     private String charmId2;
     private String charmId3;
     private String charmId4;
-    
-    private int customerID;
-    
-    private int prodId;
 
- 
+
+    private Customer customerId;
+
+    private Product prodId;
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "Order_ID", length = 11, nullable = false)
     public int getId() {
         return id;
     }
- 
+
     public void setId(int id) {
         this.id = id;
     }
-  
-    @Temporal(TemporalType.TIMESTAMP)
+
     @Column(name = "Order_Date", nullable = false)
-    public Date getOrderDate() {
+    public String getOrderDate() {
         return orderDate;
     }
- 
-    public void setOrderDate(Date orderDate) {
+
+    public void setOrderDate(String orderDate) {
         this.orderDate = orderDate;
     }
- 
+
     @Column(name = "Order_Status", nullable = false)
     public String getOrderStatus() {
         return orderStatus;
     }
- 
+
     public void setOrderStatus(String orderStatus) {
         this.orderStatus = orderStatus;
     }
-    
- 
+
+
     @Column(name = "Product_Quantity", nullable = false)
     public int getAmount() {
         return amount;
     }
- 
+
     public void setAmount(int amount) {
         this.amount = amount;
     }
- 
-    
-    
+
+
+
     @ManyToOne(targetEntity=Product.class, fetch = FetchType.LAZY)
-    @JoinColumn(name = "Product_ID", nullable = false, foreignKey = @ForeignKey(name = "Product_ID"))
-    public int getProdId() {
+    @JoinColumn(name = "Product_ID", nullable = false)
+    public Product getProdId() {
 		return this.prodId;
 	}
 
-	public void setProdId(int prodId) {
+	public void setProdId(Product prodId) {
 		this.prodId = prodId;
 	}
 
@@ -216,13 +222,13 @@ public class Order implements Serializable {
 	}
 
 	@ManyToOne(targetEntity=Customer.class, fetch = FetchType.LAZY)
-    @JoinColumn(name = "Customer_ID", nullable = false, foreignKey = @ForeignKey(name = "Customer_ID"))
-	public int getCustomerID() {
-		return this.customerID;
+    @JoinColumn(name = "Customer_ID", nullable = false)
+	public Customer getCustomerId() {
+		return this.customerId;
 	}
 
-	public void setCustomerID(int customerID) {
-		this.customerID = customerID;
+	public void setCustomerId(Customer customerID) {
+		this.customerId = customerID;
 	}
-    
+
 }
