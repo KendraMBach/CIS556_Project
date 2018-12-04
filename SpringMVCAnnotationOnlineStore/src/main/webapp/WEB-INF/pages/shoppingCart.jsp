@@ -196,6 +196,15 @@
           </tr>
           </c:forEach>
           </form:form>
+          <tr>
+	          <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+          	<td class="th-description">Total:</td>
+          	<td class="th-description"><fmt:formatNumber value="${total}" type="currency"/></td>
+          </tr>
       <tr>
       <td></td>
       <td></td>
@@ -208,7 +217,7 @@
                href="${pageContext.request.contextPath}/login">Login to Checkout</a>
            </c:if>
            <c:if test="${pageContext.request.userPrincipal.name != null}">
-           <a class="navi-item" href="${pageContext.request.contextPath}/productList">Checkout</a>
+           <a class="navi-item" href="${pageContext.request.contextPath}/shoppingCartConfirmation">Checkout</a>
            </c:if>
                </td>
        

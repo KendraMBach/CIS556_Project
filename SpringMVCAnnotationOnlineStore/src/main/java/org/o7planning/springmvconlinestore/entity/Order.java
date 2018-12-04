@@ -38,11 +38,9 @@ public class Order implements Serializable {
 		super();
 		
 		
-		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-		Calendar today = Calendar.getInstance();
-		dateFormat.format(today);
-
-		this.orderDate = String.valueOf(today.getTime());
+		String date = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
+		
+		this.orderDate = date;
 		this.orderStatus = orderStatus;
 		this.amount = amount;
 		;
@@ -64,11 +62,9 @@ public class Order implements Serializable {
 	 */
 	public Order(int id, Date orderDate, String orderStatus, int amount, Product product, double productPrice, Customer customer) {
 		
-		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-		Calendar today = Calendar.getInstance();
-		dateFormat.format(today);
-
-		this.orderDate = String.valueOf(today.getTime());
+		String date = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
+		
+		this.orderDate = date;
 		this.orderStatus = orderStatus;
 		this.amount = amount;
 
@@ -81,6 +77,11 @@ public class Order implements Serializable {
 	}
 
 	public Order() {
+		String date = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
+		
+		this.orderDate = date;
+		this.orderStatus = "Open";
+		
 
 	}
 
@@ -108,7 +109,7 @@ public class Order implements Serializable {
 
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Order_ID", length = 11, nullable = false)
     public int getId() {
         return id;

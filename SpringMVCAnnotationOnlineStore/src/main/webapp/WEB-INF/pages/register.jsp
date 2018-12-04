@@ -66,7 +66,12 @@
                                     <form:input path="city" name="city" id="city" type="text" class="form-control" placeholder="City"/>
                                     
                                     
-                                    <form:input path="state" name="state" id="state" type="text" class="form-control" placeholder="State"/>
+                                    <form:select path="state" name="state" id="state" class="form-control" placeholder="State">
+                                    	<form:option value="NONE" label="--- State ---" />
+                                    	<c:forEach items="${states}" var="state" varStatus="varStatus">
+								    		<form:option value="${state.state}" items="${state.state}" />
+								    	</c:forEach>
+									</form:select>
                                     
                                     
                                     <form:input path="zip" name="zip" id="zip" type="text" class="form-control" placeholder="Zip"/>

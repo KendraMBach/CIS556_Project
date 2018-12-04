@@ -42,7 +42,7 @@ public class OrderDAOImpl implements OrderDAO {
     private CustomerDAO customerDAO;
  
     private int getMaxOrderNum() {
-        String sql = "Select max(o.orderNum) from " + Order.class.getName() + " o ";
+        String sql = "Select max(o.id) from " + Order.class.getName() + " o ";
         Session session = sessionFactory.getCurrentSession();
         Query query = session.createQuery(sql);
         Integer value = (Integer) query.uniqueResult();
@@ -84,10 +84,12 @@ public class OrderDAOImpl implements OrderDAO {
  
         for (CartLineInfo line : lines) {
         	Order thisItem = new Order();
+        	
         	thisItem = order;
         	
             thisItem.setAmount(line.getQuantity());
-            thisItem.setProdRetailPrice(line.getProductInfo().getPrice());
+            thisItem.setProdRetailPrice(line.getAmount());
+            
             //thisItem.setQuanity(line.getQuantity());
  
             int code = line.getProductInfo().getCode();
