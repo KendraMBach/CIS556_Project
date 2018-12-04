@@ -6,7 +6,7 @@ This is the developer site for Junction Jewelers. This repository includes all J
 1. Java DAO are here: [dao](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/dao/)
 1. Java entities are here:[entity](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/entity/)
 1. Java model is here: [model](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/model/)
-1. Database SQL is here: [db/](db)
+1. Database SQL is here: [db](db/)
 1. Data Dictionary is here: [Data_Dictionary.html](http://htmlpreview.github.io/?https://github.com/CooperStansbury/CIS556_Project/blob/DB-Update/Data_Dictionary.html)
 
 ## Development
