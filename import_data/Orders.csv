@@ -1,7 +1,0 @@
-Order_ID,Order_Date,Order_Status,Product_ID,Product_Retail_Price,Product_Quantity,Customer_Choice_Name_Engraving,Customer_Choice_Birthstone_ID,Customer_Choice_Charm_ID_1,Customer_Choice_Charm_ID_2,Customer_Choice_Charm_ID_3,Customer_Choice_Charm_ID_4,Customer_ID
-30001,11/20/2018,Complete,20001,27.50,1,Jenny,,1,4,2,6,10001
-30001,11/18/2018,Complete,20005,27.50,1,Alice,,3,,,,10001
-30001,11/18/2018,Complete,20009,22.00,1,Baby Jessica,3,,,,,10001
-30002,11/18/2018,Open,20015,110.00,1,Natasha,,,,,,10005
-30003,11/18/2018,Open,20039,18.00,1,,,,,,,10006
-30004,11/18/2018,Open,20051,66.00,1,,,,,,,10002

@@ -1,0 +1,77 @@
+Product_ID,Product_Name,Product_Description,Product_Color,Product_Category,Gender,Image_Filename,Product_Size,Number_In_Stock,Product_Base_Wholesale_Price,Product_Retail_Price,Product_Option_Description,Option_Name_Engraving,Option_Birthstone,Option_Charm_1,Option_Charm_2,Option_Charm_3,Option_Charm_4
+20001,Mother's Bracelet,A bracelet for your mom.,Gold,Bracelet,Women,gold_mothers_bracelet.png,7 inch,100,30.00,75.00,"Custom engraving, up to 4 custom charms.",1,0,1,1,1,1
+20002,Mother's Bracelet,A bracelet for your mom.,Silver,Bracelet,Women,silver_mothers_bracelet.png,7 inch,100,30.00,75.00,"Custom engraving, up to 4 custom charms.",1,0,1,1,1,1
+20003,Mother's Bracelet,A bracelet for your mom.,Gold,Bracelet,Women,gold_mothers_bracelet.png,8.5 inch,100,30.00,75.00,"Custom engraving, up to 4 custom charms.",1,0,1,1,1,1
+20004,Mother's Bracelet,A bracelet for your mom.,Silver,Bracelet,Women,silver_mothers_bracelet.png,8.5 inch,100,30.00,75.00,"Custom engraving, up to 4 custom charms.",1,0,1,1,1,1
+20005,Grandmother's Bracelet,A bracelet for your mom's mom.,Gold,Bracelet,Women,gold_grandmothers_bracelet.png,7 inch,100,25.00,62.50,"Custom engraving, up to 4 custom charms.",1,0,1,1,1,1
+20006,Grandmother's Bracelet,A bracelet for your mom's mom.,Silver,Bracelet,Women,silver_grandmothers_bracelet.png,7 inch,100,25.00,62.50,"Custom engraving, up to 4 custom charms.",1,0,1,1,1,1
+20007,Grandmother's Bracelet,A bracelet for your mom's mom.,Gold,Bracelet,Women,gold_grandmothers_bracelet.png,8.5 inch,100,25.00,62.50,"Custom engraving, up to 4 custom charms.",1,0,1,1,1,1
+20008,Grandmother's Bracelet,A bracelet for your mom's mom.,Silver,Bracelet,Women,silver_grandmothers_bracelet.png,8.5 inch,100,25.00,62.50,"Custom engraving, up to 4 custom charms.",1,0,1,1,1,1
+20009,Christening Bracelet,"A tiny, tiny bracelet.",Gold,Bracelet,Baby,baby_bracelets.png,Small,100,22.00,55.00,Custom engraving.,1,1,0,0,0,1
+20010,Christening Bracelet,"A tiny, tiny bracelet.",Rose Gold,Bracelet,Baby,baby_bracelets.png,Small,100,22.00,55.00,Custom engraving.,1,1,0,0,0,1
+20011,Christening Bracelet,"A tiny, tiny bracelet.",Silver,Bracelet,Baby,baby_bracelets.png,Small,100,22.00,55.00,Custom engraving.,1,1,0,0,0,1
+20012,Christening Bracelet,"A tiny, tiny bracelet.",Gold,Bracelet,Baby,baby_bracelets.png,Medium,100,22.00,55.00,Custom engraving.,1,1,0,0,0,1
+20013,Christening Bracelet,"A tiny, tiny bracelet.",Rose Gold,Bracelet,Baby,baby_bracelets.png,Medium,100,22.00,55.00,Custom engraving.,1,1,0,0,0,1
+20014,Christening Bracelet,"A tiny, tiny bracelet.",Silver,Bracelet,Baby,baby_bracelets.png,Medium,100,22.00,55.00,Custom engraving.,1,1,0,0,0,1
+20015,Wedding Band,Do not lose this....,Gold,Ring,Men,mens_gold_wedding_band.png,7,100,110.00,275.00,Custom engraving.,1,0,0,0,0,0
+20016,Wedding Band,Do not lose this....,White Gold,Ring,Men,mens_white_gold_wedding_band.png,7,100,110.00,275.00,Custom engraving.,1,0,0,0,0,0
+20017,Wedding Band,Do not lose this....,Silver,Ring,Men,mens_silver_wedding_band.png,7,100,110.00,275.00,Custom engraving.,1,0,0,0,0,0
+20018,Wedding Band,Do not lose this....,Gold,Ring,Men,mens_gold_wedding_band.png,8,100,110.00,275.00,Custom engraving.,1,0,0,0,0,0
+20019,Wedding Band,Do not lose this....,White Gold,Ring,Men,mens_white_gold_wedding_band.png,8,100,110.00,275.00,Custom engraving.,1,0,0,0,0,0
+20020,Wedding Band,Do not lose this....,Silver,Ring,Men,mens_silver_wedding_band.png,8,100,110.00,275.00,Custom engraving.,1,0,0,0,0,0
+20021,Wedding Band,Do not lose this....,Gold,Ring,Men,mens_gold_wedding_band.png,9,100,110.00,275.00,Custom engraving.,1,0,0,0,0,0
+20022,Wedding Band,Do not lose this....,White Gold,Ring,Men,mens_white_gold_wedding_band.png,9,100,110.00,275.00,Custom engraving.,1,0,0,0,0,0
+20023,Wedding Band,Do not lose this....,Silver,Ring,Men,mens_silver_wedding_band.png,9,100,110.00,275.00,Custom engraving.,1,0,0,0,0,0
+20024,Wedding Band,Do not lose this....,Gold,Ring,Men,mens_gold_wedding_band.png,10,100,110.00,275.00,Custom engraving.,1,0,0,0,0,0
+20025,Wedding Band,Do not lose this....,White Gold,Ring,Men,mens_white_gold_wedding_band.png,10,100,110.00,275.00,Custom engraving.,1,0,0,0,0,0
+20026,Wedding Band,Do not lose this....,Silver,Ring,Men,mens_silver_wedding_band.png,10,100,110.00,275.00,Custom engraving.,1,0,0,0,0,0
+20027,Wedding Ring,She will probably say yes if you get her this.,Gold,Ring,Women,womens_gold_wedding_ring.png,5,100,170.00,425.00,Custom engraving.,1,0,0,0,0,0
+20028,Wedding Ring,She will probably say yes if you get her this.,White Gold,Ring,Women,womens_wgold_wedding_ring.png,5,100,170.00,425.00,Custom engraving.,1,0,0,0,0,0
+20029,Wedding Ring,She will probably say yes if you get her this.,Silver,Ring,Women,womens_silver_wedding_ring.png,5,100,170.00,425.00,Custom engraving.,1,0,0,0,0,0
+20030,Wedding Ring,She will probably say yes if you get her this.,Gold,Ring,Women,womens_gold_wedding_ring.png,6,100,170.00,425.00,Custom engraving.,1,0,0,0,0,0
+20031,Wedding Ring,She will probably say yes if you get her this.,White Gold,Ring,Women,womens_wgold_wedding_ring.png,6,100,170.00,425.00,Custom engraving.,1,0,0,0,0,0
+20032,Wedding Ring,She will probably say yes if you get her this.,Silver,Ring,Women,womens_silver_wedding_ring.png,6,100,170.00,425.00,Custom engraving.,1,0,0,0,0,0
+20033,Wedding Ring,She will probably say yes if you get her this.,Gold,Ring,Women,womens_gold_wedding_ring.png,7,100,170.00,425.00,Custom engraving.,1,0,0,0,0,0
+20034,Wedding Ring,She will probably say yes if you get her this.,White Gold,Ring,Women,womens_wgold_wedding_ring.png,7,100,170.00,425.00,Custom engraving.,1,0,0,0,0,0
+20035,Wedding Ring,She will probably say yes if you get her this.,Silver,Ring,Women,womens_silver_wedding_ring.png,7,100,170.00,425.00,Custom engraving.,1,0,0,0,0,0
+20036,Wedding Ring,She will probably say yes if you get her this.,Gold,Ring,Women,womens_gold_wedding_ring.png,8,100,170.00,425.00,Custom engraving.,1,0,0,0,0,0
+20037,Wedding Ring,She will probably say yes if you get her this.,White Gold,Ring,Women,womens_wgold_wedding_ring.png,8,100,170.00,425.00,Custom engraving.,1,0,0,0,0,0
+20038,Wedding Ring,She will probably say yes if you get her this.,Silver,Ring,Women,womens_silver_wedding_ring.png,8,100,170.00,425.00,Custom engraving.,1,0,0,0,0,0
+20039,Stud Earrings,Nothing says stud like studs.,Silver,Earrings,Men,mens_silver_stud_earrings.png,One Size,100,18.00,45.00,None.,0,0,0,0,0,0
+20040,Stud Earrings,Nothing says stud like studs.,Gold,Earrings,Men,mens_gold_stud_earrings.png,One Size,100,18.00,45.00,None.,0,0,0,0,0,0
+20041,Stud Earrings,Nothing says stud like studs.,Black,Earrings,Men,mens_black_stud_earrings.png,One Size,100,18.00,45.00,None.,0,0,0,0,0,0
+20042,Stud Earrings,Very practical.,Silver,Earrings,Women,womens_silver_stud_earrings.png,One Size,100,19.80,49.50,None.,0,0,0,0,0,0
+20043,Stud Earrings,Very practical.,Gold,Earrings,Women,womens_gold_stud_earrings.png,One Size,100,19.80,49.50,None.,0,0,0,0,0,0
+20044,Stud Earrings,Very practical.,Pink,Earrings,Women,pink_stud_earrings.png,One Size,100,19.80,49.50,None.,0,0,0,0,0,0
+20045,Hoop Ear Rings,Also double as bracelets.,Silver,Earrings,Women,silver_hoops.png,One Size,100,24.20,60.50,None.,0,0,0,0,0,0
+20046,Hoop Ear Rings,Also double as bracelets.,Gold,Earrings,Women,gold_hoops.png,One Size,100,24.20,60.50,None.,0,0,0,0,0,0
+20047,Hoop Ear Rings,Also double as bracelets.,Rose Gold,Earrings,Women,pink_hoops.png,One Size,100,24.20,60.50,None.,0,0,0,0,0,0
+20048,Pendant Set,For the glamorous ladies.,Gold,Set,Women,gold_pendent_set.png,One Size,100,75.00,187.50,None.,0,0,0,0,0,0
+20049,Pendant Set,For the glamorous ladies.,Silver,Set,Women,silver_pendant_set.png,One Size,100,75.00,187.50,None.,0,0,0,0,0,0
+20050,Pearl Set,For royalty.,White,Set,Women,pearl_set.png,One Size,100,75.00,187.50,None.,0,0,0,0,0,0
+20051,Pendant Necklace,"I won't let go, Jack.",Gold,Necklace,Women,gold_pendant_necklace.png,16 inches,100,66.00,165.00,None.,0,0,0,0,0,0
+20052,Pendant Necklace,"I won't let go, Jack.",Gold,Necklace,Women,gold_pendant_necklace.png,18 inches,100,66.00,165.00,None.,0,0,0,0,0,0
+20053,Pendant Necklace,"I won't let go, Jack.",Gold,Necklace,Women,gold_pendant_necklace.png,20 inches,100,66.00,165.00,None.,0,0,0,0,0,0
+20054,Pendant Necklace,"I won't let go, Jack.",Gold,Necklace,Women,gold_pendant_necklace.png,22 inches,100,66.00,165.00,None.,0,0,0,0,0,0
+20055,Pendant Necklace,"I won't let go, Jack.",Silver,Necklace,Women,silver_pendant_necklace.png,16 inches,100,60.00,150.00,None.,0,0,0,0,0,0
+20056,Pendant Necklace,"I won't let go, Jack.",Silver,Necklace,Women,silver_pendant_necklace.png,18 inches,100,60.00,150.00,None.,0,0,0,0,0,0
+20057,Pendant Necklace,"I won't let go, Jack.",Silver,Necklace,Women,silver_pendant_necklace.png,20 inches,100,60.00,150.00,None.,0,0,0,0,0,0
+20058,Pendant Necklace,"I won't let go, Jack.",Silver,Necklace,Women,silver_pendant_necklace.png,22 inches,100,60.00,150.00,None.,0,0,0,0,0,0
+20059,Pearl Necklace,Impress your friends!,Pearl,Necklace,Women,pearl_necklace.png,16 inches,100,85.00,212.50,None.,0,0,0,0,0,0
+20060,Pearl Necklace,Impress your friends!,Pearl,Necklace,Women,pearl_necklace.png,18 inches,100,85.00,212.50,None.,0,0,0,0,0,0
+20061,Pearl Necklace,Impress your friends!,Pearl,Necklace,Women,pearl_necklace.png,20 inches,100,85.00,212.50,None.,0,0,0,0,0,0
+20062,Pearl Necklace,Impress your friends!,Pearl,Necklace,Women,pearl_necklace.png,22 inches,100,85.00,212.50,None.,0,0,0,0,0,0
+20063,Crystal Necklace,For people who like astrology.,Crystal,Necklace,Women,crystal_necklace.png,16 inches,100,100.00,250.00,None.,0,0,0,0,0,0
+20064,Crystal Necklace,For people who like astrology.,Crystal,Necklace,Women,crystal_necklace.png,18 inches,100,100.00,250.00,None.,0,0,0,0,0,0
+20065,Crystal Necklace,For people who like astrology.,Crystal,Necklace,Women,crystal_necklace.png,20 inches,100,100.00,250.00,None.,0,0,0,0,0,0
+20066,Crystal Necklace,For people who like astrology.,Crystal,Necklace,Women,crystal_necklace.png,22 inches,100,100.00,250.00,None.,0,0,0,0,0,0
+20067,Owl Pendant Necklace,This thing's a hoot.,Owl,Everyday,Women,owl_pendant_necklace.png,16 inches,100,22.00,55.00,None.,0,0,0,0,0,0
+20068,Owl Pendant Necklace,This thing's a hoot.,Owl,Everyday,Women,owl_pendant_necklace.png,18 inches,100,22.00,55.00,None.,0,0,0,0,0,0
+20069,Owl Pendant Necklace,This thing's a hoot.,Owl,Everyday,Women,owl_pendant_necklace.png,20 inches,100,22.00,55.00,None.,0,0,0,0,0,0
+20070,Owl Pendant Necklace,This thing's a hoot.,Owl,Everyday,Women,owl_pendant_necklace.png,22 inches,100,22.00,55.00,None.,0,0,0,0,0,0
+20071,Rose Stud Earings,For confused teenagers.,Rose,Everyday,Women,rose_ear_rings.png,One Size,3,10.00,25.00,None.,0,0,0,0,0,0
+20072,Cat Ring,"It won't bring Tuffy back, but it's a good idea anyway.",Silver,Everyday,Women,cat_ring.png,5,100,11.00,27.50,None.,0,0,0,0,0,0
+20073,Cat Ring,"It won't bring Tuffy back, but it's a good idea anyway.",Silver,Everyday,Women,cat_ring.png,6,100,11.00,27.50,None.,0,0,0,0,0,0
+20074,Cat Ring,"It won't bring Tuffy back, but it's a good idea anyway.",Silver,Everyday,Women,cat_ring.png,7,100,11.00,27.50,None.,0,0,0,0,0,0
+20075,Cat Ring,"It won't bring Tuffy back, but it's a good idea anyway.",Silver,Everyday,Women,cat_ring.png,8,100,11.00,27.50,None.,0,0,0,0,0,0
+20076,Silver Bangles,"Serve chilled, with white wine and pain killers.",Silver,Everyday,Women,silver_bangle.png,One Size,0,44.00,110.00,None.,0,0,0,0,0,0
