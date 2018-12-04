@@ -38,17 +38,6 @@
                         <div class="col-lg-4 ml-auto mr-auto">
                             <div class="card card-register">
                                 <h3 class="title">Welcome</h3>
-								<div class="social-line text-center">
-                                    <a href="#pablo" class="btn btn-neutral btn-facebook btn-just-icon">
-                                        <i class="fa fa-facebook-square"></i>
-                                    </a>
-                                    <a href="#pablo" class="btn btn-neutral btn-google btn-just-icon">
-                                        <i class="fa fa-google-plus"></i>
-                                    </a>
-									<a href="#pablo" class="btn btn-neutral btn-twitter btn-just-icon">
-										<i class="fa fa-twitter"></i>
-									</a>
-                                </div>
                                 <form:form id="loginForm" modelAttribute="user" action="${pageContext.request.contextPath}/j_spring_security_check" method="post"> 
                                 <form class="register-form">
                                     <label>Email</label>
