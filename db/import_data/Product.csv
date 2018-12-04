@@ -7,12 +7,12 @@ Product_ID,Product_Name,Product_Description,Product_Color,Product_Category,Gende
 20006,Grandmother's Bracelet,A bracelet for your mom's mom.,Silver,Bracelet,Women,silver_grandmothers_bracelet.png,7 inch,100,25.00,62.50,"Custom engraving, up to 4 custom charms.",1,0,1,1,1,1
 20007,Grandmother's Bracelet,A bracelet for your mom's mom.,Gold,Bracelet,Women,gold_grandmothers_bracelet.png,8.5 inch,100,25.00,62.50,"Custom engraving, up to 4 custom charms.",1,0,1,1,1,1
 20008,Grandmother's Bracelet,A bracelet for your mom's mom.,Silver,Bracelet,Women,silver_grandmothers_bracelet.png,8.5 inch,100,25.00,62.50,"Custom engraving, up to 4 custom charms.",1,0,1,1,1,1
-20009,Christening Bracelet,"A tiny, tiny bracelet.",Gold,Bracelet,Baby,baby_bracelets.png,Small,100,22.00,55.00,Custom engraving.,1,1,0,0,0,1
-20010,Christening Bracelet,"A tiny, tiny bracelet.",Rose Gold,Bracelet,Baby,baby_bracelets.png,Small,100,22.00,55.00,Custom engraving.,1,1,0,0,0,1
-20011,Christening Bracelet,"A tiny, tiny bracelet.",Silver,Bracelet,Baby,baby_bracelets.png,Small,100,22.00,55.00,Custom engraving.,1,1,0,0,0,1
-20012,Christening Bracelet,"A tiny, tiny bracelet.",Gold,Bracelet,Baby,baby_bracelets.png,Medium,100,22.00,55.00,Custom engraving.,1,1,0,0,0,1
-20013,Christening Bracelet,"A tiny, tiny bracelet.",Rose Gold,Bracelet,Baby,baby_bracelets.png,Medium,100,22.00,55.00,Custom engraving.,1,1,0,0,0,1
-20014,Christening Bracelet,"A tiny, tiny bracelet.",Silver,Bracelet,Baby,baby_bracelets.png,Medium,100,22.00,55.00,Custom engraving.,1,1,0,0,0,1
+20009,Christening Bracelet,"A tiny, tiny bracelet.",Gold,Bracelet,Baby,baby_bracelets.png,Small,100,22.00,55.00,Custom engraving.,1,1,0,0,0,0
+20010,Christening Bracelet,"A tiny, tiny bracelet.",Rose Gold,Bracelet,Baby,baby_bracelets.png,Small,100,22.00,55.00,Custom engraving.,1,1,0,0,0,0
+20011,Christening Bracelet,"A tiny, tiny bracelet.",Silver,Bracelet,Baby,baby_bracelets.png,Small,100,22.00,55.00,Custom engraving.,1,1,0,0,0,0
+20012,Christening Bracelet,"A tiny, tiny bracelet.",Gold,Bracelet,Baby,baby_bracelets.png,Medium,100,22.00,55.00,Custom engraving.,1,1,0,0,0,0
+20013,Christening Bracelet,"A tiny, tiny bracelet.",Rose Gold,Bracelet,Baby,baby_bracelets.png,Medium,100,22.00,55.00,Custom engraving.,1,1,0,0,0,0
+20014,Christening Bracelet,"A tiny, tiny bracelet.",Silver,Bracelet,Baby,baby_bracelets.png,Medium,100,22.00,55.00,Custom engraving.,1,1,0,0,0,0
 20015,Wedding Band,Do not lose this....,Gold,Ring,Men,mens_gold_wedding_band.png,7,100,110.00,275.00,Custom engraving.,1,0,0,0,0,0
 20016,Wedding Band,Do not lose this....,White Gold,Ring,Men,mens_white_gold_wedding_band.png,7,100,110.00,275.00,Custom engraving.,1,0,0,0,0,0
 20017,Wedding Band,Do not lose this....,Silver,Ring,Men,mens_silver_wedding_band.png,7,100,110.00,275.00,Custom engraving.,1,0,0,0,0,0
