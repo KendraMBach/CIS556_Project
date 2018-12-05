@@ -79,9 +79,7 @@ public class Order implements Serializable {
 	}
 
 	public Order(OrderInfo orderInfo){
-		//String now = String.valueOf(new Date());
-		//SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
-		//Date date = format.parse(now);
+		
 		Date date = new Date();
 		
 		this.orderDate = date;

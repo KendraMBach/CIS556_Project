@@ -70,30 +70,19 @@ public class OrderDAOImpl implements OrderDAO {
         OrderInfo order = new OrderInfo();
         order.setOrderNum(orderNum);
  
-        //order.setAmount(cartInfo.getQuantityTotal());
-        //order.setProdRetailPrice(cartInfo.getAmountTotal()); 
- 
         CustomerInfo customerInfo = cartInfo.getCustomerInfo();
         
         Customer customer = customerDAO.findAccount(customerInfo.getEmail());
-        //int customerId = customerDAO.findCustomerId(customerInfo.getEmail(), customerInfo.getPassword());
+        
         order.setCustomer(customer);
         
         shippingCost = shippingCostDAO.findByState(customer.getState());
-        /*
-        order.setCustomerName(customerInfo.getFirstName());
-        order.setCustomerName(customerInfo.getLastName());
-        order.setCustomerEmail(customerInfo.getEmail());
-        order.setCustomerPhone(customerInfo.getPhone());
-        order.setCustomerAddress(customerInfo.getAddress());
- 		*/
-        
-        //session.persist(order);
+       
         
         List<CartLineInfo> lines = cartInfo.getCartLines();
  
         for (CartLineInfo line : lines) {
-        	//int code = line.getProductInfo().getCode();
+        	
         	String size = line.getProductInfo().getSize();
         	String name = line.getProductInfo().getName();
         	String color = line.getProductInfo().getColor();
@@ -123,11 +112,10 @@ public class OrderDAOImpl implements OrderDAO {
             	thisItem.setCharmId4(String.valueOf(line.getProductInfo().getCharm4()));
             }
             
-            //thisItem.setQuanity(line.getQuantity());
+            
             
             session.persist(thisItem);
-            //session.clear();
-            //session.flush();
+            
         }
  
         // Set OrderNum for report.

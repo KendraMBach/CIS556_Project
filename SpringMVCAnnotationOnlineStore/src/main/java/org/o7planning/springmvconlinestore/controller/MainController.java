@@ -370,7 +370,7 @@ public class MainController {
         CartInfo cartInfo = Utils.getCartInSession(request);
         ShippingCost shippingCost = null;
  
-        // Cart have no products.
+        // No products in cart
         if (cartInfo.isEmpty()) {
             // Redirect to shoppingCart page.
             return "redirect:/shoppingCart";
@@ -395,24 +395,19 @@ public class MainController {
  
     // POST: Send Cart (Save).
     @RequestMapping(value = { "/shoppingCartConfirmation" }, method = RequestMethod.POST)
-    // Avoid UnexpectedRollbackException (See more explanations)
+    // Avoid UnexpectedRollbackException
     @Transactional(propagation = Propagation.NEVER)
     public String shoppingCartConfirmationSave(HttpServletRequest request, Model model) {
         CartInfo cartInfo = Utils.getCartInSession(request);
  
-        // Cart have no products.
+     // No products in cart
         if (cartInfo.isEmpty()) {
             // Redirect to shoppingCart page.
             return "redirect:/shoppingCart";
         } 
        
             orderDAO.saveOrder(cartInfo);
-        /* catch (Exception e) {
-            // Need: Propagation.NEVER?
-        	System.out.println(e);
-            return "shoppingCartConfirmation";
-        }
-        */
+        
         // Remove Cart In Session.
         Utils.removeCartInSession(request);
          
@@ -450,19 +445,6 @@ public class MainController {
         model.addAttribute("customers", customers); //Adds all customers to page
         return "reportRendering";
     }
- /*
-    @RequestMapping(value = { "/productImage" }, method = RequestMethod.GET)
-    public void productImage(HttpServletRequest request, HttpServletResponse response, Model model,
-            @RequestParam("code") int code) throws IOException {
-        Product product = null;
-        product = this.productDAO.findProduct(code);
-        
-        if (product != null && product.getImage() != null) {
-            response.setContentType("image/jpeg, image/jpg, image/png, image/gif");
-            response.getOutputStream().write(product.getImage());
-        }
-        response.getOutputStream().close();
-    }
-    */
+ 
      
 }
