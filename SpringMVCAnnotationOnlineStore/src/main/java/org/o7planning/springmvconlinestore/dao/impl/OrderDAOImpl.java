@@ -1,5 +1,6 @@
 package org.o7planning.springmvconlinestore.dao.impl;
  
+import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -103,7 +104,7 @@ public class OrderDAOImpl implements OrderDAO {
         	
         	
             thisItem.setAmount(line.getQuantity());
-            thisItem.setProdRetailPrice(cartInfo.getFinalizedTotal(shippingCost.getCost()));
+            thisItem.setOrderTotal(cartInfo.getFinalizedTotal(shippingCost.getCost()));
             
             
             if(product.getOptEngrave() == 1) {

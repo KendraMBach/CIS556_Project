@@ -2,6 +2,7 @@ package org.o7planning.springmvconlinestore.entity;
 
 import java.io.Serializable;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -32,6 +33,7 @@ public class Order implements Serializable {
 
     /**
 	 * Maximal Constructor
+     * 
 	 */
 	public Order(Date orderDate, String orderStatus, int amount, Double prodRetailPrice,
 			String customerName, String customerAddress, String customerEmail, String customerPhone,
@@ -39,14 +41,12 @@ public class Order implements Serializable {
 			String charmId4, Product product, Customer customer) {
 		super();
 		
-		
-		String date = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
-		
+		Date date = new Date();
 		this.orderDate = date;
 		this.orderStatus = orderStatus;
 		this.amount = amount;
 		;
-		this.prodRetailPrice = prodRetailPrice;
+		this.orderTotal = prodRetailPrice;
 
 
 		this.nameEngraving = nameEngraving;
@@ -61,32 +61,35 @@ public class Order implements Serializable {
 
 	/**
 	 * Minimal Constructor
+	 * 
 	 */
 	public Order(int id, Date orderDate, String orderStatus, int amount, Product product, double productPrice, Customer customer) {
-		
-		String date = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
+		Date date = new Date();
 		
 		this.orderDate = date;
 		this.orderStatus = orderStatus;
 		this.amount = amount;
 
 		this.prodId = product;
-		this.prodRetailPrice = productPrice;
+		this.orderTotal = productPrice;
 
 
 		this.customerId = customer;
 
 	}
 
-	public Order(OrderInfo orderInfo) {
-		String date = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
+	public Order(OrderInfo orderInfo){
+		//String now = String.valueOf(new Date());
+		//SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
+		//Date date = format.parse(now);
+		Date date = new Date();
 		
 		this.orderDate = date;
 		this.id = orderInfo.getOrderNum();
 		this.orderStatus = "Open";
 		this.customerId = orderInfo.getCustomer();
 		this.prodId = orderInfo.getProduct();
-		this.prodRetailPrice = 0.0; //default
+		this.orderTotal = 0.0; //default
 		this.amount = 0; //default
 		
 
@@ -96,12 +99,12 @@ public class Order implements Serializable {
 	private static final long serialVersionUID = -2576670215015463100L;
 
     private int id;
-    private String orderDate;
+    private Date orderDate;
     private String orderStatus;
 
     private double amount;
 
-    private Double prodRetailPrice;
+    private Double orderTotal;
 
     private String nameEngraving;
     private String birthstoneID;
@@ -128,11 +131,11 @@ public class Order implements Serializable {
     }
 
     @Column(name = "Order_Date", nullable = false)
-    public String getOrderDate() {
+    public Date getOrderDate() {
         return orderDate;
     }
 
-    public void setOrderDate(String orderDate) {
+    public void setOrderDate(Date orderDate) {
         this.orderDate = orderDate;
     }
 
@@ -167,13 +170,13 @@ public class Order implements Serializable {
 		this.prodId = prodId;
 	}
 
-	@Column(name = "Product_Retail_Price", nullable = false)
-	public Double getProdRetailPrice() {
-		return prodRetailPrice;
+	@Column(name = "Order_Total", nullable = false)
+	public Double getOrderTotal() {
+		return orderTotal;
 	}
 
-	public void setProdRetailPrice(Double prodRetailPrice) {
-		this.prodRetailPrice = prodRetailPrice;
+	public void setOrderTotal(Double prodRetailPrice) {
+		this.orderTotal = prodRetailPrice;
 	}
 
 	@Column(name = "Customer_Choice_Name_Engraving", nullable = true)
