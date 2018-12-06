@@ -28,24 +28,15 @@
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
  
- <style>
-#stay {
-	   position:absolute;
-	   bottom:0;
-	   width:100%;
-	   height:60px;   /* Height of the footer */
-	   background:#6cf;
-	}
-
-</style> 
 </head>
 <jsp:include page="_menu.jsp" />
 <body>
  
  <main style="padding:100px">
    
- <div class="container">
+ <div class="report-container">
    <div class="page-title">Reports</div>
+   <c:out value = "${param.month1}"/>
  	</br>
    <div class>
  
@@ -61,11 +52,14 @@
       <sql:query dataSource = "${snapshot}" var = "result">
          SELECT DATE_FORMAT(STR_TO_DATE(Order_Date, "%m/%d/%Y"), '%M %Y') AS Order_Month, 
          SUM(CONVERT(Product_Retail_Price, DECIMAL(10,2))) AS Price
-         from orders 
-         where Order_Status = 'Complete'
-         group by DATE_FORMAT(STR_TO_DATE(Order_Date, "%m/%d/%Y"), '%M %Y')
+         FROM orders 
+         WHERE Order_Status = 'Complete'
+         AND STR_TO_DATE(Order_Date, "%m/%d/%Y") 
+         BETWEEN STR_TO_DATE( CONCAT('01 ', ?), '%d %M %Y') AND LAST_DAY(STR_TO_DATE( CONCAT('01 ', ?), '%d %M %Y'))
+         GROUP BY DATE_FORMAT(STR_TO_DATE(Order_Date, "%m/%d/%Y"), '%M %Y')
+         <sql:param value = "${param.month1}" />
+         <sql:param value = "${param.month2}" />
       </sql:query>
- 
       <table border = "1" width = "100%">
          <tr>
             <th>Month</th>
@@ -86,7 +80,10 @@
          SELECT YEAR(STR_TO_DATE(Order_Date, "%m/%d/%Y")) AS Order_Year, SUM(CONVERT(Product_Retail_Price, DECIMAL(10,2))) AS Price
          from orders 
          where Order_Status = 'Complete'
+         AND YEAR(STR_TO_DATE(Order_Date, "%m/%d/%Y")) BETWEEN ? AND ?
          group by YEAR(STR_TO_DATE(Order_Date, "%m/%d/%Y"))
+         <sql:param value = "${param.year1}" />
+         <sql:param value = "${param.year2}" />
       </sql:query>
       <table border = "1" width = "100%">
          <tr>
@@ -105,39 +102,19 @@
 
    	  <c:if test="${param.type == 'inventoryLevels'}">
       <sql:query dataSource = "${snapshot}" var = "result">
-         SELECT Product_ID, Product_Name, Product_Color, Product_Size, Number_In_Stock from product;
+         SELECT Product_ID, Product_Name, Product_Color, Product_Size, Number_In_Stock, Product_Base_Wholesale_Price, Product_Base_Wholesale_Price * Number_In_Stock AS Inventory_Cost from product;
       </sql:query>
-      <table border = "1" width = "100%">
+      <sql:query dataSource = "${snapshot}" var = "sum_result">
+         SELECT SUM(Product_Base_Wholesale_Price * Number_In_Stock) AS Total_IC from product;
+      </sql:query>
+      <table border = "1" width = "100%" padding>
          <tr>
             <th>Product ID</th>
             <th>Product Name</th>
             <th>Color</th>
             <th>Size</th>
+            <th>Wholesale Price</th>
             <th>Stock</th>
-         </tr>
-         
-         <c:forEach var = "row" items = "${result.rows}">
-            <tr>
-               <td><c:out value = "${row.Product_ID}"/></td>
-               <td><c:out value = "${row.Product_Name}"/></td>
-               <td><c:out value = "${row.Product_Color}"/></td>
-               <td><c:out value = "${row.Product_Size}"/></td>
-               <td><c:out value = "${row.Number_In_Stock}"/></td>
-            </tr>
-         </c:forEach>
-      </table>
-   	  </c:if>
-
-   	  <c:if test="${param.type == 'inventoryCosts'}">
-      <sql:query dataSource = "${snapshot}" var = "result">
-         SELECT Product_ID, Product_Name, Product_Color, Product_Size, Product_Retail_Price * Number_In_Stock AS Inventory_Cost from product;
-      </sql:query>
-      <table border = "1" width = "100%">
-         <tr>
-            <th>Product ID</th>
-            <th>Product Name</th>
-            <th>Color</th>
-            <th>Size</th>
             <th>Inventory Cost</th>
          </tr>
          
@@ -147,8 +124,21 @@
                <td><c:out value = "${row.Product_Name}"/></td>
                <td><c:out value = "${row.Product_Color}"/></td>
                <td><c:out value = "${row.Product_Size}"/></td>
+               <td><c:out value = "${row.Product_Base_Wholesale_Price}"/></td>
+               <td><c:out value = "${row.Number_In_Stock}"/></td>
                <td><c:out value = "${row.Inventory_Cost}"/></td>
             </tr>
+         </c:forEach>
+         <c:forEach var = "sum_row" items = "${sum_result.rows}">
+         	<tr>
+         	   <td><c:out value = " "/></td>
+               <td><c:out value = " "/></td>
+               <td><c:out value = " "/></td>
+               <td><c:out value = " "/></td>
+               <td><c:out value = " "/></td>
+               <td style="font-weight:bold"><c:out value = "Total:"/></td>
+               <td style="font-weight:bold"><c:out value = "${sum_row.Total_IC}"/></td>
+         	</tr>
          </c:forEach>
       </table>
    	  </c:if>
@@ -162,6 +152,12 @@
             <th>Customer ID</th>
             <th>First Name</th>
             <th>Last Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+            <th>Phone Number</th>
+            <th>Email</th>
          </tr>
          
          <c:forEach var = "row" items = "${result.rows}">
@@ -169,6 +165,12 @@
                <td><c:out value = "${row.Customer_ID}"/></td>
                <td><c:out value = "${row.Customer_First_Name}"/></td>
                <td><c:out value = "${row.Customer_Last_Name}"/></td>
+               <td><c:out value = "${row.Customer_Street_Address}"/></td>
+               <td><c:out value = "${row.Customer_City}"/></td>
+               <td><c:out value = "${row.Customer_State}"/></td>
+               <td><c:out value = "${row.Customer_Zip}"/></td>
+               <td><c:out value = "${row.Customer_Phone_Number}"/></td>
+               <td><c:out value = "${row.Customer_Email_Address}"/></td>
             </tr>
          </c:forEach>
       </table>
