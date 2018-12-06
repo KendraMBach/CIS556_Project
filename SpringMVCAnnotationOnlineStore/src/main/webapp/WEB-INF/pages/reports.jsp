@@ -54,14 +54,15 @@
      user = "root"  password = "YourStrong!Passw0rd"/>
     
     <sql:query dataSource = "${snapshot}" var = "monthlyResult">
-      SELECT DISTINCT DATE_FORMAT(STR_TO_DATE(Order_Date, "%m/%d/%Y"), '%M %Y') AS Order_Month
+      SELECT DISTINCT DATE_FORMAT(Order_Date, '%M %Y') AS Order_Month,
+      DATE_FORMAT(Order_Date, '%Y%m') num_month
       from orders 
       where Order_Status = 'Complete'
-      order by Order_Month
+      order by num_month
     </sql:query>
 
     <sql:query dataSource = "${snapshot}" var = "yearlyResult">
-      SELECT DISTINCT DATE_FORMAT(STR_TO_DATE(Order_Date, "%m/%d/%Y"), '%Y') AS Order_Year
+      SELECT DISTINCT DATE_FORMAT(Order_Date, '%Y') AS Order_Year
       from orders 
       where Order_Status = 'Complete'
       order by Order_Year

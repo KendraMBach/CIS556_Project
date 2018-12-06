@@ -50,13 +50,15 @@
  
 	  <c:if test="${param.type == 'monthlySales'}">
       <sql:query dataSource = "${snapshot}" var = "result">
-         SELECT DATE_FORMAT(STR_TO_DATE(Order_Date, "%m/%d/%Y"), '%M %Y') AS Order_Month, 
-         SUM(CONVERT(Product_Retail_Price, DECIMAL(10,2))) AS Price
+         SELECT DATE_FORMAT(Order_Date, '%M %Y') AS Order_Month,
+         DATE_FORMAT(Order_Date, '%Y%m') num_month,
+         FORMAT(ROUND(SUM(Order_Total), 2), 2) AS Price
          FROM orders 
          WHERE Order_Status = 'Complete'
-         AND STR_TO_DATE(Order_Date, "%m/%d/%Y") 
+         AND Order_Date
          BETWEEN STR_TO_DATE( CONCAT('01 ', ?), '%d %M %Y') AND LAST_DAY(STR_TO_DATE( CONCAT('01 ', ?), '%d %M %Y'))
-         GROUP BY DATE_FORMAT(STR_TO_DATE(Order_Date, "%m/%d/%Y"), '%M %Y')
+         GROUP BY DATE_FORMAT(Order_Date, '%M %Y'), DATE_FORMAT(Order_Date, '%Y%m')
+         ORDER BY num_month
          <sql:param value = "${param.month1}" />
          <sql:param value = "${param.month2}" />
       </sql:query>
@@ -77,11 +79,12 @@
 
    	  <c:if test="${param.type == 'yearlySales'}">
       <sql:query dataSource = "${snapshot}" var = "result">
-         SELECT YEAR(STR_TO_DATE(Order_Date, "%m/%d/%Y")) AS Order_Year, SUM(CONVERT(Product_Retail_Price, DECIMAL(10,2))) AS Price
+         SELECT YEAR(Order_Date) AS Order_Year, FORMAT(ROUND(SUM(Order_Total), 2), 2) AS Price
          from orders 
          where Order_Status = 'Complete'
-         AND YEAR(STR_TO_DATE(Order_Date, "%m/%d/%Y")) BETWEEN ? AND ?
-         group by YEAR(STR_TO_DATE(Order_Date, "%m/%d/%Y"))
+         AND YEAR(Order_Date) BETWEEN ? AND ?
+         group by YEAR(Order_Date)
+         order by YEAR(Order_Date)
          <sql:param value = "${param.year1}" />
          <sql:param value = "${param.year2}" />
       </sql:query>
