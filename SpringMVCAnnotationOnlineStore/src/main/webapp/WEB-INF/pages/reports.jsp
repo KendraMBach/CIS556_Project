@@ -1,4 +1,7 @@
+<%@ page import = "java.io.*,java.util.*,java.sql.*"%>
+<%@ page import = "javax.servlet.http.*,javax.servlet.*" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix = "sql"%>
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
  
 <!DOCTYPE html>
@@ -45,36 +48,67 @@
    <!--<div class="page-title">Reports</div>
   
    <div class="account-container">-->
+
+    <sql:setDataSource var = "snapshot" driver = "com.mysql.jdbc.Driver"
+     url = "jdbc:mysql://localhost/jewlz"
+     user = "root"  password = "YourStrong!Passw0rd"/>
+    
+    <sql:query dataSource = "${snapshot}" var = "monthlyResult">
+      SELECT DISTINCT DATE_FORMAT(STR_TO_DATE(Order_Date, "%m/%d/%Y"), '%M %Y') AS Order_Month
+      from orders 
+      where Order_Status = 'Complete'
+      order by Order_Month
+    </sql:query>
+
+    <sql:query dataSource = "${snapshot}" var = "yearlyResult">
+      SELECT DISTINCT DATE_FORMAT(STR_TO_DATE(Order_Date, "%m/%d/%Y"), '%Y') AS Order_Year
+      from orders 
+      where Order_Status = 'Complete'
+      order by Order_Year
+    </sql:query>
+
      <h5>Monthly Sales</h5>
-     <form action="reportRendering" id="form1">
-     <!--First Month: <input type="number" name="month1">
-     Last Month: <input type="number" name="month2">-->
+     <form action="reportRendering" id="monthForm">
+     First Month: 
+     <select form="monthForm" name="month1">
+        <c:forEach var = "row" items = "${monthlyResult.rows}">  
+            <option><c:out value = "${row.Order_Month}"/></option>
+        </c:forEach>
+     </select>
+     Last Month:
+     <select form="monthForm" name="month2">
+        <c:forEach var = "row" items = "${monthlyResult.rows}">
+            <option><c:out value = "${row.Order_Month}"/></option>
+        </c:forEach>
+     </select>
      <input type="hidden" name="type" value="monthlySales">
      <input type="submit" value="Generate">
      </form>
      <br>    
 
      <h5>Yearly Sales</h5>
-     <form action="reportRendering" id="form2">
-     <!--First Year: <input type="number" name="year1">
-     Last Year: <input type="number" name="year2">-->
+     <form action="reportRendering" id="yearForm">
+     First Year:
+     <select form="yearForm" name="year1">
+        <c:forEach var = "row" items = "${yearlyResult.rows}">
+            <option><c:out value = "${row.Order_Year}"/></option>
+        </c:forEach>
+     </select>
+     Last Year:
+     <select form="yearForm" name="year2">
+        <c:forEach var = "row" items = "${yearlyResult.rows}">
+            <option><c:out value = "${row.Order_Year}"/></option>
+        </c:forEach>
+     </select>
      <input type="hidden" name="type" value="yearlySales">
      <input type="submit" value="Generate">
      </form>
      <br>     
 
-     <h5>Inventory Levels</h5>
+     <h5>Inventory Report</h5>
      <form action="reportRendering" id="form3">
      <!--Product ID: <input type="text" name="productID">-->
      <input type="hidden" name="type" value="inventoryLevels">
-     <input type="submit" value="Generate">
-     </form>
-     <br>
-
-     <h5>Inventory Costs</h5>
-     <form action="reportRendering" id="form4">
-     <!--Product ID: <input type="text" name="productID">-->
-     <input type="hidden" name="type" value="inventoryCosts">
      <input type="submit" value="Generate">
      </form>
      <br>
@@ -87,7 +121,7 @@
      <br>
 
      <h5>Mailing Labels</h5>
-     <form action="reportRendering" id="form6">
+     <form action="reportRendering" id="form5">
      Customer ID: <input type="text" name="customerID">
      <input type="hidden" name="type" value="mailingLabels">
      <input type="submit" value="Generate">
