@@ -1,6 +1,7 @@
 package org.o7planning.springmvconlinestore.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -15,9 +16,11 @@ import org.o7planning.springmvconlinestore.dao.ProductDAO;
 import org.o7planning.springmvconlinestore.entity.Birthstone;
 import org.o7planning.springmvconlinestore.entity.Charm;
 import org.o7planning.springmvconlinestore.entity.Customer;
+import org.o7planning.springmvconlinestore.entity.Order;
 import org.o7planning.springmvconlinestore.entity.Product;
 import org.o7planning.springmvconlinestore.model.CartInfo;
 import org.o7planning.springmvconlinestore.model.CustomerInfo;
+import org.o7planning.springmvconlinestore.model.OrderInfo;
 import org.o7planning.springmvconlinestore.model.PaginationResult;
 import org.o7planning.springmvconlinestore.model.ProductInfo;
 import org.o7planning.springmvconlinestore.util.Utils;
@@ -98,7 +101,7 @@ public class MainController {
         return "index";
     }
  
-    // Initial Product List page.
+ // Initial Product List page.
     @RequestMapping(value = { "/productList" }, method = {RequestMethod.GET, RequestMethod.POST})
     public String listProductHandler(HttpServletRequest request, Model model, //
             @RequestParam(value = "name", defaultValue = "") String likeName,
@@ -121,6 +124,21 @@ public class MainController {
         result = productDAO.queryProducts(page, //
                 maxResult, maxNavigationPage, likeName);
         }
+        else if(mainCategory.equals("popular")) {
+        	//Display Popular Hack
+        	
+        	List<ProductInfo> popularResult =  new ArrayList<ProductInfo>();
+        	
+        	List<Product> test = orderDAO.listAllOrderItemsForAllOrders();
+        	for(int i=0; i<6; i++) {
+        		{
+        		ProductInfo productInfo = new ProductInfo(test.get(i));
+        			popularResult.add(productInfo);
+        		}
+        		result = new PaginationResult(popularResult);
+        		 
+        	}
+        }
         else {
         	result = productDAO.queryCategoryProducts(page, maxResult, maxNavigationPage, likeName, mainCategory);
         }
@@ -132,6 +150,26 @@ public class MainController {
         return "productList";
     }
     
+    @RequestMapping(value = { "/productSearch" }, method = {RequestMethod.GET})
+    public String searchProductHandler(HttpServletRequest request, Model model, //
+            @RequestParam(defaultValue = "") String likeName,
+            @RequestParam(value = "page", defaultValue = "1") int page, @RequestParam(value = "filter", // 
+            defaultValue = "all") String filter) {
+    	
+    		final int maxResult = 6;
+    		final int maxNavigationPage = 10;
+    		PaginationResult<ProductInfo> result = null;
+    	
+    		result = productDAO.queryProducts(page, maxResult, maxNavigationPage, likeName);
+    	
+	    	model.addAttribute("paginationProducts", result);
+	        model.addAttribute("filter", "");
+	        model.addAttribute("mainCategory", "");
+	        model.addAttribute("subCategory", "");
+    	
+				return "productList";
+    	
+    }
     
  // New User Registration.
     @RequestMapping(value = {"/register" }, method = RequestMethod.GET)
