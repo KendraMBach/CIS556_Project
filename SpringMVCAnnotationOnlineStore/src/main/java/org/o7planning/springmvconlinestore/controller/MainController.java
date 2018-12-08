@@ -13,11 +13,13 @@ import org.o7planning.springmvconlinestore.dao.CharmDAO;
 import org.o7planning.springmvconlinestore.dao.CustomerDAO;
 import org.o7planning.springmvconlinestore.dao.OrderDAO;
 import org.o7planning.springmvconlinestore.dao.ProductDAO;
+import org.o7planning.springmvconlinestore.dao.ShippingCostsDAO;
 import org.o7planning.springmvconlinestore.entity.Birthstone;
 import org.o7planning.springmvconlinestore.entity.Charm;
 import org.o7planning.springmvconlinestore.entity.Customer;
 import org.o7planning.springmvconlinestore.entity.Order;
 import org.o7planning.springmvconlinestore.entity.Product;
+import org.o7planning.springmvconlinestore.entity.ShippingCost;
 import org.o7planning.springmvconlinestore.model.CartInfo;
 import org.o7planning.springmvconlinestore.model.CustomerInfo;
 import org.o7planning.springmvconlinestore.model.OrderInfo;
@@ -65,6 +67,9 @@ public class MainController {
     
     @Autowired
     private CustomerDAO customerDAO;
+    
+    @Autowired
+    private ShippingCostsDAO shippingCostsDAO;
  
     @Autowired
     private CustomerInfoValidator customerInfoValidator;
@@ -174,10 +179,12 @@ public class MainController {
  // New User Registration.
     @RequestMapping(value = {"/register" }, method = RequestMethod.GET)
     public String newUserRegistration(Model model) {
- 
+    	
         CustomerInfo newUser = new CustomerInfo();
+        List<ShippingCost> states = shippingCostsDAO.getStateList();
  
         model.addAttribute("newUserForm", newUser);
+        model.addAttribute("states", states);
         return "register";
     }
     
@@ -303,8 +310,10 @@ public class MainController {
     @RequestMapping(value = { "/shoppingCart" }, method = RequestMethod.GET)
     public String shoppingCartHandler(HttpServletRequest request, Model model) {
         CartInfo myCart = Utils.getCartInSession(request);
+        Double total = myCart.getAmountTotal();
         
         model.addAttribute("cartForm", myCart);
+        model.addAttribute("total", total);
         return "shoppingCart";
     }
  
@@ -359,40 +368,46 @@ public class MainController {
     @RequestMapping(value = { "/shoppingCartConfirmation" }, method = RequestMethod.GET)
     public String shoppingCartConfirmationReview(HttpServletRequest request, Model model) {
         CartInfo cartInfo = Utils.getCartInSession(request);
+        ShippingCost shippingCost = null;
  
-        // Cart have no products.
+        // No products in cart
         if (cartInfo.isEmpty()) {
             // Redirect to shoppingCart page.
             return "redirect:/shoppingCart";
-        } else if (!cartInfo.isValidCustomer()) {
+        } else {
+        	Customer customer = customerDAO.lookUpCustomerWithID(Integer.parseInt(request.getUserPrincipal().getName()));
             // Enter customer info.
-            return "redirect:/shoppingCartCustomer";
-        }
- 
+            //return "redirect:/shoppingCartCustomer";
+        	CustomerInfo customerInfo = new CustomerInfo(customer);
+        	cartInfo.setCustomerInfo(customerInfo);
+        	
+        	shippingCost = shippingCostsDAO.findByState(customer.getState());
+        	Double total = cartInfo.getAmountTotal() + shippingCost.getCost();
+        	
+        	model.addAttribute("total", total);
+        	model.addAttribute("shipping", shippingCost.getCost());
+        	
+        
+        //model.addAttribute("cartInfo", cartInfo);
         return "shoppingCartConfirmation";
+        }
     }
  
     // POST: Send Cart (Save).
     @RequestMapping(value = { "/shoppingCartConfirmation" }, method = RequestMethod.POST)
-    // Avoid UnexpectedRollbackException (See more explanations)
+    // Avoid UnexpectedRollbackException
     @Transactional(propagation = Propagation.NEVER)
     public String shoppingCartConfirmationSave(HttpServletRequest request, Model model) {
         CartInfo cartInfo = Utils.getCartInSession(request);
  
-        // Cart have no products.
+     // No products in cart
         if (cartInfo.isEmpty()) {
             // Redirect to shoppingCart page.
             return "redirect:/shoppingCart";
-        } else if (!cartInfo.isValidCustomer()) {
-            // Enter customer info.
-            return "redirect:/shoppingCartCustomer";
-        }
-        try {
+        } 
+       
             orderDAO.saveOrder(cartInfo);
-        } catch (Exception e) {
-            // Need: Propagation.NEVER?
-            return "shoppingCartConfirmation";
-        }
+        
         // Remove Cart In Session.
         Utils.removeCartInSession(request);
          
@@ -430,19 +445,6 @@ public class MainController {
         model.addAttribute("customers", customers); //Adds all customers to page
         return "reportRendering";
     }
- /*
-    @RequestMapping(value = { "/productImage" }, method = RequestMethod.GET)
-    public void productImage(HttpServletRequest request, HttpServletResponse response, Model model,
-            @RequestParam("code") int code) throws IOException {
-        Product product = null;
-        product = this.productDAO.findProduct(code);
-        
-        if (product != null && product.getImage() != null) {
-            response.setContentType("image/jpeg, image/jpg, image/png, image/gif");
-            response.getOutputStream().write(product.getImage());
-        }
-        response.getOutputStream().close();
-    }
-    */
+ 
      
 }

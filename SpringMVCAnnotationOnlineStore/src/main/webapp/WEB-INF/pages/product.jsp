@@ -130,7 +130,7 @@
    	<div class="form-row">
     		
             <div class="mx-sm-3 mb-2 dropdown">
-			    <form:select name="size" path="size" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			    <form:select name="size" path="size" required="required" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 			        Size
 			        <b class="caret"></b>
 			    

@@ -1,5 +1,6 @@
 package org.o7planning.springmvconlinestore.dao.impl;
  
+import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -14,11 +15,13 @@ import org.hibernate.criterion.Restrictions;
 import org.o7planning.springmvconlinestore.dao.CustomerDAO;
 import org.o7planning.springmvconlinestore.dao.OrderDAO;
 import org.o7planning.springmvconlinestore.dao.ProductDAO;
+import org.o7planning.springmvconlinestore.dao.ShippingCostsDAO;
 import org.o7planning.springmvconlinestore.entity.Charm;
 import org.o7planning.springmvconlinestore.entity.Customer;
 import org.o7planning.springmvconlinestore.entity.Order;
 
 import org.o7planning.springmvconlinestore.entity.Product;
+import org.o7planning.springmvconlinestore.entity.ShippingCost;
 import org.o7planning.springmvconlinestore.model.CartInfo;
 import org.o7planning.springmvconlinestore.model.CartLineInfo;
 import org.o7planning.springmvconlinestore.model.CustomerInfo;
@@ -40,9 +43,12 @@ public class OrderDAOImpl implements OrderDAO {
     
     @Autowired
     private CustomerDAO customerDAO;
+    
+    @Autowired
+    private ShippingCostsDAO shippingCostDAO;
  
     private int getMaxOrderNum() {
-        String sql = "Select max(o.orderNum) from " + Order.class.getName() + " o ";
+        String sql = "Select max(o.id) from " + Order.class.getName() + " o ";
         Session session = sessionFactory.getCurrentSession();
         Query query = session.createQuery(sql);
         Integer value = (Integer) query.uniqueResult();
@@ -54,50 +60,66 @@ public class OrderDAOImpl implements OrderDAO {
  
     public void saveOrder(CartInfo cartInfo) {
         Session session = sessionFactory.getCurrentSession();
+        ShippingCost shippingCost = null;
         
         Calendar today = Calendar.getInstance();
 		today.set(Calendar.HOUR_OF_DAY, 0);
 		
  
         int orderNum = this.getMaxOrderNum() + 1;
-        Order order = new Order();
- 
-        //order.setAmount(cartInfo.getQuantityTotal());
-        //order.setProdRetailPrice(cartInfo.getAmountTotal()); 
+        OrderInfo order = new OrderInfo();
+        order.setOrderNum(orderNum);
  
         CustomerInfo customerInfo = cartInfo.getCustomerInfo();
         
         Customer customer = customerDAO.findAccount(customerInfo.getEmail());
-        //int customerId = customerDAO.findCustomerId(customerInfo.getEmail(), customerInfo.getPassword());
-        order.setCustomerId(customer);
-        /*
-        order.setCustomerName(customerInfo.getFirstName());
-        order.setCustomerName(customerInfo.getLastName());
-        order.setCustomerEmail(customerInfo.getEmail());
-        order.setCustomerPhone(customerInfo.getPhone());
-        order.setCustomerAddress(customerInfo.getAddress());
- 		*/
         
-        //session.persist(order);
+        order.setCustomer(customer);
+        
+        shippingCost = shippingCostDAO.findByState(customer.getState());
+       
         
         List<CartLineInfo> lines = cartInfo.getCartLines();
  
         for (CartLineInfo line : lines) {
-        	Order thisItem = new Order();
-        	thisItem = order;
+        	
+        	String size = line.getProductInfo().getSize();
+        	String name = line.getProductInfo().getName();
+        	String color = line.getProductInfo().getColor();
+            Product product = this.productDAO.findProductBySize(name, size, color);
+            
+        	order.setProduct(product);
+        	Order thisItem = new Order(order);
+        	
         	
             thisItem.setAmount(line.getQuantity());
-            thisItem.setProdRetailPrice(line.getProductInfo().getPrice());
-            //thisItem.setQuanity(line.getQuantity());
- 
-            int code = line.getProductInfo().getCode();
-            Product product = this.productDAO.findProduct(code);
-            thisItem.setProdId(product);
- 
+            thisItem.setOrderTotal(cartInfo.getFinalizedTotal(shippingCost.getCost()));
+            
+            
+            if(product.getOptEngrave() == 1) {
+            	thisItem.setNameEngraving(line.getProductInfo().getEngraving());
+            }
+            if(product.hasBirthstoneOpt()) {
+            	thisItem.setBirthstoneID(String.valueOf(line.getProductInfo().getBirthstoneSelected().getId()));
+            }
+            if(product.hasCharmOpt()) {
+            	thisItem.setCharmId1(String.valueOf(line.getProductInfo().getCharm1()));
+            
+            	thisItem.setCharmId2(String.valueOf(line.getProductInfo().getCharm2()));
+            
+            	thisItem.setCharmId3(String.valueOf(line.getProductInfo().getCharm3()));
+            
+            	thisItem.setCharmId4(String.valueOf(line.getProductInfo().getCharm4()));
+            }
+            
+            
+            
             session.persist(thisItem);
+            
         }
  
         // Set OrderNum for report.
+        
         cartInfo.setOrderNum(orderNum);
     }
  
@@ -129,7 +151,7 @@ public class OrderDAOImpl implements OrderDAO {
         crit.add(Restrictions.eq("Customer_ID", customerId));
         return (Order) crit.uniqueResult();
     }
- 
+ /*
     public OrderInfo getOrderInfo(int orderId) {
         Order order = this.findSingleOrder(orderId);
         if (order == null) {
@@ -141,6 +163,7 @@ public class OrderDAOImpl implements OrderDAO {
                 customer.getLastName(), customer.getAddress(), customer.getCity(), customer.getState(), //
                 customer.getZip(), customer.getEmail(), customer.getPhone());
     }
+    */
  
     //
     @SuppressWarnings("deprecation")
