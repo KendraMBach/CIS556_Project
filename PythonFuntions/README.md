@@ -1,7 +1,7 @@
-## Dependencies
+# Dependencies
 Python 3.6, Python Library MySQL Connector (pip install MySQL-connector-python)
 
-# eceipts
+# Receipts
 Sends an email to the user associated with an orderID containing a breakdown of the order's items as well as options and their cost, and shipping information.
 
 ## How To Generate A Reciept
