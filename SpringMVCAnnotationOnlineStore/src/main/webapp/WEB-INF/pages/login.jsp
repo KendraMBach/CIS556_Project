@@ -41,7 +41,7 @@
                                 <form:form id="loginForm" modelAttribute="user" action="${pageContext.request.contextPath}/j_spring_security_check" method="post"> 
                                 <form class="register-form">
                                     <label>Email</label>
-                                    <form:input path="email" name="email" id="email" type="text" class="form-control" placeholder="Email"/>
+                                    <form:input path="email" name="email" id="email" type="email" class="form-control" placeholder="Email"/>
 									<c:if test= "${not empty message}">
                                 		<span class="label label-danger">${message}</span>
                                 	</c:if>

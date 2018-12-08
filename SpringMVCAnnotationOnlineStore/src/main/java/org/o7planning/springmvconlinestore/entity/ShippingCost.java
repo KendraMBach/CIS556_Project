@@ -25,14 +25,14 @@ public class ShippingCost implements Serializable {
 	private static final long serialVersionUID = 8328306079219543687L;
 
 
-	public ShippingCost(int id, String month, String type, Double cost) {
+	public ShippingCost(int id, String state, Double cost) {
 		this.id = id;
-		this.type = type;
+		this.state = state;
 		this.cost = cost;
 	}
  
     private int id;
-    private String type;
+    private String state;
     private Double cost;
     
  
@@ -47,13 +47,13 @@ public class ShippingCost implements Serializable {
     }
 
     @Column(name = "state_code", nullable = false)
-	public String getType() {
-		return type;
+	public String getState() {
+		return state;
 	}
 
 
-	public void setType(String type) {
-		this.type = type;
+	public void setState(String type) {
+		this.state = type;
 	}
 
     @Column(name = "shipping_cost", nullable = false)

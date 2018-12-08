@@ -90,7 +90,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 		Session session = sessionFactory.getCurrentSession();
         @SuppressWarnings("deprecation")
 		Criteria crit = session.createCriteria(Customer.class);
-        crit.add(Restrictions.eq("Customer_ID", id));
+        crit.add(Restrictions.eq("id", id));
         return((Customer) crit.uniqueResult());
 	}
 	
