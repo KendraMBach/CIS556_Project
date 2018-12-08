@@ -1,5 +1,5 @@
 # Welcome to Junction Jewelers!
-This is the developer site for Junction Jewelers. This repository includes all Java models, logic and MySQL statements needed to run the website on LocalHost.The code is a Java Spring MVC eCommerce website for customers to view Jewelry inventory and place orders. Dependencies include Java 1.8, Maven, Spring, Hibernate, Tomcat 7, Eclipse IDE (ie Photon), MySQL Server, MySQL, MySQL Workbench.
+This is the developer site for Junction Jewelers. This repository includes all Java models, logic and MySQL statements needed to run the website on LocalHost.The code is a Java Spring MVC eCommerce website for customers to view Jewelry inventory and place orders. Dependencies include Java 1.8, Maven, Spring, Hibernate, Tomcat 7, Eclipse IDE (ie Photon), MySQL Server, MySQL, MySQL Workbench, Python 3.6, Python Library MySQL Connector (pip install MySQL-connector-python).
 
 ## Contents
 1. Java controllers are here: [controller](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/controller/)

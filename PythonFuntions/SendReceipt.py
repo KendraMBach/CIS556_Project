@@ -58,7 +58,6 @@ class Receipt():
       return(str(self.db.SendCommand(qShippingCost)[0][0]))
       
    def GetCustomerInfo(self):
-
       qCustomer = "SELECT Customer_First_Name, Customer_Last_Name, Customer_Street_Address, Customer_City, Customer_State, Customer_Zip, Customer_Email_Address \
                    FROM customer WHERE Customer_ID=" + self.customerID
       
@@ -143,8 +142,7 @@ class Receipt():
       self.GetCustomerID()
       self.GetCustomerInfo()
       self.GetOrderList()
-      # self.mail(self.emailAddress, "Invoice for Order #" + str(self.order_id), self.orderHeader + self.orderDescription + '\n' + self.orderFooter)
-      self.mail.SendEmail("kmbach@umich.edu", "Invoice for Order #" + str(self.order_id), self.orderHeader + self.orderDescription + '\n' + self.orderFooter)
+      self.mail(self.emailAddress, "Invoice for Order #" + str(self.order_id), self.orderHeader + self.orderDescription + '\n' + self.orderFooter)
 
 
 def main():
