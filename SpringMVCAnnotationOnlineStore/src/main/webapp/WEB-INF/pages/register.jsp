@@ -51,19 +51,19 @@
                                 </div>
                                  <form:form id="regForm" modelAttribute="newUserForm" action="register" method="post"> 
                                 	
-                                    <form:input path="firstName" name="firstName" id="firstName" type="text" class="form-control" placeholder="First Name"/>
+                                    <form:input path="firstName" name="firstName" id="firstName" type="text" required="required" class="form-control" placeholder="First Name"/>
                                 
                                 	
-                                    <form:input path="lastName" name="lastName" id="lastName" type="text" class="form-control" placeholder="Last Name"/>
+                                    <form:input path="lastName" name="lastName" id="lastName" type="text" required="required" class="form-control" placeholder="Last Name"/>
                                     
                                     <hr>
-                                    <form:input path="phone" name="phone" id="phone" type="text" class="form-control" placeholder="Phone"/>
+                                    <form:input path="phone" name="phone" id="phone" type="tel" required="required" pattern="\(?\d{3}\)-\d{3}-\d{4}$" title="(xxx)-xxx-xxxx" class="form-control" placeholder="Phone"/>
                                     
                                     
-                                    <form:input path="address" name="address" id="address" type="text" class="form-control" placeholder="Address"/>
+                                    <form:input path="address" name="address" id="address" type="text" class="form-control" required="required" placeholder="Address"/>
                                     
                                     
-                                    <form:input path="city" name="city" id="city" type="text" class="form-control" placeholder="City"/>
+                                    <form:input path="city" name="city" id="city" type="text" class="form-control" required="required" placeholder="City"/>
                                     
                                     
                                     <form:select path="state" name="state" id="state" class="form-control" placeholder="State">
@@ -74,13 +74,13 @@
 									</form:select>
                                     
                                     
-                                    <form:input path="zip" name="zip" id="zip" type="text" class="form-control" placeholder="Zip"/>
+                                    <form:input path="zip" name="zip" id="zip" type="text" class="form-control" required="required" placeholder="Zip"/>
                                 
                                     <hr>
-                                    <form:input path="email" name="email" id="email" type="text" class="form-control" placeholder="Email"/>
+                                    <form:input path="email" name="email" id="email" type="email" class="form-control" required="required" placeholder="Email"/>
                                     
                                     
-                                    <form:input path="password" name="password" id="password" type="password" class="form-control" placeholder="Password"/>
+                                    <form:input path="password" name="password" id="password" type="password" class="form-control" required="required" placeholder="Password"/>
                                     <form:button id="register" name="register" class="btn btn-danger btn-block btn-round">Register</form:button>
                                   </form:form>
                                 <div class="forgot">
