@@ -164,8 +164,7 @@
               		
                   	<form:input size="2" path="cartLines[${varStatus.index}].quantity" />
                   <div class="btn-group">
-                      <button class="btn btn-info btn-sm" type="submit" value="Update Quantity"> <i class="nc-icon nc-simple-delete"></i> </button>
-                      <button class="btn btn-info btn-sm" type="submit" value="Update Quantity"> <i class="nc-icon nc-simple-add"></i> </button>
+                      <button class="btn btn-info btn-sm" type="submit" value="Update Quantity">Update</button>
                   </div>
               </td>
               <td class="td-number">
