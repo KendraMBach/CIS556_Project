@@ -43,5 +43,6 @@
 			<attribute name="owner.project.facets" value="jpt.jpa"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Users/macowner/jython2.7.0/jython.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

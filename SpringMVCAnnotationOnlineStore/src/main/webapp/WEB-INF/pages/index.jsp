@@ -6,6 +6,7 @@
     prefix="c"
     uri="http://java.sun.com/jsp/jstl/core" 
 %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
  
 <title>Online Jewelry Store</title>
  
@@ -233,7 +234,9 @@
     	</div>
 
             <div class="section landing-section">
+            
                 <div class="container">
+                <form:form id="signUp" modelAttribute="signUpForm" action="newsLetter" method="post"> 
                     <div class="row">
                         <div class="col-md-8 ml-auto mr-auto">
                             <h2 class="text-center">Sign up for our newsletter!</h2>
@@ -245,7 +248,8 @@
 	                                        <span class="input-group-addon">
 	                                            <i class="nc-icon nc-single-02"></i>
 	                                        </span>
-	                                        <input type="text" class="form-control" placeholder="Name">
+	                                        <form:input type="text" class="form-control" path="firstName" name="firstName" id="firstName" required="required" placeholder="First Name"></form:input>
+	                                        <form:input type="text" class="form-control" path="lastName" name="lastName" id="lastName" required="required" placeholder="Last Name"></form:input>
 	                                    </div>
                                     </div>
                                     <div class="col-md-6">
@@ -254,13 +258,26 @@
 											<span class="input-group-addon">
 												<i class="nc-icon nc-email-85"></i>
 											</span>
-											<input type="text" class="form-control" placeholder="Email">
+											<form:input path="email" name="email" id="email" type="email" class="form-control" required="required" placeholder="Email"/>
 										</div>
+										
+                                    </div>
+                                    </br>
+                                    <div class="col-md-2">
+                                        </br>
+                                        
+										<div class="input-group">
+											
+											<form:button id="newsLetterButton" name="newsLetter" class="btn btn-info btn-block btn-round">Sign Up</form:button>
+										</div>
+										</br>
+										
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
+                    </form:form>
                 </div>
             </div>
         </div>

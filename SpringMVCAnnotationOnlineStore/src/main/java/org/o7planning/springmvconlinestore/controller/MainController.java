@@ -114,10 +114,57 @@ public class MainController {
     }
  
     @RequestMapping("/")
-    public String home() {
+    public String home(Model model) {
+    	CustomerInfo userInfo = new CustomerInfo();
+    	model.addAttribute("signUpForm", userInfo);
         return "index";
     }
  
+    @RequestMapping(value = { "/newsLetter" }, method = RequestMethod.POST)
+    public String newsLetter(Model model, HttpServletRequest request, @ModelAttribute("signUpForm") CustomerInfo userInfo, //
+    		@RequestParam(value = "firstName") String firstName,
+    		@RequestParam(value = "lastName") String lastName, //
+    		@RequestParam(value = "email") String email,
+            BindingResult result, //
+            final RedirectAttributes redirectAttributes) {
+    	 
+        	
+
+            if (result.hasErrors()) {
+                return "index";
+            }
+            try {
+                String dir = System.getProperty("user.home");
+                List<String> commands = new ArrayList<String>(); 
+                commands.add("/Users/macowner/anaconda3/bin/python3"); // command 
+                //commands.add("-l"); 
+                commands.add("/Users/macowner/eclipse-workspace/CIS556_Project/pythonFunctions/Newsletter.py"); 
+                commands.add(email);
+                commands.add(firstName);
+                commands.add(lastName);
+                // creating the process 
+                ProcessBuilder pb = new ProcessBuilder(commands); 
+                  
+                // startinf the process 
+                Process process = pb.start(); 
+                  
+                // for reading the ouput from stream 
+                BufferedReader bfr = new BufferedReader(new InputStreamReader(process.getInputStream()));
+
+                System.out.println(".........start   process.........");  
+                String line = "";     
+                while ((line = bfr.readLine()) != null){
+                    System.out.println("Python Output: " + line);
+                }
+
+                System.out.println("........end   process.......");
+            }
+                catch(Exception e){System.out.println(e);}
+        	
+        
+        return "redirect:/";
+    }
+    
  // Initial Product List page.
     @RequestMapping(value = { "/productList" }, method = {RequestMethod.GET, RequestMethod.POST})
     public String listProductHandler(HttpServletRequest request, Model model, //
@@ -443,9 +490,9 @@ public class MainController {
         try {
         String dir = System.getProperty("user.home");
         List<String> commands = new ArrayList<String>(); 
-        commands.add("python"); // command 
+        commands.add("/Users/macowner/anaconda3/bin/python3"); // command 
         //commands.add("-l"); 
-        commands.add("/eclipse-workspace/CIS556_Project/pythonFunctions/SendReceipt.py"); 
+        commands.add("/Users/macowner/eclipse-workspace/CIS556_Project/pythonFunctions/SendReceipt.py"); 
         commands.add(String.valueOf(cartInfo.getOrderNum()));
           
         // creating the process 

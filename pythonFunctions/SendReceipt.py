@@ -100,22 +100,22 @@ class Receipt():
          charmIDThree = item[8]
          charmIDFour = item[9]
 
-         if birthstoneID != "":
+         if birthstoneID != "" and birthstoneID != None:
             birthstone = self.BirthstoneLookup[int(birthstoneID)]
-         if charmIDOne != "":
+         if charmIDOne != "" and charmIDOne != None:
             charmOne = self.CharmLookup[int(charmIDOne)]
-         if charmIDTwo != "":
+         if charmIDTwo != "" and charmIDTwo != None:
             charmTwo = self.CharmLookup[int(charmIDTwo)]
-         if charmIDThree != "":
+         if charmIDThree != "" and charmIDThree != None:
             charmThree = self.CharmLookup[int(charmIDThree)]
-         if charmIDFour != "":
+         if charmIDFour != "" and charmIDFour != None:
             charmFour = self.CharmLookup[int(charmIDFour)]
 
 
          self.orderDescription += '\n' + productInfo[0] + '\t' + str(quantity) + '\t' + str(productInfo[1]) + '\t' + str(float(productInfo[1]) * float(quantity))
          self.orderDescription += '\n' + "Color: " + productInfo[2]
          self.orderDescription += '\n' + "Size: " + productInfo[3]
-         if engraving != "":
+         if engraving != "" and engraving != None:
             self.orderDescription += '\n' + "Engraving: " + engraving
          if birthstone[0] != "":
             self.orderDescription += '\n' + "Birthstone: " + birthstone[0] + '\t' + str(birthstone[1])
@@ -146,8 +146,9 @@ class Receipt():
 
 
 def main():
-   print("Hello ")
+   print("Started: ")
    order_id = sys.argv[1]
+   print(order_id)
    receipt = Receipt(order_id)
    receipt.EmailReceipt()
 
