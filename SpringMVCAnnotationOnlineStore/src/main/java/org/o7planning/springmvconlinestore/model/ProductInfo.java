@@ -32,6 +32,7 @@ public class ProductInfo {
 	private Charm charmSelected3;
 	private Charm charmSelected4;
 	private double totalOptionsPrice;
+	private String gender;
 	
     public ProductInfo() {
     }
@@ -275,6 +276,14 @@ public class ProductInfo {
 
 	public void setTotalOptionsPrice(double totalPrice) {
 		this.totalOptionsPrice = totalPrice;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
  
 }
