@@ -258,6 +258,11 @@
 										</div>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-4 ml-auto mr-auto">
+                                        <button class="btn btn-default btn-lg btn-fill">Sign up!</button>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
