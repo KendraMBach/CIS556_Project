@@ -88,7 +88,7 @@
 			        <div class="dropdown-divider"></div>
 			        <button type="submit" name="filter" value="bracelet,mother's bracelet" class="btn dropdown-item">Mother's Bracelets</button>
             		<div class="dropdown-divider"></div>
-            		<button type="submit" name="filter" value="bracelet,christening bracelet" class="btn dropdown-item">Baby Bracelets</button>
+            		<button type="submit" name="filter" value="bracelet,baby bracelet" class="btn dropdown-item">Baby Bracelets</button>
             		<div class="dropdown-divider"></div>
             		<button type="submit" name="filter" value="bracelet,grandmother's bracelet" class="btn dropdown-item">Grandmother's Bracelets</button>
 			        
