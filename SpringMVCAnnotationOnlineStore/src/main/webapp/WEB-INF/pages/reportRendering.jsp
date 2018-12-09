@@ -50,12 +50,14 @@
       <sql:query dataSource = "${snapshot}" var = "result">
          SELECT DATE_FORMAT(Order_Date, '%M %Y') AS Order_Month,
          DATE_FORMAT(Order_Date, '%Y%m') num_month,
-         FORMAT(ROUND(SUM(Order_Total), 2), 2) AS Price
-         FROM orders 
+         FORMAT(ROUND(SUM(Order_Total), 2), 2) AS Price,
+         FORMAT(ROUND(SUM(Order_Total - (Product_Quantity * Product_Base_Wholesale_Price)), 2), 2) AS Profit
+         FROM orders JOIN product ON orders.Product_ID = product.Product_ID
          WHERE Order_Status = 'Complete'
          AND Order_Date
          BETWEEN STR_TO_DATE( CONCAT('01 ', ?), '%d %M %Y') AND LAST_DAY(STR_TO_DATE( CONCAT('01 ', ?), '%d %M %Y'))
-         GROUP BY DATE_FORMAT(Order_Date, '%M %Y'), DATE_FORMAT(Order_Date, '%Y%m')
+         GROUP BY DATE_FORMAT(Order_Date, '%M %Y'), 
+         DATE_FORMAT(Order_Date, '%Y%m')
          ORDER BY num_month
          <sql:param value = "${param.month1}" />
          <sql:param value = "${param.month2}" />
@@ -64,12 +66,14 @@
          <tr>
             <th>Month</th>
             <th>Total Sales</th>
+            <th>Total Profit</th>
          </tr>
          
          <c:forEach var = "row" items = "${result.rows}">
             <tr>
                <td><c:out value = "${row.Order_Month}"/></td>
                <td><c:out value = "${row.Price}"/></td>
+               <td><c:out value = "${row.Profit}"/></td>
             </tr>
          </c:forEach>
       </table>
@@ -78,8 +82,10 @@
    	  <c:if test="${param.type == 'yearlySales'}">
    	  <div class="page-title">Yearly Sales Report</div></br>
       <sql:query dataSource = "${snapshot}" var = "result">
-         SELECT YEAR(Order_Date) AS Order_Year, FORMAT(ROUND(SUM(Order_Total), 2), 2) AS Price
-         from orders 
+         SELECT YEAR(Order_Date) AS Order_Year, 
+         FORMAT(ROUND(SUM(Order_Total), 2), 2) AS Price,
+         FORMAT(ROUND(SUM(Order_Total - (Product_Quantity * Product_Base_Wholesale_Price)), 2), 2) AS Profit
+         from orders JOIN product ON orders.Product_ID = product.Product_ID
          where Order_Status = 'Complete'
          AND YEAR(Order_Date) BETWEEN ? AND ?
          group by YEAR(Order_Date)
@@ -91,12 +97,14 @@
          <tr>
             <th>Year</th>
             <th>Total Sales</th>
+            <th>Total Profit</th>
          </tr>
          
          <c:forEach var = "row" items = "${result.rows}">
             <tr>
                <td><c:out value = "${row.Order_Year}"/></td>
                <td><c:out value = "${row.Price}"/></td>
+               <td><c:out value = "${row.Profit}"/></td>
             </tr>
          </c:forEach>
       </table>
