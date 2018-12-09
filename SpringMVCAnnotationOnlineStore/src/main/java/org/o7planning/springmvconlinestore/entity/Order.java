@@ -2,6 +2,7 @@ package org.o7planning.springmvconlinestore.entity;
 
 import java.io.Serializable;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -24,12 +25,15 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.UniqueConstraint;
 
+import org.o7planning.springmvconlinestore.model.OrderInfo;
+
 @Entity
 @Table(name = "Orders") 
 public class Order implements Serializable {
 
     /**
 	 * Maximal Constructor
+     * 
 	 */
 	public Order(Date orderDate, String orderStatus, int amount, Double prodRetailPrice,
 			String customerName, String customerAddress, String customerEmail, String customerPhone,
@@ -37,16 +41,12 @@ public class Order implements Serializable {
 			String charmId4, Product product, Customer customer) {
 		super();
 		
-		
-		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-		Calendar today = Calendar.getInstance();
-		dateFormat.format(today);
-
-		this.orderDate = String.valueOf(today.getTime());
+		Date date = new Date();
+		this.orderDate = date;
 		this.orderStatus = orderStatus;
 		this.amount = amount;
 		;
-		this.prodRetailPrice = prodRetailPrice;
+		this.orderTotal = prodRetailPrice;
 
 
 		this.nameEngraving = nameEngraving;
@@ -61,38 +61,48 @@ public class Order implements Serializable {
 
 	/**
 	 * Minimal Constructor
+	 * 
 	 */
 	public Order(int id, Date orderDate, String orderStatus, int amount, Product product, double productPrice, Customer customer) {
+		Date date = new Date();
 		
-		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-		Calendar today = Calendar.getInstance();
-		dateFormat.format(today);
-
-		this.orderDate = String.valueOf(today.getTime());
+		this.orderDate = date;
 		this.orderStatus = orderStatus;
 		this.amount = amount;
 
 		this.prodId = product;
-		this.prodRetailPrice = productPrice;
+		this.orderTotal = productPrice;
 
 
 		this.customerId = customer;
 
 	}
 
-	public Order() {
+	public Order(OrderInfo orderInfo){
+		
+		Date date = new Date();
+		
+		this.orderDate = date;
+		this.id = orderInfo.getOrderNum();
+		this.orderStatus = "Open";
+		this.customerId = orderInfo.getCustomer();
+		this.prodId = orderInfo.getProduct();
+		this.orderTotal = 0.0; //default
+		this.amount = 0; //default
+		
 
 	}
+	
 
 	private static final long serialVersionUID = -2576670215015463100L;
 
     private int id;
-    private String orderDate;
+    private Date orderDate;
     private String orderStatus;
 
-    private int amount;
+    private double amount;
 
-    private Double prodRetailPrice;
+    private Double orderTotal;
 
     private String nameEngraving;
     private String birthstoneID;
@@ -108,7 +118,7 @@ public class Order implements Serializable {
 
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Order_ID", length = 11, nullable = false)
     public int getId() {
         return id;
@@ -119,11 +129,11 @@ public class Order implements Serializable {
     }
 
     @Column(name = "Order_Date", nullable = false)
-    public String getOrderDate() {
+    public Date getOrderDate() {
         return orderDate;
     }
 
-    public void setOrderDate(String orderDate) {
+    public void setOrderDate(Date orderDate) {
         this.orderDate = orderDate;
     }
 
@@ -138,16 +148,16 @@ public class Order implements Serializable {
 
 
     @Column(name = "Product_Quantity", nullable = false)
-    public int getAmount() {
+    public double getAmount() {
         return amount;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
+    public void setAmount(double d) {
+        this.amount = d;
     }
 
 
-
+    @Id
     @ManyToOne(targetEntity=Product.class, fetch = FetchType.LAZY)
     @JoinColumn(name = "Product_ID", nullable = false)
     public Product getProdId() {
@@ -158,13 +168,13 @@ public class Order implements Serializable {
 		this.prodId = prodId;
 	}
 
-	@Column(name = "Product_Retail_Price", nullable = false)
-	public Double getProdRetailPrice() {
-		return prodRetailPrice;
+	@Column(name = "Order_Total", nullable = false)
+	public Double getOrderTotal() {
+		return orderTotal;
 	}
 
-	public void setProdRetailPrice(Double prodRetailPrice) {
-		this.prodRetailPrice = prodRetailPrice;
+	public void setOrderTotal(Double prodRetailPrice) {
+		this.orderTotal = prodRetailPrice;
 	}
 
 	@Column(name = "Customer_Choice_Name_Engraving", nullable = true)
@@ -220,7 +230,8 @@ public class Order implements Serializable {
 	public void setCharmId4(String charmId4) {
 		this.charmId4 = charmId4;
 	}
-
+	
+	@Id
 	@ManyToOne(targetEntity=Customer.class, fetch = FetchType.LAZY)
     @JoinColumn(name = "Customer_ID", nullable = false)
 	public Customer getCustomerId() {

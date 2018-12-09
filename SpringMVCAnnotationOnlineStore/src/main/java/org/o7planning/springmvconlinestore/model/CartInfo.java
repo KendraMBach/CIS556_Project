@@ -6,6 +6,8 @@ import java.util.List;
 public class CartInfo {
  
     private int orderNum;
+    
+    private Double shippingTotal; 
  
     private CustomerInfo customerInfo;
  
@@ -107,6 +109,15 @@ public class CartInfo {
         }
         return total;
     }
+    
+    public double getFinalizedTotal(Double shipping) {
+        double total = 0;
+        total += shipping;
+        for (CartLineInfo line : this.cartLines) {
+            total += line.getAmount();
+        }
+        return total;
+    }
  
     public void updateQuantity(CartInfo cartForm) {
         if (cartForm != null) {
@@ -117,5 +128,13 @@ public class CartInfo {
         }
  
     }
+
+	public Double getShippingTotal() {
+		return shippingTotal;
+	}
+
+	public void setShippingTotal(Double shippingTotal) {
+		this.shippingTotal = shippingTotal;
+	}
  
 }

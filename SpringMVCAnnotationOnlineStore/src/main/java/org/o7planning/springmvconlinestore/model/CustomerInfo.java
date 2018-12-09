@@ -1,8 +1,27 @@
 package org.o7planning.springmvconlinestore.model;
- 
+
+import org.o7planning.springmvconlinestore.entity.Customer;
+
 public class CustomerInfo {
  
-    private String firstName;
+	public CustomerInfo() {
+		
+	}
+	
+	public CustomerInfo(Customer customer) {
+		super();
+		this.firstName = customer.getFirstName();
+		this.lastName = customer.getLastName();
+		this.address = customer.getAddress();
+		this.city = customer.getCity();
+		this.state = customer.getState();
+		this.zip = customer.getZip();
+		this.email = customer.getEmail();
+		this.phone = customer.getPhone();
+		this.password = customer.getPassword();
+	}
+
+	private String firstName;
     private String lastName;
     private String address;
     private String city;
