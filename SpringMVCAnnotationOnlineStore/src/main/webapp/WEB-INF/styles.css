@@ -62,6 +62,10 @@ body {
 .container  {
     margin: 5px 0px;
 }
+
+.report-container  {
+    margin: 5px 5px 5px 5px;
+}
  
 .demo-container, .login-container, .account-container {
     padding: 5px;
