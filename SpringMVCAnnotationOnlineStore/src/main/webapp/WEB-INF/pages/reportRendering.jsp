@@ -62,6 +62,22 @@
          <sql:param value = "${param.month1}" />
          <sql:param value = "${param.month2}" />
       </sql:query>
+      <sql:query dataSource = "${snapshot}" var = "categories">
+         SELECT DATE_FORMAT(Order_Date, '%M %Y') AS Order_Month,
+         DATE_FORMAT(Order_Date, '%Y%m') num_month,
+         Product_Category,
+         SUM(Product_Quantity) AS Quantity_Sold
+         FROM orders JOIN product ON orders.Product_ID = product.Product_ID
+         WHERE Order_Status = 'Complete'
+         AND Order_Date
+         BETWEEN STR_TO_DATE( CONCAT('01 ', ?), '%d %M %Y') AND LAST_DAY(STR_TO_DATE( CONCAT('01 ', ?), '%d %M %Y'))
+         GROUP BY DATE_FORMAT(Order_Date, '%M %Y'), 
+         DATE_FORMAT(Order_Date, '%Y%m'),
+         Product_Category
+         ORDER BY num_month, Product_Category
+         <sql:param value = "${param.month1}" />
+         <sql:param value = "${param.month2}" />
+      </sql:query>
       <table border = "1" width = "100%">
          <tr>
             <th>Month</th>
@@ -74,6 +90,22 @@
                <td><c:out value = "${row.Order_Month}"/></td>
                <td><c:out value = "${row.Price}"/></td>
                <td><c:out value = "${row.Profit}"/></td>
+            </tr>
+         </c:forEach>
+      </table>
+      <br>
+      <table border = "1" width = "100%">
+         <tr>
+            <th>Month</th>
+            <th>Product Category</th>
+            <th>Quantity Sold</th>
+         </tr>
+         
+         <c:forEach var = "row" items = "${categories.rows}">
+            <tr>
+               <td><c:out value = "${row.Order_Month}"/></td>
+               <td><c:out value = "${row.Product_Category}"/></td>
+               <td><c:out value = "${row.Quantity_Sold}"/></td>
             </tr>
          </c:forEach>
       </table>
@@ -93,6 +125,19 @@
          <sql:param value = "${param.year1}" />
          <sql:param value = "${param.year2}" />
       </sql:query>
+      <sql:query dataSource = "${snapshot}" var = "categories">
+         SELECT YEAR(Order_Date) AS Order_Year, 
+         Product_Category,
+         SUM(Product_Quantity) AS Quantity_Sold
+         from orders JOIN product ON orders.Product_ID = product.Product_ID
+         where Order_Status = 'Complete'
+         AND YEAR(Order_Date) BETWEEN ? AND ?
+         group by YEAR(Order_Date),
+         Product_Category
+         order by YEAR(Order_Date), Product_Category
+         <sql:param value = "${param.year1}" />
+         <sql:param value = "${param.year2}" />
+      </sql:query>
       <table border = "1" width = "100%">
          <tr>
             <th>Year</th>
@@ -105,6 +150,22 @@
                <td><c:out value = "${row.Order_Year}"/></td>
                <td><c:out value = "${row.Price}"/></td>
                <td><c:out value = "${row.Profit}"/></td>
+            </tr>
+         </c:forEach>
+      </table>
+      <br>
+      <table border = "1" width = "100%">
+         <tr>
+            <th>Year</th>
+            <th>Product Category</th>
+            <th>Quantity Sold</th>
+         </tr>
+         
+         <c:forEach var = "row" items = "${categories.rows}">
+            <tr>
+               <td><c:out value = "${row.Order_Year}"/></td>
+               <td><c:out value = "${row.Product_Category}"/></td>
+               <td><c:out value = "${row.Quantity_Sold}"/></td>
             </tr>
          </c:forEach>
       </table>
