@@ -93,7 +93,7 @@
 							<div class="description">
 								<h4 class="info-title">A Unique Selection</h4>
 								<p class="description">Choose from a variety of customizable items.</p>
-								<a href="${pageContext.request.contextPath}/productList" class="btn btn-link btn-warning">See more</a>
+								<a href="${pageContext.request.contextPath}/productList?filter=bracelet" class="btn btn-link btn-warning">See more</a>
 							</div>
 						</div>
 					</div>
@@ -105,7 +105,7 @@
 							<div class="description">
 								<h4 class="info-title">Most Popular</h4>
 								<p>Things that other trendsetters like, be unique!</p>
-								<a href="#pkp" class="btn btn-link btn-warning">See more</a>
+								<a href="${pageContext.request.contextPath}/productList?filter=popular" class="btn btn-link btn-warning">See more</a>
 							</div>
 						</div>
 					</div>
@@ -240,10 +240,12 @@
                     <div class="row">
                         <div class="col-md-8 ml-auto mr-auto">
                             <h2 class="text-center">Sign up for our newsletter!</h2>
+                            <hr>
+                            </br>
                             <form class="contact-form">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <label>Name</label>
+                                        
 										<div class="input-group">
 	                                        <span class="input-group-addon">
 	                                            <i class="nc-icon nc-single-02"></i>
@@ -253,7 +255,7 @@
 	                                    </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <label>Email</label>
+                                        
 										<div class="input-group">
 											<span class="input-group-addon">
 												<i class="nc-icon nc-email-85"></i>
@@ -263,20 +265,11 @@
 										
                                     </div>
                                     </br>
-                                    <div class="col-md-2">
-                                        </br>
-                                        
-										<div class="input-group">
-											
-											<form:button id="newsLetterButton" name="newsLetter" class="btn btn-info btn-block btn-round">Sign Up</form:button>
-										</div>
-										</br>
-										
-                                    </div>
+                                    
                                 </div>
-                                <div class="row">
+                                <div class="row" style="margin:40px">
                                     <div class="col-md-4 ml-auto mr-auto">
-                                        <button class="btn btn-default btn-lg btn-fill">Sign up!</button>
+                                        <form:button id="newsLetterButton" name="newsLetter" class="btn btn-info btn-lg btn-fill" style="margin-left:25px">Sign up!</form:button>
                                     </div>
                                 </div>
                             </form>

@@ -117,6 +117,8 @@ public class MainController {
     public String home(Model model) {
     	CustomerInfo userInfo = new CustomerInfo();
     	model.addAttribute("signUpForm", userInfo);
+    	model.addAttribute("filter", " ");
+    	
         return "index";
     }
  
