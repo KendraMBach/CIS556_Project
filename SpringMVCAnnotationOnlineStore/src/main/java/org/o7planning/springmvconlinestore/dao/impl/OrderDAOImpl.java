@@ -86,7 +86,8 @@ public class OrderDAOImpl implements OrderDAO {
         	String size = line.getProductInfo().getSize();
         	String name = line.getProductInfo().getName();
         	String color = line.getProductInfo().getColor();
-            Product product = this.productDAO.findProductBySize(name, size, color);
+        	String gender = line.getProductInfo().getGender();
+            Product product = this.productDAO.findProductBySize(name, size, color, gender);
             
         	order.setProduct(product);
         	Order thisItem = new Order(order);

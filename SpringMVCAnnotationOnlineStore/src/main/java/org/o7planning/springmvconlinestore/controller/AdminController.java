@@ -99,6 +99,7 @@ public class AdminController {
         return "login";
     }
     
+    
  // POST: Show Login Page
     @RequestMapping(value = { "/login" }, method = RequestMethod.POST)
     @Transactional(propagation = Propagation.NEVER)
@@ -208,6 +209,7 @@ public class AdminController {
         model.addAttribute("charm3", thisProduct.getOptCharm3());
         model.addAttribute("charm4", thisProduct.getOptCharm4());
         model.addAttribute("charmList", charms);
+        model.addAttribute("gender", thisProduct.getGender());
         return "product";
     }
  
@@ -224,6 +226,7 @@ public class AdminController {
             return "product";
         }
         try {
+        	
             productDAO.save(productInfo);
         } catch (Exception e) {
             // Need: Propagation.NEVER?

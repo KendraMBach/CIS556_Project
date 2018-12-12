@@ -257,6 +257,7 @@
 		<div class="form-group row">
 			<div class="col" style="padding-top:20px;">
 			<form:hidden path="code" id="code" name="code" value="${productForm.code}" />
+			<form:hidden path="gender" id="gender" name="gender" value="${gender}" />
 			
               <form:button id="buyProduct" name="buyProduct" class="btn btn-info">Add to Cart</form:button>
    				</div>
