@@ -106,16 +106,17 @@ public class ProductDAOImpl implements ProductDAO {
     public PaginationResult<ProductInfo> queryProducts(int page, int maxResult, int maxNavigationPage,
             String likeName) { 
         String sql = "Select new " + ProductInfo.class.getName() //
-                + "(p.id, p.name, p.priceRetail, p.description, p.image, p.category, p.color) " + " from "//
+                + "(p.id, p.name, p.priceRetail, p.description, p.image, p.category, p.color, p.inStock) " + "from "//
                 + Product.class.getName() + " p ";
         if (likeName != null && likeName.length() > 0) {
-            sql += " Where lower(p.name) like :likeName and ";
+            sql += "Where lower(p.name) like :likeName and ";
         }
         else {
-        	sql+= " Where ";
+        	sql+= "Where ";
         }
-        sql += "p.id IN (select max(p2.id) from " + Product.class.getName()
-        		+ " as p2 group by p2.name, p2.color, p2.description, p2.priceRetail)";
+        sql += "p.id IN (select max(p1.id) from " + Product.class.getName()
+        		+ " p1 Where p1.inStock = (Select max(p2.inStock) from " + Product.class.getName() + " p2 where p1.name = p2.name) "
+        				+ "group by p1.name, p1.color, p1.inStock, p1.description, p1.priceRetail)";
         sql += " order by p.priceRetail asc ";
         //
         Session session = sessionFactory.getCurrentSession();
@@ -131,11 +132,12 @@ public class ProductDAOImpl implements ProductDAO {
             String likeName, String category) { 
     	
         String sql = "Select new " + ProductInfo.class.getName() //
-                + "(p.id, p.name, p.priceRetail, p.description, p.image, p.category, p.color) " + " from "//
+                + "(p.id, p.name, p.priceRetail, p.description, p.image, p.category, p.color, p.inStock) " + " from "//
                 + Product.class.getName() + " p " //
                 + " Where lower(p.category) = :category";
-        	sql += " and p.id IN (select max(p2.id) from " + Product.class.getName()
-        		+ " as p2 group by p2.name, p2.color, p2.description, p2.priceRetail)";
+        	sql += " and p.id IN (select max(p1.id) from " + Product.class.getName()
+        		+ " p1 Where p1.inStock = (Select max(p2.inStock) from " + Product.class.getName() + " p2 where p1.name = p2.name) "
+        				+ "group by p1.name, p1.color, p1.inStock, p1.description, p1.priceRetail)";
         	sql += " order by p.priceRetail asc ";
         //
         Session session = sessionFactory.getCurrentSession();
@@ -158,12 +160,13 @@ public class ProductDAOImpl implements ProductDAO {
     	
     	
         String sql = "Select distinct new " + ProductInfo.class.getName() //
-                + "(p.id, p.name, p.priceRetail, p.description, p.image, p.category, p.color) " + " from "//
+                + "(p.id, p.name, p.priceRetail, p.description, p.image, p.category, p.color, p.inStock) " + " from "//
                 + Product.class.getName() + " p " //
                 + " Where lower(p.category) = :mainCategory";
         if(subCategory.equals("all")) {
-        	sql += " and p.id IN (select max(p2.id) from " + Product.class.getName()
-            		+ " as p2 group by p2.name, p2.color, p2.description, p2.priceRetail)";
+        	sql += " and p.id IN (select max(p1.id) from " + Product.class.getName()
+            		+ " p1 Where p1.inStock = (Select max(p2.inStock) from " + Product.class.getName() + " p2 where p1.name = p2.name) "
+            				+ "group by p1.name, p1.color, p1.inStock, p1.description, p1.priceRetail)";
         	sql += " order by p.priceRetail asc ";
         //
         Session session = sessionFactory.getCurrentSession();
@@ -175,8 +178,9 @@ public class ProductDAOImpl implements ProductDAO {
         else {
         	
         	sql += " and lower(p.name) = :subCategory";
-        	sql += " and p.id IN (select max(p2.id) from " + Product.class.getName()
-            		+ " as p2 group by p2.name, p2.color, p2.description, p2.priceRetail)";
+        	sql += " and p.id IN (select max(p1.id) from " + Product.class.getName()
+            		+ " p1 Where p1.inStock = (Select max(p2.inStock) from " + Product.class.getName() + " p2 where p1.name = p2.name) "
+            				+ "group by p1.name, p1.color, p1.inStock, p1.description, p1.priceRetail)";
         	sql += " order by p.priceRetail asc ";
             //
             Session session = sessionFactory.getCurrentSession();

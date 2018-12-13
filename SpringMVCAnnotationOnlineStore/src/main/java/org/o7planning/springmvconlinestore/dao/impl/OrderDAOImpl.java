@@ -94,6 +94,7 @@ public class OrderDAOImpl implements OrderDAO {
         	
         	
             thisItem.setAmount(line.getQuantity());
+            product.setInStock(product.getInStock() - line.getQuantity());
             thisItem.setOrderTotal(cartInfo.getFinalizedTotal(shippingCost.getCost()));
             
             
@@ -114,8 +115,11 @@ public class OrderDAOImpl implements OrderDAO {
             }
             
             
+            session.saveOrUpdate(product);
             
             session.persist(thisItem);
+            
+            
             
         }
  
@@ -173,10 +177,11 @@ public class OrderDAOImpl implements OrderDAO {
                 + "(d.id, d.product.id, d.customer.id) "//
                 + " from " + Order.class.getName() + " d "//
                 + " where d.order.id = :orderId ";
- 
+        
         Session session = this.sessionFactory.getCurrentSession();
  
         Query query = session.createQuery(sql);
+        
         query.setParameter("orderId", orderId);
  
         return query.list();
@@ -184,17 +189,17 @@ public class OrderDAOImpl implements OrderDAO {
     
     
 	public List<Product> listAllOrderItemsForAllOrders() {
-		
-        String sql = "select d.prodId "//
-                + "from " + Order.class.getName() + " d group by "
-                		+ "d.prodId order by count(d.prodId) desc";
- 
-        Session session = this.sessionFactory.getCurrentSession();
- 
-        Query query = session.createQuery(sql);
-        
- 
-        return (List<Product>) query.list();
+			
+	        String sql = "select d.prodId "//
+	                + "from " + Order.class.getName() + " d group by "
+	                		+ "d.prodId order by count(d.prodId) desc";
+	 
+	        Session session = this.sessionFactory.getCurrentSession();
+	 
+	        Query query = session.createQuery(sql);
+	        
+	 
+	        return (List<Product>) query.list();
     }
     
     

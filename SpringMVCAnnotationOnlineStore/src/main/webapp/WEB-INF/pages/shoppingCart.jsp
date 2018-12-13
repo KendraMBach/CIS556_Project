@@ -162,7 +162,7 @@
               </td>
               <td class="td-number">
               		
-                  	<form:input size="2" path="cartLines[${varStatus.index}].quantity" />
+                  	<form:input size="3" path="cartLines[${varStatus.index}].quantity" />
                   <div class="btn-group">
                       <button class="btn btn-info btn-sm" type="submit" value="Update Quantity">Update</button>
                   </div>
