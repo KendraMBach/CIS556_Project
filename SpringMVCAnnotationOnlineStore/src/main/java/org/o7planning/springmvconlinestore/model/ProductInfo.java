@@ -38,7 +38,7 @@ public class ProductInfo {
     }
     
     public ProductInfo(int code, String name, double price, String description, String fileData,
-			String category, String color) {
+			String category, String color, int inStock) {
 		super();
 		this.code = code;
 		this.name = name;
@@ -48,6 +48,7 @@ public class ProductInfo {
 		this.fileData = fileData;
 		this.category = category;
 		this.setColor(color);
+		this.quantityInStock = inStock;
 	}
  
     public ProductInfo(Product product) {
@@ -66,6 +67,7 @@ public class ProductInfo {
 		this.setCharm2(product.getOptCharm2());
 		this.setCharm3(product.getOptCharm3());
 		this.setCharm4(product.getOptCharm4());
+		this.setQuantityInStock(product.getInStock());
     }
  
     public ProductInfo(int code, String name, double price) {
@@ -74,11 +76,13 @@ public class ProductInfo {
         this.price = price;
     }
     
-    public ProductInfo(int code, String name, double price, String category) {
+    public ProductInfo(int code, String name, double price, String category, int inStock) {
         this.code = code;
         this.name = name;
         this.price = price;
         this.setCategory(category);
+        this.quantityInStock = inStock;
+        
     }
     
  
@@ -99,6 +103,7 @@ public class ProductInfo {
 		this.setCharm2(optCharm2);
 		this.setCharm3(optCharm3);
 		this.setCharm4(optCharm4);
+		this.quantityInStock = inStock;
 		
 	}
 
