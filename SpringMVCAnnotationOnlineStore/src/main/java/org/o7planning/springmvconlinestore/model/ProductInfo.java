@@ -7,7 +7,7 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
  
 public class ProductInfo {
     
-
+	private int quantityInStock;
 	private int code;
     private String name;
     private double price;
@@ -284,6 +284,23 @@ public class ProductInfo {
 
 	public void setGender(String gender) {
 		this.gender = gender;
+	}
+
+	public int getQuantityInStock() {
+		return quantityInStock;
+	}
+
+	public void setQuantityInStock(int quantityInStock) {
+		this.quantityInStock = quantityInStock;
+	}
+	
+	public boolean inStock() {
+		if(this.getQuantityInStock() > 0) {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
  
 }

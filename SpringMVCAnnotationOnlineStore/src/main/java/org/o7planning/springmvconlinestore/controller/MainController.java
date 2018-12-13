@@ -285,12 +285,7 @@ public class MainController {
     		
     	
         Product product = null;
-        /*
-        if (code > 0) {
-            product = productDAO.findProduct(code);
-            
-        }
-        */
+        
         product = productDAO.findProductBySize(prodInfo.getName(), size, color, gender);
         if (product != null) {
         	Double totalPrice = 0.00;
@@ -300,7 +295,7 @@ public class MainController {
  
             ProductInfo productInfo = new ProductInfo(product);
             productInfo.setGender(gender);
-            
+            productInfo.setQuantityInStock(product.getInStock());
             
            //Update user selections
             productInfo.setSize(request.getParameter("size"));
@@ -369,7 +364,8 @@ public class MainController {
             @ModelAttribute("cartForm") CartInfo cartForm) {
  
         CartInfo cartInfo = Utils.getCartInSession(request);
-        cartInfo.updateQuantity(cartForm);
+        
+        cartInfo.updateQuantity(cartForm, cartInfo);
  
         // Redirect to shoppingCart page.
         return "redirect:/shoppingCart";
