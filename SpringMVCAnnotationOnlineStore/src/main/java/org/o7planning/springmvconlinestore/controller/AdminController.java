@@ -210,6 +210,9 @@ public class AdminController {
         model.addAttribute("charm4", thisProduct.getOptCharm4());
         model.addAttribute("charmList", charms);
         model.addAttribute("gender", thisProduct.getGender());
+        model.addAttribute("color", thisProduct.getColor());
+        model.addAttribute("name", thisProduct.getName());
+        
         return "product";
     }
  

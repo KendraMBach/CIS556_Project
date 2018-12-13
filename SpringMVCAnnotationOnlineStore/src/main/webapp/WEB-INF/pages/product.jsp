@@ -138,7 +138,7 @@
 			        <form:option value="" class="dropdown-header">Select Size</form:option>
 			        
 			        <c:forEach items="${sizes}" var="size">
-				        <form:option value="${size}" class="dropdown-item">${size}</form:option>
+				        <form:option value="${size}" name="${size}" path="size" class="dropdown-item">${size}</form:option>
 				        <div class="dropdown-divider"></div>
 			        </c:forEach>
 			        
@@ -258,6 +258,8 @@
 			<div class="col" style="padding-top:20px;">
 			<form:hidden path="code" id="code" name="code" value="${productForm.code}" />
 			<form:hidden path="gender" id="gender" name="gender" value="${gender}" />
+			<form:hidden path="color" id="color" name="color" value="${color}" />
+			<form:hidden path="name" id="name" name="name" value="${name}" />
 			
               <form:button id="buyProduct" name="buyProduct" class="btn btn-info">Add to Cart</form:button>
    				</div>

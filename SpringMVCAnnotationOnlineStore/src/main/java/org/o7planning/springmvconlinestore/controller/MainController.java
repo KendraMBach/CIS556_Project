@@ -279,13 +279,19 @@ public class MainController {
     public String listProductHandler(HttpServletRequest request, Model model, //
             @RequestParam(value = "code", defaultValue = "") int code, //
             @RequestParam(value = "gender") String gender, //
+            @RequestParam(value = "size") String size, //
+            @RequestParam(value = "color") String color, //
             @ModelAttribute("productForm") ProductInfo prodInfo, BindingResult result) {
     		
     	
         Product product = null;
+        /*
         if (code > 0) {
             product = productDAO.findProduct(code);
+            
         }
+        */
+        product = productDAO.findProductBySize(prodInfo.getName(), size, color, gender);
         if (product != null) {
         	Double totalPrice = 0.00;
 			
