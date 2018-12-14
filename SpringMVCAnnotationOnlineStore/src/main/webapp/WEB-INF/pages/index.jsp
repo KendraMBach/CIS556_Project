@@ -272,11 +272,6 @@
                                         <form:button id="newsLetterButton" name="newsLetter" class="btn btn-info btn-lg btn-fill" style="margin-left:25px">Sign up!</form:button>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-4 ml-auto mr-auto">
-                                        <button class="btn btn-default btn-lg btn-fill">Sign up!</button>
-                                    </div>
-                                </div>
                             </form>
                         </div>
                     </div>
