@@ -66,7 +66,8 @@ Below are the steps required to run the application on `http://localhost:8080/Sp
 If you receive a stack trace with a `500 error` - do not fret! Just contact Kendra Bach instead.
 Or feel free to research the error you're getting. If it's a `404`, refer back to you "Console" on Eclipse and see what error you are receiving there. More than likely, it's an easy config fix, or terminal command.
 
-For `500 error` along with output in Eclipse Console that states something like:
+#### `500 error`
+If you see something like:
 ```
 SEVERE: Failed to initialize end point associated with ProtocolHandler ["http-bio-8080"]
 java.net.BindException: Address already in use (Bind failed) <null>:8080
@@ -75,16 +76,13 @@ java.net.BindException: Address already in use (Bind failed) <null>:8080
 1. Press the red button on Eclipse's Console window
 1. Open a new terminal window
 1. Run: `lsof -i :8080 | grep LISTEN`
-1. You will likely see something like:
-```
-java      5748 UserName  127u  IPv6 0x607148bec30d6e71      0t0  TCP *:http-alt (LISTEN)
-```
-1. Run: `kill -15 5748`. **Note-** The number (`5748`) may be different. Copy and paste the number you see from the output in your command.
+1. You will likely see something like:`java      5748 UserName  127u  IPv6 0x607148bec30d6e71      0t0  TCP *:http-alt (LISTEN)``
+1. Run: `kill -15 5748`. **Note:** The number (`5748`) may be different. Copy and paste the number you see from the output into your command.
 1. Run the first command again to ensure the process was properly terminated
 1. If you receive an empty response (i.e. no processes show) then you're in the clear to back-step to Step 8 and run the process again
 1. If you still see the same process lingering, run: `kill -9 5748`
 
-### Notes
+## Notes
 Every time the [pom.xml](SpringMVCAnnotationOnlineStore/pom.xml) is reconfigured a Maven build is necessary.
 1. Right click on the project in Eclipse.
 1. Navigate down to where you see "Maven" (6th item from the bottom of the menu)
