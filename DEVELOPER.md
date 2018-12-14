@@ -1,21 +1,17 @@
-Dependencies include Java 1.8, Maven, Spring, Hibernate, Tomcat 7, Eclipse IDE (ie Photon), MySQL Server, MySQL, MySQL Workbench, Python 3.6, Python Library MySQL Connector (pip install MySQL-connector-python).
+# Developer
+This README includes details on the technology stack and instructions for getting started. There are three main folders in this repository:
 
+1. [SpringMVCAnnotationOnlineStore](SpringMVCAnnotationOnlineStore): The web application
+1. [database](database): database initial state specification
+1. [pythonFunctions](pythonFunctions): SMPT email functionality
 
+## Architecture Overview
+![Architecture](Architecture.png)
 
-## Contents
-1. Java controllers are here: [controller](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/controller/)
-1. Java DAO are here: [dao](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/dao/)
-1. Java entities are here:[entity](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/entity/)
-1. Java model is here: [model](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/model/)
-1. Database SQL is here: [db](db/)
-1. Data Dictionary is here: [Data_Dictionary.html](http://htmlpreview.github.io/?https://github.com/CooperStansbury/CIS556_Project/blob/DB-Update/Data_Dictionary.html)
+## Dependencies
+This project has a number of software dependencies. The major technologies are covered below, with links to further resources.
+1. [Java 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-## Development
-
-The following instructions will allow you to run the application locally on localhost:8080.
-Note: the MySQL configuration points to localhost:3306.
-
-1. Java 1.8
     - Open a (Unix) terminal
     - Execute the following:
 ```
@@ -29,6 +25,27 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.181-b13, mixed mode)
 ```
     - If not, download it here:
      https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+1. [Python 3.6](https://www.python.org/downloads/release/python-360/) - Email receipt functionality
+    - Also required: [MySQL-connector-python](https://dev.mysql.com/downloads/connector/python/): `python3 -m pip install MySQL-connector-python`
+1. [Eclipse](https://www.eclipse.org) - Deployment IDE
+1. [Tomcat7](https://tomcat.apache.org) - Java Servlet / JSP Deployment
+1. [MySQL (8) Community Server](https://dev.mysql.com/downloads/mysql/) - database server
+1. [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) - database management system (GUI)
+1. [Maven](https://maven.apache.org/) - Dependency Management
+
+## Contents
+1. Java controllers are here: [controller](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/controller/)
+1. Java DAO are here: [dao](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/dao/)
+1. Java entities are here:[entity](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/entity/)
+1. Java model is here: [model](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/model/)
+1. Database SQL is here: [db](db/)
+1. Data Dictionary is here: [Data_Dictionary.html](http://htmlpreview.github.io/?https://github.com/CooperStansbury/CIS556_Project/blob/DB-Update/Data_Dictionary.html)
+
+## Development
+
+The following instructions will allow you to run the application locally on localhost:8080.
+Note: the MySQL configuration points to localhost:3306.
 
 2. Eclipse IDE
     - Download from https://www.eclipse.org
@@ -136,20 +153,6 @@ java.net.BindException: Address already in use (Bind failed) <null>:8080
           ```
           kill -9 5748
           ```
-
-
-## Built With
-
-* [Paper Kit 2](https://demos.creative-tim.com/paper-kit-2/index.html) - UI Kit Used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [Eclipse](https://www.eclipse.org) - Deployment IDE
-* [Tomcat7](https://tomcat.apache.org) - Java Servlet / JSP Deployment
-* [MySQL Community Server](https://dev.mysql.com/downloads/mysql/) - Open source DB
-* [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) - DB GUI
-
-## License
-
-After project deadline (12/18/2018) this project will be licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
 
