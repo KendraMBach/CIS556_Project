@@ -77,10 +77,10 @@ java.net.BindException: Address already in use (Bind failed) <null>:8080
 1. If you still see the same process lingering, run: `kill -9 5748`
 
 ## Notes
-Every time the [pom.xml](SpringMVCAnnotationOnlineStore/pom.xml) is reconfigured a Maven build is necessary.
-1. Right click on the project in Eclipse.
-1. Navigate down to where you see "Maven" (6th item from the bottom of the menu)
-1. Select it and choose "Update Project..."
+1. Every time the [pom.xml](SpringMVCAnnotationOnlineStore/pom.xml) is reconfigured a Maven build is necessary.
+    1. Right click on the project in Eclipse.
+    1. Navigate down to where you see "Maven" (6th item from the bottom of the menu)
+    1. Select it and choose "Update Project..."
 
 ## Acknowledgments
 * Java Spring Setup Reference - https://o7planning.org

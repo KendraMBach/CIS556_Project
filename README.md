@@ -1,7 +1,5 @@
 # Welcome to Junction Jewelers!
-This is the developer site for Junction Jewelers. This repository includes the Java models, logic and MySQL statements needed to run our website on your machine.
-
-**NOTE** This technology stack has a number of dependencies. Please refer to the [DEVELOPER](DEVELOPER.md) README for instructions and details.
+This is the developer site for Junction Jewelers. This repository includes the Java models, logic and MySQL statements needed to run our website on your machine. This technology stack has a number of dependencies. Please refer to the [DEVELOPER](DEVELOPER.md) README for instructions and details.
 
 There are three main directories in this repository, each with more detailed README files. 
 
