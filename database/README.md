@@ -2,7 +2,7 @@
 This is the initial database specification that supports our web page. This directory contains the SQL statements required to initialize the database server on `localhost` so that the Java application can access and update it. This document describes the high-level structure of the database and how to configure the MySQL instance to play nice with the Java application.
 
 ## Architecture
-The auto-generated html data dictionary can be found here: [Data Dictionary](http://htmlpreview.github.io/?Data_Dictionary.html)
+The auto-generated html data dictionary can be found here: [Data Dictionary](http://htmlpreview.github.io/?https://github.com/KendraMBach/CIS556_Project/readmes/database/Data_Dictionary.html)
 
 #### High-Level ERD
 ![ERD](ERD.png)
