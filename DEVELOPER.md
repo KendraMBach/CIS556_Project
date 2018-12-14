@@ -1,17 +1,11 @@
 # Developer
 This README includes details on the technology stack and instructions for getting started. There are three main folders in this repository:
 
-1. [SpringMVCAnnotationOnlineStore](SpringMVCAnnotationOnlineStore): The web application
-1. [database](database): database initial state specification
-1. [pythonFunctions](pythonFunctions): SMPT email functionality
+1. [SpringMVCAnnotationOnlineStore](SpringMVCAnnotationOnlineStore): Core Java application
+1. [database](database): MySQL database initial state specification
+1. [pythonFunctions](pythonFunctions): Python SMPT email communication functionality
 
 ## Architecture Overview
-1. [Java controllers](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/controller/)
-1. [Java DAO](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/dao/)
-1. [Java Entities](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/entity/)
-1. [Java Model](SpringMVCAnnotationOnlineStore/src/main/java/org/o7planning/springmvconlinestore/model/)
-
-### Overview Diagram
 ![Architecture](Architecture.png)
 
 ## Dependencies

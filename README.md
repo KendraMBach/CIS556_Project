@@ -3,6 +3,12 @@ This is the developer site for Junction Jewelers. This repository includes the J
 
 **NOTE** This technology stack has a number of dependencies. Please refer to the [DEVELOPER](DEVELOPER.md) README for instructions and details.
 
+There are three main directories in this repository, each with more detailed README files. 
+
+1. [SpringMVCAnnotationOnlineStore](SpringMVCAnnotationOnlineStore): Core Java application
+1. [database](database): MySQL database initial state specification
+1. [pythonFunctions](pythonFunctions): Python SMPT email communication functionality
+
 ## License
 Please see the [MIT LICENSE](LICENSE.md) file for details.
 
