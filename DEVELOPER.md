@@ -76,7 +76,7 @@ java.net.BindException: Address already in use (Bind failed) <null>:8080
 1. Press the red button on Eclipse's Console window
 1. Open a new terminal window
 1. Run: `lsof -i :8080 | grep LISTEN`
-1. You will likely see something like:`java      5748 UserName  127u  IPv6 0x607148bec30d6e71      0t0  TCP *:http-alt (LISTEN)``
+1. You will likely see something like:`java      5748 UserName  127u  IPv6 0x607148bec30d6e71      0t0  TCP *:http-alt (LISTEN)`
 1. Run: `kill -15 5748`. **Note:** The number (`5748`) may be different. Copy and paste the number you see from the output into your command.
 1. Run the first command again to ensure the process was properly terminated
 1. If you receive an empty response (i.e. no processes show) then you're in the clear to back-step to Step 8 and run the process again
