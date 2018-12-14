@@ -22,7 +22,7 @@ After installation, follow these steps to configure the MySQL instance and the J
 1. Open MySQL WorkBench
 1. Select the 'local Instance 3306'.
 1. From 'File' select 'Run SQL Script...'
-1. Navigate to [all_in_one_create_jewlz.sql](CIS556_Project/database/all_in_one_create_jewlz.sql)
+1. Navigate to [all_in_one_create_jewlz.sql](all_in_one_create_jewlz.sql)
 1. Refresh
 
 Alternatively,
