@@ -19,6 +19,7 @@ New female customer expecting a baby in April, just browsing for items
 
 ### Persona 3
 [Persona 3 Video](https://youtu.be/N8nQjVFqV_g)
+
 Returning male customer purchasing groomsman gifts
 - He is purchasing some matching black stud earrings for his groomsmen
 - He previously used the site to purchase his wedding band
