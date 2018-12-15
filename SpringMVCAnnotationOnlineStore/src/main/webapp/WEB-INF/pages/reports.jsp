@@ -57,14 +57,12 @@
       SELECT DISTINCT DATE_FORMAT(Order_Date, '%M %Y') AS Order_Month,
       DATE_FORMAT(Order_Date, '%Y%m') num_month
       from orders 
-      where Order_Status = 'Complete'
       order by num_month
     </sql:query>
 
     <sql:query dataSource = "${snapshot}" var = "yearlyResult">
       SELECT DISTINCT DATE_FORMAT(Order_Date, '%Y') AS Order_Year
       from orders 
-      where Order_Status = 'Complete'
       order by Order_Year
     </sql:query>
 
