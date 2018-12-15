@@ -197,6 +197,11 @@
               </div>
             </div>
 			</c:forEach>
+			<c:if test="${empty paginationProducts.list}">
+			 <div class="row" style="margin-left:200px; margin-top:50px">
+			  <h4 class="card-title"> No Products Match Your Search. </h4>
+			 </div>
+			</c:if>
           </div>
           <!-- /.row -->
 
