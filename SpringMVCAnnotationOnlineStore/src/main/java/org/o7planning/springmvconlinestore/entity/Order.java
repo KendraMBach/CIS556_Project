@@ -118,7 +118,6 @@ public class Order implements Serializable {
 
 
     @Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Order_ID", length = 11, nullable = false)
     public int getId() {
         return id;
