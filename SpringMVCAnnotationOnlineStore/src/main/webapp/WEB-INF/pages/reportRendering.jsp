@@ -35,9 +35,6 @@
  <main style="padding:100px">
    
  <div class="report-container">
-   <div class="page-title">Reports</div>
-   <c:out value = "${param.month1}"/>
- 	</br>
    <div class>
  
  	<!--	<c:forEach items="${customers}" var="customer">
@@ -49,16 +46,35 @@
          user = "root"  password = "YourStrong!Passw0rd"/>
  
 	  <c:if test="${param.type == 'monthlySales'}">
+	  <div class="page-title">Monthly Sales Report</div></br>
       <sql:query dataSource = "${snapshot}" var = "result">
          SELECT DATE_FORMAT(Order_Date, '%M %Y') AS Order_Month,
          DATE_FORMAT(Order_Date, '%Y%m') num_month,
-         FORMAT(ROUND(SUM(Order_Total), 2), 2) AS Price
-         FROM orders 
+         FORMAT(ROUND(SUM(Order_Total), 2), 2) AS Price,
+         FORMAT(ROUND(SUM(Order_Total - (Product_Quantity * Product_Base_Wholesale_Price)), 2), 2) AS Profit
+         FROM orders JOIN product ON orders.Product_ID = product.Product_ID
          WHERE Order_Status = 'Complete'
          AND Order_Date
          BETWEEN STR_TO_DATE( CONCAT('01 ', ?), '%d %M %Y') AND LAST_DAY(STR_TO_DATE( CONCAT('01 ', ?), '%d %M %Y'))
-         GROUP BY DATE_FORMAT(Order_Date, '%M %Y'), DATE_FORMAT(Order_Date, '%Y%m')
+         GROUP BY DATE_FORMAT(Order_Date, '%M %Y'), 
+         DATE_FORMAT(Order_Date, '%Y%m')
          ORDER BY num_month
+         <sql:param value = "${param.month1}" />
+         <sql:param value = "${param.month2}" />
+      </sql:query>
+      <sql:query dataSource = "${snapshot}" var = "categories">
+         SELECT DATE_FORMAT(Order_Date, '%M %Y') AS Order_Month,
+         DATE_FORMAT(Order_Date, '%Y%m') num_month,
+         Product_Category,
+         SUM(Product_Quantity) AS Quantity_Sold
+         FROM orders JOIN product ON orders.Product_ID = product.Product_ID
+         WHERE Order_Status = 'Complete'
+         AND Order_Date
+         BETWEEN STR_TO_DATE( CONCAT('01 ', ?), '%d %M %Y') AND LAST_DAY(STR_TO_DATE( CONCAT('01 ', ?), '%d %M %Y'))
+         GROUP BY DATE_FORMAT(Order_Date, '%M %Y'), 
+         DATE_FORMAT(Order_Date, '%Y%m'),
+         Product_Category
+         ORDER BY num_month, Product_Category
          <sql:param value = "${param.month1}" />
          <sql:param value = "${param.month2}" />
       </sql:query>
@@ -66,21 +82,42 @@
          <tr>
             <th>Month</th>
             <th>Total Sales</th>
+            <th>Total Profit</th>
          </tr>
          
          <c:forEach var = "row" items = "${result.rows}">
             <tr>
                <td><c:out value = "${row.Order_Month}"/></td>
                <td><c:out value = "${row.Price}"/></td>
+               <td><c:out value = "${row.Profit}"/></td>
+            </tr>
+         </c:forEach>
+      </table>
+      <br>
+      <table border = "1" width = "100%">
+         <tr>
+            <th>Month</th>
+            <th>Product Category</th>
+            <th>Quantity Sold</th>
+         </tr>
+         
+         <c:forEach var = "row" items = "${categories.rows}">
+            <tr>
+               <td><c:out value = "${row.Order_Month}"/></td>
+               <td><c:out value = "${row.Product_Category}"/></td>
+               <td><c:out value = "${row.Quantity_Sold}"/></td>
             </tr>
          </c:forEach>
       </table>
    	  </c:if>
 
    	  <c:if test="${param.type == 'yearlySales'}">
+   	  <div class="page-title">Yearly Sales Report</div></br>
       <sql:query dataSource = "${snapshot}" var = "result">
-         SELECT YEAR(Order_Date) AS Order_Year, FORMAT(ROUND(SUM(Order_Total), 2), 2) AS Price
-         from orders 
+         SELECT YEAR(Order_Date) AS Order_Year, 
+         FORMAT(ROUND(SUM(Order_Total), 2), 2) AS Price,
+         FORMAT(ROUND(SUM(Order_Total - (Product_Quantity * Product_Base_Wholesale_Price)), 2), 2) AS Profit
+         from orders JOIN product ON orders.Product_ID = product.Product_ID
          where Order_Status = 'Complete'
          AND YEAR(Order_Date) BETWEEN ? AND ?
          group by YEAR(Order_Date)
@@ -88,27 +125,60 @@
          <sql:param value = "${param.year1}" />
          <sql:param value = "${param.year2}" />
       </sql:query>
+      <sql:query dataSource = "${snapshot}" var = "categories">
+         SELECT YEAR(Order_Date) AS Order_Year, 
+         Product_Category,
+         SUM(Product_Quantity) AS Quantity_Sold
+         from orders JOIN product ON orders.Product_ID = product.Product_ID
+         where Order_Status = 'Complete'
+         AND YEAR(Order_Date) BETWEEN ? AND ?
+         group by YEAR(Order_Date),
+         Product_Category
+         order by YEAR(Order_Date), Product_Category
+         <sql:param value = "${param.year1}" />
+         <sql:param value = "${param.year2}" />
+      </sql:query>
       <table border = "1" width = "100%">
          <tr>
             <th>Year</th>
             <th>Total Sales</th>
+            <th>Total Profit</th>
          </tr>
          
          <c:forEach var = "row" items = "${result.rows}">
             <tr>
                <td><c:out value = "${row.Order_Year}"/></td>
                <td><c:out value = "${row.Price}"/></td>
+               <td><c:out value = "${row.Profit}"/></td>
+            </tr>
+         </c:forEach>
+      </table>
+      <br>
+      <table border = "1" width = "100%">
+         <tr>
+            <th>Year</th>
+            <th>Product Category</th>
+            <th>Quantity Sold</th>
+         </tr>
+         
+         <c:forEach var = "row" items = "${categories.rows}">
+            <tr>
+               <td><c:out value = "${row.Order_Year}"/></td>
+               <td><c:out value = "${row.Product_Category}"/></td>
+               <td><c:out value = "${row.Quantity_Sold}"/></td>
             </tr>
          </c:forEach>
       </table>
    	  </c:if>
 
    	  <c:if test="${param.type == 'inventoryLevels'}">
+   	  <div class="page-title">Inventory Report</div></br>
       <sql:query dataSource = "${snapshot}" var = "result">
-         SELECT Product_ID, Product_Name, Product_Color, Product_Size, Number_In_Stock, Product_Base_Wholesale_Price, Product_Base_Wholesale_Price * Number_In_Stock AS Inventory_Cost from product;
+         SELECT Product_ID, Product_Name, Product_Color, Product_Size, Number_In_Stock, FORMAT(Product_Base_Wholesale_Price, 2) AS Product_Base_Wholesale_Price,
+          FORMAT(Product_Base_Wholesale_Price * Number_In_Stock, 2) AS Inventory_Cost from product;
       </sql:query>
       <sql:query dataSource = "${snapshot}" var = "sum_result">
-         SELECT SUM(Product_Base_Wholesale_Price * Number_In_Stock) AS Total_IC from product;
+         SELECT FORMAT(SUM(Product_Base_Wholesale_Price * Number_In_Stock), 2) AS Total_IC from product;
       </sql:query>
       <table border = "1" width = "100%" padding>
          <tr>
@@ -147,6 +217,7 @@
    	  </c:if>
 
    	  <c:if test="${param.type == 'customerList'}">
+   	  <div class="page-title">Customer List</div></br>
       <sql:query dataSource = "${snapshot}" var = "result">
          SELECT * from customer;
       </sql:query>
@@ -180,6 +251,7 @@
    	  </c:if>
 
    	  <c:if test="${param.type == 'mailingLabels'}">
+   	  <div class="page-title">Mailing Label Sheet</div></br>
       <sql:query dataSource = "${snapshot}" var = "result">
          SELECT CONCAT(Customer_First_Name, ' ', Customer_Last_Name) AS Customer_Full_Name, Customer_Street_Address, 
          CONCAT(Customer_City, ', ', Customer_State, ' ', Customer_Zip) AS Customer_CSZ from customer where Customer_ID = ?;
