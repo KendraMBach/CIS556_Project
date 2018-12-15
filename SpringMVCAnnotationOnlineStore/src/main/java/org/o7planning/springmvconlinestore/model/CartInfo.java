@@ -12,6 +12,7 @@ public class CartInfo {
     private CustomerInfo customerInfo;
  
     private final List<CartLineInfo> cartLines = new ArrayList<CartLineInfo>();
+    
  
     public CartInfo() {
  
@@ -119,11 +120,18 @@ public class CartInfo {
         return total;
     }
  
-    public void updateQuantity(CartInfo cartForm) {
+    public void updateQuantity(CartInfo cartForm, CartInfo sessionCart) {
         if (cartForm != null) {
             List<CartLineInfo> lines = cartForm.getCartLines();
-            for (CartLineInfo line : lines) {
-                this.updateProduct(line.getProductInfo().getCode(), line.getQuantity());
+            List<CartLineInfo> sessionLines = sessionCart.getCartLines();
+            for (int i = 0; i < lines.size(); i++) {
+            	CartLineInfo line = lines.get(i);
+            	CartLineInfo sessionLine = sessionLines.get(i);
+	            	int limit = sessionLine.getProductInfo().getQuantityInStock();
+	            	if(line.getQuantity() <= limit) {
+	            		this.updateProduct(line.getProductInfo().getCode(), line.getQuantity());
+	            	
+            	}
             }
         }
  
@@ -137,4 +145,5 @@ public class CartInfo {
 		this.shippingTotal = shippingTotal;
 	}
  
+	
 }

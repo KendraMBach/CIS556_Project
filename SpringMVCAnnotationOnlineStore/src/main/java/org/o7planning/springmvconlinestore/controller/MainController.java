@@ -1,10 +1,22 @@
 package org.o7planning.springmvconlinestore.controller;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import javax.script.ScriptContext;
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
+import javax.script.SimpleScriptContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -102,10 +114,59 @@ public class MainController {
     }
  
     @RequestMapping("/")
-    public String home() {
+    public String home(Model model) {
+    	CustomerInfo userInfo = new CustomerInfo();
+    	model.addAttribute("signUpForm", userInfo);
+    	model.addAttribute("filter", " ");
+    	
         return "index";
     }
  
+    @RequestMapping(value = { "/newsLetter" }, method = RequestMethod.POST)
+    public String newsLetter(Model model, HttpServletRequest request, @ModelAttribute("signUpForm") CustomerInfo userInfo, //
+    		@RequestParam(value = "firstName") String firstName,
+    		@RequestParam(value = "lastName") String lastName, //
+    		@RequestParam(value = "email") String email,
+            BindingResult result, //
+            final RedirectAttributes redirectAttributes) {
+    	 
+        	
+
+            if (result.hasErrors()) {
+                return "index";
+            }
+            try {
+                String dir = System.getProperty("user.home");
+                List<String> commands = new ArrayList<String>(); 
+                commands.add("/Users/macowner/anaconda3/bin/python3"); // command 
+                //commands.add("-l"); 
+                commands.add("/Users/macowner/eclipse-workspace/CIS556_Project/pythonFunctions/Newsletter.py"); 
+                commands.add(email);
+                commands.add(firstName);
+                commands.add(lastName);
+                // creating the process 
+                ProcessBuilder pb = new ProcessBuilder(commands); 
+                  
+                // startinf the process 
+                Process process = pb.start(); 
+                  
+                // for reading the ouput from stream 
+                BufferedReader bfr = new BufferedReader(new InputStreamReader(process.getInputStream()));
+
+                System.out.println(".........start   process.........");  
+                String line = "";     
+                while ((line = bfr.readLine()) != null){
+                    System.out.println("Python Output: " + line);
+                }
+
+                System.out.println("........end   process.......");
+            }
+                catch(Exception e){System.out.println(e);}
+        	
+        
+        return "redirect:/";
+    }
+    
  // Initial Product List page.
     @RequestMapping(value = { "/productList" }, method = {RequestMethod.GET, RequestMethod.POST})
     public String listProductHandler(HttpServletRequest request, Model model, //
@@ -216,14 +277,16 @@ public class MainController {
     
     @RequestMapping({ "/buyProduct" })
     public String listProductHandler(HttpServletRequest request, Model model, //
-            @RequestParam(value = "code", defaultValue = "") int code, @ModelAttribute("productForm") //
-    		ProductInfo prodInfo, BindingResult result) {
+            @RequestParam(value = "code", defaultValue = "") int code, //
+            @RequestParam(value = "gender") String gender, //
+            @RequestParam(value = "size") String size, //
+            @RequestParam(value = "color") String color, //
+            @ModelAttribute("productForm") ProductInfo prodInfo, BindingResult result) {
     		
     	
         Product product = null;
-        if (code > 0) {
-            product = productDAO.findProduct(code);
-        }
+        
+        product = productDAO.findProductBySize(prodInfo.getName(), size, color, gender);
         if (product != null) {
         	Double totalPrice = 0.00;
 			
@@ -231,7 +294,8 @@ public class MainController {
             CartInfo cartInfo = Utils.getCartInSession(request);
  
             ProductInfo productInfo = new ProductInfo(product);
-            
+            productInfo.setGender(gender);
+            productInfo.setQuantityInStock(product.getInStock());
             
            //Update user selections
             productInfo.setSize(request.getParameter("size"));
@@ -300,7 +364,8 @@ public class MainController {
             @ModelAttribute("cartForm") CartInfo cartForm) {
  
         CartInfo cartInfo = Utils.getCartInSession(request);
-        cartInfo.updateQuantity(cartForm);
+        
+        cartInfo.updateQuantity(cartForm, cartInfo);
  
         // Redirect to shoppingCart page.
         return "redirect:/shoppingCart";
@@ -397,7 +462,7 @@ public class MainController {
     @RequestMapping(value = { "/shoppingCartConfirmation" }, method = RequestMethod.POST)
     // Avoid UnexpectedRollbackException
     @Transactional(propagation = Propagation.NEVER)
-    public String shoppingCartConfirmationSave(HttpServletRequest request, Model model) {
+    public String shoppingCartConfirmationSave(HttpServletRequest request, Model model)  {
         CartInfo cartInfo = Utils.getCartInSession(request);
  
      // No products in cart
@@ -413,7 +478,45 @@ public class MainController {
          
         // Store Last ordered cart to Session.
         Utils.storeLastOrderedCartInSession(request, cartInfo);
- 
+        
+        // Send user receipt
+/*
+        StringWriter writer = new StringWriter(); //ouput will be stored here
+        
+        ScriptEngineManager manager = new ScriptEngineManager();
+        ScriptContext context = new SimpleScriptContext();
+     
+        context.setWriter(writer); //configures output redirection
+        ScriptEngine engine = manager.getEngineByName("python");
+        engine.eval(new FileReader("/Users/macowner/eclipse-workspace/CIS556_Project/pythonFunctions/SendReceipt.py"), context);
+        System.out.println(writer.toString()); 
+        */
+        try {
+        String dir = System.getProperty("user.home");
+        List<String> commands = new ArrayList<String>(); 
+        commands.add("/Users/macowner/anaconda3/bin/python3"); // command 
+        //commands.add("-l"); 
+        commands.add("/Users/macowner/eclipse-workspace/CIS556_Project/pythonFunctions/SendReceipt.py"); 
+        commands.add(String.valueOf(cartInfo.getOrderNum()));
+          
+        // creating the process 
+        ProcessBuilder pb = new ProcessBuilder(commands); 
+          
+        // startinf the process 
+        Process process = pb.start(); 
+          
+        // for reading the ouput from stream 
+        BufferedReader bfr = new BufferedReader(new InputStreamReader(process.getInputStream()));
+
+        System.out.println(".........start   process.........");  
+        String line = "";     
+        while ((line = bfr.readLine()) != null){
+            System.out.println("Python Output: " + line);
+        }
+
+        System.out.println("........end   process.......");
+    }
+        catch(Exception e){System.out.println(e);}
         // Redirect to successful page.
         return "redirect:/shoppingCartFinalize";
     }
@@ -426,7 +529,8 @@ public class MainController {
         if (lastOrderedCart == null) {
             return "redirect:/shoppingCart";
         }
- 
+        
+        
         return "shoppingCartFinalize";
     }
     

@@ -157,37 +157,13 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-          
-         
-<!--  
-<c:forEach items="${paginationProducts.list}" var="prodInfo">
-       <div class="product-preview-container">
-           <ul>
-               <li><img class="product-image"
-                   src="${pageContext.request.contextPath}/productImage?code=${prodInfo.code}" /></li>
-               <li>Code: ${prodInfo.code}</li>
-               <li>Name: ${prodInfo.name}</li>
-               <li>Price: <fmt:formatNumber value="${prodInfo.price}" type="currency"/></li>
-               <li><a
-                   href="${pageContext.request.contextPath}/buyProduct?code=${prodInfo.code}">
-                       Buy Now</a></li>
-               For Manager edit Product 
-               <security:authorize  access="hasRole('ROLE_MANAGER')">
-                 <li><a style="color:red;"
-                     href="${pageContext.request.contextPath}/product?code=${prodInfo.code}">
-                       Edit Product</a></li>
-               </security:authorize>
-           </ul>
-       </div>
- 
-   </c:forEach>
-   <br/>
--->
 	
           <div class="row">
 	<c:forEach items="${paginationProducts.list}" var="prodInfo">
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
+              <c:choose>
+              <c:when test="${prodInfo.quantityInStock > 0}" >
                 <a href="${pageContext.request.contextPath}/product?code=${prodInfo.code}"><img class="card-img-top" src="${pageContext.request.contextPath}/resources/img/jewelryImages/${prodInfo.fileData}" alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title">
@@ -197,11 +173,27 @@
                   <p><font size=+1>Color: ${prodInfo.color}</font></p>
                   </br>
                   <h5>Price: <fmt:formatNumber value="${prodInfo.price}" type="currency"/></h5>
+                  </c:when>
+                  <c:otherwise>
+	                <a><img class="card-img-top" src="${pageContext.request.contextPath}/resources/img/jewelryImages/${prodInfo.fileData}" alt=""></a>
+	                <div class="card-body">
+	                  <h4 class="card-title">
+	                    <a>${prodInfo.name}</a>
+	                  </h4>
+	                  <hr>
+	                  <p><font size=+1>Color: ${prodInfo.color}</font></p>
+	                  </br>
+	                  <h5>Price: <fmt:formatNumber value="${prodInfo.price}" type="currency"/></h5>
+	                  <span class="label label-warning">Out of Stock</span>
+                  </c:otherwise>
+                  </c:choose>
                   <p class="card-text"> </p>
+                  
                 </div>
                 <div class="card-footer">
                   <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                 </div>
+                
               </div>
             </div>
 			</c:forEach>

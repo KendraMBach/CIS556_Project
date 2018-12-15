@@ -33,6 +33,6 @@ public interface ProductDAO {
     public PaginationResult<ProductInfo> queryBySubCategoryProducts(int page, int maxResult, int maxNavigationPage,
             String likeName, String mainCategory, String subCategory);
     
-    public Product findProductBySize(String name, String size, String color);
+    public Product findProductBySize(String name, String size, String color, String gender);
     
 }

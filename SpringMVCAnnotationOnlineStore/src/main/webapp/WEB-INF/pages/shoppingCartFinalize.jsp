@@ -38,6 +38,13 @@
 
 </style> 
  
+ <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_Uc1O1d7WpAyoGwCdrdJn7");
+   })();
+</script>
+ 
 </head>
 <jsp:include page="_menu.jsp" />
 <body>

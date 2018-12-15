@@ -7,7 +7,7 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
  
 public class ProductInfo {
     
-
+	private int quantityInStock;
 	private int code;
     private String name;
     private double price;
@@ -32,12 +32,13 @@ public class ProductInfo {
 	private Charm charmSelected3;
 	private Charm charmSelected4;
 	private double totalOptionsPrice;
+	private String gender;
 	
     public ProductInfo() {
     }
     
     public ProductInfo(int code, String name, double price, String description, String fileData,
-			String category, String color) {
+			String category, String color, int inStock) {
 		super();
 		this.code = code;
 		this.name = name;
@@ -47,6 +48,7 @@ public class ProductInfo {
 		this.fileData = fileData;
 		this.category = category;
 		this.setColor(color);
+		this.quantityInStock = inStock;
 	}
  
     public ProductInfo(Product product) {
@@ -65,6 +67,7 @@ public class ProductInfo {
 		this.setCharm2(product.getOptCharm2());
 		this.setCharm3(product.getOptCharm3());
 		this.setCharm4(product.getOptCharm4());
+		this.setQuantityInStock(product.getInStock());
     }
  
     public ProductInfo(int code, String name, double price) {
@@ -73,11 +76,13 @@ public class ProductInfo {
         this.price = price;
     }
     
-    public ProductInfo(int code, String name, double price, String category) {
+    public ProductInfo(int code, String name, double price, String category, int inStock) {
         this.code = code;
         this.name = name;
         this.price = price;
         this.setCategory(category);
+        this.quantityInStock = inStock;
+        
     }
     
  
@@ -98,6 +103,7 @@ public class ProductInfo {
 		this.setCharm2(optCharm2);
 		this.setCharm3(optCharm3);
 		this.setCharm4(optCharm4);
+		this.quantityInStock = inStock;
 		
 	}
 
@@ -275,6 +281,31 @@ public class ProductInfo {
 
 	public void setTotalOptionsPrice(double totalPrice) {
 		this.totalOptionsPrice = totalPrice;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public int getQuantityInStock() {
+		return quantityInStock;
+	}
+
+	public void setQuantityInStock(int quantityInStock) {
+		this.quantityInStock = quantityInStock;
+	}
+	
+	public boolean inStock() {
+		if(this.getQuantityInStock() > 0) {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
  
 }

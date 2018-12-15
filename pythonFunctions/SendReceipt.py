@@ -27,7 +27,7 @@ class Receipt():
    def GetCustomerID(self):
       qCustomerID = "SELECT Customer_ID FROM orders WHERE Order_ID=" + self.order_id
       self.customerID = str(self.db.SendCommand(qCustomerID)[0][0])
-   
+
    def CreateBirthstoneLookup(self):
       qBirthstone = "SELECT Birthstone, Birthstone_Cost FROM birthstone"
       birthstoneList = self.db.SendCommand(qBirthstone)
@@ -50,17 +50,17 @@ class Receipt():
 
    def GetProductInfo(self, product_id):
       qProduct = "SELECT Product_Name, Product_Retail_Price, Product_Color, Product_Size FROM product WHERE Product_ID=" + str(product_id)
-      
+
       return(self.db.SendCommand(qProduct)[0])
 
    def GetShippingCostByState(self, stateCode):
       qShippingCost = "SELECT Shipping_Cost FROM shipping_costs WHERE State_Code=" + "\" " + stateCode + "\""
       return(str(self.db.SendCommand(qShippingCost)[0][0]))
-      
+
    def GetCustomerInfo(self):
       qCustomer = "SELECT Customer_First_Name, Customer_Last_Name, Customer_Street_Address, Customer_City, Customer_State, Customer_Zip, Customer_Email_Address \
                    FROM customer WHERE Customer_ID=" + self.customerID
-      
+
       customer = self.db.SendCommand(qCustomer)[0]
       self.first = customer[0].strip()
       self.last = customer[1].strip()
@@ -78,7 +78,7 @@ class Receipt():
                     FROM orders WHERE Order_ID=" + self.order_id
 
       orderList = self.db.SendCommand(qOrderList)
-      
+
       birthstone = ("",0.0)
       charmOne = ("",0.0)
       charmTwo = ("",0.0)
@@ -100,22 +100,22 @@ class Receipt():
          charmIDThree = item[8]
          charmIDFour = item[9]
 
-         if birthstoneID != "":
+         if birthstoneID != "" and birthstoneID != None:
             birthstone = self.BirthstoneLookup[int(birthstoneID)]
-         if charmIDOne != "":
+         if charmIDOne != "" and charmIDOne != None:
             charmOne = self.CharmLookup[int(charmIDOne)]
-         if charmIDTwo != "":
+         if charmIDTwo != "" and charmIDTwo != None:
             charmTwo = self.CharmLookup[int(charmIDTwo)]
-         if charmIDThree != "":
+         if charmIDThree != "" and charmIDThree != None:
             charmThree = self.CharmLookup[int(charmIDThree)]
-         if charmIDFour != "":
+         if charmIDFour != "" and charmIDFour != None:
             charmFour = self.CharmLookup[int(charmIDFour)]
 
 
          self.orderDescription += '\n' + productInfo[0] + '\t' + str(quantity) + '\t' + str(productInfo[1]) + '\t' + str(float(productInfo[1]) * float(quantity))
          self.orderDescription += '\n' + "Color: " + productInfo[2]
          self.orderDescription += '\n' + "Size: " + productInfo[3]
-         if engraving != "":
+         if engraving != "" and engraving != None:
             self.orderDescription += '\n' + "Engraving: " + engraving
          if birthstone[0] != "":
             self.orderDescription += '\n' + "Birthstone: " + birthstone[0] + '\t' + str(birthstone[1])
@@ -142,11 +142,13 @@ class Receipt():
       self.GetCustomerID()
       self.GetCustomerInfo()
       self.GetOrderList()
-      self.mail(self.emailAddress, "Invoice for Order #" + str(self.order_id), self.orderHeader + self.orderDescription + '\n' + self.orderFooter)
+      self.mail.SendEmail(self.emailAddress, "Invoice for Order #" + str(self.order_id), self.orderHeader + self.orderDescription + '\n' + self.orderFooter)
 
 
 def main():
+   print("Started: ")
    order_id = sys.argv[1]
+   print(order_id)
    receipt = Receipt(order_id)
    receipt.EmailReceipt()
 
