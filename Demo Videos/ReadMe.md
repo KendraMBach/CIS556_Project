@@ -10,6 +10,7 @@ The persona test paths test the application from the perspective of three target
 - He knows he needs to purchase a wedding ring, but isn’t sure which one he wants, or what his ring size is.
 
 ### Persona 2
+[Persona 2 Video](https://youtu.be/M0GgMxB-N8o)
 New female customer expecting a baby in April, just browsing for items
 - She’s looking for a series of bracelets for her, her mother, and the baby
 - She’d like a customized engraving of the baby’s name
@@ -17,6 +18,7 @@ New female customer expecting a baby in April, just browsing for items
 - She might want to look at some items for herself while she’s shopping
 
 ### Persona 3
+[Persona 3 Video](https://youtu.be/N8nQjVFqV_g)
 Returning male customer purchasing groomsman gifts
 - He is purchasing some matching black stud earrings for his groomsmen
 - He previously used the site to purchase his wedding band
