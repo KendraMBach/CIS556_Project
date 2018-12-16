@@ -26,7 +26,7 @@
 	                
 	                <c:if test="${pageContext.request.userPrincipal.name != null}">
 			        <li class="nav-item">
-	                    <a href="${pageContext.request.contextPath}/accountInfo" target="_blank" class="nav-link"><i class="nc-icon nc-single-02"></i>Welcome Back</a>
+	                    <a target="_blank" class="nav-link"><i class="nc-icon nc-single-02"></i>Welcome Back</a>
 	                	
 	                </li>
 	                <li class="nav-item">
